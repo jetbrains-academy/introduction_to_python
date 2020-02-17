@@ -1,0 +1,4 @@
+Modules in Python are simply Python files with the `['.py']` extension containing Python definitions and statements. Modules can be handy when you want to use your function in a number of programs without copying its definition into each program. Modules are imported from other modules using the `['import']` keyword and the file name without an extension. The first time a module is loaded into a running Python script, it is initialized by executing the code in the module once.  
+  
+Import the module `['my_module']` and use the `['hello_world']` function.  
+Use 'import' keyword and my\_module reference.Access 'hello\_world' function from module 'my\_module' as my\_module.hello\_world()
