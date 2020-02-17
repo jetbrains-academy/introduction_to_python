@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: tests.py
+  visible: false
+- name: hello_world.py
+  visible: true
+  placeholders:
+  - offset: 32
+    length: 5
+    placeholder_text: type your name

@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: dicts.py
+  visible: true
+  placeholders:
+  - offset: 311
+    length: 18
+    placeholder_text: Jane's phone
+- name: tests.py
+  visible: false

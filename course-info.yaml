@@ -1,0 +1,15 @@
+title: Introduction to Python
+language: English
+summary: Introduction course to Python.
+programming_language: Python
+content:
+- Introduction
+- Variables
+- Strings
+- Data structures
+- Condition expressions
+- Loops
+- Functions
+- Classes and objects
+- Modules and packages
+- File input output

@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: for_string.py
+  visible: true
+  placeholders:
+  - offset: 158
+    length: 22
+    placeholder_text: count how many characters are in the hello_world using loop
+- name: tests.py
+  visible: false

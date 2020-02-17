@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: string_methods.py
+  visible: true
+  placeholders:
+  - offset: 131
+    length: 20
+    placeholder_text: upper cased monty_python
+- name: tests.py
+  visible: false

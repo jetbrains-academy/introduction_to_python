@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: assignments.py
+  visible: true
+  placeholders:
+  - offset: 100
+    length: 2
+    placeholder_text: operator
+- name: tests.py
+  visible: false

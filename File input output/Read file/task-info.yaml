@@ -1,0 +1,20 @@
+type: edu
+files:
+- name: input.txt
+  visible: true
+- name: input1.txt
+  visible: true
+- name: read_file.py
+  visible: true
+  placeholders:
+  - offset: 266
+    length: 11
+    placeholder_text: print each line
+  - offset: 406
+    length: 20
+    placeholder_text: print only first line of f1
+  - offset: 428
+    length: 10
+    placeholder_text: do not forget to close file
+- name: tests.py
+  visible: false

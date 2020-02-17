@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: for_loop.py
+  visible: true
+  placeholders:
+  - offset: 238
+    length: 20
+    placeholder_text: iterate over primes using for loop
+- name: tests.py
+  visible: false

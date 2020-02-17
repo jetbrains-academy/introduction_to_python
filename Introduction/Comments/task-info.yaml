@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: comments.py
+  visible: true
+  placeholders:
+  - offset: 138
+    length: 11
+    placeholder_text: add new comment here
+- name: tests.py
+  visible: false

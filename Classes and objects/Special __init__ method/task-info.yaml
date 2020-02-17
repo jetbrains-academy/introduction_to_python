@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: init_method.py
+  visible: true
+  placeholders:
+  - offset: 159
+    length: 11
+    placeholder_text: add parameters here
+- name: tests.py
+  visible: false

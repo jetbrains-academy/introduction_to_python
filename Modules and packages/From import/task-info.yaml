@@ -1,0 +1,14 @@
+type: edu
+files:
+- name: my_module.py
+  visible: true
+- name: calculator.py
+  visible: true
+- name: from_import.py
+  visible: true
+  placeholders:
+  - offset: 169
+    length: 33
+    placeholder_text: import hello_world from my_module
+- name: tests.py
+  visible: false

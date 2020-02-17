@@ -1,0 +1,13 @@
+type: edu
+files:
+- name: arithmetic_operators.py
+  visible: true
+  placeholders:
+  - offset: 45
+    length: 10
+    placeholder_text: divide 'number' by two
+  - offset: 69
+    length: 10
+    placeholder_text: calculate the remainder
+- name: tests.py
+  visible: false

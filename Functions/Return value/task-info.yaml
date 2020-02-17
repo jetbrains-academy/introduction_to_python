@@ -1,0 +1,16 @@
+type: edu
+files:
+- name: return_keyword.py
+  visible: true
+  placeholders:
+  - offset: 373
+    length: 1
+    placeholder_text: initialize variable b
+  - offset: 445
+    length: 9
+    placeholder_text: update variable b
+  - offset: 463
+    length: 11
+    placeholder_text: update variable a
+- name: tests.py
+  visible: false

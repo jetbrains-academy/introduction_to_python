@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: negative_indexing.py
+  visible: true
+  placeholders:
+  - offset: 58
+    length: 15
+    placeholder_text: type here
+- name: tests.py
+  visible: false

@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: access_variable.py
+  visible: true
+  placeholders:
+  - offset: 408
+    length: 19
+    placeholder_text: value of variable1 from my_object
+- name: tests.py
+  visible: false

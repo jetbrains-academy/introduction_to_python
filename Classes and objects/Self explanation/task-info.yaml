@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: self_parameter.py
+  visible: true
+  placeholders:
+  - offset: 184
+    length: 22
+    placeholder_text: add number to current
+- name: tests.py
+  visible: false

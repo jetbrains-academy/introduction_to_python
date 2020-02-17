@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: continue_keyword.py
+  visible: true
+  placeholders:
+  - offset: 154
+    length: 10
+    placeholder_text: Check if x is even
+- name: tests.py
+  visible: false

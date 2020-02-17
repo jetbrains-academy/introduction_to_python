@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: dict_key_value.py
+  visible: true
+  placeholders:
+  - offset: 208
+    length: 19
+    placeholder_text: phone_book values
+- name: tests.py
+  visible: false

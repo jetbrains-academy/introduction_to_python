@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: functions.py
+  visible: true
+  placeholders:
+  - offset: 256
+    length: 10
+    placeholder_text: define a function named 'fun' to replace three lines above
+- name: tests.py
+  visible: false

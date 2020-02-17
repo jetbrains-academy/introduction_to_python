@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: class_definition.py
+  visible: true
+  placeholders:
+  - offset: 30
+    length: 1
+    placeholder_text: assign any value to variable
+- name: tests.py
+  visible: false

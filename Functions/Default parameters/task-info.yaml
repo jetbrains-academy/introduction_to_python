@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: default_parameter.py
+  visible: true
+  placeholders:
+  - offset: 158
+    length: 20
+    placeholder_text: add parameters for function, set default value for name
+- name: tests.py
+  visible: false

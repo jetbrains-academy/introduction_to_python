@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: string_indexing.py
+  visible: true
+  placeholders:
+  - offset: 96
+    length: 9
+    placeholder_text: type here
+- name: tests.py
+  visible: false

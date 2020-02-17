@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: type_cast.py
+  visible: true
+  placeholders:
+  - offset: 113
+    length: 17
+    placeholder_text: Convert float_number to integer
+- name: tests.py
+  visible: false

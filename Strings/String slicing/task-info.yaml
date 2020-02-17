@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: slicing.py
+  visible: true
+  placeholders:
+  - offset: 167
+    length: 16
+    placeholder_text: type here
+- name: tests.py
+  visible: false

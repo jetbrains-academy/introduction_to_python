@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: len_function.py
+  visible: true
+  placeholders:
+  - offset: 117
+    length: 27
+    placeholder_text: type here
+- name: tests.py
+  visible: false

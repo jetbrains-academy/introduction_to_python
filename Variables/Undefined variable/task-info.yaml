@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: undefined_variable.py
+  visible: true
+  placeholders:
+  - offset: 19
+    length: 14
+    placeholder_text: other variable
+- name: tests.py
+  visible: false

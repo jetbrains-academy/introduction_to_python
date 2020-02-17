@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: lists.py
+  visible: true
+  placeholders:
+  - offset: 70
+    length: 12
+    placeholder_text: slice
+- name: tests.py
+  visible: false

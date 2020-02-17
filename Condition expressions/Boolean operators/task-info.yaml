@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: boolean_operators.py
+  visible: true
+  placeholders:
+  - offset: 132
+    length: 28
+    placeholder_text: John is not 23 years old
+- name: tests.py
+  visible: false

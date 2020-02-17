@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: tuples.py
+  visible: true
+  placeholders:
+  - offset: 161
+    length: 13
+    placeholder_text: alphabet length
+- name: tests.py
+  visible: false
