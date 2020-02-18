@@ -7,4 +7,4 @@ print(calc.get_current())
 
 import my_module
 
-my_module.hello_world('John')
+my_module.hello_world("John")

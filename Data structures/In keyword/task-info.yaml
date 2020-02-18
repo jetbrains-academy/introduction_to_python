@@ -3,7 +3,7 @@ files:
 - name: in_keyword.py
   visible: true
   placeholders:
-  - offset: 234
+  - offset: 236
     length: 29
     placeholder_text: is 'fish' in grocery_dict keys
 - name: tests.py

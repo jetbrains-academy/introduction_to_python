@@ -1,3 +1,5 @@
+## Variable types
+
 number = 9
 print(type(number))   # print type of variable "number"
 

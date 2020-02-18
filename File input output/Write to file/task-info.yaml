@@ -5,13 +5,13 @@ files:
 - name: write_to_file.py
   visible: true
   placeholders:
-  - offset: 88
+  - offset: 92
     length: 3
     placeholder_text: add modifier
-  - offset: 120
+  - offset: 124
     length: 10
     placeholder_text: add the whole zoo to the output.txt
-  - offset: 136
+  - offset: 140
     length: 9
     placeholder_text: close the file
 - name: tests.py

@@ -1,4 +1,9 @@
-Comments in Python start with the hash character ( `#` ) and include the whole line. You can use Ctrl + / to comment or uncomment the whole line in PyCharm.  
+## Comments
+
+Comments in Python start with the hash character ( `#` ) and include the whole line. You can use &shortcut:CommentByLineComment; to comment or uncomment the whole line in PyCharm.  
   
 Add a new comment to the file.  
-Type your new comment here.
+
+<div class="hint">
+  Type your new comment here.
+</div>
