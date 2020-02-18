@@ -7,6 +7,6 @@ phone_book["Jill"] = 345
 print(phone_book)
 
 # Remove key-value pair from phone_book
-del phone_book['John']
+del phone_bookJohn
 
-print(phone_book['Jane'])
+print(phone_bookJane)

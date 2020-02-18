@@ -3,7 +3,7 @@ from test_helper import run_common_tests, passed, failed, import_task_file, get_
 
 def test_value():
     output = get_file_output()
-    answer = ['It is a really long string', 'triple-quoted st']
+    answer = It is a really long string', 'triple-quoted st
     if 'to define multi-line strings' in output:
         failed("Too long string in the output")
     else:

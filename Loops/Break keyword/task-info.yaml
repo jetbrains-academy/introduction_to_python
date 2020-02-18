@@ -3,7 +3,7 @@ files:
 - name: break_keyword.py
   visible: true
   placeholders:
-  - offset: 377
+  - offset: 375
     length: 20
     placeholder_text: exit loop if animal is 'elephant'
 - name: tests.py

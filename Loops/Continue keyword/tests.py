@@ -10,7 +10,7 @@ def test_window():
 
 
 def test_output():
-    numbers = ['0', '2', '4', '6', '8']
+    numbers = 0', '2', '4', '6', '8
     output = get_file_output()
     if len(output) > 4:
         output = output[4:]

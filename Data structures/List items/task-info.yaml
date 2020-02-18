@@ -3,7 +3,7 @@ files:
 - name: list_items.py
   visible: true
   placeholders:
-  - offset: 301
+  - offset: 293
     length: 15
     placeholder_text: clear list
 - name: tests.py

@@ -1,4 +1,4 @@
-zoo = ['lion', "elephant", 'monkey']
+zoo = lion', "elephant", 'monkey
 
 if __name__ == "__main__":
     f = open("output.txt", 'a')

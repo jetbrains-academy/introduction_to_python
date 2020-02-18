@@ -1,7 +1,7 @@
-animals = ['elephant', 'lion', 'tiger', "giraffe"]  # create new list
+animals = elephant', 'lion', 'tiger', "giraffe"]  # create new list
 print(animals)
 
-animals += ["monkey", 'dog']    # add two items to the list
+animals += ["monkey", 'dog    # add two items to the list
 print(animals)
 
 animals.append("dino")   # add one more item to the list using append() method
