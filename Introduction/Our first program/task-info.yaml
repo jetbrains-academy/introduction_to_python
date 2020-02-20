@@ -8,3 +8,5 @@ files:
   - offset: 32
     length: 5
     placeholder_text: type your name
+- name: execute.svg
+  visible: true

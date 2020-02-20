@@ -8,7 +8,13 @@ Add elements from the `zoo` list to "output.txt".
 <div class='hint'>Use 'write' method.</div>
 <div class='hint'>Call f.close method.</div>
 
-If you like this course, we would suggest trying projects on [JetBrains Academy](https://hi.hyperskill.org/). You can select one of the Python projects there and build it [right in the IDE](
-https://hyperskill.org/plugin#python.).
+## What's next?
 
-To enable Python support, log in to your profile on JetBrains Academy, and then go to **Settings | Learning Goal | Python Developer**.
+Now, once you have mastered the basics of Python, we bet that you’ll be wondering what to do next. We recommend checking out [JetBrains Academy](https://hi.hyperskill.org/). Here's a few reasons to try JetBrains Academy now:
+
+- 50+ projects and 500+ topics available for learning, and the number keeps growing.
+- Different levels of project difficulty that provide a flexible learning experience for users of all ability levels.
+- Comprehensive learning tracks with a detailed [Knowledge Map](https://hyperskill.org/knowledge-map).
+- Learn anywhere: you can start learning on your tablet or mobile phone via the browser and continue on your laptop or PC; you can even build the projects [right in your IDE](https://hyperskill.org/plugin#python.).
+
+Join JetBrains Academy [here](https://hyperskill.org/onboarding) and try it yourself.

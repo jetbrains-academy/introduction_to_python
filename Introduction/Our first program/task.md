@@ -4,13 +4,26 @@ Traditionally the first program you write in any programming language is `"Hello
   
 Introduce yourself to the World.  
   
-To run a script, right-click anywhere in the **Editor** view so you can see the context menu and select **Run &lt;script_name&gt;**.   
-Alternatively, you can use the &shortcut:RunClass; shortcut.  
+To run this script, right-click anywhere in the **Editor** view so you can see the context menu and select **Run 'hello_world'**.   
+Alternatively, you can use the &shortcut:RunClass; shortcut.
+Exclusively in PyCharm Edu, you can use the ![](execute.svg) gutter icon. 
 
 For more information, check out [our help](https://www.jetbrains.com/help/pycharm/running-and-rerunning-applications.html).
 
-If this task was not clear enough or you want more theory, we would suggest trying projects on [JetBrains Academy](https://hi.hyperskill.org/).
-You can select one of the Python projects there and build it [right in the IDE](
-https://hyperskill.org/plugin#python.).
+## JetBrains Academy
 
-To enable Python support, log in to your profile on JetBrains Academy, and then go to **Settings | Learning Goal | Python Developer**.
+If this task seems too hard or you are looking for a more structured and detailed curriculum, we suggest trying [JetBrains Academy](https://hi.hyperskill.org/).
+
+There are many reasons for you to try JetBrains Academy. Here's just a few of them:
+
+- Comprehensive learning tracks with a detailed [Knowledge Map](https://hyperskill.org/knowledge-map).
+- Projects with different difficulty levels that provide a flexible learning experience to match your skill level. 
+- You can practice with and master [professional development tools](https://hyperskill.org/plugin).
+
+Join JetBrains Academy [here](https://hyperskill.org/onboarding) and try it yourself.
+
+<style>
+    img {
+        display: inline !important;
+    }
+</style>
