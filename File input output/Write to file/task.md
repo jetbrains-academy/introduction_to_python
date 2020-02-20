@@ -10,11 +10,11 @@ Add elements from the `zoo` list to "output.txt".
 
 ## What's next?
 
-Now, once you have mastered the basics of Python, we bet that you’ll be wondering what to do next. We recommend checking out [JetBrains Academy](https://hi.hyperskill.org/). Here's a few reasons to try JetBrains Academy now:
+Now, once you have mastered the basics of Python, we bet that you’ll be wondering what to do next. We recommend checking out [JetBrains Academy](https://hi.hyperskill.org?utm_source=ide&utm_content=last-task). Here's a few reasons to try JetBrains Academy now:
 
 - 50+ projects and 500+ topics available for learning, and the number keeps growing.
 - Different levels of project difficulty that provide a flexible learning experience for users of all ability levels.
-- Comprehensive learning tracks with a detailed [Knowledge Map](https://hyperskill.org/knowledge-map).
-- Learn anywhere: you can start learning on your tablet or mobile phone via the browser and continue on your laptop or PC; you can even build the projects [right in your IDE](https://hyperskill.org/plugin#python.).
+- Comprehensive learning tracks with a detailed [Knowledge Map](https://hyperskill.org/knowledge-map?utm_source=ide&utm_content=last-task).
+- Learn anywhere: you can start learning on your tablet or mobile phone via the browser and continue on your laptop or PC; you can even build the projects [right in your IDE](https://hyperskill.org/plugin#python).
 
-Join JetBrains Academy [here](https://hyperskill.org/onboarding) and try it yourself.
+Join JetBrains Academy [here](https://hyperskill.org/onboarding?track=python&utm_source=ide&utm_content=last-task) and try it yourself.
