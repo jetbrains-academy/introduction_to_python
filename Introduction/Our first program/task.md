@@ -21,9 +21,3 @@ There are many reasons for you to try JetBrains Academy. Here's just a few of th
 - You can practice with and master [professional development tools](https://hyperskill.org/plugin?utm_source=ide&utm_content=first-task).
 
 Join JetBrains Academy [here](https://hyperskill.org/onboarding?track=python&utm_source=ide&utm_content=first-task) and try it yourself.
-
-<style>
-    img {
-        display: inline !important;
-    }
-</style>
