@@ -3,4 +3,4 @@ files:
 - name: main.py
   visible: true
 - name: edu_course_overview.png
-  visible: true
+  visible: false
