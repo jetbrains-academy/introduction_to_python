@@ -1,0 +1,6 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+- name: edu_course_view.png
+  visible: false
