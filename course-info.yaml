@@ -1,6 +1,10 @@
 title: Introduction to Python
 language: English
 summary: Introduction course to Python.
+vendor:
+  name: JetBrains
+  email: support@jetbrains.com
+  url: https://www.jetbrains.com/
 programming_language: Python
 content:
 - Introduction
