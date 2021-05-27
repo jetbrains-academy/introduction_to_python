@@ -2,21 +2,17 @@ type: theory
 files:
 - name: main.py
   visible: true
-- name: images/back.svg
+- name: images/back.png
   visible: false
-- name: images/commentTask.svg
-  visible: false
-- name: images/edu_next_button.png
-  visible: false
-- name: images/edu_peek_solution.png
-  visible: false
-- name: images/reset.svg
-  visible: false
-- name: images/forward.svg
-  visible: false
-- name: images/gear.svg
-  visible: false
-- name: images/hideToolWindow.svg
+- name: images/commentTask.png
   visible: false
 - name: images/edu_task_description_window_settings.png
+  visible: false
+- name: images/forward.png
+  visible: false
+- name: images/gear.png
+  visible: false
+- name: images/hideToolWindow.png
+  visible: false
+- name: images/reset.png
   visible: false
