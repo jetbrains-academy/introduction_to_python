@@ -4,9 +4,11 @@ If you open a file using `"w"` (write) as the second argument, a new empty file 
   
 Add elements from the `zoo` list to "output.txt".  
 
-<div class='hint'>Use 'a' modifier to append lines to the end of file.</div>
-<div class='hint'>Use 'write' method.</div>
-<div class='hint'>Call f.close method.</div>
+<div class='hint'>Use the <code>a</code> modifier to append lines at the end of the file.</div>
+<div class="hint">Check out the section 7.2.1 "Methods of File Objects" in this <a href="https://docs.python.org/3/tutorial/inputoutput.html">Python Tutorial chapter</a> 
+and find a method that writes into a file.</div>
+<div class='hint'>Use the <code>write()</code> method.</div>
+<div class='hint'>Don't forget to call the <code>close()</code> method.</div>
 
 ## What's next?
 
