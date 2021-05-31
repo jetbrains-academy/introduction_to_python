@@ -7,5 +7,5 @@ or uncomment the whole line or a block of code in PyCharm.
 Add a new comment to the file.  
 
 <div class="hint">
-  Type your new comment instead of the words "add new comment here".
+  Type your new comment in the answer placeholder instead of the words "add new comment here".
 </div>

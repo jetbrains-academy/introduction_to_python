@@ -3,7 +3,7 @@ files:
 - name: comparison_operators.py
   visible: true
   placeholders:
-  - offset: 188
+  - offset: 189
     length: 1
     placeholder_text: operator
 - name: tests.py
