@@ -6,7 +6,7 @@ For theoretical tasks, the description provides learning and reading materials.
 For quizzes, it offers multiple choice questions.
 For programming assignments, it states the problem to be solved.
 
-Use the Task Description icons for the following actions:
+Use Task Description icons for the following actions:
 
 | Icon                               | Description                   |
 |------------------------------------|-------------------------------|
