@@ -3,7 +3,7 @@ files:
 - name: list_operations.py
   visible: true
   placeholders:
-  - offset: 257
+  - offset: 259
     length: 24
     placeholder_text: replace "dino" with "dinosaur"
 - name: tests.py
