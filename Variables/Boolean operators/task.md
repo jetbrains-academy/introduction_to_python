@@ -1,14 +1,11 @@
 ## Boolean operators
 
-Boolean is a type of value that can only be `True` or `False` . The `==` (equality) operator checks whether the two variables being compared are equal.  
+Boolean is a type of value that can only be `True` or `False`. 
+The `==` (equality) operator checks whether the two variables 
+being compared are equal and returns either `True` or `False`.  
 
-Other comparison operators:
-- `!=` not equal;
-- `<` less than;
-- `>` greater than;
-- `<=` less than or equal to;
-- `>=` greater than or equal to.
   
-Check whether the variable `two` is equal to `three` .  
+Check whether the variable `two` is equal to `three`.
 
-<div class='hint'>Use == operator.</div>
+
+<div class='hint'>Use the <code>==</code> operator.</div>

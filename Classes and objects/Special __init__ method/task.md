@@ -3,7 +3,7 @@
 `__init__` is one of the reserved methods in Python. It is used to initialize objects it 
 creates: `__init__` is short for "initialize". 
 
-The `__init__()` function is called when an object of the class is created, 
+If defined, the `__init__()` function is called when an object of the class is created, 
 it initializes the object and its attributes. It always takes at least 
 one argument, `self`, which refers to the object itself.
 
