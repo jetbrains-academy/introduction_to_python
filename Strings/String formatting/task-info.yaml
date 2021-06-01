@@ -3,10 +3,10 @@ files:
 - name: string_formatting.py
   visible: true
   placeholders:
-  - offset: 133
+  - offset: 128
     length: 2
     placeholder_text: special symbol
-  - offset: 149
+  - offset: 144
     length: 2
     placeholder_text: years
 - name: tests.py
