@@ -8,7 +8,8 @@ or decimal values.
 > <i><b>Note</b>: The formatting operations described here exhibit a variety 
 > of quirks that lead to a number of common errors. 
 > Using the newer formatted string literals (see further), 
-> the str.format() interface, or template strings may help avoid these errors. 
+> the <code><a href="https://docs.python.org/3/library/stdtypes.html#str.format">str.format()</a></code> 
+> interface, or <a href="https://docs.python.org/3/library/string.html#template-strings">template strings</a> may help avoid these errors. 
 > Each of these alternatives provides their own trade-offs and benefits of 
 > simplicity, flexibility, and/or extensibility.</i>
   
