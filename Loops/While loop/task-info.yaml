@@ -3,7 +3,7 @@ files:
 - name: while_loop.py
   visible: true
   placeholders:
-  - offset: 213
+  - offset: 268
     length: 18
     placeholder_text: print all squares from 0 to 99
 - name: tests.py
