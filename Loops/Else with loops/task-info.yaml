@@ -1,0 +1,13 @@
+type: edu
+files:
+- name: task.py
+  visible: true
+  placeholders:
+  - offset: 181
+    length: 10
+    placeholder_text: '# Add a condition for interruption'
+  - offset: 200
+    length: 5
+    placeholder_text: '# Add a statement that will terminate the loop'
+- name: tests.py
+  visible: false
