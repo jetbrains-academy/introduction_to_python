@@ -37,4 +37,4 @@ is completed (unless there was a `break` in there somewhere).
 In the second loop in the code editor, add two lines of code to make sure the loop prints
 numbers 1 and 2, nad never prints the phrase `"for loop is done"`.
 
-<div class="hint">You should stop at number 3</div>
+<div class="hint">It should terminate at number 3</div>
