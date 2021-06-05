@@ -3,7 +3,7 @@ files:
 - name: functions.py
   visible: true
   placeholders:
-  - offset: 256
+  - offset: 257
     length: 10
     placeholder_text: define a function named 'fun' to replace three lines above
 - name: tests.py
