@@ -1,0 +1,16 @@
+type: edu
+files:
+- name: task.py
+  visible: true
+  placeholders:
+  - offset: 1062
+    length: 56
+    placeholder_text: '# Add a list of phrases that will be capitalized'
+  - offset: 1130
+    length: 56
+    placeholder_text: '# Add a dict of keyword arguments'
+  - offset: 1187
+    length: 37
+    placeholder_text: '# call the cat() function to print the required output'
+- name: tests.py
+  visible: false
