@@ -3,7 +3,7 @@ files:
 - name: default_parameter.py
   visible: true
   placeholders:
-  - offset: 158
+  - offset: 478
     length: 20
     placeholder_text: add parameters for function, set default value for name
 - name: tests.py
