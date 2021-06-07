@@ -36,6 +36,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: my_function() missing 1 required positional argument: 'surname'
 ```
 
-Define a function that prints the square of the passed parameter.  
+In code editor define a function that prints the square of a passed parameter.  
 
-<div class='hint'>Put parameter 'x' inside parentheses in function definition.</div>
+<div class='hint'>Add the parameter <code>x</code> inside parentheses in function definition.</div>
