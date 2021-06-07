@@ -11,6 +11,7 @@ files:
     placeholder_text: '# Add a dict of keyword arguments'
   - offset: 1187
     length: 37
-    placeholder_text: '# call the cat() function to print the required output'
+    placeholder_text: '# call the cat() function like in example above to print the
+      required output'
 - name: tests.py
   visible: false
