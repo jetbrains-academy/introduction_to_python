@@ -1,6 +1,6 @@
 type: edu
 files:
-- name: task.py
+- name: keyword_args.py
   visible: true
   placeholders:
   - offset: 232

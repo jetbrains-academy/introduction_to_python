@@ -1,6 +1,6 @@
 type: edu
 files:
-- name: task.py
+- name: args_kwargs.py
   visible: true
   placeholders:
   - offset: 1062
