@@ -3,3 +3,5 @@ content:
 - Parameters and call arguments
 - Return value
 - Default parameters
+- Keyword Arguments
+- Args and kwargs
