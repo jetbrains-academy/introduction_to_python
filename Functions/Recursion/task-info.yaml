@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: task.py
+  visible: true
+  placeholders:
+  - offset: 75
+    length: 20
+    placeholder_text: '# calculate n multiplied by the factorial of n - 1'
+- name: tests.py
+  visible: false
