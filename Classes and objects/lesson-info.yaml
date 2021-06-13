@@ -2,5 +2,5 @@ content:
 - Definition
 - Variable access
 - Update variable
-- Self explanation
+- The self parameter
 - Special __init__ method
