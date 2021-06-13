@@ -1,5 +1,5 @@
 type: edu
-custom_name: Variable access
+custom_name: Update variable
 files:
 - name: access_variable.py
   visible: true
