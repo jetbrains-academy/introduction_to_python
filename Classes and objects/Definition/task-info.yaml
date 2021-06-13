@@ -6,5 +6,8 @@ files:
   - offset: 30
     length: 1
     placeholder_text: assign any value to variable
+  - offset: 252
+    length: 9
+    placeholder_text: '# Instantiate an object of the class MyClass'
 - name: tests.py
   visible: false
