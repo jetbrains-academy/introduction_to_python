@@ -41,7 +41,8 @@ x = SomeClass()
 `x = SomeClass()` creates a new instance of the class and assigns this object to the local 
 variable `x`.
 
-
+You can find out more about class definition syntax by reading <a href="https://docs.python.org/3/tutorial/classes.html#class-definition-syntax">this section</a>
+of Python Documentation.
 
 Assign a value to the `variable` inside `MyClass` and create an object `x` of the class `MyClass()`. 
 
