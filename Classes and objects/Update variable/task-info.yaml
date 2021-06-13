@@ -1,0 +1,14 @@
+type: edu
+custom_name: Variable access
+files:
+- name: access_variable.py
+  visible: true
+  placeholders:
+  - offset: 212
+    length: 5
+    placeholder_text: '# Instantiate another car object'
+  - offset: 252
+    length: 5
+    placeholder_text: '# Change color for car2'
+- name: tests.py
+  visible: false
