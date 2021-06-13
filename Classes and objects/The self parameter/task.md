@@ -22,8 +22,8 @@ class Bag:
         self.add(x)
 ```
   
-In the code editor, implement the `add` method. It should add `amount` to 
-the `current` field.  
+In the code editor, implement the `add` method of the class `Calculator`. It should 
+add `amount` to the field `current`.  
 
 <div class='hint'>Add <code>amount</code> to the <code>self.current</code> variable.</div>
 <div class="hint">Use the <code>+=</code> sign.</div>

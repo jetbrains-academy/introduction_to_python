@@ -3,10 +3,10 @@ files:
 - name: self_parameter.py
   visible: true
   placeholders:
-  - offset: 357
+  - offset: 484
     length: 22
     placeholder_text: '# update the current atribute by adding the amount to it'
-  - offset: 423
+  - offset: 550
     length: 12
     placeholder_text: '# return the current value'
 - name: tests.py
