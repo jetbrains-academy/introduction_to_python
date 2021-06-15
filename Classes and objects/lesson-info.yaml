@@ -4,3 +4,4 @@ content:
 - Update variable
 - The self parameter
 - Special __init__ method
+- __str__ vs __repr__

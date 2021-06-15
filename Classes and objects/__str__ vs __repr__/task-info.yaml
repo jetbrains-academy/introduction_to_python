@@ -1,0 +1,13 @@
+type: edu
+files:
+- name: task.py
+  visible: true
+  placeholders:
+  - offset: 438
+    length: 46
+    placeholder_text: '# Add an f-string to return'
+  - offset: 524
+    length: 45
+    placeholder_text: '# Add an f-string to return'
+- name: tests.py
+  visible: false
