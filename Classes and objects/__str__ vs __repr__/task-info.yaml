@@ -1,6 +1,6 @@
 type: edu
 files:
-- name: task.py
+- name: str_and_repr.py
   visible: true
   placeholders:
   - offset: 438
