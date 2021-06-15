@@ -1,0 +1,16 @@
+type: edu
+files:
+- name: class_instance_variables.py
+  visible: true
+  placeholders:
+  - offset: 983
+    length: 13
+    placeholder_text: '# Add a class variable `kind`'
+  - offset: 1045
+    length: 16
+    placeholder_text: '# Add an instance variable `name`'
+  - offset: 1070
+    length: 22
+    placeholder_text: '# Add an instance variable `species`'
+- name: tests.py
+  visible: false
