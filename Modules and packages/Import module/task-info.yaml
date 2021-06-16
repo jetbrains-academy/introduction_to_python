@@ -5,12 +5,12 @@ files:
 - name: imports.py
   visible: true
   placeholders:
-  - offset: 164
+  - offset: 18
     length: 16
-    placeholder_text: here import my_module
-  - offset: 182
+    placeholder_text: '# Import the module here'
+  - offset: 178
     length: 29
-    placeholder_text: call function hello_world from my_module
+    placeholder_text: '# call the function `hello_world` from `my_module`'
 - name: calculator.py
   visible: true
 - name: tests.py
