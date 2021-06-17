@@ -16,7 +16,7 @@ class Add:
 
 class Subtract:
     def __init__(self):
-        self.current = 0
+        self.current = 100
 
     def subtract(self, amount):
         self.current -= amount
@@ -27,7 +27,7 @@ class Subtract:
 
 class Multiply:
     def __init__(self):
-        self.current = 0
+        self.current = 10
 
     def multiply(self, amount):
         self.current *= amount

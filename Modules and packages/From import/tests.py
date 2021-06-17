@@ -20,3 +20,4 @@ def test_window_1():
 if __name__ == '__main__':
     run_common_tests()
     test_window()
+    test_window_1()
