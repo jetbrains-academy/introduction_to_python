@@ -8,12 +8,11 @@ names saves the authors of multi-module packages like [NumPy](https://numpy.org/
 or [Pillow](https://pypi.org/project/Pillow/) from having to worry about each other’s 
 module names.
 
-<div class="hint">The `__init__.py` files are required to make Python treat directories 
+<div class="hint">The <code>__init__.py</code> files are required to make Python treat directories 
 containing the file as packages. This prevents directories with a common name, such 
-as string, unintentionally hiding valid modules that occur later on the module search 
-path. In the simplest case, `__init__.py` can just be an empty file, but it can also 
-execute initialization code for the package or set the `__all__` variable, described 
-later.</div>
+as <code>string</code>, unintentionally hiding valid modules that occur later on the module search 
+path. In the simplest case, <code>__init__.py</code> can just be an empty file, but it can also 
+execute initialization code for the package or set the <code>__all__</code> variable, described <a href="https://docs.python.org/3/tutorial/modules.html#importing-from-a-package">here</a>.</div>
 
 Check out the packages `functions` and `classes` we created. Users of the packages 
 can import individual modules from the package, for example:
@@ -33,12 +32,14 @@ An alternative way of importing the submodule is:
 from functions.greeting import hello
 ```
 
-This also loads the submodule echo, and makes it available without its package prefix, 
+This also loads the submodule `hello`, and makes it available without its package prefix, 
 so it can be used as follows:
 
 ```python
 hello.hello('Susan')
 ```
+
+You can learn more about packages by reading <a href="https://docs.python.org/3/tutorial/modules.html#packages">this page</a> of Python Documentation
 
 In the code editor, import the `official` module properly to make the last `print` 
 statement work.
