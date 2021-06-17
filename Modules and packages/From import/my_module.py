@@ -1,7 +1,7 @@
 """ documentation string for module my_module
-This module contains hello_world function
+This module contains hello function
 """
 
 
-def hello_world():
-    return "Hello, World!"
+def hello(name):
+    return f"Hey there, {name}!"

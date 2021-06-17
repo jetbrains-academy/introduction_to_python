@@ -3,10 +3,19 @@ from test_helper import run_common_tests, failed, passed, get_answer_placeholder
 
 def test_window():
     window = get_answer_placeholders()[0]
-    if "from " in window:
+    if "from" in window:
         passed()
     else:
-        failed("Use hello_world imported from my_module")
+        failed("Wrong import, check out hint 1")
+
+
+def test_window_1():
+    window = get_answer_placeholders()[1]
+    if "hey('" in window or 'hey("' in window:
+        passed()
+    else:
+        failed("Call the hey function and give it our name as a string!")
+
 
 if __name__ == '__main__':
     run_common_tests()

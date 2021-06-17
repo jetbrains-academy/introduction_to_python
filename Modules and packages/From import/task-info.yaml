@@ -7,8 +7,11 @@ files:
 - name: from_import.py
   visible: true
   placeholders:
-  - offset: 169
-    length: 33
-    placeholder_text: import hello_world from my_module
+  - offset: 186
+    length: 11
+    placeholder_text: '# call the imported function to print your name'
+  - offset: 27
+    length: 34
+    placeholder_text: '# Import the function here'
 - name: tests.py
   visible: false
