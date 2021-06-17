@@ -21,7 +21,7 @@ The variable `sys.path` is a list of strings that determines the interpreter’s
 for modules: see what it prints for you when you run the code of the task.
 
 Remember that you can use &shortcut:CodeCompletion; after a dot (.) to explore available 
-methods of a module.  
+methods of a module. You can read more about standard modules <a href="https://docs.python.org/3/tutorial/modules.html#standard-modules">here</a>.
   
 Print the current date using an imported built-in module `datetime`.  
 

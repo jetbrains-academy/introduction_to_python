@@ -1,0 +1,24 @@
+type: edu
+files:
+- name: task.py
+  visible: true
+  placeholders:
+  - offset: 95
+    length: 46
+    placeholder_text: '# import the official module as official'
+- name: tests.py
+  visible: false
+- name: functions/greeting/hello.py
+  visible: true
+- name: functions/goodbye.py
+  visible: true
+- name: classes/calculator.py
+  visible: true
+- name: classes/__init__.py
+  visible: true
+- name: functions/__init__.py
+  visible: true
+- name: functions/greeting/__init__.py
+  visible: true
+- name: functions/greeting/official.py
+  visible: true
