@@ -3,7 +3,7 @@ from test_helper import run_common_tests, failed, passed, get_answer_placeholder
 
 def test_window():
     window = get_answer_placeholders()[0]
-    if "from" in window:
+    if "from my_module import hello as hey" in window:
         passed()
     else:
         failed("Wrong import, check out hint 1")
