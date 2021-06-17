@@ -23,7 +23,7 @@ In most cases Python programmers do not use this facility since it introduces
 an unknown set of names into the interpreter, possibly hiding some things 
 you have already defined.
 
-If the module name is followed by as, then the name following as is bound 
+If the module name is followed by `as`, then the name following as is bound 
 directly to the imported module:
 
 ```python
