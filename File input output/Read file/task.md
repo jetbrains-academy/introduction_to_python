@@ -1,11 +1,62 @@
 ## Read file
 
-Python has a number of built-in functions to read and write information from a file on your computer. The `open` function is used to open a file. The file can be opened in read mode (using `"r"` as the second argument) or in write mode (using `"w"` as the second argument). The `open` function returns the file object. You need to store it to close the file later.  
-  
-Print the contents of "input.txt" to output. Print the first line of "input1.txt". Then close the file.  
 
-Check out the section 7.2.1 "Methods of File Objects" in this [Python Tutorial chapter](https://docs.python.org/3/tutorial/inputoutput.html#methods-of-file-objects).
+- To read a file’s contents, you can call `f.read(size)`, which reads some quantity of data and returns it as 
+a string. When size is omitted or negative, the entire contents of the file will be read and returned.
 
-<div class='hint'>Use <code>print</code> function.</div>
-<div class='hint'>Use <code>readline()</code> method.</div>
-<div class='hint'>Use <code>f1.close()</code> method.</div>
+```python
+with open('somefile.txt') as f:
+    print(f.read())
+```
+```text
+Here's everything that's in the file.\n
+```
+<i>**Note**: there will be a problem if the file is twice as large as your machine’s memory.</i>
+
+
+- `f.readline()` reads a single line from the file; a newline character (`\n`) is left at the end of the 
+string, and is only omitted on the last line of the file if the file doesn’t end in a newline. This 
+makes the return value unambiguous; if `f.readline()` returns an empty string, the end of the file has 
+been reached, while a blank line is represented by `\n`, a string containing only a single newline.
+
+```python
+f.readline()
+```
+```text
+'This is the first line of the file.\n'
+```
+```python
+f.readline()
+```
+```text
+'Second line of the file\n'
+```
+```python
+f.readline()
+```
+```text
+''
+``` 
+- For reading lines from a file, you can loop over the file object. This is memory efficient, fast, and 
+leads to simple code:
+```python
+for line in f:
+    print(line)
+```
+```text
+This is the first line of the file.
+Second line of the file
+```
+
+- If you want to read all the lines of a file in a list you can also use `list(f)` or `f.readlines()`.
+
+
+For more details, check out the section [Methods of File Objects](https://docs.python.org/3/tutorial/inputoutput.html#methods-of-file-objects) in Python Tutorial.
+
+
+Print the contents of "input.txt" to output by iterating over the lines of the file and printing each one.
+Then print only the first line of "input1.txt".
+
+<div class="hint">Loop over the file object as in the example in task description.</div>
+<div class='hint'>Use the <code>print</code> function.</div>
+<div class='hint'>Use the <code>readline()</code> method to print a single line.</div>
