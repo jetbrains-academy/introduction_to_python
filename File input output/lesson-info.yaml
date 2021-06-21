@@ -1,4 +1,6 @@
 custom_name: File input/output
 content:
+- Open file
 - Read file
 - Write to file
+
