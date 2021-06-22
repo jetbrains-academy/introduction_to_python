@@ -11,8 +11,7 @@ module names.
 <div class="hint">The <code>__init__.py</code> files are required to make Python treat directories 
 containing the file as packages. This prevents directories with a common name, such 
 as <code>string</code>, unintentionally hiding valid modules that occur later on the module search 
-path. In the simplest case, <code>__init__.py</code> can just be an empty file, but it can also 
-execute initialization code for the package or set the <code>__all__</code> variable, described <a href="https://docs.python.org/3/tutorial/modules.html#importing-from-a-package">here</a>.</div>
+path. In the simplest case, <code>__init__.py</code> can just be an empty file.</div>
 
 Check out the packages `functions` and `classes` we created. Users of the packages 
 can import individual modules from the package, for example:
