@@ -15,10 +15,7 @@ x = x + 1                 # Increment x
 
 Comments should be complete sentences. The first word should be capitalized, 
 unless it is an identifier that begins with a lower case letter. Ensure that 
-your comments are clear and easily understandable to other people. Python coders 
-from non-English speaking countries: please write your comments 
-**in English**, unless you are 120% sure that the code will never be read by people 
-who don't speak your language.
+your comments are clear and easily understandable to other people. 
 
 #### Block Comments
 
