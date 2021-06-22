@@ -5,14 +5,14 @@ files:
 - name: write_to_file.py
   visible: true
   placeholders:
-  - offset: 105
+  - offset: 74
     length: 3
     placeholder_text: add modifier
-  - offset: 124
+  - offset: 89
     length: 33
     placeholder_text: '# On a new line in  "output.txt", add all elements from the
       zoo list, joined by " and "'
-  - offset: 166
+  - offset: 127
     length: 27
     placeholder_text: '# Add the number to the output as well'
 - name: tests.py
