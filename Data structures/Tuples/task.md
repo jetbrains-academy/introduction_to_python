@@ -1,19 +1,18 @@
 ## Tuples
 
-We saw that lists and strings have many common properties, such as indexing and 
-slicing operations. They are two examples of sequence data types.
-There is also another standard sequence data type: the tuple.
-
-Tuples are almost identical to lists. The only significant difference between tuples and 
+Tuples represent another standard sequence data type.
+They are almost identical to lists. The only significant difference between tuples and 
 lists is that tuples are immutable: you cannot add, replace, or delete elements from 
 a tuple. Tuples are constructed by comma-separated elements enclosed in parentheses, for 
-example `(a, b, c)` . 
+example: 
+
+```python
+(a, b, c)
+```
  
 A special situation is the construction of tuples containing 0 or 1 items. 
 Empty tuples are constructed by an empty pair of parentheses; 
-a tuple with one item is constructed by following a value with a comma 
-(it is not sufficient to enclose a single value in parentheses). Ugly, 
-but effective. For example:
+a tuple with one item is constructed by following a value with a comma. For example:
 
 ```python
 empty = ()
