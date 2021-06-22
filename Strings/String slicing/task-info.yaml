@@ -3,7 +3,7 @@ files:
 - name: slicing.py
   visible: true
   placeholders:
-  - offset: 164
+  - offset: 165
     length: 16
     placeholder_text: type here
 - name: tests.py
