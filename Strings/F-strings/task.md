@@ -2,8 +2,7 @@
 
 A formatted string literal or f-string is a string literal that is prefixed 
 with 'f' or 'F'. These strings may contain replacement fields, which are 
-expressions delimited by curly braces `{}`. Formatted strings are expressions evaluated at 
-run time. 
+expressions delimited by curly braces `{}`. 
 
 The parts of the string outside curly braces are treated literally. 
 Escape sequences are decoded like in ordinary string literals.

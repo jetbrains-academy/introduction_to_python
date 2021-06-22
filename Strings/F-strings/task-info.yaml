@@ -1,6 +1,6 @@
 type: edu
 files:
-- name: task.py
+- name: f-strings.py
   visible: true
   placeholders:
   - offset: 7
