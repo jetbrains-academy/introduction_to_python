@@ -4,4 +4,4 @@ The `if` keyword is used to form a conditional statement that executes some spec
   
 Print `"empty"` if the `tasks` list is empty.  
 
-<div class='hint'>Use len function to check if tasks is empty.</div>
+<div class='hint'>Use the <code>len()</code> function to check if <code>tasks</code> is empty.</div>

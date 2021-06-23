@@ -4,4 +4,4 @@ Boolean operators are not evaluated from left to right. There's an order of oper
   
 Check if `name` is `"Ellis"` or it's not true that `name` equal `"John"` and he is `17` years old at the same time.  
 
-<div class='hint'>Combine 'and', 'or' and 'not' keywords.</div>
+<div class='hint'>Combine <code>and</code>, <code>or</code> and <code>not</code> keywords.</div>
