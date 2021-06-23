@@ -5,9 +5,9 @@ files:
   placeholders:
   - offset: 161
     length: 13
-    placeholder_text: alphabet length
+    placeholder_text: '???'
   - offset: 189
     length: 12
-    placeholder_text: '# Create a tuple with a single element ''fun_tuple'''
+    placeholder_text: '???'
 - name: tests.py
   visible: false

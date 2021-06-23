@@ -5,6 +5,6 @@ files:
   placeholders:
   - offset: 300
     length: 15
-    placeholder_text: clear list
+    placeholder_text: '# Clear the list'
 - name: tests.py
   visible: false
