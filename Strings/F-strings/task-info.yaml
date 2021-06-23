@@ -5,15 +5,15 @@ files:
   placeholders:
   - offset: 7
     length: 7
-    placeholder_text: '# Your name here'
+    placeholder_text: '???'
   - offset: 21
     length: 2
-    placeholder_text: '# Your age here'
+    placeholder_text: '???'
   - offset: 50
     length: 6
-    placeholder_text: '# Add a replacement field for your name'
+    placeholder_text: '???'
   - offset: 65
     length: 5
-    placeholder_text: '# Add a replacement field for your age'
+    placeholder_text: '???'
 - name: tests.py
   visible: false
