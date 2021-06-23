@@ -5,6 +5,6 @@ files:
   placeholders:
   - offset: 346
     length: 1
-    placeholder_text: another value
+    placeholder_text: '# Another value'
 - name: tests.py
   visible: false
