@@ -5,12 +5,12 @@ files:
   placeholders:
   - offset: 364
     length: 1
-    placeholder_text: '# initialize variable b'
+    placeholder_text: '???'
   - offset: 436
     length: 9
-    placeholder_text: '# update variable b'
+    placeholder_text: '???'
   - offset: 454
     length: 11
-    placeholder_text: '# update variable a'
+    placeholder_text: '???'
 - name: tests.py
   visible: false

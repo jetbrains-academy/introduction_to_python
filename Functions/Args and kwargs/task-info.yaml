@@ -3,15 +3,14 @@ files:
 - name: args_kwargs.py
   visible: true
   placeholders:
-  - offset: 1062
+  - offset: 1110
     length: 56
-    placeholder_text: '# Add a list of phrases that will be capitalized'
-  - offset: 1130
+    placeholder_text: '???'
+  - offset: 1212
     length: 56
-    placeholder_text: '# Add a dict of keyword arguments'
-  - offset: 1187
+    placeholder_text: '???'
+  - offset: 1346
     length: 37
-    placeholder_text: '# call the cat() function like in example above to print the
-      required output'
+    placeholder_text: '???'
 - name: tests.py
   visible: false

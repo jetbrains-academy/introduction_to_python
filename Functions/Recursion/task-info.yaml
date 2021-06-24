@@ -1,10 +1,10 @@
 type: edu
 files:
-- name: task.py
+- name: recursion.py
   visible: true
   placeholders:
-  - offset: 75
+  - offset: 134
     length: 20
-    placeholder_text: '# calculate n multiplied by the factorial of n - 1'
+    placeholder_text: ???
 - name: tests.py
   visible: false
