@@ -5,9 +5,9 @@ files:
   placeholders:
   - offset: 351
     length: 18
-    placeholder_text: '# Check if name is equal to "John"'
+    placeholder_text: check if name equal to "John"
   - offset: 386
     length: 5
-    placeholder_text: '# Otherwise....'
+    placeholder_text: otherwise
 - name: tests.py
   visible: false
