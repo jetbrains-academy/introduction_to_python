@@ -4,5 +4,5 @@ The `else` statement complements the `if` statement. The `elif` keyword is short
   
 Print `True` if name is equal to `"John"` and `False` otherwise.  
 
-<div class='hint'>Use the <code>if</code> keyword and the <code>==</code> operator.</div>
-<div class='hint'>Use the <code>else</code> keyword.</div>
+<div class='hint'>Use if keyword and == operator.</div>
+<div class='hint'>Use else keyword.</div>
