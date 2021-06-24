@@ -2,7 +2,10 @@
 
 The `elif` and `else` statements complement the `if` statement. 
 There can be zero or more `elif` parts, and the `else` part is optional. The keyword 
-‘elif’ is short for ‘else if’, and is useful to avoid excessive indentation.
+`elif` is short for ‘else if’, and is useful to avoid excessive indentation.
+
+<div class="hint">An <code>if … elif … elif …</code> sequence is a substitute for the <code>switch</code> or 
+<code>case</code> statements found in other languages, such as Java.</div>
 
 In conditional execution, exactly one of the suites is selected by evaluating the expressions one by one until one is found 
 to be `True`; then that suite is executed and no other part of the if statement is executed or evaluated. 
