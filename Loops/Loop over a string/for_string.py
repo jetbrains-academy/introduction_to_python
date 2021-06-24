@@ -6,6 +6,6 @@ for ch in hello_world:    # print each character from hello_world
 length = 0      # initialize length variable
 
 for ch in hello_world:
-    length += 1     # add 1 to the length on each iteration
+    length += 1     # add 1 to the length on each iteration to count the characters
 
 print(len(hello_world) == length)

@@ -3,9 +3,10 @@ while i < 5:
     print('it\'s less that 5')
     i += 1
 else:
-    print('and now it\'s 5')  # print this message when the condition is no longer True
+    print('and now it\'s 5')  # Print this message when the condition is no longer True
 
 for i in range(1,5):
+    # Add a condition for interruption and a statement that will terminate the loop.
     if i == 3:
         break
     print(i)

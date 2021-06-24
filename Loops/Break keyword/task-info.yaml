@@ -5,6 +5,6 @@ files:
   placeholders:
   - offset: 377
     length: 20
-    placeholder_text: exit loop if animal is "elephant"
+    placeholder_text: '???'
 - name: tests.py
   visible: false
