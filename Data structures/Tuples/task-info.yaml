@@ -6,8 +6,5 @@ files:
   - offset: 161
     length: 13
     placeholder_text: alphabet length
-  - offset: 176
-    length: 0
-    placeholder_text: '# Create a tuple with a single element ''fun_tuple'''
 - name: tests.py
   visible: false
