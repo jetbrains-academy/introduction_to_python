@@ -1,9 +1,9 @@
-def my_function():  # function named my_function
+def my_function():  # Function named my_function
     print("Hello, World!")
 
 
 for i in range(5):
-    my_function()   # call function defined above 5 times
+    my_function()   # Call function defined above 5 times
 
 print("I want to be a function")
 print("I want to be a function")
