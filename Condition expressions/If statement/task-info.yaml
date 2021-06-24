@@ -3,7 +3,7 @@ files:
 - name: if_statement.py
   visible: true
   placeholders:
-  - offset: 233
+  - offset: 235
     length: 19
     placeholder_text: check if 'tasks' is empty
 - name: tests.py
