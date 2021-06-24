@@ -3,11 +3,11 @@ files:
 - name: else_with_loops.py
   visible: true
   placeholders:
-  - offset: 266
+  - offset: 182
     length: 10
-    placeholder_text: '???'
-  - offset: 285
+    placeholder_text: '# Add a condition for interruption.'
+  - offset: 201
     length: 5
-    placeholder_text: '???'
+    placeholder_text: '# Add a statement that will terminate the loop.'
 - name: tests.py
   visible: false
