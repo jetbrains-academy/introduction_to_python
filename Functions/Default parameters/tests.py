@@ -11,5 +11,4 @@ def test_window_names():
 
 if __name__ == '__main__':
     run_common_tests()
-    # test_window()
     test_window_names()
