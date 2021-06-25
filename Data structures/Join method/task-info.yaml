@@ -1,11 +1,10 @@
 type: edu
 files:
-- name: task.py
+- name: join_method.py
   visible: true
   placeholders:
   - offset: 88
     length: 22
-    placeholder_text: '# complete the code so that the print statement prints the
-      correct line'
+    placeholder_text: '???'
 - name: tests.py
   visible: false
