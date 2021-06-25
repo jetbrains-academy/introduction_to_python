@@ -23,7 +23,7 @@ class Bag:
 ```
   
 In the code editor, implement the `add` method of the class `Calculator`. It should 
-add `amount` to the field `current`.  
+add `amount` to the field `current`.  In addition, complete the method `get_current`.
 
 <div class='hint'>Add <code>amount</code> to the <code>self.current</code> variable.</div>
 <div class="hint">Use the <code>+=</code> sign.</div>
