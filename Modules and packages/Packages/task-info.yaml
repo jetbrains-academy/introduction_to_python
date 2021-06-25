@@ -5,7 +5,7 @@ files:
   placeholders:
   - offset: 95
     length: 46
-    placeholder_text: '# import the official module as official'
+    placeholder_text: '# Import the official module as official'
 - name: tests.py
   visible: false
 - name: functions/greeting/hello.py
