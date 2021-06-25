@@ -1,7 +1,7 @@
 from test_helper import run_common_tests, get_answer_placeholders, passed, failed
 
 
-def test_window():
+def test_kind():
     window = get_answer_placeholders()[0]
     if "kind = 'pets'" in window or 'kind = "pets"' in window:
         passed()
@@ -9,24 +9,25 @@ def test_window():
         failed("Implement the class variable: kind = 'pets'")
 
 
-def test_window_1():
+def test_name():
     window = get_answer_placeholders()[1]
-    if 'self.name = name' in window or 'self.species = species':
+    if 'self.name = name' in window:
         passed()
     else:
-        failed("Your instance variable implementation is incorrect")
+        failed("Your 'name' instance variable implementation is incorrect")
 
 
-def test_window_2():
+def test_species():
     window = get_answer_placeholders()[2]
-    if 'self.name = name' in window or 'self.species = species':
+    if 'self.species = species' in window:
         passed()
     else:
-        failed("Your instance variable implementation is incorrect")
+        failed("Your 'species' instance variable implementation is incorrect")
+
 
 
 if __name__ == '__main__':
     run_common_tests()
-    test_window()
-    test_window_1()
-    test_window_2()
+    test_kind()
+    test_name()
+    test_species()

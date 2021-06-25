@@ -7,13 +7,13 @@ class Cat:
     def __init__(self, name):
         self.name = name
 
-    def add_food(self, food):  # method modifying the class variable
+    def add_food(self, food):  # Method modifying the class variable
         self.favorite_food.append(food)
 
 
 kitty = Cat('Kitty')
 barsik = Cat('Barsik')
-kitty.add_food('salmon')  # we are only adding a fave food for Kitty, but Barsik gets it too
+kitty.add_food('salmon')  # We are only adding a fave food for Kitty, but Barsik gets it too
 print(barsik.favorite_food)
 
 
@@ -25,21 +25,24 @@ class Cats:
         self.name = name
         self.favorite_food = []
 
-    def add_food(self, food):  # method modifying an instance variable
+    def add_food(self, food):  # Method modifying an instance variable
         self.favorite_food.append(food)
 
 
 kitty = Cats('Kitty')
 barsik = Cats('Barsik')
 kitty.add_food('salmon')
-print(barsik.favorite_food)  # this time it's empty!
+print(barsik.favorite_food)  # This time it's empty!
 
 
 class Animals:
+    # Add a class variable `kind`.
     kind = 'pets'
 
     def __init__(self, name, species):
+        # Add an instance variable `name`.
         self.name = name
+        # Add an instance variable `species`.
         self.species = species
 
     def __str__(self):
