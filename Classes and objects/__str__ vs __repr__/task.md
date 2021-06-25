@@ -29,7 +29,7 @@ to see what each of the two `print` statements prints.
 
 Implement `__str__` and `__repr__` methods for the class `Cat`. `__str__` method should return a string like this:
 `"My siamese cat's name is Lucy"`;  `__repr__` method should return a string like this:
-`"Cat, breed: siamese, name: Lucy"`
+`"Cat, breed: siamese, name: Lucy"`. Use f-strings.
 
 
 
