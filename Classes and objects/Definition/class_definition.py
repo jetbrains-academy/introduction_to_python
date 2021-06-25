@@ -1,7 +1,7 @@
 class MyClass:
     variable = 4
 
-    def foo(self):  # we'll explain self parameter later
+    def foo(self):  # We'll explain self parameter later
         print("Hello from function foo")
 
 
