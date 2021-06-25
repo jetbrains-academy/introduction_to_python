@@ -1,7 +1,7 @@
 type: edu
 custom_name: Update variable
 files:
-- name: access_variable.py
+- name: update_variable.py
   visible: true
   placeholders:
   - offset: 212

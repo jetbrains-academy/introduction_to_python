@@ -1,6 +1,6 @@
 ## Update variable 
 
-In this exercise, create a new `Car` object `car2` and then set the `color` 
+In this exercise, create a new `Car` object `car2`, and then set the `color` 
 of `car2` to `"red"`.  
 
 <div class='hint'>Remember how we instantiated objects in the previous task by 
