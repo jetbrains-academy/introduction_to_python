@@ -1,5 +1,5 @@
 class Square:
-    def __init__(self):  # special method __init__
+    def __init__(self):  # Special method __init__
         self.sides = 4
 
 
