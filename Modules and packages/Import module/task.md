@@ -7,8 +7,7 @@ in several programs without copying its definition into each of them.
 Modules in Python are simply Python files with the `.py` extension containing 
 Python definitions and statements.
 Modules are imported from other modules using the `import` keyword 
-and the file name without the extension `.py`. The first time a module is loaded 
-into a running Python script, it is initialized by executing the code in the module once.
+and the file name without the extension `.py`. 
 
 Let's say you wrote a script called `my_funcs.py` with a bunch of functions (`func1`, `func2` 
 etc.). Now, if you want to use those in another script that in placed in the same directory, 
