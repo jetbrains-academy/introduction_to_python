@@ -7,9 +7,9 @@ class Complex:
         self.num = complex(self.r, self.i)
 
 
-complex_number = Complex()  # instantiate a complex number object
-complex_number.create(12, 5)  # call create method with real_part = 12 and imag_part = 5
-complex_number.build()  # build the complex number
+complex_number = Complex()  # Instantiate a complex number object
+complex_number.create(12, 5)  # Call create method with real_part = 12 and imag_part = 5
+complex_number.build()  # Cuild the complex number
 print(complex_number.num)
 
 
