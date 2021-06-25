@@ -38,6 +38,6 @@ x.num
 
 
 In the code editor, add parameters to the`__init__()` method of the class `Car`, so we can 
-create it with a specified color.  
+create it with a specified color and brand.  
 
 <div class='hint'>Add two parameters &mdash; <code>self</code> and <code>color</code>.</div>

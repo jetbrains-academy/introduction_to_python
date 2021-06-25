@@ -13,7 +13,8 @@ class Car:
         self.brand = brand
 
 
-# Note: you should not pass the self parameter explicitly, only the color parameter
+# Note: you should not pass the self parameter explicitly,
+# only the color and the brand parameters.
 car = Car("blue", "BMW")
 
 print(car.color, car.brand)
