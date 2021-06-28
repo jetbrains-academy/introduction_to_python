@@ -15,9 +15,9 @@ Here's everything that's in the file.\n
 
 
 `f.readline()` reads a single line from the file; a newline character (`\n`) is left at the end of the 
-string, and is only omitted on the last line of the file if the file doesn’t end in a newline. This 
-makes the return value unambiguous; if `f.readline()` returns an empty string, the end of the file has 
-been reached, while a blank line is represented by `\n`, a string containing only a single newline.
+string, and is only omitted on the last line of the file if the file doesn’t end in a newline. If `f.readline()` 
+returns an empty string, the end of the file has been reached, while a blank line is represented by `\n`, 
+a string containing only a single newline.
 
 ```python
 f.readline()
@@ -38,7 +38,7 @@ f.readline()
 ''
 ``` 
 For reading lines from a file, you can loop over the file object. This is memory efficient, fast, and 
-leads to simple code:
+makes the code simple:
 ```python
 for line in f:
     print(line)
