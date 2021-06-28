@@ -1,6 +1,6 @@
 ## Class and Instance Variables
 
-Generally speaking, instance variables are for data unique to each instance 
+In general, instance variables are for data unique to each instance 
 and class variables are for attributes and methods shared by all instances of the class:
 
 ```python
@@ -30,7 +30,7 @@ Felis catus
 You can see that `species` is a class variable shared by all instances, while
 `name` and `breed` are instance variable unique to each instance.
 
-Shared data can have possibly surprising effects with involving mutable objects 
+Shared data can have possibly surprising effects when involving mutable objects 
 such as lists and dictionaries. If a class variable is a list, and you modify it for
 one object, it will be changed for all objects of the class (check out the example in the code
 editor - see what `print(barsik.favorite_food)` will print). If you intend using a list to keep track 

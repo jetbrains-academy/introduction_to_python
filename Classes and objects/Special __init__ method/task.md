@@ -13,13 +13,13 @@ class MyClass:
 `__init__` is one of the reserved methods in Python. If defined, the `__init__()` 
 method is invoked automatically when an instance of the class is created,
 and it initializes the object and its attributes. It always takes at least
-one argument, `self`, which refers to the object itself. So in our example, 
+one argument, `self`. So in our example, 
 a new, initialized instance can be obtained by:
 
 ```python
 x = MyClass()
 ```
-Of course, the `__init__()` method may have arguments for greater flexibility. 
+The `__init__()` method may receive arguments for greater flexibility. 
 In that case, arguments given to the class instantiation operator are passed 
 on to `__init__()`. For example:
 ```python
@@ -29,7 +29,7 @@ class Complex:
         self.i = imag_part
         self.num = complex(self.r, self.i)
 
-x = Complex(3.0, -4.5)
+x = Complex(3.0, -4.5)  # Instantiating a complex number
 x.num
 ```
 ```text

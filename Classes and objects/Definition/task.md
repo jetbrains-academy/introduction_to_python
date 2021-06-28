@@ -7,7 +7,7 @@ Each class instance (object) can have attributes attached to it for maintaining 
 Functions of objects are called methods, and they can modify their state. Methods are 
 defined by the object's class.
 
-The simplest form of class definition looks like this:
+The generalized form of class definition looks like this:
 
 ```
 class ClassName:
@@ -21,13 +21,12 @@ Class definitions, like function definitions (`def` statements) must be executed
 they have any effect.
 
 The statements inside a class definition will usually be function definitions, 
-but other statements are allowed, and sometimes useful. The 
-function definitions inside a class normally have a peculiar form of argument list, dictated 
-by the calling conventions for methods — this is explained later.
+but other statements are sometimes useful. The function definitions inside a 
+class normally have a peculiar form of argument list — this is explained later.
 
 Class objects support two kinds of operations: attribute references and instantiation.
-Attribute references will be discussed in the next sections. Class instantiation uses 
-function notation. Just pretend that the class object is a parameterless function that 
+Attribute references will be discussed in the following sections. Class instantiation uses 
+function notation. Just imagine that the class object is a parameterless function that 
 returns a new instance of the class. For example:
 
 ```python
