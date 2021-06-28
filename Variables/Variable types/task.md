@@ -5,13 +5,13 @@ objects. Every object has an identity, a type and a value. An object’s identit
 never changes once it has been created; you may think of it as the object’s 
 address in memory.
 
-An object’s type determines the operations that the object supports (e.g., 
-“does it have a length?”) and also defines the possible values for objects of 
+An object’s `type` determines the operations that it supports (e.g., 
+“does it have a length?”), and defines the possible values for objects of 
 that type. The `type()` function returns an object’s type (which is an object itself). 
 Like its identity, an object’s type is also unchangeable.
 
 The value of some objects can change. Objects whose value 
-can change are said to be <i>mutable</i>; objects whose value is unchangeable once 
+can change are <i>mutable</i>; objects whose value is unchangeable once 
 they are created are called <i>immutable</i>.
 
 In Python, there are two main types of numbers: integers and floats. The most important 
