@@ -2,7 +2,7 @@
 
 We saw that the `break` statement breaks out of the innermost enclosing `for` or `while` loop.
 
-Python also allows loop statements to have an `else` clause; it is executed when the loop terminates
+Python also allows loop statements to have an `else` clause. It is executed when the loop terminates
 through exhaustion of the iterable (with `for`) or when the condition becomes `False`
 (with `while`), but not when the loop is terminated by a `break` statement. Check
 out this example of a loop, which searches for prime numbers:
@@ -27,8 +27,8 @@ for n in range(2, 10):
 8 equals 2 * 4
 9 equals 3 * 3
 ```
-Yes, this is the correct code. Look closely: the `else` clause belongs to the for loop, not the
-if statement.
+Is this code the `else` clause belongs to the `for` loop, not the
+`if` statement.
 
 Remember, an `else` after an `if` statement is skipped and NOT executed if the expression following 
 `if` is `True`, while in the case of loops, an `else` clause is executed after the loop itself
