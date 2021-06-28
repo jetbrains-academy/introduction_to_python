@@ -14,10 +14,10 @@ f.write('This is a test\n')
 ```text
 15
 ```
-Other types of objects in text mode need to be converted to a string:
+Other types of objects in text mode need to be converted into a string first:
 ```python
 value = ('the answer', 42)
-s = str(value)  # convert the tuple to string
+s = str(value)  # convert the tuple into string
 f.write(s)
 ```
 ```python
