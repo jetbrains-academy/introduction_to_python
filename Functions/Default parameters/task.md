@@ -3,7 +3,7 @@
 It is also possible to define functions with a variable number of arguments. There are 
 three forms, which can be combined. The most useful form is to specify a default value 
 for one or more arguments. This creates a function that can be called with fewer 
-arguments than it is defined to allow. For example, check out the first function in the code editor.
+arguments than it is defined with. For example, check out the first function in the code editor.
 This function can be called in several ways:
 
 - giving only the mandatory argument `a`: `multiply_by(3)`

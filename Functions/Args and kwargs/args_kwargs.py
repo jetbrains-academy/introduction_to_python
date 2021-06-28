@@ -9,7 +9,7 @@ def random_dialogue(place, *args, **kwargs):
     print('\n')
 
 
-random_dialogue("Library", "Do you at least have a cigar, sir?",  # call 1
+random_dialogue("Library", "Do you at least have a cigar, sir?",  # Call 1
                 "Sure, help yourself.",
                 lost_person="old banker",
                 other_guy="street clown",
@@ -17,7 +17,7 @@ random_dialogue("Library", "Do you at least have a cigar, sir?",  # call 1
 
 dic = {"lost_person": "old banker", "other_guy": "street_clown", "scene": "park"}
 lst = ["Do you at least have a cigar, sir?", "Sure, help yourself."]
-random_dialogue("Library", *lst, **dic)  # call 2 - the exact same output
+random_dialogue("Library", *lst, **dic)  # Call 2 - the exact same output
 
 
 def cat(food, *args, state='still hungry', action='meow', breed='Siamese'):

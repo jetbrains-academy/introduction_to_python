@@ -14,14 +14,14 @@ cat('beef', 'happy', 'hiss')       # 3 positional arguments
 cat('a hug', state='purrring')     # 1 positional, 1 keyword
 ```
 In a function call, keyword arguments must follow positional arguments. All the keyword 
-arguments passed must match one of the arguments accepted by the function (e.g. actor is not a valid 
-argument for the parrot function), and their order is not important. This also includes non-optional 
+arguments passed must match one of the arguments accepted by the function (e.g. `book` is not a valid 
+argument for the `cat` function), and their order is not important. This also includes non-optional 
 arguments (e.g. `cat(food='fish')` is valid too). No argument may receive a value more than once.
 All the following calls would be invalid:
 
 ```python
 cat()                              # required argument missing
-cat(food='fish', 'dead')           # non-keyword argument after a keyword argument
+cat(food='fish', 'dead')           # positional argument after a keyword argument
 cat('veggies', food='nothing')     # duplicate value for the same argument
 cat(actor='Johnny Depp')           # unknown keyword argument
 ```

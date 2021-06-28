@@ -1,7 +1,7 @@
 ## Definition
 
 Functions are a convenient way to divide your code into useful blocks, make it more 
-readable and help reuse it.
+readable and reuse it.
 The keyword `def` introduces a function definition. 
 It must be followed by the function name and the parenthesized list of formal parameters (which can be empty). 
 The statements that form the body of the function start at the next line, and must be indented.

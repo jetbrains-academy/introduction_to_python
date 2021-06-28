@@ -1,7 +1,8 @@
 ## Args and kwargs
 
 When a final formal parameter of the form `**name` is present, it receives a dictionary 
-(see [Data Structures — Dictionaries ](course://Data structures/Dictionaries)) containing all keyword arguments except for those corresponding 
+(see [Data Structures — Dictionaries ](course://Data structures/Dictionaries)) containing 
+all keyword arguments except for those corresponding 
 to a formal parameter. This may be combined with a formal parameter of the form `*name` which 
 receives a tuple containing any number of positional arguments beyond the formal parameter list. 
 (`*name` must occur before `**name`.) For example, if we define a function like the one in the 
@@ -23,7 +24,7 @@ after the `*args` parameter are ‘keyword-only’ arguments, meaning that they 
 rather than positional arguments. Another way to call this function is shown in call 2 and, that will give 
 us the same output.
 
-Look at the code and modify the code below the function `cat()` in the code editor, so that it prints 
+Modify the code below the function `cat()` in the code editor, so that it prints 
 the following:
 ```text
 -- This cat would eat if you gave it anything
