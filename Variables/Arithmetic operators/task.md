@@ -1,11 +1,11 @@
 ## Arithmetic operators
 
-Just as with any other programming language, the addition ( `+` ), subtraction ( `-` ), 
+Just as in any other programming language, the addition ( `+` ), subtraction ( `-` ), 
 multiplication ( `*` ), and division ( `/` ) operators can be used with numbers. In 
 addition, Python has the power ( `**` ),  modulo ( `%` ) and floor division ( `//` ) operators.
 
 - The `*` (multiplication) operator yields the product of its arguments. The arguments must 
-either both be numbers, or one argument must be an integer and the other must be a sequence.
+either both be numbers, or one argument must be an integer and the other - a sequence.
   
 - The `/` (division) and `//` (floor division) operators yield the quotient of their arguments. 
   Division of integers yields a float, while floor division of integers results in an integer.
