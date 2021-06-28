@@ -1,6 +1,6 @@
 ## Comments
 
-Comments in Python start with the hash character (`#`) and a single space 
+Comments in Python start with the hash character (`#`) and a single space, 
 and they extend to the end of the physical line. You can use &shortcut:CommentByLineComment; to comment 
 or uncomment the whole line or a block of code in PyCharm.  
 
