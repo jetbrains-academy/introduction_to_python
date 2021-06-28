@@ -1,7 +1,7 @@
 ## Lists introduction
 
 Python has a number of compound data types, used to group together other values. 
-The most versatile is the list, which can be written as a list of comma-separated 
+The most versatile is the list, which can be written as a series of comma-separated 
 values (items) between square brackets, e.g. `lst = [item1, item2]`. 
 Lists might contain items of different types, but usually all the items in a list 
 are of the same type. Like strings, lists can be indexed and sliced (see [Lesson 3](course://Strings/String slicing)).

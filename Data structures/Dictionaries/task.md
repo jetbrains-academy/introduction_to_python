@@ -2,10 +2,10 @@
 
 A dictionary is similar to a list, except that you access its values by looking up a 
 key instead of an index. A key can be any immutable type. Strings and numbers can 
-always be keys, tuples can be used as keys if they contain only strings, numbers, or 
-tuples that contain immutable objects. You can’t use lists as keys. 
+always be keys, tuples can be used as keys if they contain only immutable objects. 
+You can’t use lists as keys. 
 
-You can think of a dictionary as a set of <code>key: value</code> pairs, with the requirement 
+Think of a dictionary as a set of <code>key: value</code> pairs, with the requirement 
 that the keys are unique within one dictionary. Dictionaries are enclosed 
 in curly braces e.g. `dct = {'key1' : "value1", 'key2' : "value2"}`. A pair of 
 braces creates an empty dictionary: `{}`.  
