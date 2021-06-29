@@ -9,6 +9,6 @@ files:
   placeholders:
   - offset: 169
     length: 33
-    placeholder_text: import hello_world from my_module
+    placeholder_text: '# Import hello_world from my_module'
 - name: tests.py
   visible: false

@@ -3,8 +3,8 @@ files:
 - name: builtin_modules.py
   visible: true
   placeholders:
-  - offset: 23
+  - offset: 50
     length: 25
-    placeholder_text: current date
+    placeholder_text: '???'
 - name: tests.py
   visible: false
