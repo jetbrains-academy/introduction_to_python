@@ -3,8 +3,8 @@ files:
 - name: dict_key_value.py
   visible: true
   placeholders:
-  - offset: 208
+  - offset: 209
     length: 19
-    placeholder_text: phone_book values
+    placeholder_text: '???'
 - name: tests.py
   visible: false

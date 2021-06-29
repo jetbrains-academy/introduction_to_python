@@ -1,7 +1,7 @@
-phone_book = {"John": 123, "Jane": 234, "Jerard": 345}  # create new dictionary
+phone_book = {"John": 123, "Jane": 234, "Jerard": 345}  # Create new dictionary
 print(phone_book)
 
-# Add new item to the dictionary
+# Add new item to the dictionary.
 phone_book["Jill"] = 456
 print(phone_book)
 

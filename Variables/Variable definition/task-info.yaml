@@ -3,8 +3,8 @@ files:
 - name: variable_definition.py
   visible: true
   placeholders:
-  - offset: 345
+  - offset: 346
     length: 1
-    placeholder_text: another value
+    placeholder_text: '???'
 - name: tests.py
   visible: false

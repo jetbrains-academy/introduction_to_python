@@ -5,9 +5,9 @@ files:
   placeholders:
   - offset: 45
     length: 10
-    placeholder_text: divide 'number' by two
+    placeholder_text: "???"
   - offset: 69
     length: 10
-    placeholder_text: calculate the remainder
+    placeholder_text: '???'
 - name: tests.py
   visible: false

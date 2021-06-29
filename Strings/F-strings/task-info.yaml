@@ -1,0 +1,19 @@
+type: edu
+files:
+- name: f-strings.py
+  visible: true
+  placeholders:
+  - offset: 7
+    length: 7
+    placeholder_text: '???'
+  - offset: 21
+    length: 2
+    placeholder_text: '???'
+  - offset: 50
+    length: 6
+    placeholder_text: '???'
+  - offset: 65
+    length: 5
+    placeholder_text: '???'
+- name: tests.py
+  visible: false

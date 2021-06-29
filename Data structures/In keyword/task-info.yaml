@@ -5,6 +5,6 @@ files:
   placeholders:
   - offset: 236
     length: 29
-    placeholder_text: is 'fish' in grocery_dict keys
+    placeholder_text: '???'
 - name: tests.py
   visible: false

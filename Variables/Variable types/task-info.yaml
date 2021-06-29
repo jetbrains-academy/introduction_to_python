@@ -3,8 +3,8 @@ files:
 - name: variable_type.py
   visible: true
   placeholders:
-  - offset: 112
+  - offset: 93
     length: 18
-    placeholder_text: float_number type
+    placeholder_text: '???'
 - name: tests.py
   visible: false

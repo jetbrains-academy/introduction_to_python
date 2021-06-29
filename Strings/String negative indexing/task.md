@@ -1,7 +1,8 @@
 ## String negative indexing
 
-You can use negative numbers in the indexing operator to count characters ‘backwards’ from the end of the string.  
+As we said, you can use negative indices to count characters ‘backwards’ starting
+from the end of a string.  
   
-Use negative index to get the `'!'` sign from `long_string`   
+Use a negative index to get the `'!'` sign from `long_string`   
 
-<div class='hint'>Use negative index.</div>
+<div class='hint'>Use a negative index.</div>

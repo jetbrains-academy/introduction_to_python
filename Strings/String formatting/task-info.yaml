@@ -3,11 +3,11 @@ files:
 - name: string_formatting.py
   visible: true
   placeholders:
-  - offset: 132
+  - offset: 129
     length: 2
-    placeholder_text: special symbol
-  - offset: 148
+    placeholder_text: ???
+  - offset: 145
     length: 2
-    placeholder_text: years
+    placeholder_text: ???
 - name: tests.py
   visible: false

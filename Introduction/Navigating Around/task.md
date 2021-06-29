@@ -2,7 +2,7 @@
 
 This lesson will help you take your first steps with the [EduTools plugin](https://www.jetbrains.com/help/education/educational-products.html) and use it to learn Python.
 
-With the EduTools plugin, you can learn programming languages and tools by completing coding tasks, and get instant feedback right inside the IDE.
+With the EduTools plugin, you can learn programming languages and tools by completing coding tasks and get instant feedback right inside the IDE.
 
 Enough talking – let's get started!
 

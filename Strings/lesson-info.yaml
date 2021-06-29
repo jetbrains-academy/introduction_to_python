@@ -9,3 +9,4 @@ content:
 - Character escaping
 - Basic string methods
 - String formatting
+- F-strings

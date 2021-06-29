@@ -1,7 +1,8 @@
 ## List items
 
-Assignment to slices is also possible, and this can even change the size of a list or clear it entirely.  
+Assignment to slices of lists instead of individual elements is also possible, 
+and in this way you can even change the size of a list or clear it entirely.  
   
-Clear `animals` list.  
+Try to make the `animals` list empty.  
 
-<div class='hint'>Use assignment to an empty list [].</div>
+<div class='hint'>Use an assignment to an empty list <code>[]</code>.</div>

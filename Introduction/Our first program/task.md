@@ -1,6 +1,6 @@
 ## Our first program
 
-Traditionally the first program you write in any programming language is `"Hello World!"`.  
+Traditionally, the first program you write in any programming language is `"Hello World!"`.  
   
 Introduce yourself to the World.  
   

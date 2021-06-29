@@ -7,6 +7,6 @@ files:
   placeholders:
   - offset: 32
     length: 5
-    placeholder_text: type your name
+    placeholder_text: 'Type your name here'
 - name: execute.svg
   visible: false

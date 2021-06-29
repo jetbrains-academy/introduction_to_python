@@ -3,8 +3,8 @@ files:
 - name: dicts.py
   visible: true
   placeholders:
-  - offset: 312
-    length: 19
-    placeholder_text: Jane's phone
+  - offset: 323
+    length: 18
+    placeholder_text: '???'
 - name: tests.py
   visible: false
