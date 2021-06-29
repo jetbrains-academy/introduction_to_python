@@ -1,7 +1,8 @@
 def sum_two_numbers(a, b):
-    return a + b            # return result to the function caller
+    return a + b  # Return result to the function caller
 
-c = sum_two_numbers(3, 12)  # assign result of function execution to variable 'c'
+
+c = sum_two_numbers(3, 12)  # Assign result of function execution to variable 'c'
 
 
 def fib(n):
@@ -16,5 +17,6 @@ def fib(n):
         b = a + b
         a = tmp_var
     return result
+
 
 print(fib(10))

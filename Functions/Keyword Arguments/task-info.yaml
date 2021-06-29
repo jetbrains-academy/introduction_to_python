@@ -1,10 +1,10 @@
 type: edu
 files:
-- name: default_parameter.py
+- name: keyword_args.py
   visible: true
   placeholders:
-  - offset: 478
-    length: 20
+  - offset: 232
+    length: 38
     placeholder_text: '???'
 - name: tests.py
   visible: false

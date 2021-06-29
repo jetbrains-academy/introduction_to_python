@@ -3,9 +3,9 @@ files:
 - name: param_args.py
   visible: true
   placeholders:
-  - offset: 159
+  - offset: 145
     length: 14
-    placeholder_text: define a function named 'square' that prints square of passed
-      parameter
+    placeholder_text: '# Define a function named "square" that prints square of
+      passed parameter'
 - name: tests.py
   visible: false
