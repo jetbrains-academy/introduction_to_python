@@ -3,7 +3,7 @@ files:
 - name: boolean_order.py
   visible: true
   placeholders:
-  - offset: 108
+  - offset: 110
     length: 53
     placeholder_text: '"name" is "Ellis" or not ("name" equal "John" and he is 17
       years old)'
