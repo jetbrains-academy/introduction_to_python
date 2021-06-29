@@ -1,0 +1,16 @@
+type: edu
+files:
+- name: class_instance_variables.py
+  visible: true
+  placeholders:
+  - offset: 1018
+    length: 13
+    placeholder_text: ???
+  - offset: 1123
+    length: 16
+    placeholder_text: ???
+  - offset: 1194
+    length: 22
+    placeholder_text: ???
+- name: tests.py
+  visible: false

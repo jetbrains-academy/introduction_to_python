@@ -1,0 +1,13 @@
+type: edu
+files:
+- name: self_parameter.py
+  visible: true
+  placeholders:
+  - offset: 484
+    length: 22
+    placeholder_text: '# Update the current atribute by adding the amount to it.'
+  - offset: 550
+    length: 12
+    placeholder_text: '???'
+- name: tests.py
+  visible: false

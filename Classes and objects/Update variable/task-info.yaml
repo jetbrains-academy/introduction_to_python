@@ -1,13 +1,14 @@
 type: edu
+custom_name: Update variable
 files:
-- name: class_definition.py
+- name: update_variable.py
   visible: true
   placeholders:
-  - offset: 30
-    length: 1
+  - offset: 212
+    length: 5
     placeholder_text: '???'
   - offset: 252
-    length: 9
+    length: 5
     placeholder_text: '???'
 - name: tests.py
   visible: false

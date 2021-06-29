@@ -1,8 +1,10 @@
 class Car:
     color = ""
-    def description(self):
-        description_string = "This is a %s car." % self.color    # we'll explain self parameter later in task 4
+
+    def description(self):  # we'll explain the self parameter later
+        description_string = f"This is a {self.color} car."
         return description_string
+
 
 car1 = Car()
 car2 = Car()

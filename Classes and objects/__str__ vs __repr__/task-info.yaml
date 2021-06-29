@@ -1,13 +1,13 @@
 type: edu
 files:
-- name: class_definition.py
+- name: str_and_repr.py
   visible: true
   placeholders:
-  - offset: 30
-    length: 1
+  - offset: 438
+    length: 46
     placeholder_text: '???'
-  - offset: 252
-    length: 9
+  - offset: 524
+    length: 45
     placeholder_text: '???'
 - name: tests.py
   visible: false

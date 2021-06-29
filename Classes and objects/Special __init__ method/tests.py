@@ -16,6 +16,7 @@ def test_window1():
     else:
         failed("Don't forget about the self parameter")
 
+
 if __name__ == '__main__':
     run_common_tests()
     test_window()
