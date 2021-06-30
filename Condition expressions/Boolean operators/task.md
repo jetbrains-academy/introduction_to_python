@@ -4,6 +4,4 @@ Boolean operators compare statements and return results in boolean values. The b
   
 Check if `name` is equal to `"John"` and he is not `23` years old.  
 
-<div class='hint'>Refer to the "Boolean operators" task in "Variables" if you're stuck.</div>
-
-<div class='hint'>Use <code>and</code> keyword and <code>!=</code> operator.</div>
+<div class='hint'>Use the <code>and</code> keyword and the <code>!=</code> operator.</div>
