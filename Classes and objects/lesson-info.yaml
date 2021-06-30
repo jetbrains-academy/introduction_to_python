@@ -1,8 +1,4 @@
 content:
 - Definition
 - Variable access
-- Update variable
-- The self parameter
 - Special __init__ method
-- __str__ vs __repr__
-- Class and Instance Variables
