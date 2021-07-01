@@ -7,7 +7,7 @@ or uncomment the whole line or a block of code in PyCharm.
 
 Always make a priority of keeping the comments up-to-date when the code changes!
 Comments that contradict the code are worse than no comments.
-Also they are unnecessary and in fact quite distracting if they state the obvious. Don't do this:
+Also, they are unnecessary and in fact quite distracting if they state the obvious. Don't do this:
 
 ```python
 x = x + 1                 # Increment x
@@ -26,7 +26,7 @@ are indented to the same level as that code.
 Use inline comments sparingly. An inline comment is a comment on the 
 same line as a statement. Inline comments should be separated by at least two spaces from the statement.
 
-You can read more about proper commenting in <a href="https://www.python.org/dev/peps/pep-0008/#comments">PEP 8 - Style Guide for Python Code</a> 
+You can read more about proper commenting in <a href="https://www.python.org/dev/peps/pep-0008/#comments">PEP 8 – Style Guide for Python Code</a>. 
   
 Add a new comment to the file in the code editor.  
 
