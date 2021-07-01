@@ -14,7 +14,7 @@ For more information, check out [our help](https://www.jetbrains.com/help/pychar
 
 If this task seems too hard or you are looking for a more structured and detailed curriculum, we suggest trying [JetBrains Academy](https://hi.hyperskill.org?utm_source=ide&utm_content=first-task).
 
-There are many reasons for you to try JetBrains Academy. Here's just a few of them:
+There are many reasons for you to try JetBrains Academy. Here are just a few of them:
 
 - Comprehensive learning tracks with a detailed [Knowledge Map](https://hyperskill.org/knowledge-map?utm_source=ide&utm_content=first-task).
 - Projects with different difficulty levels that provide a flexible learning experience to match your skill level. 
