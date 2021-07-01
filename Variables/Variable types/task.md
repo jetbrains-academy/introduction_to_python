@@ -1,12 +1,12 @@
 ## Variable types
 
 All data in a Python program is represented by objects or by relations between 
-objects. Every object has an identity, a type and a value. An object’s identity 
+objects. Every object has an identity, a type, and a value. An object’s identity 
 never changes once it has been created; you may think of it as the object’s 
 address in memory.
 
 An object’s `type` determines the operations that it supports (e.g., 
-“does it have a length?”), and defines the possible values for objects of 
+“does it have a length?”) and defines the possible values for objects of 
 that type. The `type()` function returns an object’s type (which is an object itself). 
 Like its identity, an object’s type is also unchangeable.
 
