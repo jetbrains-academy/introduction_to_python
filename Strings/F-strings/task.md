@@ -6,7 +6,7 @@ expressions delimited by curly braces `{}`.
 
 The parts of the string outside curly braces are treated literally. 
 Escape sequences are decoded like in ordinary string literals.
-Replacement expressions can contain line breaks (e.g. in triple-quoted strings), 
+Replacement expressions can contain line breaks (e.g., in triple-quoted strings), 
 but they cannot contain comments. Each expression is evaluated in the context 
 where the formatted string literal appears, in order from left to right.
 
@@ -32,5 +32,5 @@ For more information about formatted string literals you can refer to <a href="h
 Try creating an f-string yourself. Also try running the code to see what it prints.
 
 <div class="hint">The value assigned to the <code>name</code> variable has to be a string, so it needs to be in quotes, 
-like so: <code>'Max'</code></div>
+like so: <code>'Max'</code>.</div>
 
