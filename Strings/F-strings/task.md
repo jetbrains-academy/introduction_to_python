@@ -16,7 +16,7 @@ name = "Fred"
 f"He said his name is {name}."
 ```
 ```text
-"He said his name is Fred."
+'He said his name is Fred.'
 ```
 
 There are more fancy things you can do in f-strings, for example:

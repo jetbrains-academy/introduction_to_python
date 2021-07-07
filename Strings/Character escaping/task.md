@@ -1,7 +1,7 @@
 ## Character escaping
 
 Backslash is used to escape special symbols, such as single or double quotation marks, 
-for example, `"It\'s me"` or `"She said \"Hello\""`. If you need to actually type the `\`
+for example, `"It\'s me"` or `"She said \"Hello\""`. If you need to actually type the <code>\\</code>
 character as part of your string, you will need to escape it too. For example, here's how 
 you print a single backslash:
 
@@ -22,6 +22,6 @@ Print out the following text using one string:
 ```text
 The name of this ice-cream is "Sweet'n'Tasty"  
 ```
-<code>
+
 
 <div class='hint'>Use the backslash to escape quotes.</div>
