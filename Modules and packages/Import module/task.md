@@ -9,10 +9,10 @@ Python definitions and statements.
 Modules are imported from other modules using the `import` keyword 
 and the file name without the extension `.py`. 
 
-Let's say you wrote a script called `my_funcs.py` with a bunch of functions (`func1`, `func2` 
-etc.). Now, if you want to use those in another script that in placed in the same directory, 
+Let's say you wrote a script called `my_funcs.py` with a bunch of functions (`func1`, `func2`, 
+etc.). Now, if you want to use those in another script that in placed is the same directory, 
 you can do `import my_funcs`. This does not import the names of the functions defined in `my_funcs` 
-directly, but using the module name you can now access the functions, for example:
+directly, but using the module name, you can now access the functions, for example:
 ```python
 my_funcs.func1()
 ```
@@ -24,7 +24,7 @@ You can find out more about modules in Python by reading [this section](https://
   
 In the code editor, import the module `my_module` and use the `hello_world` function from it.  
 
-<div class='hint'>Use the <code>import</code> keyword and <code>my_module</code> reference.</div>
+<div class='hint'>Use the <code>import</code> keyword and the <code>my_module</code> reference.</div>
 <div class='hint'>Access the function from the module using syntax such as <code>module.function()</code>.</div>
 <div class="hint">Don't forget to provide the function with an argument.</div>
 

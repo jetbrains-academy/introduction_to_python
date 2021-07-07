@@ -29,7 +29,7 @@ Where the specified text will be inserted in the file depends on the file mode (
 
 `'w'`: the file will be emptied before the text will be inserted at the beginning.
 
-If you want to include a symbol, such as a line break, into your string (to start from a new line),
+If you want to include a symbol such as a line break, into your string (to start from a new line),
 add it with a `+`:
 ```python
 f.write('\n' + 'string,' + ' ' + 'another string')
@@ -37,12 +37,12 @@ f.write('\n' + 'string,' + ' ' + 'another string')
 This will add a new line and write `'string, another string'`.
 
 In the code editor, add all elements from the `zoo` list to "output.txt" so that the output is added from
-a new line, and the elements are separated by `' and '`. Use the <code>' and '.join(lst)</code> syntax to 
-join the list elements into the required string. Afterwards, add the `number` to the same output file.
+a new line and the elements are separated by `' and '`. Use the <code>' and '.join(lst)</code> syntax to 
+join the list elements into the required string. Afterwards, add `number` to the same output file.
 
 <div class='hint'>Use the <code>'a'</code> modifier to append lines at the end of the file.</div>
 <div class='hint'>Use the <code>write()</code> method.</div>
-<div class='hint'>Convert the <code>number</code> into a string before writing.</div>
+<div class='hint'>Convert <code>number</code> into a string before writing.</div>
 <div class="hint">Add <code>\n</code> at the beginning of each string to write so that it's written as a separate line.</div>
 
 
@@ -53,10 +53,10 @@ Now, once you have mastered the basics of Python, we bet that you’re wondering
 We recommend checking out [JetBrains Academy](https://hi.hyperskill.org?utm_source=ide&utm_content=last-task). 
 Here are several reasons to try JetBrains Academy now:
 
-- At the moment 37 Python projects and 348 topics available for learning, and the number keeps growing.
+- At the moment, 37 Python projects and 348 topics are available for learning, and the number keeps growing.
   Other programming languages, such as Kotlin and Java, are also available.
 - Projects of varying difficulty levels provide a flexible learning experience for all.
-- Comprehensive learning tracks with a detailed [Knowledge Map](https://hyperskill.org/knowledge-map?utm_source=ide&utm_content=last-task).
+- Comprehensive learning tracks are augmented with a detailed [Knowledge Map](https://hyperskill.org/knowledge-map?utm_source=ide&utm_content=last-task).
 - Learn anywhere: you can start learning on your tablet or mobile phone via a browser and continue on your 
   laptop or PC; you can even build the projects [right in your IDE](https://hyperskill.org/plugin#python).
 

@@ -7,8 +7,8 @@ f = open('somefile.txt', 'w')
 ```
 The first argument is a string containing the filename. The second argument is another string containing
 a few characters describing the way in which the file will be used. It can be `'r'` if the file
-will only be read, `'w'` - for writing only (an already existing file with the same name will be erased), and
-`'a'` opens the file for appending - any data written to the file is added to its end.
+will only be read, `'w'` – for writing only (an already existing file with the same name will be erased), and
+`'a'` opens the file for appending – any data written to the file is added to its end.
 `'r+'` opens the file for both reading and writing. The mode argument is optional; `'r'` will be assumed
 if it’s omitted.
 

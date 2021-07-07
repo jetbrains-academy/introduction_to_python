@@ -18,11 +18,11 @@ class Bag:
         self.data.append(x)
 
     def addtwice(self, x):
-        self.add(x)  # Calling method `add` from another method
+        self.add(x)  # Calling the method `add` from another method
         self.add(x)
 ```
   
-In the code editor, implement the `add` method of the class `Calculator`. It should 
+In the code editor, implement the `add` method of the `Calculator` class. It should 
 add `amount` to the field `current`.  In addition, complete the method `get_current`.
 
 <div class='hint'>Add <code>amount</code> to the <code>self.current</code> variable.</div>
