@@ -1,6 +1,6 @@
 ## Parameters and call arguments
 
-Function parameters are defined inside the parentheses `()`, following the 
+Function parameters are defined inside the parentheses `()` following the 
 function name. A parameter acts as a variable name for an argument passed to the
 function. 
 
@@ -23,11 +23,11 @@ Result:
 ```text
 Jon Snow
 ```
-However, if you just supply it with one argument during the call:
+However, if you supply it with just one argument during the call:
 ```python
 my_function("Sam")
 ```
-A `TypeError` will be raised:
+`TypeError` will be raised:
 ```text
 TypeError                                 Traceback (most recent call last)
 <ipython-input-29-40eb74e4b26a> in <module>
@@ -36,6 +36,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: my_function() missing 1 required positional argument: 'surname'
 ```
 
-In the code editor define a function that prints the square of a passed parameter.  
+In the code editor, define a function that prints the square of a passed parameter.  
 
-<div class='hint'>Add the parameter <code>x</code> inside parentheses in function definition.</div>
+<div class='hint'>Add the <code>x</code> parameter inside parentheses in the function definition.</div>

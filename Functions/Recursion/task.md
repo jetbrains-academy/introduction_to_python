@@ -38,7 +38,7 @@ countdown(-10)
 RecursionError: maximum recursion depth exceeded while calling a Python object
 ```
 You can find out what Python’s recursion limit is with a function from the sys module 
-called `getrecursionlimit()` and you can change it with `setrecursionlimit()`:
+called `getrecursionlimit()`, and you can change it with `setrecursionlimit()`:
 
 ```python
 from sys import setrecursionlimit
@@ -52,10 +52,10 @@ getrecursionlimit()
 
 Keep in mind that recursion isn’t useful in every situation. For some problems, a recursive solution, although 
 possible, will be awkward rather than elegant. Recursive implementations often consume more 
-memory than non-recursive ones, and in some cases may result in slower execution.
+memory than non-recursive ones and in some cases may result in slower execution.
 
-In the code editor, implement a recursive function that calculates a [factorial](https://en.wikipedia.org/wiki/Factorial) of a positive integer.
-For 1 and 0 it returns 1, for every other number it calculates a product of this number (`n`) and
+In the code editor, implement a recursive function that calculates the [factorial](https://en.wikipedia.org/wiki/Factorial) of a positive integer.
+For 1 and 0 it returns 1, for every other number it calculates the product of this number (`n`) and
 the factorial of the previous number (`n-1`).
 
 <div class="hint">Do not forget about the recursive function call.</div>
