@@ -1,4 +1,4 @@
-## loop over a string
+## Loop over a string
 
 As we discussed earlier, in many ways strings are similar to lists in Python. 
 You can iterate over a string just like you would iterate over a list.  
