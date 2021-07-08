@@ -1,4 +1,4 @@
-## Rcursion
+## Recursion
 
 The word <b>recursion</b> comes from the Latin word <i>recurrere</i>, meaning to return, revert, or recur.
 In programming, recursion refers to a coding technique in which a function calls itself.
