@@ -9,9 +9,9 @@ the interpreter, but if you really want to see it, you can use `print(some_func(
 ><i>The first statement of the function body can optionally be a string literal; this string 
 literal is the function’s documentation string, or docstring (more about docstrings can 
 be found in the section <a href="https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings">Documentation Strings</a>
-in Python Documentation). It’s good practice to include docstrings in code that you write.</i>
+in Python Documentation). It’s good practice to include docstrings in the code that you write.</i>
   
-In the Fibonacci sequence, the first two numbers are `1` and `1` , and each subsequent 
+In the Fibonacci sequence, the first two numbers are `1` and `1`, and each subsequent 
 number is the sum of the previous two. Write a function that returns a list of numbers 
 of the Fibonacci sequence up to `n` .  
 

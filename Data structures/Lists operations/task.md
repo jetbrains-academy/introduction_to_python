@@ -1,6 +1,6 @@
 ## List operations
 
-Unlike strings, lists are a mutable type, i.e. it is possible to
+Unlike strings, lists are a mutable type, i.e., it is possible to
 change their content using `lst[index] = new_item`.
 
 ```python

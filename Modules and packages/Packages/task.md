@@ -10,10 +10,10 @@ module names.
 
 <div class="hint">The <code>__init__.py</code> files are required to make Python treat directories 
 containing the file as packages. This prevents directories with a common name, such 
-as <code>string</code>, unintentionally hiding valid modules that occur later on the module search 
+as <code>string</code>, from unintentionally hiding valid modules that occur later on the module search 
 path. In the simplest case, <code>__init__.py</code> can just be an empty file.</div>
 
-Check out the packages `functions` and `classes` we created. Users of the packages 
+Check out the packages `functions` and `classes` we've created. Users of the packages 
 can import individual modules from the package, for example:
 
 ```python
@@ -38,7 +38,7 @@ so it can be used as follows:
 hello.hello('Susan')
 ```
 
-You can learn more about packages by reading <a href="https://docs.python.org/3/tutorial/modules.html#packages">this page</a> of Python Documentation
+You can learn more about packages by reading <a href="https://docs.python.org/3/tutorial/modules.html#packages">this page</a> of Python Documentation.
 
 In the code editor, import the `official` module properly to make the last `print` 
 statement work.

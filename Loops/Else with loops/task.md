@@ -5,7 +5,7 @@ We saw that the `break` statement breaks out of the innermost enclosing `for` or
 Python also allows loop statements to have an `else` clause. It is executed when the loop terminates
 through exhaustion of the iterable (with `for`) or when the condition becomes `False`
 (with `while`), but not when the loop is terminated by a `break` statement. Check
-out this example of a loop, which searches for prime numbers:
+out this example of a loop which searches for prime numbers:
 
 ```python
 for n in range(2, 10):
@@ -27,14 +27,14 @@ for n in range(2, 10):
 8 equals 2 * 4
 9 equals 3 * 3
 ```
-Is this code the `else` clause belongs to the `for` loop, not the
+In this code, the `else` clause belongs to the `for` loop, not the
 `if` statement.
 
 Remember, an `else` after an `if` statement is skipped and NOT executed if the expression following 
 `if` is `True`, while in the case of loops, an `else` clause is executed after the loop itself
 is completed (unless there was a `break` in there somewhere).
 
-In the second loop in the code editor, add two lines of code to make sure the loop prints
-numbers 1 and 2, nad never prints the phrase `"for loop is done"`.
+In the code editor, add two lines of code to the second loop to make sure the loop prints
+numbers 1 and 2 and never prints the phrase `"for loop is done"`.
 
-<div class="hint">It should terminate at number 3</div>
+<div class="hint">It should terminate at number 3.</div>

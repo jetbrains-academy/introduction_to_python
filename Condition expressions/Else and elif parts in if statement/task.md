@@ -26,7 +26,7 @@ else:
 a is greater than b
 ```
   
-Print `True` if name is equal to `"John"` and `False` otherwise.  
+Print `True` if `name` is equal to `"John"` and `False` otherwise.  
 
 <div class='hint'>Use the <code>if</code> keyword and the <code>==</code> operator.</div>
 <div class='hint'>Use the <code>else</code> keyword.</div>

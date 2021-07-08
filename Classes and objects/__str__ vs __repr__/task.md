@@ -12,13 +12,13 @@ print(repr(s))
 Hello World
 'Hello World'
 ```
-You can see that if we print a string using the `repr()` function then it prints 
+You can see that if we print a string using the `repr()` function, then it prints 
 with a pair of quotes. `str()` is used for creating output for the user, while `repr()` 
-is normally used for debugging and development. `repr()` needs to be unambiguous 
+is normally used for debugging and development. `repr()` needs to be unambiguous, 
 and `str()` &mdash; to be readable.
 
-Much like `__init__`, methods `__repr__` and `__str__` are reserved in Python. 
-The `print()` statement and `str()` built-in function uses the `__str__` method defined in the object's class
+Much like `__init__`, the methods `__repr__` and `__str__` are reserved in Python. 
+The `print()` statement and the `str()` built-in function use the `__str__` method defined in the object's class
 to display its string representation. The `repr()` built-in function uses the `__repr__` method 
 defined in the object's class. 
 

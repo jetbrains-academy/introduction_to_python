@@ -20,7 +20,7 @@ A code block starts with indentation and ends with the first unindented line. Th
 be consistent throughout the block. Generally, four whitespaces or single tabs are used for indentation.
 Incorrect indentation will result in `IndentationError`.
 
-If you have only one statement to execute, you can put it on the same line as the if statement.
+If you have only one statement to execute, you can put it on the same line as the `if` statement.
 
 ```python
 if a > b: print("a is greater than b")

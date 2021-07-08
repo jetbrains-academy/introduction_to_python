@@ -1,7 +1,7 @@
 ## Keyword Arguments
 
 We already hinted that functions can also be called using keyword arguments of the form `kwarg=value`. For 
-instance, the function `cat()` which we defined for you
+instance, the function `cat()`, which we defined for you,
 accepts one required argument (`food`) and three optional arguments (`state`, `action`, and `breed`). 
 It can be called in any of the following ways (you can try them all out):
 
@@ -14,9 +14,9 @@ cat('beef', 'happy', 'hiss')       # 3 positional arguments
 cat('a hug', state='purrring')     # 1 positional, 1 keyword
 ```
 In a function call, keyword arguments must follow positional arguments. All the keyword 
-arguments passed must match one of the arguments accepted by the function (e.g. `book` is not a valid 
+arguments passed must match one of the arguments accepted by the function (e.g., `book` is not a valid 
 argument for the `cat` function), and their order is not important. This also includes non-optional 
-arguments (e.g. `cat(food='fish')` is valid too). No argument may receive a value more than once.
+arguments (e.g., `cat(food='fish')` is valid too). No argument may receive a value more than once.
 All the following calls would be invalid:
 
 ```python
@@ -25,7 +25,7 @@ cat(food='fish', 'dead')           # positional argument after a keyword argumen
 cat('veggies', food='nothing')     # duplicate value for the same argument
 cat(actor='Johnny Depp')           # unknown keyword argument
 ```
-Complete the function call in the editor with arguments so that it prints the following:
+In the editor, complete the function call  with arguments so that it prints the following:
 ```text
 -- This cat wouldn't growl if you gave it soup
 -- Lovely fur, the Sphinx

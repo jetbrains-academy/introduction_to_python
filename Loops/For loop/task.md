@@ -1,7 +1,7 @@
 ## for loop
 
 The `for` statement is used to iterate over the elements of a sequence (such as 
-a string, tuple or list) or other iterable object. The sequence is evaluated once.
+a string, tuple, or list) or another iterable object. The sequence is evaluated once.
 On each iteration, the variable defined in the `for` loop will be assigned to the next value
 in the list. The code following the line with the `for` statement is executed once 
 for each item. When the items are exhausted, the loop terminates.

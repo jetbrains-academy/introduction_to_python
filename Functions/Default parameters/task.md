@@ -8,7 +8,7 @@ This function can be called in several ways:
 
 - giving only the mandatory argument `a`: `multiply_by(3)`
 
-- giving one of the optional arguments: `multiply_by(3, 47)` or `multiply_by(3, c=47)`
+- giving one of the optional arguments: `multiply_by(3, 47)`, or `multiply_by(3, c=47)`
 
 - or even giving all arguments: `multiply_by(3, 47, 0)`
 
@@ -19,6 +19,6 @@ Do not put spaces around the `=` symbol in function calls and definitions.
 Explore this topic further by reading <a href="https://docs.python.org/3/tutorial/controlflow.html#default-argument-values">this section</a>
 of Python Documentation.
 
-Add parameters to the function `hello()`, and set a default value for the `name` parameter.  
+Add parameters to the `hello()` function and set a default value for the `name` parameter.  
 
-<div class='hint'>Specify any default value for the parameter <code>name</code>.</div>
+<div class='hint'>Specify any default value for the <code>name</code> parameter.</div>
