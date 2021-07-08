@@ -10,7 +10,7 @@ Modules are imported from other modules using the `import` keyword
 and the file name without the extension `.py`. 
 
 Let's say you wrote a script called `my_funcs.py` with a bunch of functions (`func1`, `func2`, 
-etc.). Now, if you want to use those in another script that in placed is the same directory, 
+etc.). Now, if you want to use those in another script that is placed in the same directory, 
 you can do `import my_funcs`. This does not import the names of the functions defined in `my_funcs` 
 directly, but using the module name, you can now access the functions, for example:
 ```python
