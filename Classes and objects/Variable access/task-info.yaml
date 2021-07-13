@@ -3,8 +3,8 @@ files:
 - name: access_variable.py
   visible: true
   placeholders:
-  - offset: 409
-    length: 19
-    placeholder_text: '???'
+    - offset: 398
+      length: 19
+      placeholder_text: '# print the value of `variable1` from `my_object`'
 - name: tests.py
   visible: false
