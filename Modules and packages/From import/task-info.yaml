@@ -7,8 +7,8 @@ files:
 - name: from_import.py
   visible: true
   placeholders:
-  - offset: 169
-    length: 33
+  - offset: 27
+    length: 34
     placeholder_text: '# Import hello_world from my_module'
 - name: tests.py
   visible: false
