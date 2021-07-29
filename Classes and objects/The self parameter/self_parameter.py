@@ -9,7 +9,7 @@ class Complex:
 
 complex_number = Complex()  # Instantiate a complex number object
 complex_number.create(12, 5)  # Call create method with real_part = 12 and imag_part = 5
-complex_number.build()  # Cuild the complex number
+complex_number.build()  # Build the complex number
 print(complex_number.num)
 
 
