@@ -4,7 +4,10 @@ files:
   visible: true
   placeholders:
   - offset: 377
-    length: 20
-    placeholder_text: ???
+    length: 21
+    placeholder_text: '# Add a condition'
+  - offset: 407
+    length: 5
+    placeholder_text: '# Exit loop'
 - name: tests.py
   visible: false

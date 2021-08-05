@@ -12,6 +12,6 @@ while True:                         # This condition cannot possibly be false
     animal = zoo.pop()       # Extract one element from the list end
     print(animal)
     if animal == "elephant":
-        break           # Exit loop
+        break
 
 print(zoo)
