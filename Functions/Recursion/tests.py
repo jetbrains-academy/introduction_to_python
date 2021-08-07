@@ -5,6 +5,8 @@ def test_window():
     window = get_answer_placeholders()[0]
     if "factorial(n - 1)" in window and "*" in window:
         passed()
+    elif "factorial(n-1)" in window and "*" in window:
+        passed("Correct, but code style could be improved. Use spaces in math equations.")
     else:
         failed("Do not forget the recursive function call!")
 
