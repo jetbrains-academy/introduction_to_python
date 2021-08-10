@@ -8,8 +8,15 @@ def test_window():
     else:
         failed("Use == to check that animal is equal to 'elephant'")
 
+def test_window1():
+    window = get_answer_placeholders()[1]
+    if "break" in window:
+        passed()
+    else:
+        failed("Use the break keyword to exit the loop!")
 
 
 if __name__ == '__main__':
     run_common_tests()
     test_window()
+    test_window1()

@@ -6,6 +6,7 @@ an infinite loop is to use `while True`. The `break` keyword is used to
 escape the loop.  
 
   
-Write a condition to exit the loop on its first iteration using the `break` statement.  
+Write a condition to exit the loop on its first iteration after evaluating if `animal`
+is equal to `elephant`.  Use the `break` statement.  
 
 <div class="hint">Use <code>==</code> to check if <code>animal</code> is equal to <code>"elephant"</code>.</div>
