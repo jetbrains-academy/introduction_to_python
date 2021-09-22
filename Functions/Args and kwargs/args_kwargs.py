@@ -15,7 +15,7 @@ random_dialogue("Library", "Do you at least have a cigar, sir?",  # Call 1
                 other_guy="street clown",
                 scene="in a park")
 
-dic = {"lost_person": "old banker", "other_guy": "street_clown", "scene": "park"}
+dic = {"lost_person": "old banker", "other_guy": "street_clown", "scene": "in a park"}
 lst = ["Do you at least have a cigar, sir?", "Sure, help yourself."]
 random_dialogue("Library", *lst, **dic)  # Call 2 - the exact same output
 
