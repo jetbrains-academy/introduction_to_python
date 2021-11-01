@@ -1,3 +1,3 @@
 hello = "hello"
-ten_of_hellos = hello * 10
-print(ten_of_hellos)
+two_times_hello = hello * 2
+print(two_times_hello)
