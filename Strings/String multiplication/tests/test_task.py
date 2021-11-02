@@ -1,12 +1,11 @@
 import unittest
 
 try:
-    from string_multiplication import two_times_hello
+    from string_multiplication import food
 
     class TestCase(unittest.TestCase):
         def test_add(self):
-            self.assertEqual(two_times_hello, 'hello-hello-hello-hello-hello-', msg="Wrong string result.")
-
+            self.assertEqual(food, 'couscous', msg="Wrong string result.")
 
 except ImportError:
     class TestCase(unittest.TestCase):

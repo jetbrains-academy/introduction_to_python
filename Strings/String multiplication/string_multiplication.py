@@ -1,3 +1,3 @@
-hello = "hello-"
-two_times_hello = hello * 5
-print(two_times_hello)
+not_yet_food = "cous"
+food = not_yet_food * 2
+print(food)

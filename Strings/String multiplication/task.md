@@ -2,7 +2,12 @@
 
 Python also supports string-by-number multiplication (but not the other way around!).  
   
-Use `hello` to get a duplicated `"hellohello"` 
-string ( `"hello"` repeated `2` times).
+Use `not_yet_food` variable to get a food name stored in `food` 
+variable. 
+
+<div class="hint">
+
+`"cous"` repeated `2` times gives you `"couscous"`.
+</div>
 
 <div class='hint'>Use multiplication.</div>
