@@ -7,6 +7,6 @@ files:
     length: 16
     placeholder_text: 2 * hello
 - name: tests/__init__.py
-  visible: true
+  visible: false
 - name: tests/test_task.py
-  visible: true
+  visible: false
