@@ -1,21 +1,15 @@
-import unittest
+import contextlib
 import io
-import sys
-
-
-def test_foo():
-    capturedOutput = io.StringIO()  # Create StringIO object
-    sys.stdout = capturedOutput  # and redirect stdout.
-    import character_escaping
-    sys.stdout = sys.__stdout__  # Reset redirect.
-    value = capturedOutput.getvalue()
-    return value
+import unittest
 
 
 class TestCase(unittest.TestCase):
     def test_string(self):
-        result = test_foo()[:-1]
+        f = io.StringIO()
+        with contextlib.redirect_stdout(f):
+            import character_escaping
+        output = f.getvalue()[:-1]
         string = 'The name of this ice-cream is "Sweet\'n\'Tasty"'
-        answer = result == string
-        # self.assertEqual(result, string, msg='Wrong result string.')
-        self.assertTrue(answer, msg='Wrong result string.')
+        self.assertEqual(output, string, msg='Wrong result string.')
+
+
