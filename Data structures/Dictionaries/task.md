@@ -24,7 +24,9 @@ True
 You can access a value in a dictionary similarly to how you would access a value in a list,
 but using a key instead of an index. More info about this data structure can be found 
 <a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries">here</a>.
-  
+
+Add Jared's (`"Jared"`) number `570` to the phone book.
+Remove Gerard's number from the phone book.
 Print Jane's phone number from the `phone_book`.  
 
 <div class='hint'>Use dictionary indexing, e.g., <code>dct[key]</code></div>
