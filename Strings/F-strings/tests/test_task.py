@@ -22,7 +22,7 @@ class TestCase(unittest.TestCase):
         self.assertIsNotNone(re.search('\d+', result_str), msg='The resulting string should contain '
                                                                'your age written in digits.')
     def test_age(self):
-        self.assertIsNotNone(re.search('\d+', str(age)), msg='`age` should contain digits')
+        self.assertIsNotNone(re.match('\d+', str(age)), msg='`age` should contain only digits')
 
     def test_string(self):
         self.assertIsNotNone(re.match(correct_string, result_str), msg='The result string does not match the expected.')
