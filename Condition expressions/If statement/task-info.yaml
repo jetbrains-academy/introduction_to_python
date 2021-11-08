@@ -3,8 +3,11 @@ files:
 - name: if_statement.py
   visible: true
   placeholders:
-  - offset: 237
+  - offset: 236
     length: 19
-    placeholder_text: "# Check if 'tasks' is empty."
-- name: tests.py
+    placeholder_text: '# Write an if statement with a condition to check if the list
+      `tasks` is empty.'
+- name: tests/__init__.py
+  visible: false
+- name: tests/test_task.py
   visible: false
