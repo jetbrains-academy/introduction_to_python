@@ -11,6 +11,7 @@ vendor:
   email: support@jetbrains.com
   url: https://www.jetbrains.com/
 programming_language: Python
+environment: unittest
 content:
 - Introduction
 - Variables
