@@ -3,8 +3,8 @@ files:
 - name: for_string.py
   visible: true
   placeholders:
-  - offset: 158
-    length: 22
+  - offset: 172
+    length: 29
     placeholder_text: '# Iterate over the string.'
 - name: tests/__init__.py
   visible: false
