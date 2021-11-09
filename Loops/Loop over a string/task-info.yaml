@@ -6,5 +6,7 @@ files:
   - offset: 158
     length: 22
     placeholder_text: '# Iterate over the string.'
-- name: tests.py
+- name: tests/__init__.py
+  visible: false
+- name: tests/test_task.py
   visible: false
