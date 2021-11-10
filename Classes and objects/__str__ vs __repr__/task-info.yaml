@@ -5,9 +5,11 @@ files:
   placeholders:
   - offset: 438
     length: 46
-    placeholder_text: '???'
+    placeholder_text: ???
   - offset: 524
     length: 45
-    placeholder_text: '???'
-- name: tests.py
+    placeholder_text: ???
+- name: tests/__init__.py
+  visible: false
+- name: tests/test_task.py
   visible: false
