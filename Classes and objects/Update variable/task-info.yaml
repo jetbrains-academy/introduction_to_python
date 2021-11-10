@@ -6,9 +6,17 @@ files:
   placeholders:
   - offset: 212
     length: 5
-    placeholder_text: '???'
+    placeholder_text: ???
   - offset: 252
     length: 5
-    placeholder_text: '???'
-- name: tests.py
+    placeholder_text: ???
+  - offset: 291
+    length: 18
+    placeholder_text: '''Call description() method of car2'''
+  - offset: 265
+    length: 18
+    placeholder_text: '''Call description() method of car1'''
+- name: tests/__init__.py
+  visible: false
+- name: tests/test_task.py
   visible: false
