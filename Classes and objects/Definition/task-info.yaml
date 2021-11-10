@@ -4,10 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 30
-    length: 1
-    placeholder_text: '???'
-  - offset: 252
+    length: 2
+    placeholder_text: ???
+  - offset: 253
     length: 9
-    placeholder_text: '???'
+    placeholder_text: ???
 - name: tests.py
   visible: false
+- name: tests/__init__.py
+  visible: true
+- name: tests/test_task.py
+  visible: true

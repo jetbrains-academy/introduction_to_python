@@ -44,6 +44,7 @@ You can find out more about class definition syntax by reading <a href="https://
 of Python Documentation.
 
 Assign a value to  `variable` inside `MyClass` and create an object `x` of the class `MyClass()`. 
+Run the code and see what happens!
 
 <div class='hint'>Assign any value to <code>variable</code>.</div>
 
