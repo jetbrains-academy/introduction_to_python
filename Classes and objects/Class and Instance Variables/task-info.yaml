@@ -3,14 +3,16 @@ files:
 - name: class_instance_variables.py
   visible: true
   placeholders:
-  - offset: 1018
+  - offset: 983
     length: 13
-    placeholder_text: ???
-  - offset: 1123
+    placeholder_text: '# Add a class variable `kind` and assign it the required value.'
+  - offset: 1088
     length: 16
-    placeholder_text: ???
-  - offset: 1194
+    placeholder_text: pass
+  - offset: 1113
     length: 22
-    placeholder_text: ???
-- name: tests.py
+    placeholder_text: '# Add an instance variable `species`.'
+- name: tests/__init__.py
+  visible: false
+- name: tests/test_task.py
   visible: false
