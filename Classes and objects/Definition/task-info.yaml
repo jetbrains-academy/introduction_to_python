@@ -9,9 +9,7 @@ files:
   - offset: 253
     length: 9
     placeholder_text: ???
-- name: tests.py
-  visible: false
 - name: tests/__init__.py
-  visible: true
+  visible: false
 - name: tests/test_task.py
-  visible: true
+  visible: false
