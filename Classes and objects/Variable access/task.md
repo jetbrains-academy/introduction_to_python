@@ -19,5 +19,6 @@ assigned to, so you can change the value of `MyClass.year` by assignment.
 
   
 Check out our example and print the value of `variable1` from `my_object`.  
+Call the `foo` method of the object `my_object`, print the result.
 
 <div class='hint'>Access <code>variable1</code> using the <code>object.name</code> syntax.</div>
