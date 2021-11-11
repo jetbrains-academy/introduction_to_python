@@ -8,7 +8,7 @@ class TestCase(unittest.TestCase):
             self.assertEqual(p_letter, python[0], msg="Make sure you get the first letter from the word Python.")
 
         except ImportError:
-            self.assertEqual(1, 2, msg="Do not rename any variables.")
+            self.assertTrue(False, msg="Do not rename any variables.")
 
 
 
