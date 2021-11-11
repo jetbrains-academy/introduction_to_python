@@ -7,6 +7,6 @@ with open('input1.txt', 'r') as file:
     print(file.read())
 
 
-outfile = open('outfile.txt', 'w') # opening the file in write mode (using `w` argument)
-outfile.write('Hello World')  # writing to the file, the write() method is explained later.
+outfile = open('outfile.txt', 'w')  # Opening the file in write mode (using `w` argument)
+outfile.write('Hello World')  # Writing to the file, the write() method is explained later.
 outfile.close()

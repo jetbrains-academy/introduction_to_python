@@ -29,8 +29,9 @@ True
 free up any system resources used by it. You cannot use the file object after it is closed, whether by a `with` statement or by calling `f.close()`.
 
 In the code editor, open the file `input1.txt` in read mode properly using the `with` statement. Check out the
-name that is used for the file in the later code and use it. Afterwards, close the output file using the 
-`close()` method.
+name that is used for the file on the next line and use it. Afterwards, close the output file `outfile` that was opened. 
+
+After running your code, check out the output file that appeared in the course view among the other files.
 
 <div class="hint">Supply the <code>r</code> argument to the method <code>open()</code>,
 just for the sake of practicing!</div>
