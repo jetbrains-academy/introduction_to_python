@@ -43,7 +43,7 @@ join the list elements into the required string. Afterwards, add `number` to the
 <div class='hint'>Use the <code>'a'</code> modifier to append lines at the end of the file.</div>
 <div class='hint'>Use the <code>write()</code> method.</div>
 <div class='hint'>Convert <code>number</code> into a string before writing.</div>
-<div class="hint">Add <code>\n</code> at the beginning of each string to write so that it's written as a separate line.</div>
+<div class="hint">Add <code>\n</code> at the beginning of each string to write so that it eds up a separate line.</div>
 
 
 
