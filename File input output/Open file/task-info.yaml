@@ -14,8 +14,8 @@ files:
 - name: input1.txt
   visible: true
 - name: tests/__init__.py
-  visible: true
+  visible: false
 - name: tests/test_task.py
-  visible: true
+  visible: false
 - name: outfile.txt
   visible: true
