@@ -5,12 +5,15 @@ files:
 - name: imports.py
   visible: true
   placeholders:
-  - offset: 18
-    length: 16
-    placeholder_text: '# Import the module here'
-  - offset: 178
-    length: 29
-    placeholder_text: '# Call the function `hello_world` from `my_module`'
+  - offset: 17
+    length: 17
+    placeholder_text: '# Import the module `calculator` here'
+  - offset: 124
+    length: 11
+    placeholder_text: '# Use Calculator method `add` to add `i` to the current value.'
+  - offset: 75
+    length: 23
+    placeholder_text: '''Create a new instance of Calculator class defined in calculator'''
 - name: calculator.py
   visible: true
 - name: tests/__init__.py

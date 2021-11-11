@@ -2,24 +2,30 @@ import unittest
 import contextlib
 import io
 import re
+import calculator
 
 f = io.StringIO()
 try:
     with contextlib.redirect_stdout(f):
-        import imports
+        from imports import *
     output = f.getvalue().split('\n')
 
     class TestCase(unittest.TestCase):
-        def test_loop(self):
-            self.assertEqual(output[0], '2', msg='Please do not change the starter code.')
-            self.assertTrue(re.match(r'Hello, World! My name is \w+', output[1]),
-                            msg='Your code should call `hello_world` function from `my_module` with some name '
-                                'so that it prints the greeting.')
+        def test_class(self):
+            try:
+                self.assertTrue(isinstance(calc, calculator.Calculator),
+                                msg='`calc` should be an instance of `Calculator`.')
+            except NameError:
+                self.assertTrue(False, msg='Do not change variable names.')
+
+        def test_out(self):
+            self.assertEqual('Hello, World! My name is John', output[0], msg='Please do not change the starter code.')
+            self.assertEqual(str(4950), output[1], msg='Calculation result looks wrong.')
 
 except NameError:
     class TestFailCase(unittest.TestCase):
         def test_fail(self):
-            self.assertTrue(False, msg='You need to import `my_module`.')
+            self.assertTrue(False, msg='You need to import `calculator`.')
 
 except ModuleNotFoundError:
     class TestFailCase1(unittest.TestCase):
