@@ -5,7 +5,7 @@ try:
 
     class TestCase(unittest.TestCase):
         def test_string(self):
-            self.assertEqual(python, monty_python[6:], msg="Wrong string result.")
+            self.assertEqual(monty_python[6:], python,  msg="Wrong string result.")
 
         def test_space(self):
             self.assertFalse(' ' in python, msg="Do not include the space in the result string.")
@@ -13,4 +13,4 @@ try:
 except ImportError:
     class TestCase(unittest.TestCase):
         def test_fail(self):
-            self.assertEqual(1, 2, msg="Do not rename any variables.")
+            self.assertTrue(False, msg="Do not rename any variables.")
