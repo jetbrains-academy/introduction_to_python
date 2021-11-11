@@ -17,5 +17,3 @@ files:
   visible: false
 - name: tests/test_task.py
   visible: false
-- name: outfile.txt
-  visible: true
