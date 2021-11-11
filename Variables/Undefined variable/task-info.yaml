@@ -5,6 +5,4 @@ files:
   placeholders:
   - offset: 19
     length: 14
-    placeholder_text: '???'
-- name: tests.py
-  visible: false
+    placeholder_text: variable
