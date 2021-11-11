@@ -7,8 +7,13 @@ files:
 - name: from_import.py
   visible: true
   placeholders:
-  - offset: 27
-    length: 34
-    placeholder_text: '# Import hello_world from my_module'
-- name: tests.py
+  - offset: 0
+    length: 33
+    placeholder_text: '# Import class Calculator from another module'
+  - offset: 97
+    length: 12
+    placeholder_text: '''Instantiate a calculator'''
+- name: tests/__init__.py
+  visible: false
+- name: tests/test_task.py
   visible: false
