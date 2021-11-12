@@ -10,16 +10,16 @@ try:
 
     class TestCase(unittest.TestCase):
         def test_loop(self):
-            self.assertEqual(output[0], '0', msg='Please do not change the starter code.')
-            self.assertEqual(output[1], '1', msg='Please do not change the starter code.')
-            self.assertEqual(output[2], '2', msg='Please do not change the starter code.')
-            self.assertEqual(output[3], '3', msg='Please do not change the starter code.')
-            self.assertEqual(output[4], '4', msg='Please do not change the starter code.')
-            self.assertEqual(output[5], '2', msg='Your code does not print the `primes`')
-            self.assertEqual(output[6], '3', msg='Your code does not print the `primes`')
-            self.assertEqual(output[7], '5', msg='Your code does not print the `primes`')
-            self.assertEqual(output[8], '7', msg='Your code does not print the `primes`')
-            self.assertEqual(output, ['0', '1', '2', '3', '4', '2', '3', '5', '7', ''], msg='Wrong output.')
+            self.assertEqual('0', output[0], msg='Please do not change the starter code.')
+            self.assertEqual('1', output[1], msg='Please do not change the starter code.')
+            self.assertEqual('2', output[2], msg='Please do not change the starter code.')
+            self.assertEqual('3', output[3], msg='Please do not change the starter code.')
+            self.assertEqual('4', output[4], msg='Please do not change the starter code.')
+            self.assertEqual('2', output[5], msg='Your code does not print the `primes`')
+            self.assertEqual('3', output[6], msg='Your code does not print the `primes`')
+            self.assertEqual('5', output[7], msg='Your code does not print the `primes`')
+            self.assertEqual('7', output[8], msg='Your code does not print the `primes`')
+            self.assertEqual(['0', '1', '2', '3', '4', '2', '3', '5', '7', ''], output, msg='Wrong output.')
 
 except IndentationError:
     class TestFailCase(unittest.TestCase):

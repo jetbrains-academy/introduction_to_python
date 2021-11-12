@@ -9,10 +9,14 @@ try:
     output = f.getvalue().split('\n')
 
     class TestCase(unittest.TestCase):
-        def test_loop(self):
-            self.assertEqual(len(output), 15, msg='Wrong output length. Please do not change anything '
+        def test_out_len(self):
+            expected, actual = 15, len(output)
+            self.assertEqual(expected, actual, msg='Wrong output length. Please do not change anything '
                                                   'in the starter code apart from the answer placeholder')
-            self.assertEqual(output[-2], 'True', msg='`length` should be equal to `len(hello_world)`.')
+
+        def test_word_len(self):
+            expected, actual = 'True', output[-2]
+            self.assertEqual(expected, actual, msg='`length` should be equal to `len(hello_world)`.')
 
 except IndentationError:
     class TestFailCase(unittest.TestCase):

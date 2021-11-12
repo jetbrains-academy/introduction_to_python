@@ -14,7 +14,8 @@ try:
                             msg='Your loop should only print the last three animals in reverse order.')
 
         def test_list(self):
-            self.assertEqual(zoo, ['lion', 'tiger'], msg='The zoo list in the end should contain only lion and tiger.')
+            expected, actual = ['lion', 'tiger'], zoo
+            self.assertEqual(expected, actual, msg='The zoo list in the end should contain only lion and tiger.')
 
 except IndexError:
     class TestFailCase(unittest.TestCase):

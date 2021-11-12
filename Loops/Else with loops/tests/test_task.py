@@ -20,9 +20,9 @@ class TestCase(unittest.TestCase):
     def test_correct(self):
         if len(output) == 13:
             self.test_default()
-        correct = ["it's less than 5", "it's less than 5", "it's less than 5",
+        expected = ["it's less than 5", "it's less than 5", "it's less than 5",
                    "it's less than 5", "it's less than 5", "and now it's 5",
                    '1', '2', 'Outside the for loop', '']
-        self.assertEqual(correct, output, msg='Your code does not print what is expected. Check your condition. '
+        self.assertEqual(expected, output, msg='Your code does not print what is expected. Check your condition. '
                                               'Please do not change the starter code.')
 

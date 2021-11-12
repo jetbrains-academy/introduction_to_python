@@ -10,14 +10,17 @@ try:
 
     class TestCase(unittest.TestCase):
         def test_finished(self):
-            self.assertEqual(output[10], 'Finished', msg='Please do not change the starter code.')
+            expected, actual = 'Finished', output[10]
+            self.assertEqual(expected, actual, msg='Please do not change the starter code.')
 
         def test_output(self):
-            self.assertEqual(output[11:20], ['1', '4', '9', '16', '25', '36', '49', '64', '81'],
+            expected, actual = ['1', '4', '9', '16', '25', '36', '49', '64', '81'], output[11:20]
+            self.assertEqual(expected, actual,
                              msg='Your while loop does not output all of the needed squares.')
 
         def test_last(self):
-            self.assertEqual(output[-2], '81', msg='The last square should be 81. Maybe check your while loop '
+            expected, actual = '81', output[-2]
+            self.assertEqual(expected, actual, msg='The last square should be 81. Maybe check your while loop '
                                                    'condition.')
 
 except IndentationError:
