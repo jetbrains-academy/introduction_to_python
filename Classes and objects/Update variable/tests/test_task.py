@@ -16,8 +16,10 @@ try:
             self.assertTrue(isinstance(car2, Car), msg='Object `car2` has to be an instance of `Car`.')
 
         def test_out(self):
-            self.assertEqual(output[0], car1.description(), msg='Please do not change the starter code.')
-            self.assertEqual(output[1], car2.description(), msg='The second print statement should print the '
+            expected, actual = car1.description(), output[0]
+            self.assertEqual(expected, actual, msg='Please do not change the starter code.')
+            expected, actual = car2.description(), output[1]
+            self.assertEqual(expected, actual, msg='The second print statement should print the '
                                                                 'description of car2, which should include '
                                                                 'its `color`.')
 

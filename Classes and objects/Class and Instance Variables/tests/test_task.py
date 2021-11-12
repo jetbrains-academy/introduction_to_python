@@ -7,12 +7,15 @@ try:
     class TestCase(unittest.TestCase):
         def test_class(self):
             george = Animals('George', 'rabbit')
-            self.assertEqual(george.kind, 'pets', msg='Check your class variable.')
+            expected, actual = 'pets', george.kind
+            self.assertEqual(expected, actual, msg='Check your class variable.')
 
         def test_instance(self):
             george = Animals('George', 'rabbit')
-            self.assertEqual(george.species, 'rabbit', msg='Check your __init__() method and species attribute.')
-            self.assertEqual(george.name, 'George', msg='Check your __init__() method and name attribute.')
+            expected, actual = 'rabbit', george.species
+            self.assertEqual(expected, actual, msg='Check your __init__() method and species attribute.')
+            expected, actual = 'George', george.name
+            self.assertEqual(expected, actual, msg='Check your __init__() method and name attribute.')
 
 except ImportError:
     class TestFailCase(unittest.TestCase):

@@ -16,7 +16,8 @@ try:
             self.assertTrue(isinstance(another_object, MyClass), msg='Object `another_object` has to be an instance of `MyClass`.')
 
         def test_out(self):
-            self.assertEqual(output[2], str(my_object.variable1), msg='Your code should print the value of the '
+            expected, actual = str(my_object.variable1), output[2]
+            self.assertEqual(expected, actual, msg='Your code should print the value of the '
                                                                 '`variable1` attribute of `my_object` in the third'
                                                                       'print statement.')
 

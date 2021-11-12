@@ -8,8 +8,10 @@ try:
     class TestCase(unittest.TestCase):
         def test_car(self):
             car = Car("blue", "BMW")
-            self.assertEqual(car.color, 'blue', msg='Check your __init__() method.')
-            self.assertEqual(car.brand, 'BMW', msg='Check your __init__() method.')
+            expected, actual = 'blue', car.color
+            self.assertEqual(expected, actual, msg='Check your __init__() method.')
+            expected, actual = 'BMW', car.brand
+            self.assertEqual(expected, actual, msg='Check your __init__() method.')
 
 except ImportError:
     class TestFailCase(unittest.TestCase):
