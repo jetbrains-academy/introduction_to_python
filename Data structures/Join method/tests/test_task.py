@@ -10,7 +10,7 @@ output = f.getvalue().split('\n')[0]
 
 class TestCase(unittest.TestCase):
     def test_out_str(self):
-        self.assertEqual(output, 'I like apples and I like bananas and I like peaches and I like grapes',
+        self.assertEqual('I like apples and I like bananas and I like peaches and I like grapes', output,
                          msg='Your printed output does not match the expected.')
 
     def test_joined(self):

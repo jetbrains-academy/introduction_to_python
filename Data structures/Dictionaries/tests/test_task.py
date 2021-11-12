@@ -11,7 +11,7 @@ result = output[3]
 
 class TestCase(unittest.TestCase):
     def test_out_num(self):
-        self.assertEqual(result, str(234),
+        self.assertEqual(str(234), result,
                          msg="Your printed output does not match the expected.")
 
     def test_dict(self):

@@ -12,5 +12,5 @@ correct_string = str(squares[1:4])  # [4, 9, 16]
 
 class TestCase(unittest.TestCase):
     def test_slice(self):
-        self.assertEqual(result_str, correct_string, msg='The resulting slice does not match the expected.')
+        self.assertEqual(correct_string, result_str, msg='The resulting slice does not match the expected.')
 

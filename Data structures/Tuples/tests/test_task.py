@@ -12,7 +12,7 @@ result_2 = output[1]
 
 class TestCase(unittest.TestCase):
     def test_len(self):
-        self.assertEqual(result_1, str(26), msg='Are you sure you got the correct alphabet length?')
+        self.assertEqual(str(26), result_1, msg='Are you sure you got the correct alphabet length?')
 
     def test_tuple(self):
         self.assertTrue(type(my_tuple) == tuple, msg='my_tuple should be a tuple!')

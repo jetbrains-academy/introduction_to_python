@@ -4,7 +4,7 @@ from list_operations import animals
 
 class TestCase(unittest.TestCase):
     def test_list(self):
-        self.assertEqual(animals, ['elephant', 'lion', 'tiger', 'giraffe', 'monkey', 'dog', 'dinosaur'],
+        self.assertEqual(['elephant', 'lion', 'tiger', 'giraffe', 'monkey', 'dog', 'dinosaur'], animals,
                          msg='The resulting list does not match the expected')
 
     def test_dinosaur(self):
