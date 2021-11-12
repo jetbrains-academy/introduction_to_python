@@ -19,8 +19,10 @@ try:
                 self.assertTrue(False, msg='Do not change variable names.')
 
         def test_out(self):
-            self.assertEqual('Hello, World! My name is John', output[0], msg='Please do not change the starter code.')
-            self.assertEqual(str(4950), output[1], msg='Calculation result looks wrong.')
+            expected, actual = 'Hello, World! My name is John', output[0]
+            self.assertEqual(expected, actual, msg='Please do not change the starter code.')
+            expected, actual = str(4950), output[1]
+            self.assertEqual(expected, actual, msg='Calculation result looks wrong.')
 
 except NameError:
     class TestFailCase(unittest.TestCase):

@@ -12,7 +12,8 @@ time_stamp = str(datetime.datetime.today())
 
 class TestCase(unittest.TestCase):
     def test_datetime(self):
-        self.assertEqual(time_stamp.split(':')[:2], output[1].split(':')[:2],
+        expected, actual = time_stamp.split(':')[:2], output[1].split(':')[:2]
+        self.assertEqual(expected, actual,
                          msg='Your code is not printing the correct current date and time.')
 
 

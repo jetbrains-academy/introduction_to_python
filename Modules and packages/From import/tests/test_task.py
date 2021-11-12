@@ -11,9 +11,11 @@ try:
 
     class TestCase(unittest.TestCase):
         def test_output(self):
-            self.assertEqual('Hey there, User!', output[0],
+            expected, actual = 'Hey there, User!', output[0]
+            self.assertEqual(expected, actual,
                              msg='Please do not change the starter code.')
-            self.assertEqual('66.66666666666667', output[1],
+            expected, actual = '66.66666666666667', output[1]
+            self.assertEqual(expected, actual,
                              msg='Calculation result is wrong. Please do not change the starter code.')
 
 except NameError:
