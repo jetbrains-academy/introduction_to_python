@@ -11,7 +11,8 @@ class TestCase(unittest.TestCase):
                 from open_file import outfile
             output = f.getvalue().split('\n')
 
-            self.assertEqual(8, len(output), msg='Please do not remove or add any print statements.')
+            expected, actual = 8, len(output)
+            self.assertEqual(expected, actual, msg='Please do not remove or add any print statements.')
             self.assertTrue(outfile.closed, msg='outfile is not closed.')
 
         except ImportError:
