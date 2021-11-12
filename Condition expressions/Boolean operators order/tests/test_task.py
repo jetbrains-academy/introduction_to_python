@@ -11,7 +11,7 @@ result = output[2]
 
 class TestCase(unittest.TestCase):
     def test_out_len(self):
-        self.assertEqual(len(output), 4, msg='Please do not remove or add any print statements.')
+        self.assertEqual(4, len(output), msg='Please do not remove or add any print statements.')
 
     def test_out_str(self):
-        self.assertEqual(result, 'True', msg='Your expression does not seem to product the correct result.')
+        self.assertEqual('True', result, msg='Your expression does not seem to produce the correct result.')
