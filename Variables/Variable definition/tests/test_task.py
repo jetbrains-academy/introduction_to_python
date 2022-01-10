@@ -1,40 +1,54 @@
-import contextlib
+import importlib
 from io import StringIO
 import sys
 import unittest
+from unittest.mock import patch
 
 
-@contextlib.contextmanager
-def captured_output():
-    new_out, new_err = StringIO(), StringIO()
-    old_out, old_err = sys.stdout, sys.stderr
-    try:
-        sys.stdout, sys.stderr = new_out, new_err
-        yield sys.stdout, sys.stderr
-    finally:
-        sys.stdout, sys.stderr = old_out, old_err
-
-
-with captured_output() as (out, err):
+def try_import():
     import variable_definition
-    actual_output = out.getvalue()
+    return variable_definition
 
 
 class TestCase(unittest.TestCase):
+    task_name = 'variable_definition'
+
+    def setUp(self):
+        try:
+            # Stores output from print() in actualOutput
+            with patch('sys.stdout', new=StringIO()) as self.actualOutput:
+                # Loads submission on first test, reloads on subsequent tests
+                if self.task_name in sys.modules:
+                    importlib.reload(sys.modules[self.task_name])
+                else:
+                    importlib.import_module(self.task_name)
+        except Exception as e:
+            self.fail("There was a problem while loading the solution - {0}. Check the solution for IDE-highlighted "
+                      "errors and warnings.".format(str(e)))
 
     def test_assignment_operator(self):
         expected_first_greetings = "greetings = greetings"
+        actual_output = self.actualOutput.getvalue()
 
         self.assertIn(expected_first_greetings, actual_output, msg="The line expressing greetings after the initial "
                                                                    "assignment was not found. Check if the variable is "
                                                                    "assigned properly and that the print statement "
                                                                    "is intact.")
 
-    def test_variable_concept(self):
+    def test_assignment_operator2(self):
+        expected_first_greetings = "greetings = greetings"
+        actual_output = self.actualOutput.getvalue()
+
+        self.assertIn(expected_first_greetings, actual_output, msg="The line expressing greetings after the initial "
+                                                                   "assignment was not found. Check if the variable is "
+                                                                   "assigned properly and that the print statement "
+                                                                   "is intact.")
+
+    def test_variable(self):
         unexpected_greetings = "greetings"
 
         try:
-            actual_greetings = variable_definition.greetings
+            actual_greetings = try_import().greetings
         except AttributeError:
             self.fail(msg="The variable greetings seems to be undefined. Do not remove it from the task code")
 
@@ -42,15 +56,15 @@ class TestCase(unittest.TestCase):
                                                                         "reassigned. You should change it to something "
                                                                         "else.")
 
-    def test_chained_assignment_operator(self):
+    def test_chained_assignment(self):
         expected_a = expected_b = 2
 
         try:
-            actual_a = variable_definition.a
+            actual_a = try_import().a
         except AttributeError:
             self.fail(msg="The variable a seems to be undefined. Do not remove it from the task code")
         try:
-            actual_b = variable_definition.b
+            actual_b = try_import().b
         except AttributeError:
             self.fail(msg="The variable b seems to be undefined. Do not remove it from the task code")
 
