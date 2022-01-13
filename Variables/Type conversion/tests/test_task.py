@@ -28,5 +28,15 @@ class TestCase(unittest.TestCase):
             self.fail("There was a problem while loading the solution - {0}. Check the solution for "
                       "IDE-highlighted  errors and warnings.".format(str(e)))
 
-    def test_concept_name(self):
-        pass
+    def test_type_conversion(self):
+        expected_type = int
+        try:
+            actual_converted_float_number = try_import().converted_float_number
+        except AttributeError:
+            self.fail(msg="The variable converted_float_number a seems to be undefined. "
+                          "Do not remove it from the task code")
+
+        # TODO comeback and switch it to another assert architecture if the render of the text is not fixed in task view
+        self.assertIs(type(actual_converted_float_number), expected_type, msg="The variable seems not to be an integer "
+                                                                          "still. Please, convert it!")
+
