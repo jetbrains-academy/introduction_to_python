@@ -32,3 +32,4 @@ class TestCase(unittest.TestCase):
         with self.assertRaises(NameError, msg="Try printing a variable, which was not defined"):
             try_import()
 
+    # TODO add Reserved keywords check
