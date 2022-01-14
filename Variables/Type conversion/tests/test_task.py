@@ -33,10 +33,9 @@ class TestCase(unittest.TestCase):
         try:
             actual_converted_float_number = try_import().converted_float_number
         except AttributeError:
-            self.fail(msg="The variable converted_float_number a seems to be undefined. "
+            self.fail(msg="The variable converted_float_number seems to be undefined. "
                           "Do not remove it from the task code")
 
         # TODO comeback and switch it to another assert architecture if the render of the text is not fixed in task view
         self.assertIs(type(actual_converted_float_number), expected_type, msg="The variable seems not to be an integer "
-                                                                          "still. Please, convert it!")
-
+                                                                              "still. Please, convert it!")
