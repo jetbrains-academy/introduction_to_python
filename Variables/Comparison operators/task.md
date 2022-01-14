@@ -23,7 +23,17 @@ values: either `True` or `False`. Comparisons can be chained arbitrarily, and
 expressions like `a < b < c` have the 
 conventional mathematical meaning. Read more on comparisons <a href="https://docs.python.org/3/reference/expressions.html#comparisons">here</a>.
   
-Check whether the value of the variable `three` is strictly greater than the value of 
-the variable `two`.  
+ - Check whether the value of the variable `three` is strictly greater than the value of 
+the variable `two`.
+ - Check whether the value of the variable `one` is strictly smaller than the value of
+   the variable `three`.
+ - Check whether the value of the variable `three` is strictly greater than both the value of
+   the variable `two` and the value of the variable `one`.
+ - Check if the variable `one` is not equal to variable `two`.
+ - Check if the variable `thee` equals to itself.
 
 <div class='hint'>Use the <code>></code> operator.</div>
+<div class='hint'>Use the <code><</code> operator.</div>
+<div class='hint'>Use both the <code>></code> and the <code><</code> operators.</div>
+<div class='hint'>Use the <code>!=</code> operator.</div>
+<div class='hint'>Use the <code>==</code> operator.</div>
