@@ -17,7 +17,9 @@ my_function()  # function call
 ```
 
 Read more about defining functions in <a href="https://docs.python.org/3/tutorial/controlflow.html#defining-functions">this section</a> of Python Documentation.
-  
-Define a function that can replace the duplicated `print` statements in the file.  
+### Task
+ - Call the function `my_function` inside the loop to repeat its invocation 5 times
+ - Define a function that can replace the duplicated `print` statements in the file.  
 
+<div class='hint'>Use the <code>()</code> to call the <code>my_function</code> function.</div>
 <div class='hint'>Use the <code>def</code> keyword to define the <code>fun</code> function.</div>
