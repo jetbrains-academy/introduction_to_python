@@ -58,3 +58,6 @@ class TestCase(unittest.TestCase):
         self.assertEqual(expected_function_output, actual_output, msg="The result of the fun function is missing from "
                                                                       "the output. Make sure you declare it correctly."
                                                                       "Do not alter the body of the function.")
+
+    # TODO test function purpose concept
+    # TODO test def definition concept
