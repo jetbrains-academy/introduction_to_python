@@ -7,6 +7,6 @@ the string) and the method name after it, e.g., `"John".upper()`. In PyCharm, yo
 explore all available string methods by using the &shortcut:CodeCompletion; shortcut after the dot. 
 Detailed information about all string methods can be found <a href="https://docs.python.org/3/library/stdtypes.html#string-methods">here</a>.
   
-Print `monty_python` in upper case.  
+Print `monty_python` in upper case using an appropriate string method.  
 
 <div class='hint'>Pay attention to how the <code>lower()</code> method is used in our code.</div>

@@ -3,8 +3,10 @@ files:
 - name: string_multiplication.py
   visible: true
   placeholders:
-  - offset: 38
-    length: 1
-    placeholder_text: '???'
-- name: tests.py
+  - offset: 29
+    length: 16
+    placeholder_text: 2 * hello
+- name: tests/__init__.py
+  visible: false
+- name: tests/test_task.py
   visible: false

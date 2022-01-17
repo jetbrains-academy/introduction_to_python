@@ -13,7 +13,7 @@ or decimal values.
 > Each of these alternatives provides their own trade-offs and benefits of 
 > simplicity, flexibility, and/or extensibility.</i>
   
-Tell PyCharm how old you are.  
+Tell PyCharm how old you are (using digits).  
 
 <div class='hint'>Use the <code>%d</code> special symbol.</div>
 <div class='hint'>How old are you?</div>

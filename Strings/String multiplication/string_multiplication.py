@@ -1,3 +1,3 @@
-hello = "hello"
-ten_of_hellos = hello * 10
-print(ten_of_hellos)
+not_yet_food = "cous"
+food = not_yet_food * 2
+print(food)
