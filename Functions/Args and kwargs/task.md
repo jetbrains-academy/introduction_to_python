@@ -24,6 +24,8 @@ after the `*args` parameter are ‘keyword-only’ arguments, meaning that they 
 rather than positional arguments. Another way to call this function is shown in call 2, and it will give 
 us the same output.
 
+### Task
+
 In the code editor, modify the code below the `cat()` function so that it prints 
 the following:
 ```text
