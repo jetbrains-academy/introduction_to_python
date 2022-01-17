@@ -25,6 +25,8 @@ cat(food='fish', 'dead')           # positional argument after a keyword argumen
 cat('veggies', food='nothing')     # duplicate value for the same argument
 cat(actor='Johnny Depp')           # unknown keyword argument
 ```
+
+### Task
 In the editor, complete the function call  with arguments so that it prints the following:
 ```text
 -- This cat wouldn't growl if you gave it soup
