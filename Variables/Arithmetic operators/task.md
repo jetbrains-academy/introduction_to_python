@@ -21,7 +21,7 @@ The binary arithmetic operations have the conventional priority levels. Note tha
 some of these operations also apply to certain non-numeric types.
 
 You can read more on this topic <a href="https://docs.python.org/3/reference/expressions.html#binary-arithmetic-operations">here</a>.
-  
+### Task
  - Divide the value stored in `number` by `2`.
  - Calculate a remainder of such a division.
  - Multiply the division result by `2`.
