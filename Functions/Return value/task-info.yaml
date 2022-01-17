@@ -5,12 +5,15 @@ files:
   placeholders:
   - offset: 364
     length: 1
-    placeholder_text: '???'
+    placeholder_text: '# Assign an initial value to b'
   - offset: 436
     length: 9
-    placeholder_text: '???'
+    placeholder_text: '# Update some value with a sum'
   - offset: 454
     length: 11
-    placeholder_text: '???'
-- name: tests.py
+    placeholder_text: '# Restore a variable from the temp'
+  - offset: 470
+    length: 13
+    placeholder_text: '# here we need to return the result to the caller'
+- name: tests/test_task.py
   visible: false
