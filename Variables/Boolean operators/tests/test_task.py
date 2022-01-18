@@ -38,7 +38,7 @@ class TestCase(unittest.TestCase):
                           "Do not remove it from the task code")
 
         self.assertEqual(expected_value, actual_value, msg="The is_true has a wrong value. "
-                                                                 "Make sure you comparison is to a correct value")
+                                                                 "Make sure your comparison is to a correct value")
 
     def test_false(self):
         expected_value = False
