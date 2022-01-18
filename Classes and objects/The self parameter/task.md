@@ -24,6 +24,7 @@ class Bag:
   
 In the code editor, implement the `add` method of the `Calculator` class. It should 
 add `amount` to the field `current`.  In addition, complete the method `get_current`.
+Run the code to see how it works.
 
 <div class='hint'>Add <code>amount</code> to the <code>self.current</code> variable.</div>
 <div class="hint">Use the <code>+=</code> sign.</div>

@@ -37,7 +37,7 @@ editor – see what `print(barsik.favorite_food)` will print). If you intend usi
 of features unique to each instance, you need to make it an instance attribute.
 
 In the code editor, complete the implementation of the `Animals` class so that the `print` statement 
-below prints a line like this: `"This is Doggy the dog, one of my pets."`
+below prints a line like this: `"This is Doggy the dog, one of my pets."` for each of the pets.
 
-<div class="hint">The class variable should contain information shared between all instances.</div>
-<div class="hint">Instance variables should contain information unique for the instances.</div>
+<div class="hint">The class variable should contain information shared between all instances (it's one of the <code>"pets"</code>).</div>
+<div class="hint">Instance variables should contain information unique for the instances (name is unique).</div>
