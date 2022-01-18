@@ -21,5 +21,8 @@ files:
   - offset: 274
     length: 11
     placeholder_text: '# perform a floor division of number by 2'
+  - offset: 302
+    length: 26
+    placeholder_text: '# raise the multiplication result to the power of 3'
 - name: tests/test_task.py
   visible: false

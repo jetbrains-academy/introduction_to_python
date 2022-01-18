@@ -12,6 +12,7 @@ def try_import():
 
 class TestCase(unittest.TestCase):
     task_name = 'arithmetic_operators'
+    # unittest.TestLoader.sortTestMethodsUsing =
 
     def setUp(self):
         try:
@@ -28,7 +29,7 @@ class TestCase(unittest.TestCase):
             self.fail("There was a problem while loading the solution - {0}. Check the solution for "
                       "IDE-highlighted  errors and warnings.".format(str(e)))
 
-    def test_addition(self):
+    def test_ordered_4_addition(self):
         expected_addition_result = 10.0
 
         try:
@@ -39,7 +40,7 @@ class TestCase(unittest.TestCase):
 
         self.assertEqual(expected_addition_result, actual_addition_result, msg="Something does not ADD up.")
 
-    def test_division(self):
+    def test_ordered_1_division(self):
         expected_division_result = 4.5
 
         try:
@@ -51,7 +52,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(expected_division_result, actual_division_result, msg="The division result value seems to be "
                                                                                "a bit off.")
 
-    def test_division_remainder(self):
+    def test_ordered_2_division_remainder(self):
         expected_division_remainder = 1
 
         try:
@@ -64,7 +65,7 @@ class TestCase(unittest.TestCase):
                                                                                      "seems to be "
                                                                                      "a bit off.")
 
-    def test_multiplication_result(self):
+    def test_ordered_3_multiplication_result(self):
         expected_multiplication_result = 9.0
 
         try:
@@ -77,7 +78,7 @@ class TestCase(unittest.TestCase):
                          msg="The multiplication result value seems to be "
                              "a bit off.")
 
-    def test_subtraction_result(self):
+    def test_ordered_5_subtraction_result(self):
         expected_subtraction_result = 0
 
         try:
@@ -90,7 +91,7 @@ class TestCase(unittest.TestCase):
                          msg="The subtraction result value seems to be "
                              "a bit off.")
 
-    def test_floor_result(self):
+    def test_ordered_6_floor_result(self):
         expected_floor_result = 4.0
 
         try:
@@ -102,7 +103,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(expected_floor_result, actual_floor_result, msg="The floor result value seems to be "
                                                                          "a bit off.")
 
-    def test_power_result(self):
+    def test_ordered_7_power_result(self):
         expected_power_result = 729.0
 
         try:
