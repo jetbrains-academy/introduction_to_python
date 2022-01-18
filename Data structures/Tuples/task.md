@@ -46,4 +46,4 @@ You can run the code to see what it prints.
 
 <div class='hint'>Use the <code>len()</code> function.</div>
 
-<div class='hint'>Don't forget the trailing comma.</div>
+<div class='hint'>Don't forget the trailing comma in the tuple with one element.</div>
