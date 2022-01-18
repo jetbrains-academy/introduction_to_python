@@ -6,5 +6,5 @@ files:
   - offset: 134
     length: 20
     placeholder_text: ???
-- name: tests.py
+- name: tests/test_task.py
   visible: false

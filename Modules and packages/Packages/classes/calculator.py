@@ -1,36 +1,26 @@
 """
-This module contains calculator classes
+This module contains a calculator
 """
 
 
-class Add:
+class Calculator:
     def __init__(self):
         self.current = 0
 
     def add(self, amount):
         self.current += amount
 
-    def get_current(self):
-        return self.current
-
-
-class Subtract:
-    def __init__(self):
-        self.current = 100
-
     def subtract(self, amount):
         self.current -= amount
 
-    def get_current(self):
-        return self.current
-
-
-class Multiply:
-    def __init__(self):
-        self.current = 10
-
     def multiply(self, amount):
         self.current *= amount
+
+    def divide(self, amount):
+        try:
+            self.current /= amount
+        except ZeroDivisionError:
+            print('Can not divide by zero.')
 
     def get_current(self):
         return self.current

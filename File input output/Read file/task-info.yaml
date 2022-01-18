@@ -16,5 +16,7 @@ files:
   - offset: 115
     length: 20
     placeholder_text: '# print only first line of f1'
-- name: tests.py
+- name: tests/__init__.py
+  visible: false
+- name: tests/test_task.py
   visible: false

@@ -1,6 +1,6 @@
 i = 0
 while i < 5:
-    print('it\'s less that 5')
+    print('it\'s less than 5')
     i += 1
 else:
     print('and now it\'s 5')  # Print this message when the condition is no longer True

@@ -1,8 +1,12 @@
 ## List items
 
 Assignment is possible to slices of lists, just like to individual list elements. 
-This way you can even change the size of a list or clear it entirely.  
-  
-Try to make the `animals` list empty.  
+This way you can even change the size of a list or clear it entirely by doing something like:
 
-<div class='hint'>Use an assignment to an empty list <code>[]</code>.</div>
+```python
+animals[:] = []
+```
+  
+Make all `animals` elephants by replacing the last two items.  
+
+<div class='hint'>Use assignment to a slice as in examples.</div>

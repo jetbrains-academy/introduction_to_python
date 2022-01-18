@@ -1,8 +1,15 @@
-import calculator
 import my_module
-
-calc = calculator.Calculator()  # Create new instance of Calculator class defined in calculator module
-calc.add(2)
-print(calc.get_current())
+import calculator
 
 my_module.hello_world("John")
+
+
+calc = calculator.Calculator()
+for i in range(100):
+    calc.add(i)
+
+print(calc.get_current())
+
+
+
+

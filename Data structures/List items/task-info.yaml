@@ -3,8 +3,10 @@ files:
 - name: list_items.py
   visible: true
   placeholders:
-  - offset: 300
-    length: 15
+  - offset: 302
+    length: 39
     placeholder_text: '# Clear the list'
-- name: tests.py
+- name: tests/__init__.py
+  visible: false
+- name: tests/test_task.py
   visible: false

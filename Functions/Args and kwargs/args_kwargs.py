@@ -21,12 +21,13 @@ random_dialogue("Library", *lst, **dic)  # Call 2 - the exact same output
 
 
 def cat(food, *args, state='still hungry', action='meow', breed='Siamese'):
-    print("-- This cat would", action, end=' ')
-    print("if you gave it", food)
-    print("-- Lovely fur, the", breed)
-    print("-- It's", state, "!")
+    print(f"-- This cat would {action}", end=' ')
+    print(f"if you gave it {food}")
+    print(f"-- Lovely fur, the {breed}")
+    print(f"-- It's {state}!")
     for arg in args:
         print(arg.upper())
+
 
 # Add a list of phrases that will be capitalized.
 phrases = ['It is too fat.', 'You are feeding your cat too much.']

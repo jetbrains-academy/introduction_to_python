@@ -6,7 +6,7 @@ can use the imported name without the `module_name` prefix.  For example:
 ```python
 from calculator import Add
 
-calc = Add()    # name `Calculator` used directly without prefix `calculator`
+calc = Add()    # name `Add` used directly without prefix `calculator`
 ```
 
 This does not introduce the name of the module from which the imports are taken in the 
@@ -37,8 +37,9 @@ when utilising `from` with similar effects:
 from calculator import Subtract as Minus
 ```
 
-Import the `hello` function from `my_module` as `hey` and call it to print your name.
+Import the `Calculator` class from `calculator` and create an instance of this class. Remember how to access it correctly in 
+this case.
 
-<div class='hint'>Use syntax such as <code>from some_module import some_func as func</code>.</div>
-<div class="hint">Note: The <code>hey</code> function should be called without a prefix. The function expects
-one string argument.</div>
+
+<div class="hint">Note: The <code>Calculator</code> class should be called without a prefix because you 
+imported it directly.</div>

@@ -3,7 +3,7 @@
 The `len()` method is used to count how many characters a string contains.  
   
 Get the first half of the string stored in the variable `phrase`.  
-Note: Remember about type conversion.  
+Note: when getting the index, remember about type conversion.  
 
 <div class='hint'>You need to obtain a slice of the string from its start  
 to the middle point.</div>

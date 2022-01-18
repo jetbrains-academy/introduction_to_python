@@ -1,17 +1,19 @@
 type: edu
 files:
-- name: task.py
+- name: open_file.py
   visible: true
   placeholders:
   - offset: 152
     length: 37
     placeholder_text: '# Open the file input1.txt in read mode using the with statement'
-  - offset: 396
+  - offset: 397
     length: 15
     placeholder_text: '# Close the output file!'
-- name: tests.py
-  visible: false
 - name: input.txt
   visible: true
 - name: input1.txt
   visible: true
+- name: tests/__init__.py
+  visible: false
+- name: tests/test_task.py
+  visible: false

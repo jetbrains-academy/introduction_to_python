@@ -6,5 +6,8 @@ files:
   - offset: 257
     length: 10
     placeholder_text: '# Define a function named "fun" to replace three lines above'
-- name: tests.py
+  - offset: 101
+    length: 13
+    placeholder_text: '# Call my_function here'
+- name: tests/test_task.py
   visible: false

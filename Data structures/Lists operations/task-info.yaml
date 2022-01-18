@@ -6,5 +6,7 @@ files:
   - offset: 259
     length: 24
     placeholder_text: '# Replace "dino" with "dinosaur" here'
-- name: tests.py
+- name: tests/__init__.py
+  visible: false
+- name: tests/test_task.py
   visible: false

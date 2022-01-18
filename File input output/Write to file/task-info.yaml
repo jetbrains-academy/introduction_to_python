@@ -15,5 +15,7 @@ files:
   - offset: 127
     length: 27
     placeholder_text: '# Add the number to the output as well'
-- name: tests.py
+- name: tests/__init__.py
+  visible: false
+- name: tests/test_task.py
   visible: false

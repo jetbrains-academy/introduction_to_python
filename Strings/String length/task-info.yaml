@@ -3,8 +3,13 @@ files:
 - name: len_function.py
   visible: true
   placeholders:
-  - offset: 117
-    length: 27
-    placeholder_text: '???'
-- name: tests.py
+  - offset: 200
+    length: 23
+    placeholder_text: '"???"'
+  - offset: 121
+    length: 20
+    placeholder_text: '"???"'
+- name: tests/__init__.py
+  visible: false
+- name: tests/test_task.py
   visible: false
