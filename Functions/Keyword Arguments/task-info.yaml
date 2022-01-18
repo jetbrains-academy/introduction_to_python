@@ -3,8 +3,8 @@ files:
 - name: keyword_args.py
   visible: true
   placeholders:
-  - offset: 232
+  - offset: 236
     length: 38
-    placeholder_text: '???'
-- name: tests.py
+    placeholder_text: ???
+- name: tests/test_task.py
   visible: false
