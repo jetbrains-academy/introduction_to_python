@@ -10,13 +10,16 @@ try:
 
     class TestCase(unittest.TestCase):
         def test_list(self):
-            self.assertEqual(["task1", "task2"], tasks, msg='Do not change the tasks list.')
+            self.assertEqual([], tasks, msg='Do not change the tasks list.')
 
         def test_condition(self):
-            self.assertNotEqual('empty list', output[2], msg='Your code prints "empty list", but the list is not empty.')
+            self.assertEqual('Not an empty list!', output[2], msg='Your code should print "Not an empty list!" at first, because the list is not empty.')
+
+        def test_condition2(self):
+            self.assertEqual('Now empty!', output[3], msg='Your code should print "Now empty!" in the end, because the list is now empty.')
 
         def test_out_len(self):
-            self.assertEqual(3, len(output), msg='Please do not remove or add any print statements.')
+            self.assertEqual(5, len(output), msg='Output should contain 4 lines.')
 
 
 except IndentationError:

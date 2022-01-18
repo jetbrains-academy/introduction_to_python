@@ -27,5 +27,6 @@ if a > b: print("a is greater than b")
 ```
 
 Print `"empty"` if the `tasks` list is empty.  
+After the list is cleared, check again (you might need a different condition!) and print `'Now empty!'` if it is.
 
 <div class='hint'>Use the <code>len()</code> function to check if <code>tasks</code> is empty.</div>
