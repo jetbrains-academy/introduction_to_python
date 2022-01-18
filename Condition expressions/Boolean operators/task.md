@@ -5,6 +5,7 @@ operator `and` returns `True` when the expressions on both sides of `and` are `T
 The boolean operator `or` returns `True` when at least one expression on either side 
 of `or` is `True`. The boolean operator `not` inverts the boolean expression it precedes.  
   
-Check if `name` is equal to `"John"` and he is not `23` years old.  
+Write an expression that evaluates to `True` if `name` is equal to `"John"` and
+he is `16` or older.  
 
-<div class='hint'>Use the <code>and</code> keyword and the <code>!=</code> operator.</div>
+<div class='hint'>Use the <code>and</code> keyword and the <code>>=</code> operator.</div>

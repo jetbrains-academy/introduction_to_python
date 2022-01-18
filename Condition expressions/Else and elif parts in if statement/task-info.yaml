@@ -11,3 +11,7 @@ files:
     placeholder_text: otherwise
 - name: tests.py
   visible: false
+- name: tests/__init__.py
+  visible: false
+- name: tests/test_task.py
+  visible: false
