@@ -33,6 +33,5 @@ def cat(food, *args, state='still hungry', action='meow', breed='Siamese'):
 phrases = ['It is too fat.', 'You are feeding your cat too much.']
 # Add a dict of keyword arguments.
 keywords = {'state': 'fat', 'action': 'eat', 'breed': 'Maine Coon'}
-keywords.values()
 # Call the cat() function like in example above to print the required output.
 cat('anything', *phrases, **keywords)

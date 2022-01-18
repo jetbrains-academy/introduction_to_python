@@ -11,7 +11,7 @@ files:
     length: 56
     placeholder_text: '# Declare the keywords to insert into the narrative. The keys
       should match the named arguments of the cat()'
-  - offset: 1377
+  - offset: 1359
     length: 37
     placeholder_text: '# invoke cat with some food, phrases and keywords'
 - name: tests/test_task.py
