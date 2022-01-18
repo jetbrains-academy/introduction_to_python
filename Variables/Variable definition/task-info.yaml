@@ -3,8 +3,14 @@ files:
 - name: variable_definition.py
   visible: true
   placeholders:
-  - offset: 346
+  - offset: 231
     length: 1
-    placeholder_text: '???'
-- name: tests.py
-  visible: false
+    placeholder_text: ???
+  - offset: 337
+    length: 1
+    placeholder_text: '# Assign a new value'
+  - offset: 472
+    length: 5
+    placeholder_text: '# Assign 2 to both a and b here'
+- name: tests/test_task.py
+  visible: true

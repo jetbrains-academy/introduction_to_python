@@ -5,6 +5,6 @@ files:
   placeholders:
   - offset: 100
     length: 2
-    placeholder_text: '???'
-- name: tests.py
+    placeholder_text: ???
+- name: tests/test_task.py
   visible: false

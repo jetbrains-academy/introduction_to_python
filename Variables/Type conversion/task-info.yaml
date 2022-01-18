@@ -3,8 +3,8 @@ files:
 - name: type_cast.py
   visible: true
   placeholders:
-  - offset: 113
+  - offset: 223
     length: 17
-    placeholder_text: '???'
-- name: tests.py
+    placeholder_text: '"convert it to int here"'
+- name: tests/test_task.py
   visible: false

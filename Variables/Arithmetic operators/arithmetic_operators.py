@@ -1,8 +1,17 @@
 number = 9.0        # Float number
 
-result = number / 2
+division_result = number / 2
 
-remainder = number % 2
+division_remainder = number % 2
 
-print("result = " + str(result))
-print("remainder = " + str(remainder))
+multiplication_result = division_result * 2
+
+addition_result = multiplication_result + division_remainder
+
+subtraction_result = number - multiplication_result
+
+floor_result = number // 2
+
+power_result = multiplication_result ** 3
+
+print("result = " + str(subtraction_result))

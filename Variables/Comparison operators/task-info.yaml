@@ -3,8 +3,23 @@ files:
 - name: comparison_operators.py
   visible: true
   placeholders:
-  - offset: 189
+  - offset: 213
     length: 1
-    placeholder_text: '???'
-- name: tests.py
+    placeholder_text: '?'
+  - offset: 367
+    length: 1
+    placeholder_text: '?'
+  - offset: 522
+    length: 1
+    placeholder_text: '?'
+  - offset: 530
+    length: 1
+    placeholder_text: '?'
+  - offset: 711
+    length: 2
+    placeholder_text: '?'
+  - offset: 863
+    length: 2
+    placeholder_text: '?'
+- name: tests/test_task.py
   visible: false
