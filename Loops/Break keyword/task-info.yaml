@@ -3,11 +3,13 @@ files:
 - name: break_keyword.py
   visible: true
   placeholders:
-  - offset: 377
-    length: 21
-    placeholder_text: '# Add a condition'
-  - offset: 407
+  - offset: 435
     length: 5
-    placeholder_text: '# Exit loop'
-- name: tests.py
+    placeholder_text: '# Exit the loop'
+  - offset: 402
+    length: 24
+    placeholder_text: '# Add the condition to exit the loop'
+- name: tests/__init__.py
+  visible: false
+- name: tests/test_task.py
   visible: false

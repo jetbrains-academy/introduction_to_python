@@ -6,5 +6,7 @@ files:
   - offset: 238
     length: 20
     placeholder_text: '# Loop over primes to print each of them.'
-- name: tests.py
+- name: tests/test_task.py
+  visible: false
+- name: tests/__init__.py
   visible: false
