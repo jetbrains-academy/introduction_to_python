@@ -43,5 +43,9 @@ You can learn more about packages by reading <a href="https://docs.python.org/3/
 In the code editor, import the `official` module properly to make the last `print` 
 statement work.
 
+In the second print statement, add a function call (find the right function) so that it prints a goodbye to `'Alex'`.
+
 <div class="hint">Access the module using syntax such as <code>package.subpackage.module</code>.</div>
 <div class="hint">Use syntax such as <code>import module as something</code>.</div>
+<div class="hint">Check out imports: there's one that might have the right function for the second task.
+Be careful when using it: the module is already imported with a specific name.</div>
