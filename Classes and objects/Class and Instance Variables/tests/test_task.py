@@ -13,9 +13,9 @@ try:
         def test_instance(self):
             george = Animals('George', 'rabbit')
             expected, actual = 'rabbit', george.species
-            self.assertEqual(expected, actual, msg='Check your __init__() method and species attribute.')
+            self.assertEqual(expected, actual, msg='Check your __init__() method and the species attribute.')
             expected, actual = 'George', george.name
-            self.assertEqual(expected, actual, msg='Check your __init__() method and name attribute.')
+            self.assertEqual(expected, actual, msg='Check your __init__() method and the name attribute.')
 
 except ImportError:
     class TestFailCase(unittest.TestCase):
@@ -25,7 +25,7 @@ except ImportError:
 except TypeError:
     class TestFailCase2(unittest.TestCase):
         def test_fail(self):
-            self.assertTrue(False, msg='__init__() method should accept three arguments: self, name and species.')
+            self.assertTrue(False, msg='The __init__() method should accept three arguments: self, name, and species.')
 
 
 
