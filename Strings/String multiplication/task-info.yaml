@@ -5,7 +5,7 @@ files:
   placeholders:
   - offset: 29
     length: 16
-    placeholder_text: 2 * hello
+    placeholder_text: '''TODO'''
 - name: tests/__init__.py
   visible: false
 - name: tests/test_task.py
