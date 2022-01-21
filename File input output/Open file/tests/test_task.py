@@ -13,11 +13,11 @@ class TestCase(unittest.TestCase):
 
             expected, actual = 8, len(output)
             self.assertEqual(expected, actual, msg='Please do not remove or add any print statements.')
-            self.assertTrue(outfile.closed, msg='outfile is not closed.')
+            self.assertTrue(outfile.closed, msg='The outfile file is not closed.')
 
         except ImportError:
             self.assertTrue(False, msg='Please do not rename any variables.')
 
         except NameError:
-            self.assertTrue(False, msg='You should open input1.txt as `file`')
+            self.assertTrue(False, msg='You should open input1.txt as a file.')
 

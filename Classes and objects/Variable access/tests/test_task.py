@@ -12,18 +12,18 @@ try:
 
     class TestCase(unittest.TestCase):
         def test_instances(self):
-            self.assertTrue(isinstance(my_object, MyClass), msg='Object `my_object` has to be an instance of `MyClass`.')
-            self.assertTrue(isinstance(another_object, MyClass), msg='Object `another_object` has to be an instance of `MyClass`.')
+            self.assertTrue(isinstance(my_object, MyClass), msg='The object my_object has to be an instance of MyClass.')
+            self.assertTrue(isinstance(another_object, MyClass), msg='The object another_object has to be an instance of MyClass.')
 
         def test_out(self):
             expected, actual = str(my_object.variable1), output[2]
             self.assertEqual(expected, actual, msg='Your code should print the value of the '
-                                                                '`variable1` attribute of `my_object` in the third'
+                                                                'variable1 attribute of my_object in the third'
                                                                       'print statement.')
 
         def test_method_call_syntax(self):
-            self.assertFalse('<bound method ' in output[3], msg='To call a method properly you need to use syntax such as `object.method()`. '
-                                                                'Without brackets this will just return the function object.')
+            self.assertFalse('<bound method ' in output[3], msg='To call a method properly, you need to use the syntax such as `object.method()`. '
+                                                                'Without brackets, this will just return the function object.')
 
 
 except ImportError:

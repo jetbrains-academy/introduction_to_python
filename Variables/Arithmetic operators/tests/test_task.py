@@ -26,8 +26,8 @@ class TestCase(unittest.TestCase):
         except NameError as ne:
             pass
         except Exception as e:
-            self.fail("There was a problem while loading the solution - {0}. Check the solution for "
-                      "IDE-highlighted  errors and warnings.".format(str(e)))
+            self.fail("There was a problem while loading the solution – {0}. Check the solution for "
+                      "IDE-highlighted errors and warnings.".format(str(e)))
 
     def test_ordered_4_addition(self):
         expected_addition_result = 10.0
@@ -36,7 +36,7 @@ class TestCase(unittest.TestCase):
             actual_addition_result = try_import().addition_result
         except AttributeError:
             self.fail(msg="The variable addition_result seems to be undefined. "
-                          "Do not remove it from the task code")
+                          "Do not remove it from the task code.")
 
         self.assertEqual(expected_addition_result, actual_addition_result, msg="Something does not ADD up.")
 
@@ -47,7 +47,7 @@ class TestCase(unittest.TestCase):
             actual_division_result = try_import().division_result
         except AttributeError:
             self.fail(msg="The variable division_result seems to be undefined. "
-                          "Do not remove it from the task code")
+                          "Do not remove it from the task code.")
 
         self.assertEqual(expected_division_result, actual_division_result, msg="The division result value seems to be "
                                                                                "a bit off.")
@@ -59,7 +59,7 @@ class TestCase(unittest.TestCase):
             actual_division_remainder = try_import().division_remainder
         except AttributeError:
             self.fail(msg="The variable division_remainder seems to be undefined. "
-                          "Do not remove it from the task code")
+                          "Do not remove it from the task code.")
 
         self.assertEqual(expected_division_remainder, actual_division_remainder, msg="The division remainder value "
                                                                                      "seems to be "
@@ -72,7 +72,7 @@ class TestCase(unittest.TestCase):
             actual_multiplication_result = try_import().multiplication_result
         except AttributeError:
             self.fail(msg="The variable multiplication_result seems to be undefined. "
-                          "Do not remove it from the task code")
+                          "Do not remove it from the task code.")
 
         self.assertEqual(expected_multiplication_result, actual_multiplication_result,
                          msg="The multiplication result value seems to be "
@@ -85,7 +85,7 @@ class TestCase(unittest.TestCase):
             actual_subtraction_result = try_import().subtraction_result
         except AttributeError:
             self.fail(msg="The variable subtraction_result seems to be undefined. "
-                          "Do not remove it from the task code")
+                          "Do not remove it from the task code.")
 
         self.assertEqual(expected_subtraction_result, actual_subtraction_result,
                          msg="The subtraction result value seems to be "
@@ -98,7 +98,7 @@ class TestCase(unittest.TestCase):
             actual_floor_result = try_import().floor_result
         except AttributeError:
             self.fail(msg="The variable floor_result seems to be undefined. "
-                          "Do not remove it from the task code")
+                          "Do not remove it from the task code.")
 
         self.assertEqual(expected_floor_result, actual_floor_result, msg="The floor result value seems to be "
                                                                          "a bit off.")
@@ -110,7 +110,7 @@ class TestCase(unittest.TestCase):
             actual_power_result = try_import().power_result
         except AttributeError:
             self.fail(msg="The variable power_result seems to be undefined. "
-                          "Do not remove it from the task code")
+                          "Do not remove it from the task code.")
 
         self.assertEqual(expected_power_result, actual_power_result, msg="The power result value seems to be "
                                                                          "a bit off.")

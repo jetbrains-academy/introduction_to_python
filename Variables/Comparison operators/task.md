@@ -29,8 +29,8 @@ the variable `two`.
    the variable `three`.
  - Check whether the value of the variable `three` is strictly greater than both the value of
    the variable `two` and the value of the variable `one`.
- - Check if the variable `one` is not equal to variable `two`.
- - Check if the variable `thee` equals to itself.
+ - Check if the variable `one` is not equal to the variable `two`.
+ - Check if the variable `thee` equals itself.
 
 <div class='hint'>Use the <code>></code> operator.</div>
 <div class='hint'>Use the <code><</code> operator.</div>

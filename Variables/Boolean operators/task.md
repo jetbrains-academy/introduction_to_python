@@ -5,7 +5,7 @@ compares two variables and checks whether they are equal.
 
 ### Task
  - Check whether the variable `two` is equal to `three`.
- - Check if variable `is_equal` has a deceiving name.
+ - Check if the variable `is_equal` has a deceiving name.
  - Check if the variable `is_false` does indeed contain a lie.
 
 

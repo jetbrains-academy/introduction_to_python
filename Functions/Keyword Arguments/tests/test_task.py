@@ -25,15 +25,15 @@ class TestCase(unittest.TestCase):
         except NameError as ne:
             pass
         except Exception as e:
-            self.fail("There was a problem while loading the solution - {0}. Check the solution for "
-                      "IDE-highlighted  errors and warnings.".format(str(e)))
+            self.fail("There was a problem while loading the solution – {0}. Check the solution for "
+                      "IDE-highlighted errors and warnings.".format(str(e)))
 
     def test_keyword_argument_syntax_1(self):
         expected_output_for_growl_and_soup = "-- This cat wouldn't growl if you gave it soup"
         actual_output = self.actualOutput.getvalue()
 
-        self.assertIn(expected_output_for_growl_and_soup, actual_output, msg="The line about cat performing an action"
-                                                                             "in response to a food is missing from "
+        self.assertIn(expected_output_for_growl_and_soup, actual_output, msg="The line about the cat performing an action"
+                                                                             "in response to feeding is missing from "
                                                                              "the output. Make sure you insert "
                                                                              "parameters correctly.")
 

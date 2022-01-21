@@ -12,7 +12,7 @@ try:
 
     class TestCase(unittest.TestCase):
         def test_class(self):
-            self.assertTrue(isinstance(my_object, MyClass), msg='Object `my_object` has to be an instance of `MyClass`.')
+            self.assertTrue(isinstance(my_object, MyClass), msg='The object my_object has to be an instance of MyClass.')
 
         def test_out(self):
             expected, actual = str(my_object.variable), output[1]

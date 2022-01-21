@@ -16,7 +16,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(3, len(output), msg='Do not remove or add any print statements.')
 
     def test_string(self):
-        self.assertIsNotNone(re.match(correct_string, result_str), msg='The result string does not match the expected.')
+        self.assertIsNotNone(re.match(correct_string, result_str), msg='The result string does not match the expected one.')
 
     def test_string_age(self):
         self.assertIsNotNone(re.search(r'\d+', result_str), msg='The result string does not contain your age.')

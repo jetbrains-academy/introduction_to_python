@@ -12,8 +12,8 @@ try:
 
     class TestCase(unittest.TestCase):
         def test_instances(self):
-            self.assertTrue(isinstance(car1, Car), msg='Object `car1` has to be an instance of `Car`.')
-            self.assertTrue(isinstance(car2, Car), msg='Object `car2` has to be an instance of `Car`.')
+            self.assertTrue(isinstance(car1, Car), msg='The object car1 has to be an instance of Car.')
+            self.assertTrue(isinstance(car2, Car), msg='The object car2 has to be an instance of Car.')
 
         def test_out(self):
             expected, actual = car1.description(), output[0]
@@ -24,10 +24,10 @@ try:
                                                                 'its `color`.')
 
         def test_method_call_syntax(self):
-            self.assertFalse('<bound method ' in output[0], msg='To call a method properly you need to use syntax such as `object.method()`. '
-                                                                'Without brackets this will just return the function object.')
-            self.assertFalse('<bound method ' in output[1], msg='To call a method properly you need to use syntax such as `object.method()`. '
-                                                                'Without brackets this will just return the function object.')
+            self.assertFalse('<bound method ' in output[0], msg='To call a method properly, you need to use the syntax such as `object.method()`. '
+                                                                'Without brackets, this will just return the function object.')
+            self.assertFalse('<bound method ' in output[1], msg='To call a method properly, you need to use the syntax such as `object.method()`. '
+                                                                'Without brackets, this will just return the function object.')
 
 
 except ImportError:

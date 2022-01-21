@@ -15,7 +15,7 @@ class TestCase(unittest.TestCase):
                        "it's less than 5", "it's less than 5",
                        "it's less than 5", "and now it's 5", '1',
                        '2', '3', '4', 'for loop is done', 'Outside the for loop', '']
-        self.assertNotEqual(default_out, output, msg='You need to add a correct condition and a break statement')
+        self.assertNotEqual(default_out, output, msg='You need to add a correct condition and a break statement.')
 
     def test_correct(self):
         if len(output) == 13:

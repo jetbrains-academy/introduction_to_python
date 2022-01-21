@@ -14,7 +14,7 @@ class TestCase(unittest.TestCase):
     def test_datetime(self):
         expected, actual = time_stamp.split(':')[:2], output[1].split(':')[:2]
         self.assertEqual(expected, actual,
-                         msg='Your code is not printing the correct current date and time.')
+                         msg='Your code does not print the correct current date and time.')
 
 
 

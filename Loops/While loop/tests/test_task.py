@@ -21,7 +21,7 @@ try:
         def test_last(self):
             expected, actual = '81', output[-2]
             self.assertEqual(expected, actual, msg='The last square should be 81. Maybe check your while loop '
-                                                   'condition.')
+                                                   'condition?')
 
 except IndentationError:
     class TestFailCase(unittest.TestCase):

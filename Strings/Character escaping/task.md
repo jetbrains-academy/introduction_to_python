@@ -20,7 +20,7 @@ You can learn more about escaping from <a href="https://docs.python.org/3/refere
 
 Print out the following text using one string:  
 ```text
-The name of this ice-cream is "Sweet'n'Tasty"  
+The name of this ice cream is "Sweet'n'Tasty"  
 ```
 
 
