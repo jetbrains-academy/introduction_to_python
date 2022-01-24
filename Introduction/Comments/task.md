@@ -28,8 +28,12 @@ same line as a statement. Inline comments should be separated by at least two sp
 
 You can read more about proper commenting in <a href="https://www.python.org/dev/peps/pep-0008/#comments">PEP 8 – Style Guide for Python Code</a>. 
   
-Add a new comment to the file in the code editor.  
+You can also comment a line or a block of code if you don't want to delete it it's not needed it at the moment. 
+
+### Task
+In the code editor, comment the line with the `print` statement that says it should not be printed. 
+See how the code is not highlighted anymore.
 
 <div class="hint">
-  Type your new comment in the answer placeholder instead of the words "add new comment here".
+  Add a <code>#</code> and a space before that <code>print</code> statement. Leave everything else as is.
 </div>

@@ -9,8 +9,6 @@ files:
   - offset: 386
     length: 5
     placeholder_text: '# TODO: otherwise...'
-- name: tests.py
-  visible: false
 - name: tests/__init__.py
   visible: false
 - name: tests/test_task.py
