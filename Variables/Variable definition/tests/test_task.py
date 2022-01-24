@@ -23,7 +23,7 @@ class TestCase(unittest.TestCase):
                 else:
                     importlib.import_module(self.task_name)
         except Exception as e:
-            self.fail("There was a problem while loading the solution - {0}. Check the solution for IDE-highlighted "
+            self.fail("There was a problem while loading the solution – {0}. Check the solution for IDE-highlighted "
                       "errors and warnings.".format(str(e)))
 
     def test_assignment_operator(self):
@@ -31,7 +31,7 @@ class TestCase(unittest.TestCase):
         actual_output = self.actualOutput.getvalue()
 
         self.assertIn(expected_first_greetings, actual_output, msg="The line expressing greetings after the initial "
-                                                                   "assignment was not found. Check if the variable is "
+                                                                   "assignment was not found. Check that the variable is "
                                                                    "assigned properly and that the print statement "
                                                                    "is intact.")
 
@@ -40,7 +40,7 @@ class TestCase(unittest.TestCase):
         actual_output = self.actualOutput.getvalue()
 
         self.assertIn(expected_first_greetings, actual_output, msg="The line expressing greetings after the initial "
-                                                                   "assignment was not found. Check if the variable is "
+                                                                   "assignment was not found. Check that the variable is "
                                                                    "assigned properly and that the print statement "
                                                                    "is intact.")
 
@@ -50,9 +50,9 @@ class TestCase(unittest.TestCase):
         try:
             actual_greetings = try_import().greetings
         except AttributeError:
-            self.fail(msg="The variable greetings seems to be undefined. Do not remove it from the task code")
+            self.fail(msg="The variable greetings seems to be undefined. Do not remove it from the task code.")
 
-        self.assertNotEqual(unexpected_greetings, actual_greetings, msg="The variable greetings seems not to be "
+        self.assertNotEqual(unexpected_greetings, actual_greetings, msg="The variable greetings doesn't seem to be "
                                                                         "reassigned. You should change it to something "
                                                                         "else.")
 
@@ -62,11 +62,11 @@ class TestCase(unittest.TestCase):
         try:
             actual_a = try_import().a
         except AttributeError:
-            self.fail(msg="The variable a seems to be undefined. Do not remove it from the task code")
+            self.fail(msg="The variable a seems to be undefined. Do not remove it from the task code.")
         try:
             actual_b = try_import().b
         except AttributeError:
-            self.fail(msg="The variable b seems to be undefined. Do not remove it from the task code")
+            self.fail(msg="The variable b seems to be undefined. Do not remove it from the task code.")
 
-        self.assertEqual(expected_a, actual_a, msg="The variable a should be reassigned via chained assignment")
-        self.assertEqual(expected_b, actual_b, msg="The variable b should be assigned via chained assignment")
+        self.assertEqual(expected_a, actual_a, msg="The variable a should be reassigned via chained assignment.")
+        self.assertEqual(expected_b, actual_b, msg="The variable b should be assigned via chained assignment.")

@@ -25,14 +25,14 @@ class TestCase(unittest.TestCase):
         except NameError as ne:
             pass
         except Exception as e:
-            self.fail("There was a problem while loading the solution - {0}. Check the solution for "
-                      "IDE-highlighted  errors and warnings.".format(str(e)))
+            self.fail("There was a problem while loading the solution – {0}. Check the solution for "
+                      "IDE-highlighted errors and warnings.".format(str(e)))
 
     def test_default_value_takes_1_argument(self):
         try:
             actual_hello = try_import().hello
         except AttributeError:
-            self.fail(msg="There was a problem while loading hello function. Make sure its declaration stays intact.")
+            self.fail(msg="There was a problem while loading the hello function. Make sure its declaration stays intact.")
 
         try:
             actual_hello("test_subject")
@@ -44,7 +44,7 @@ class TestCase(unittest.TestCase):
         try:
             actual_hello = try_import().hello
         except AttributeError:
-            self.fail(msg="There was a problem while loading hello function. Make sure its declaration stays intact.")
+            self.fail(msg="There was a problem while loading the hello function. Make sure its declaration stays intact.")
 
         try:
             actual_hello("test_subject", "test_name")
@@ -55,10 +55,10 @@ class TestCase(unittest.TestCase):
         try:
             actual_hello = try_import().hello
         except AttributeError:
-            self.fail(msg="There was a problem while loading hello function. Make sure its declaration stays intact.")
+            self.fail(msg="There was a problem while loading the hello function. Make sure its declaration stays intact.")
 
         try:
             actual_hello("test_subject", name="test_name")
         except TypeError:
-            self.fail(msg="Seems like the hello function is unable to take name argument. "
+            self.fail(msg="Seems like the hello function is unable to take the name argument. "
                           "Make sure the second argument is called \"name\"")

@@ -25,8 +25,8 @@ class TestCase(unittest.TestCase):
         except NameError as ne:
             pass
         except Exception as e:
-            self.fail("There was a problem while loading the solution - {0}. Check the solution for "
-                      "IDE-highlighted  errors and warnings.".format(str(e)))
+            self.fail("There was a problem while loading the solution – {0}. Check the solution for "
+                      "IDE-highlighted errors and warnings.".format(str(e)))
 
     def test_true(self):
         expected_value = True
@@ -35,10 +35,10 @@ class TestCase(unittest.TestCase):
             actual_value = try_import().is_true
         except AttributeError:
             self.fail(msg="The variable is_true seems to be undefined. "
-                          "Do not remove it from the task code")
+                          "Do not remove it from the task code.")
 
-        self.assertEqual(expected_value, actual_value, msg="The is_true has a wrong value. "
-                                                                 "Make sure your comparison is to a correct value")
+        self.assertEqual(expected_value, actual_value, msg="The is_true variable has a wrong value. "
+                                                                 "Make sure your comparison is to a correct value.")
 
     def test_false(self):
         expected_value = False
@@ -47,10 +47,10 @@ class TestCase(unittest.TestCase):
             actual_value = try_import().is_false
         except AttributeError:
             self.fail(msg="The variable is_false seems to be undefined. "
-                          "Do not remove it from the task code")
+                          "Do not remove it from the task code.")
 
-        self.assertEqual(expected_value, actual_value, msg="The is_false has a wrong value. "
-                                                           "Make sure your comparison is to a correct value")
+        self.assertEqual(expected_value, actual_value, msg="The is_false variable has a wrong value. "
+                                                           "Make sure your comparison is to a correct value.")
 
     def test_equality_operator(self):
         expected_value = False
@@ -59,7 +59,7 @@ class TestCase(unittest.TestCase):
             actual_value = try_import().is_equal
         except AttributeError:
             self.fail(msg="The variable is_equal seems to be undefined. "
-                          "Do not remove it from the task code")
+                          "Do not remove it from the task code.")
 
-        self.assertEqual(expected_value, actual_value, msg="The is_equal has a wrong value. "
-                                                           "Make sure your comparison is to a correct value")
+        self.assertEqual(expected_value, actual_value, msg="The is_equal variable has a wrong value. "
+                                                           "Make sure your comparison is to a correct value.")

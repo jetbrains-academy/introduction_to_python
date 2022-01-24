@@ -12,11 +12,11 @@ try:
         def test_out_len(self):
             expected, actual = 15, len(output)
             self.assertEqual(expected, actual, msg='Wrong output length. Please do not change anything '
-                                                  'in the starter code apart from the answer placeholder')
+                                                  'in the starter code apart from the answer placeholder.')
 
         def test_word_len(self):
             expected, actual = 'True', output[-2]
-            self.assertEqual(expected, actual, msg='`length` should be equal to `len(hello_world)`.')
+            self.assertEqual(expected, actual, msg='The length variable should be equal to `len(hello_world)`.')
 
 except IndentationError:
     class TestFailCase(unittest.TestCase):

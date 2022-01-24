@@ -8,7 +8,7 @@ try:
             self.assertEqual(phrase[:index_to_slice], first_half, msg="You seem to have gotten a wrong slice.")
 
         def test_index_type(self):
-            self.assertTrue(type(index_to_slice) == int, msg="Index should be an integer.")
+            self.assertTrue(type(index_to_slice) == int, msg="An index should be an integer.")
 
         def test_index(self):
             self.assertEqual(int(len(phrase) / 2), index_to_slice, msg="You got a wrong slicing index.")

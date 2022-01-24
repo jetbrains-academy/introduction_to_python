@@ -14,7 +14,7 @@ try:
         def test_class(self):
             try:
                 self.assertTrue(isinstance(calc, calculator.Calculator),
-                                msg='`calc` should be an instance of `Calculator`.')
+                                msg='`calc` should be an instance of Calculator.')
             except NameError:
                 self.assertTrue(False, msg='Do not change variable names.')
 
@@ -27,7 +27,7 @@ try:
 except NameError:
     class TestFailCase(unittest.TestCase):
         def test_fail(self):
-            self.assertTrue(False, msg='You need to import `calculator`.')
+            self.assertTrue(False, msg='You need to import the calculator module.')
 
 except ModuleNotFoundError:
     class TestFailCase1(unittest.TestCase):

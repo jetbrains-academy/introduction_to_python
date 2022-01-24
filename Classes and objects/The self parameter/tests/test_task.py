@@ -22,7 +22,7 @@ try:
             value = Calculator()
             value.add(100)
             expected, actual = value.current, value.get_current()
-            self.assertEqual(expected, actual, msg='Method get_current() should return self.current.')
+            self.assertEqual(expected, actual, msg='The method get_current() should return self.current.')
 
 
 except ImportError:

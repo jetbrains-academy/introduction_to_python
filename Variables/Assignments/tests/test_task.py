@@ -25,8 +25,8 @@ class TestCase(unittest.TestCase):
         except NameError as ne:
             pass
         except Exception as e:
-            self.fail("There was a problem while loading the solution - {0}. Check the solution for "
-                      "IDE-highlighted  errors and warnings.".format(str(e)))
+            self.fail("There was a problem while loading the solution – {0}. Check the solution for "
+                      "IDE-highlighted errors and warnings.".format(str(e)))
 
     def test_augmented_assignment(self):
         expected_number = 12.0
@@ -35,7 +35,7 @@ class TestCase(unittest.TestCase):
             actual_number = try_import().number
         except AttributeError:
             self.fail(msg="The variable number seems to be undefined. "
-                          "Do not remove it from the task code")
+                          "Do not remove it from the task code.")
 
-        self.assertEqual(expected_number, actual_number, msg="The number has a wrong value. "
-                                                             "Make sure you augment the assignment!")
+        self.assertEqual(expected_number, actual_number, msg="The number variable has a wrong value. "
+                                                             "Make sure you use augmented assignment!")

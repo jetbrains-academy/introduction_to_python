@@ -25,8 +25,8 @@ class TestCase(unittest.TestCase):
         except NameError as ne:
             pass
         except Exception as e:
-            self.fail("There was a problem while loading the solution - {0}. Check the solution for "
-                      "IDE-highlighted  errors and warnings.".format(str(e)))
+            self.fail("There was a problem while loading the solution – {0}. Check the solution for "
+                      "IDE-highlighted errors and warnings.".format(str(e)))
 
     def test_formal_parameters_1(self):
         try:
@@ -35,7 +35,7 @@ class TestCase(unittest.TestCase):
             self.fail(msg="There was a problem while loading the phrases variable. Make sure its declaration "
                           "remains intact.")
 
-        self.assertIsInstance(actual_phrases, list, msg="The phrases should be stored in a list.")
+        self.assertIsInstance(actual_phrases, list, msg="Phrases should be stored in a list.")
 
     def test_formal_parameters_2(self):
         try:
@@ -44,7 +44,7 @@ class TestCase(unittest.TestCase):
             self.fail(msg="There was a problem while loading the keywords variable. Make sure its declaration "
                           "remains intact.")
 
-        self.assertIsInstance(actual_keywords, dict, msg="The keywords should be stored in a dictionary.")
+        self.assertIsInstance(actual_keywords, dict, msg="Keywords should be stored in a dictionary.")
 
     def test_formal_parameters_3(self):
         try:
@@ -59,7 +59,7 @@ class TestCase(unittest.TestCase):
         for expected_phrase in expected_phrases_in_output:
             self.assertIn(expected_phrase, actual_output, msg="Some of the phrases appear to be missing "
                                                               "from the output. Do not modify the body "
-                                                              "of the cat for this test to pass.")
+                                                              "of the cat function for this test to pass.")
 
     def test_formal_parameters_4(self):
         try:

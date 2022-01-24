@@ -25,8 +25,8 @@ class TestCase(unittest.TestCase):
         except NameError as ne:
             pass
         except Exception as e:
-            self.fail("There was a problem while loading the solution - {0}. Check the solution for "
-                      "IDE-highlighted  errors and warnings.".format(str(e)))
+            self.fail("There was a problem while loading the solution – {0}. Check the solution for "
+                      "IDE-highlighted errors and warnings.".format(str(e)))
 
     def test_arg_syntax_2(self):
         expected_square_result_2_is_4 = "4\n"
@@ -34,7 +34,7 @@ class TestCase(unittest.TestCase):
         try:
             actual_square = try_import().square
         except AttributeError:
-            self.fail(msg="There was a problem loading square function. Make sure you declare it properly.")
+            self.fail(msg="There was a problem loading the square function. Make sure you declare it properly.")
 
         with patch('sys.stdout', new=StringIO()) as self.currentOutput:
             actual_square(2)
@@ -50,7 +50,7 @@ class TestCase(unittest.TestCase):
         try:
             actual_square = try_import().square
         except AttributeError:
-            self.fail(msg="There was a problem loading square function. Make sure you declare it properly.")
+            self.fail(msg="There was a problem loading the square function. Make sure you declare it properly.")
 
         with patch('sys.stdout', new=StringIO()) as self.currentOutput:
             actual_square(3)
@@ -66,7 +66,7 @@ class TestCase(unittest.TestCase):
         try:
             actual_square = try_import().square
         except AttributeError:
-            self.fail(msg="There was a problem loading square function. Make sure you declare it properly.")
+            self.fail(msg="There was a problem loading the square function. Make sure you declare it properly.")
 
         with patch('sys.stdout', new=StringIO()) as self.currentOutput:
             actual_square(5)

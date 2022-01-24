@@ -21,7 +21,7 @@ try:
 except NameError:
     class TestFailCase(unittest.TestCase):
         def test_fail(self):
-            self.assertTrue(False, msg='Use `Calculator` directly, without a prefix.')
+            self.assertTrue(False, msg='Use the Calculator class directly, without a prefix.')
 
 
 

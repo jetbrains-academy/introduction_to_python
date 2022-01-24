@@ -25,11 +25,11 @@ class TestCase(unittest.TestCase):
         except NameError as ne:
             pass
         except Exception as e:
-            self.fail("There was a problem while loading the solution - {0}. Check the solution for "
-                      "IDE-highlighted  errors and warnings.".format(str(e)))
+            self.fail("There was a problem while loading the solution – {0}. Check the solution for "
+                      "IDE-highlighted errors and warnings.".format(str(e)))
 
     def test_variable_name(self):
-        with self.assertRaises(NameError, msg="Try printing a variable, which was not defined"):
+        with self.assertRaises(NameError, msg="Try printing a variable which was not defined."):
             try_import()
 
     # TODO add Reserved keywords check

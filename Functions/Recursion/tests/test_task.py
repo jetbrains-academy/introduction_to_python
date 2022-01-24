@@ -26,8 +26,8 @@ class TestCase(unittest.TestCase):
         except NameError as ne:
             pass
         except Exception as e:
-            self.fail("There was a problem while loading the solution - {0}. Check the solution for "
-                      "IDE-highlighted  errors and warnings.".format(str(e)))
+            self.fail("There was a problem while loading the solution – {0}. Check the solution for "
+                      "IDE-highlighted errors and warnings.".format(str(e)))
 
     def test_factorial_1(self):
         expected_factorial_10 = 3628800
@@ -42,7 +42,7 @@ class TestCase(unittest.TestCase):
 
         self.assertEqual(expected_factorial_10, actual_factorial_10, msg="The value returned for n = 10 "
                                                                          "seems to be incorrect. Check the function "
-                                                                         "implementation")
+                                                                         "implementation".)
 
     def test_factorial_2(self):
         expected_factorial_12 = 479001600
@@ -57,7 +57,7 @@ class TestCase(unittest.TestCase):
 
         self.assertEqual(expected_factorial_12, actual_factorial_12, msg="The value returned for n = 12 "
                                                                          "seems to be incorrect. Check the function "
-                                                                         "implementation")
+                                                                         "implementation".)
 
     def test_recursion(self):
         setrecursionlimit(1000)
