@@ -9,8 +9,6 @@ files:
   - offset: 270
     length: 30
     placeholder_text: '''???'''
-- name: tests.py
-  visible: false
 - name: tests/__init__.py
   visible: false
 - name: tests/test_task.py
