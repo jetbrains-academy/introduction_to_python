@@ -32,7 +32,8 @@ class TestCase(unittest.TestCase):
         try:
             actual_hello = try_import().hello
         except AttributeError:
-            self.fail(msg="There was a problem while loading the hello function. Make sure its declaration stays intact.")
+            self.fail(msg="There was a problem while loading the hello function. Make sure its declaration stays "
+                          "intact.")
 
         try:
             actual_hello("test_subject")
@@ -44,7 +45,8 @@ class TestCase(unittest.TestCase):
         try:
             actual_hello = try_import().hello
         except AttributeError:
-            self.fail(msg="There was a problem while loading the hello function. Make sure its declaration stays intact.")
+            self.fail(msg="There was a problem while loading the hello function. Make sure its declaration stays "
+                          "intact.")
 
         try:
             actual_hello("test_subject", "test_name")
@@ -55,7 +57,8 @@ class TestCase(unittest.TestCase):
         try:
             actual_hello = try_import().hello
         except AttributeError:
-            self.fail(msg="There was a problem while loading the hello function. Make sure its declaration stays intact.")
+            self.fail(msg="There was a problem while loading the hello function. Make sure its declaration stays "
+                          "intact.")
 
         try:
             actual_hello("test_subject", name="test_name")
