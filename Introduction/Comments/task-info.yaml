@@ -3,8 +3,8 @@ files:
 - name: comments.py
   visible: true
   placeholders:
-  - offset: 137
-    length: 12
-    placeholder_text: ' Add a new comment here'
-- name: tests.py
+  - offset: 181
+    length: 43
+    placeholder_text: print("This line should not be printed!")
+- name: tests/test_task.py
   visible: false
