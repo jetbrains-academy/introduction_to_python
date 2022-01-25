@@ -1,5 +1,5 @@
 # Create a new dictionary, where
-# "John", "Jane" and "Jerard" are keys and numbers are values.
+# "John", "Jane" and "Gerard" are keys and numbers are values.
 phone_book = {"John": 123, "Jane": 234, "Gerard": 345}
 print(phone_book)
 
