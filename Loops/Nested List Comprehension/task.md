@@ -1,6 +1,6 @@
 ## Nested List Comprehension
 
-Nested List Comprehensions are simply list comprehensions nested within other 
+Nested list comprehensions are simply list comprehensions nested within other 
 list comprehension. This is quite similar to [nested loops](course://Loops/Nested for Loop).
 Here is a program that builds a [nested list](course://Data structures/Nested Lists) using a nested loop:
 
@@ -35,7 +35,7 @@ Output:
 
 ### Task
 
-Create a $10×10$ `matrix` such that each row (sublist) contains **characters** 0-9 from
+Create a $10×10$ `matrix` such that each row (sublist) contains **characters** 0–9 from
 `string`. Use list comprehension to complete the task in one line of code. 
 
 <div class="hint">

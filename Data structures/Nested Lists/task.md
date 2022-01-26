@@ -5,7 +5,7 @@ data structure is known as a nested list.
 
 You can use nested lists to arrange data into hierarchical structures.
 
-A nested list can be created by writing a comma-separated sequence of sublists:
+To create a nested list, write a comma-separated sequence of sublists:
 
 ```python
 nested_list = [[1, 2, 3], [4, 5], 6]
@@ -22,8 +22,8 @@ Output:
 [4, 5]
 6
 ```
-You can access items within sublists in a nested list using multiple indices:
-To access number `1` from the first sublist:
+You can access items within sublists in a nested list using multiple indices.
+To access number `1` from the first sublist, write:
 ```python
 print(nested_list[0][0])
 ```

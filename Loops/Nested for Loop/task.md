@@ -26,7 +26,7 @@ expensive boots
 <details>
 
 Note that any type of loop can be nested inside another loop. 
-For example, a [`while` loop](course://Loops/While loop) (see further) can be nested inside a `for` loop or vice versa.
+For example, a [`while` loop](course://Loops/While loop) (see further) can be nested inside a `for` loop, or vice versa.
 </details>
 
 
