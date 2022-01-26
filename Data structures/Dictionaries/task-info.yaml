@@ -8,7 +8,7 @@ files:
     placeholder_text: '# Add Jared''s number to the phone book'
   - offset: 344
     length: 24
-    placeholder_text: '# Remove Jerard''s number from the phone book'
+    placeholder_text: '# Remove Gerard''s number from the phone book'
   - offset: 394
     length: 18
     placeholder_text: ???
