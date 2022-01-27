@@ -22,8 +22,8 @@ Output:
 [4, 5]
 6
 ```
-You can access items within sublists in a nested list using multiple indices:
-To access number `1` from the first sublist:
+You can access items within sublists in a nested list using multiple indices.
+To access number `1` from `nested_list`, use the index `0` twice. First, you access the element `[1,2,3]` and then, the first element of that sublist:
 ```python
 print(nested_list[0][0])
 ```

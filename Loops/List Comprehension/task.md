@@ -16,7 +16,7 @@ Output:
 ```
 
 This is nice, but quite bulky. List comprehension offers a more compact syntax when you want to create a new list based on the values of an existing list
-or another iterable (tuple, string, array, range, etc). It does the same task and simplifies the program. Typically, list comprehensions are written in a single line of code.
+or another iterable (tuple, string, array, range, etc.). It does the same task and simplifies the program. Typically, list comprehensions are written in a single line of code.
 
 ```python
 my_list = [i for i in range(5)]
@@ -26,11 +26,11 @@ Output:
 ```text
 [0, 1, 2, 3, 4]
 ```
-List comprehensions are also more efficient computationally than a for loop.
+List comprehensions are also more efficient computationally than a `for` loop.
 
 In the code editor, use list comprehension to build `my_efficient_list` from the elements of `my_inefficient_list`
 by adding $10$ to each of them. For example, the first element of `my_inefficient_list` is $1 + 10 = 11$,
-so the first element of `my_efficient_list` should be $11 + 10 = 21$ and so on.
+so the first element of `my_efficient_list` should be $11 + 10 = 21$, and so on.
 
 
 <div class="hint">
