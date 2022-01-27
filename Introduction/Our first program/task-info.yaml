@@ -1,12 +1,10 @@
-type: edu
+type: theory
 files:
-- name: tests.py
-  visible: false
 - name: hello_world.py
   visible: true
   placeholders:
   - offset: 32
     length: 5
-    placeholder_text: 'Type your name here'
+    placeholder_text: Type your name here
 - name: execute.svg
   visible: false
