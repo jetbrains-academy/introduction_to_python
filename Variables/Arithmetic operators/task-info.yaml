@@ -26,3 +26,4 @@ files:
     placeholder_text: '# raise the multiplication result to the power of 3'
 - name: tests/test_task.py
   visible: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Variables+/+Arithmetic+Operators
