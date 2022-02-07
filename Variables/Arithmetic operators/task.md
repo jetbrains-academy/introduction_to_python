@@ -26,7 +26,7 @@ You can read more on this topic <a href="https://docs.python.org/3/reference/exp
  - Calculate a remainder of such a division.
  - Multiply the division result by `2`.
  - Add the division result to the multiplication result.
- - Subtract the division result from the number.
+ - Subtract the multiplication result from the number.
  - Perform a floor division of `number` by 2.
  - Raise the `multiplication_result` to the power of 3
 
