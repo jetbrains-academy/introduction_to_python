@@ -1,3 +1,1 @@
 This is the output file.
-lion and elephant and monkey
-15

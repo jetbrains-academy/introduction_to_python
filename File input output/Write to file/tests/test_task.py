@@ -3,15 +3,23 @@ import write_to_file
 
 
 class TestCase(unittest.TestCase):
-    def test_out(self):
+    def test_first_line(self):
         with open('output.txt', 'r') as result:
-            expected, actual = 'This is the output file.\n', result.readline()
+            lines = result.readlines()
+            expected, actual = 'This is the output file.\n', lines[0]
             self.assertEqual(expected, actual,
                              msg='The first line in the output file should remain "This is the output file.".')
-            expected, actual = 'lion and elephant and monkey\n', result.readline()
+    def test_last_line(self):
+        with open('output.txt', 'r') as result:
+            lines = result.readlines()
+            actual = lines[-1]
+            self.assertTrue('15' == actual or '15\n' == actual,
+                             msg='The last line in the output should be "15".')
+
+    def test_second_to_last_line(self):
+        with open('output.txt', 'r') as result:
+            lines = result.readlines()
+            expected, actual = 'lion and elephant and monkey\n', lines[-2]
             self.assertEqual(expected, actual,
-                             msg='The second line in the output file should be "lion and elephant and monkey".')
-            third_line = result.readline()
-            self.assertTrue('15' == third_line or '15\n' == third_line,
-                            msg='The third line in the output should be "15".')
+                             msg='The second to last line in the output file should be "lion and elephant and monkey".')
 
