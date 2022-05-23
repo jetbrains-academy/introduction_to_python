@@ -36,9 +36,9 @@ f.write('\n' + 'string,' + ' ' + 'another string')
 ```
 This will add a new line and write `'string, another string'`.
 
-In the code editor, add all elements from the `zoo` list to "output.txt" so that the output is added from
-a new line and the elements are separated by `' and '`. Use the <code>' and '.join(lst)</code> syntax to 
-join the list elements into the required string. Afterwards, add `number` to the same output file.
+In the code editor, **append** one new line to `output.txt` with all elements from the `zoo` list separated by `' and '`. 
+Use the <code>' and '.join(lst)</code> syntax to join the list elements into the required string. Afterwards, 
+append another line with the `number` to the same output file.
 
 <div class='hint'>Use the <code>'a'</code> modifier to append lines at the end of the file.</div>
 <div class='hint'>Use the <code>write()</code> method.</div>
