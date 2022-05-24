@@ -25,7 +25,7 @@ def countdown(n):
 countdown(4)
 ```
 ```text
-10 9 8 7 6 5 4 3 2 1 0 
+4 3 2 1 0 
 ```
 
 <div class="hint">This function doesn’t check its argument for validity: if <code>n</code> 
