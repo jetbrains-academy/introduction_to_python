@@ -5,5 +5,5 @@ some_module.func()
 
 # Make a change here.
 if __name__ == "__main__":
-    print('This should be printed ONLY when order.py is called directly.')
+    print('This should be printed ONLY when task.py is called directly.')
 
