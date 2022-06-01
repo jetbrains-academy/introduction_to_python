@@ -8,7 +8,7 @@ files:
     placeholder_text: '# Call func() from the imported module'
   - offset: 107
     length: 100
-    placeholder_text: print('This should be printed ONLY when task.py is called directly.')
+    placeholder_text: print('This should be printed ONLY when order.py is called directly.')
 - name: tests/test_task.py
   visible: false
 - name: __init__.py

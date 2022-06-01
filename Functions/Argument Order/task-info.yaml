@@ -1,0 +1,14 @@
+type: edu
+files:
+- name: __init__.py
+  visible: false
+- name: tests/__init__.py
+  visible: false
+- name: order.py
+  visible: true
+  placeholders:
+  - offset: 185
+    length: 26
+    placeholder_text: length=5, 5, '____'
+- name: tests/test_task.py
+  visible: false
