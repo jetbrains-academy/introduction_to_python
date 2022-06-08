@@ -20,7 +20,7 @@ scene : in a park
 This function can be called with an arbitrary number of arguments. These arguments will be wrapped 
 up in a tuple (see [Tuples](course://Data structures/Tuples)). Before the variable number of arguments, zero or 
 more normal arguments may occur; in our case there's one – `place`. Any formal parameters that occur 
-after the `*args` parameter are ‘keyword-only’ arguments, meaning that they can only be used as keywords 
+after the `*args` parameter are [‘keyword-only’](https://peps.python.org/pep-3102/) arguments, meaning that they can only be used as keywords 
 rather than positional arguments. Another way to call this function is shown in call 2, and it will give 
 us the same output.
 
