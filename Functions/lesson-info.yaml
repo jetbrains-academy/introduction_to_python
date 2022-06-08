@@ -2,6 +2,7 @@ content:
 - Definition
 - Parameters and call arguments
 - Return value
+- Docstrings
 - Default parameters
 - Keyword Arguments
 - Argument Order
