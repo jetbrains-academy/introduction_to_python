@@ -6,5 +6,6 @@ content:
 - Nested List Comprehension
 - While loop
 - Break keyword
+- Fix infinite execution
 - Else with loops
 - Continue keyword
