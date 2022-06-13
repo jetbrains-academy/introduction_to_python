@@ -13,6 +13,13 @@ Every course available in EduTools is structured as a list of lessons. Lessons, 
 
 When you open a course, you will see the main tool windows used for navigation: <b>Course View</b>, <b>Editor</b>, and <b>Task Description</b>:
 
-<img src="edu_course_overview.png" width="100%"/>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<img src="edu_course_overview.png" class="center" width=800>
 
 Click the "Next" button to navigate to the next task.
