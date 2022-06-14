@@ -4,8 +4,8 @@ The word <b>recursion</b> comes from the Latin word <i>recurrere</i>, meaning to
 In programming, recursion refers to a coding technique in which a function calls itself.
 
 In most cases, recursion isn't necessary, but in some situations, self-referential
-definition is warranted. Walking through tree-like data structures would be a good example.
-Such structures are nested, and they readily fit a recursive definition. A non-recursive
+definition is warranted. Walking through [tree-like data structures](https://en.wikipedia.org/wiki/Tree_(data_structure)) would be a good example.
+Such structures are [nested](course://Data structures/Nested Lists), and they readily fit a recursive definition. A non-recursive
 algorithm for the same task would be quite cumbersome.  
 
 Here's a simple example of a recursive function. It takes a number as an argument 
@@ -29,7 +29,7 @@ countdown(4)
 ```
 
 <div class="hint">This function doesn’t check its argument for validity: if <code>n</code> 
-is either a non-integer or negative, you’ll get a <code>RecursionError</code> exception because the base case is never reached:
+is either a non-integer or negative, you’ll get a <a href="https://docs.python.org/3/library/exceptions.html?highlight=recursionerror#RecursionError"><code>RecursionError</code></a> exception because the base case is never reached:
 
 ```python
 countdown(-10)
@@ -38,7 +38,7 @@ countdown(-10)
 RecursionError: maximum recursion depth exceeded while calling a Python object
 ```
 You can find out what Python’s recursion limit is with a function from the sys module 
-called `getrecursionlimit()`, and you can change it with `setrecursionlimit()`:
+called [`getrecursionlimit()`](https://docs.python.org/3/library/sys.html#sys.getrecursionlimit), and you can change it with [`setrecursionlimit()`](https://docs.python.org/3/library/sys.html#sys.setrecursionlimit):
 
 ```python
 from sys import setrecursionlimit
