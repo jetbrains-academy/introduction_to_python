@@ -8,7 +8,7 @@ files:
     placeholder_text: '# divide the number by two'
   - offset: 87
     length: 10
-    placeholder_text: '# get the argument of the division of the number by two'
+    placeholder_text: '# get the remainder of the division of the number by two'
   - offset: 123
     length: 19
     placeholder_text: '# multiply the division result by 2'
