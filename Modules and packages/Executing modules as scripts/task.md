@@ -56,7 +56,10 @@ some_module __name__ is: __main__
 some_module executed directly
 ```
 
-Modify `task.py` and `some_module.py` so that when you run task.py, your output is as follows:
+### Task
+<i>The files in this task are named the same as in the examples above, but their code is a bit different.</i>
+
+Modify `task.py` and `some_module.py` so that when you run `task.py`, your output is as follows:
 
 ```text
 This is a message from some_module.
