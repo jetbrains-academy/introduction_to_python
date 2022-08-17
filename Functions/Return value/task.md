@@ -11,7 +11,7 @@ literal is the function’s documentation string, or docstring (more about docst
 be found in the section <a href="https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings">Documentation Strings</a>
 in Python Documentation). It’s good practice to include docstrings in the code that you write.</i>
   
-In the Fibonacci sequence, the first two numbers are `1` and `1`, and each subsequent 
+In the [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number), the first two numbers are `1` and `1`, and each subsequent 
 number is the sum of the previous two. 
 
 ### Task
