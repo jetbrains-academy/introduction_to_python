@@ -1,8 +1,8 @@
 ## Argument Order
 
 In the code editor, you can see a function that prints a table 
-with a given number of rows and columns, and it can also use different 
-symbols for printing the table. The function call below contains some errors,
+with a given number of rows and columns; it can also use different 
+symbols for printing the table. The function call below contains some errors;
 correct them so that the code prints a table like the one below:
 
 ```text

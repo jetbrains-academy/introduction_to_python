@@ -6,6 +6,6 @@ assignment operator, to assign a value to a variable. An assignment can be
 chained, e.g., `a = b = 2`.   
 ### Task
  - Change the value stored in the variable `greetings`.
- - Use the chain assignment to store 2 in both `a` and `b`.
+ - Use the chain assignment to store 2 in both `a` and `b` on line 15.
 
 <div class="hint">Type a new value in the answer placeholder.</div>

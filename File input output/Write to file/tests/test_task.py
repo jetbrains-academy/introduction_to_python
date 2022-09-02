@@ -6,7 +6,7 @@ class TestCase(unittest.TestCase):
     def test_first_line(self):
         with open('output.txt', 'r') as result:
             lines = result.readlines()
-            expected, actual = 'This is the output file.\n', lines[0]
+            expected, actual = 'This is the output file. Do not modify this line :)\n', lines[0]
             self.assertEqual(expected, actual,
                              msg='The first line in the output file should remain "This is the output file.".')
     def test_last_line(self):

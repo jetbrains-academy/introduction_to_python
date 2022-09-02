@@ -7,7 +7,7 @@ It must be followed by the function name and the parenthesized list of **formal 
 The statements that form the body of the function start at the next line and must be indented.
 
 <details>
-Formal parameters are enclosed in parentheses; they are the variables defined by the function that receive values when the function is called. The list consists of variable names of all the necessary values for the method. Each formal parameter is separated by a comma. When method is not accepting any input values, then the method should have an empty set of parentheses after the method name. e.g. <code>addition()</code>.
+Formal parameters are enclosed in parentheses; they are the variables defined by the function, which receive values when the function is called. The list consists of variable names of all the necessary values for the method. Each formal parameter is separated by a comma. When the method is not accepting any input values, it should have an empty set of parentheses after the method name, e.g., <code>addition()</code>.
 </details>
 
 Functions only run when they are called. To call a function, use its name followed by parentheses:
