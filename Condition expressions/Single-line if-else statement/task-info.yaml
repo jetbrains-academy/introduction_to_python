@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 115
-    length: 74
+    length: 73
     placeholder_text: |-
       if my_random_number > 50:
           print(my_random_number)
