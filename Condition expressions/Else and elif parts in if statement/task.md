@@ -25,6 +25,21 @@ else:
 ```text
 a is greater than b
 ```
+
+<details>
+
+A simple if-else statement can also be fit in one line of code, just like we have shown in the previous task. For example,
+```python
+if a > b:
+    a += 1
+else: 
+    a -= 1
+```
+can be written as
+```python
+a += 1 if a > b else a -= 1
+```
+</details>
   
 Print `True` if `name` is equal to `"John"` and `False` otherwise.  
 
