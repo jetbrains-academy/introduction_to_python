@@ -20,4 +20,5 @@ class TestCase(unittest.TestCase):
         with open("concatenation.py", "r") as taskfile:
             lines = taskfile.readlines()
             code = lines[-2]
-            self.assertTrue("+" in code, msg="Your solution does not use concatenation.")
+            if not ("+" in code):
+                self.fail(msg="Your solution does not use string concatenation.")

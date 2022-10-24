@@ -19,4 +19,5 @@ class TestCase(unittest.TestCase):
         with open("string_multiplication.py", "r") as taskfile:
             lines = taskfile.readlines()
             code = lines[-2]
-            self.assertTrue("*" in code, msg="Your solution does not use string multiplication.")
+            if not ("*" in code):
+                self.fail(msg="Your solution does not use string multiplication.")
