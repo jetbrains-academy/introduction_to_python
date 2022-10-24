@@ -28,5 +28,17 @@ class TestCase(unittest.TestCase):
     def test_string(self):
         self.assertIsNotNone(re.match(correct_string, result_str), msg='The result string does not match the expected one.')
 
+    def test_0_code_len(self):
+        with open("f_strings.py", "r") as taskfile:
+            lines = taskfile.readlines()
+            self.assertTrue(len(lines) == 3, msg="Please do not add or remove any lines from the code file.")
+
+    def test_statement_1(self):
+        with open("f_strings.py", "r") as taskfile:
+            lines = taskfile.readlines()
+            code = lines[-1]
+            if not ("{name}" in code and "{age}" in code):
+                self.fail(msg="Your solution should use f-string syntax.")
+
 
 
