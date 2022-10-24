@@ -26,4 +26,6 @@ str[:]         # a copy of the whole array
 
 Use slicing to get `"Python"` from the `monty_python` variable.  
 
+Please do not add or remove any lines from the code.
+
 <div class='hint'>You can leave one of the indices empty.</div>

@@ -31,6 +31,8 @@ For more information about formatted string literals you can refer to <a href="h
 
 Try creating an f-string yourself. Also try running the code to see what it prints.
 
+Please do not add or remove any lines from the code.
+
 <div class="hint">The value assigned to the <code>name</code> variable has to be a string, so it needs to be in quotes, 
 like so: <code>'Max'</code>.</div>
 

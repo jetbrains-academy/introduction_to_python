@@ -11,4 +11,6 @@ Note that since `-0` is the same as `0` , negative indices start from `-1`.
   
 Use the index operator to get the letter `"P"` from `"Python"` .  
 
+Please do not add or remove any lines from the code.
+
 <div class="hint">Note that indices start with 0.</div>

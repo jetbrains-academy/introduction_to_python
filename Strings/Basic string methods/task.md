@@ -9,4 +9,6 @@ Detailed information about all string methods can be found <a href="https://docs
   
 Print `monty_python` in upper case using an appropriate string method.  
 
+Please do not add or remove any lines from the code.
+
 <div class='hint'>Pay attention to how the <code>lower()</code> method is used in our code.</div>
