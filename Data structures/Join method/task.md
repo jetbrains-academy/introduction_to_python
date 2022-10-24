@@ -38,5 +38,7 @@ Assign a value to the  `joined` variable such that the `print` statement prints 
 I like apples and I like bananas and I like peaches and I like grapes
 ```
 
+Please do not add or remove any lines from the code.
+
 <div class="hint">Look closely at the examples and simply do the same!</div>
 <div class="hint"><code>fruits</code> is your iterable here, and <code>separator</code> is the separator string.</div>

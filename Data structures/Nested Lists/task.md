@@ -33,4 +33,6 @@ Output:
 ```
 In the code editor, use indexing to access and print elements `9` and `10` from of the nested list `my_list`. 
 
+Please do not add or remove any lines from the code.
+
 <div class="hint">If you're stuck, review the examples in the task description again.</div>

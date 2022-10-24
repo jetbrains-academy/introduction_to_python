@@ -18,3 +18,21 @@ class TestCase(unittest.TestCase):
         self.assertTrue(result_2 == 'False', msg="Are you sure that grocery_dict contains basil? It should not...")
 
 
+    def test_0_code_len(self):
+        with open("in_keyword.py", "r") as taskfile:
+            lines = taskfile.readlines()
+            self.assertTrue(len(lines) == 8, msg="Please do not add or remove any lines from the code file.")
+
+    def test_statement_1(self):
+        with open("in_keyword.py", "r") as taskfile:
+            lines = taskfile.readlines()
+            code = lines[-1]
+            if not ('in' in code):
+                self.fail(msg="Your solution should use the in keyword.")
+
+    def test_statement_2(self):
+        with open("in_keyword.py", "r") as taskfile:
+            lines = taskfile.readlines()
+            code = lines[-2]
+            if not ('in' in code):
+                self.fail(msg="Your solution should use the in keyword.")

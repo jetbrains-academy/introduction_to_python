@@ -21,3 +21,14 @@ class TestCase(unittest.TestCase):
         self.assertEqual({'Jane': 234, 'Jill': 345, 'Jared': 570}, phone_book,
                          msg="Your resulting dictionary seems to be off.")
 
+    def test_0_code_len(self):
+        with open("dicts.py", "r") as taskfile:
+            lines = taskfile.readlines()
+            self.assertTrue(len(lines) == 18, msg="Please do not add or remove any lines from the code file.")
+
+    def test_statement_1(self):
+        with open("dicts.py", "r") as taskfile:
+            lines = taskfile.readlines()
+            code = lines[-6]
+            if not ('phone_book["Jared"]' in code or "phone_book['Jared']" in code):
+                self.fail(msg="Your solution should use dictionary indexing to get Jared's phone.")

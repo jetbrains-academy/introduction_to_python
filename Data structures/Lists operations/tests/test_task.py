@@ -13,3 +13,15 @@ class TestCase(unittest.TestCase):
                                                                          'has to be "dinosaur".')
         except IndexError:
             self.assertTrue(False, msg='The list appears to be too short.')
+
+    def test_0_code_len(self):
+        with open("list_operations.py", "r") as taskfile:
+            lines = taskfile.readlines()
+            self.assertTrue(len(lines) == 11, msg="Please do not add or remove any lines from the code file.")
+
+    def test_statement_1(self):
+        with open("list_operations.py", "r") as taskfile:
+            lines = taskfile.readlines()
+            code = lines[-2]
+            if not ("[" in code and "]" in code):
+                self.fail(msg="Your solution should use indexing.")

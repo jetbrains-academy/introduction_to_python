@@ -33,4 +33,7 @@ squares
 Find out about many other useful list methods on <a href="https://docs.python.org/3/tutorial/datastructures.html#more-on-lists">this page</a>.
 
 Replace `"dino"` with `"dinosaur"` in the `animals` list.  
+
+Please do not add or remove any lines from the code.
+
 <div class='hint'>Use list indexing operation and value assignment.</div>

@@ -7,6 +7,7 @@ item. You can apply `in` to lists or dictionaries the same way you did it with s
 2) Check if the dictionary contains `"basil"`.
 
 Please complete the task in the specified order.
+Please do not add or remove any lines from the code.
 
 <div class="hint">Use the <code>in</code> keyword.</div>
 
