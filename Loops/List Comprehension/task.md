@@ -32,6 +32,7 @@ In the code editor, use list comprehension to build `my_efficient_list` from the
 by adding $10$ to each of them. For example, the first element of `my_inefficient_list` is $1 + 10 = 11$,
 so the first element of `my_efficient_list` should be $11 + 10 = 21$, and so on.
 
+Please do not add or remove any lines from the code.
 
 <div class="hint">
 
