@@ -1,17 +1,21 @@
 import unittest
-import contextlib
-import io
-
-f = io.StringIO()
-with contextlib.redirect_stdout(f):
-    import boolean_order
-output = f.getvalue().split('\n')
-result = output[2]
-
 
 class TestCase(unittest.TestCase):
-    def test_out_len(self):
-        self.assertEqual(4, len(output), msg='Please do not remove or add any print statements.')
+    def test_0_code_len(self):
+        with open("boolean_order.py", "r") as taskfile:
+            lines = taskfile.readlines()
+            self.assertTrue(len(lines) == 8, msg="Please do not add or remove any lines from the code file.")
 
-    def test_out_str(self):
-        self.assertEqual('True', result, msg='Your expression does not seem to produce the correct result.')
+    def test_statement_0(self):
+        name = "John"
+        age = 17
+        with open("boolean_order.py", "r") as taskfile:
+            lines = taskfile.readlines()
+            code = lines[-1][6:-2]
+            self.assertTrue(eval(code), msg="Your expression does not evaluate to True")
+
+    def test_statement_1(self):
+        with open("boolean_order.py", "r") as taskfile:
+            lines = taskfile.readlines()
+            code = lines[-1][6:-2]
+            self.assertTrue("Jane" in code and "John" in code and "age" in code and "name" in code, msg="Your expression does not check the values of the variables")
