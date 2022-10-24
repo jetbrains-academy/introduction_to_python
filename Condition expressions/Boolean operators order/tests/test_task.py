@@ -18,4 +18,5 @@ class TestCase(unittest.TestCase):
         with open("boolean_order.py", "r") as taskfile:
             lines = taskfile.readlines()
             code = lines[-1][6:-2]
-            self.assertTrue("Jane" in code and "John" in code and "age" in code and "name" in code, msg="Your expression does not check the values of the variables")
+            if not ("Jane" in code and "John" in code and "age" in code and "name" in code):
+                self.fail(msg="Your expression does not check the values of the variables")
