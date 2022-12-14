@@ -5,7 +5,7 @@ files:
   placeholders:
   - offset: 302
     length: 39
-    placeholder_text: '# Clear the list'
+    placeholder_text: '# Make all animals elephants by replacing the last two items.'
 - name: tests/__init__.py
   visible: false
 - name: tests/test_task.py
