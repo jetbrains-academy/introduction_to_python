@@ -10,7 +10,7 @@ is_greater = three > two    # insert any operator rendering the expression true.
 print(f"three is greater than two: {is_greater}")
 
 is_less = one < three   # insert any operator rendering the expression true. There are several options.
-print(f"one is smaller than three: {is_greater}")
+print(f"one is smaller than three: {is_less}")
 
 is_true = one < three > two     # insert any operator rendering the expression true. There are several options.
 print(f"one is smaller than three, which is greater than two: {is_true}")
