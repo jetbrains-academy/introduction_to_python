@@ -1,10 +1,14 @@
 import unittest
 import contextlib
 import io
+import importlib
+import sys
 
 
 f = io.StringIO()
 with contextlib.redirect_stdout(f):
+    if 'task' in sys.modules:
+        importlib.reload(task)
     import task
 
 output = f.getvalue().split('\n')

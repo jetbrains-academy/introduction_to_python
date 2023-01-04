@@ -1,6 +1,8 @@
 import unittest
 import contextlib
 import io
+import importlib
+import sys
 
 
 class TestCase(unittest.TestCase):
@@ -8,6 +10,8 @@ class TestCase(unittest.TestCase):
         f = io.StringIO()
         try:
             with contextlib.redirect_stdout(f):
+                if 'task' in sys.modules:
+                    importlib.reload(task)
                 import task
             output = f.getvalue().split('\n')
             self.assertTrue(str(output[0][:2]).isnumeric() or output[0]=="Too small!")
