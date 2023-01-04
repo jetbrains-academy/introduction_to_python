@@ -4,7 +4,7 @@ import unittest
 class TestCase(unittest.TestCase):
     def test_dict(self):
         try:
-            from task import ages_dict
+            from dict_keys import ages_dict
             test_dict1 = {
                 "Alice": 21,
                 "Bob": 39,

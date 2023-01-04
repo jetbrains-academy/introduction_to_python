@@ -1,6 +1,6 @@
 import unittest
 
-from task import *
+from list_comprehension import *
 
 
 # todo: replace this with an actual test

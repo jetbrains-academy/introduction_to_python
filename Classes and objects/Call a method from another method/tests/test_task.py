@@ -1,6 +1,6 @@
 import unittest
 
-from task import Calculator
+from call_method import Calculator
 
 
 class TestCase(unittest.TestCase):

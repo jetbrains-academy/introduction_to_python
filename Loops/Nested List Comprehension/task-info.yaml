@@ -1,6 +1,6 @@
 type: edu
 files:
-- name: task.py
+- name: nested_list_comprehension.py
   visible: true
   placeholders:
   - offset: 33

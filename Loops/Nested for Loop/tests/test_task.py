@@ -5,7 +5,7 @@ import io
 f = io.StringIO()
 
 with contextlib.redirect_stdout(f):
-    from task import *
+    from nested_loop import *
 output = f.getvalue().split('\n')
 
 

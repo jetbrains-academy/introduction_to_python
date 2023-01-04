@@ -1,6 +1,6 @@
 import unittest
 
-from task import City
+from class_instance2 import City
 
 
 class TestCase(unittest.TestCase):
