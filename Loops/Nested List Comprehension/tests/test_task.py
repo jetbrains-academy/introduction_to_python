@@ -1,6 +1,6 @@
 import unittest
 
-from task import matrix, string
+from nested_list_comprehension import matrix, string
 
 
 class TestCase(unittest.TestCase):

@@ -2,7 +2,7 @@ import contextlib
 import io
 import unittest
 
-from task import lines_list
+from read_all_lines import lines_list
 
 
 class TestCase(unittest.TestCase):

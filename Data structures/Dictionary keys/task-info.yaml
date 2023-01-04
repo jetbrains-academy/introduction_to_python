@@ -1,6 +1,6 @@
 type: edu
 files:
-- name: task.py
+- name: dict_keys.py
   visible: true
   placeholders:
   - offset: 0

@@ -1,11 +1,11 @@
 type: edu
 files:
-- name: task.py
+- name: docstrings.py
   visible: true
   placeholders:
   - offset: 32
     length: 54
-    placeholder_text: '# TODO: add a docstring here'
+    placeholder_text: "# TODO: add a docstring here"
 - name: tests/test_task.py
   visible: false
 - name: __init__.py

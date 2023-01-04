@@ -1,6 +1,6 @@
 type: edu
 files:
-- name: task.py
+- name: infinite.py
   visible: true
   placeholders:
   - offset: 146

@@ -1,16 +1,16 @@
 type: edu
 files:
-- name: task.py
+- name: class_instance2.py
   visible: true
   placeholders:
   - offset: 16
     length: 15
-    placeholder_text: '# TODO: add a mutable class variable (all_cities list) to store
-      all added city names'
+    placeholder_text: "# TODO: add a mutable class variable (all_cities list) to store\
+      \ all added city names"
   - offset: 185
     length: 15
-    placeholder_text: '# TODO: call add_city method to add the city name to the list
-      upon object initialization'
+    placeholder_text: "# TODO: call add_city method to add the city name to the list\
+      \ upon object initialization"
   - offset: 234
     length: 33
     placeholder_text: |-

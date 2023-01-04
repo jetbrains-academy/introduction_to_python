@@ -1,6 +1,6 @@
 type: edu
 files:
-- name: task.py
+- name: else_with_loops2.py
   visible: true
   placeholders:
   - offset: 35

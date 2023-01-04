@@ -1,6 +1,6 @@
 type: edu
 files:
-- name: task.py
+- name: list_comprehension.py
   visible: true
   placeholders:
   - offset: 194

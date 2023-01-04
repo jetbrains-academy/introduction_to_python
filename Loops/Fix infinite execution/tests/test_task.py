@@ -4,7 +4,7 @@ import io
 
 import wrapt_timeout_decorator
 
-from task import should_not_be_infinite
+from infinite import should_not_be_infinite
 
 
 class TestCaseWithTimeouts(unittest.TestCase):

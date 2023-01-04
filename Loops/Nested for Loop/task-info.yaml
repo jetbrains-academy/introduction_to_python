@@ -1,11 +1,11 @@
 type: edu
 files:
-- name: task.py
+- name: nested_loop.py
   visible: true
   placeholders:
   - offset: 61
     length: 31
-    placeholder_text: '# TODO: use a nested loop here.'
+    placeholder_text: "# TODO: use a nested loop here."
 - name: tests/test_task.py
   visible: false
 - name: __init__.py
