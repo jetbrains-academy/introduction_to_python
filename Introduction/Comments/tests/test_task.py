@@ -30,8 +30,9 @@ class TestCase(unittest.TestCase):
         expected_absent_line = "This line should not be printed!"
         actual_output = self.actualOutput.getvalue()
 
-        self.assertNotIn(expected_absent_line, actual_output, msg="The line, which says it should not be printed, "
-                                                                  "should, in fact, not be printed. ")
+        if expected_absent_line in actual_output:
+            self.fail(msg="The line, which says it should not be printed, "
+                          "should, in fact, not be printed.")
 
     def test_output_len(self):
         expected_out_len = 31
