@@ -1,7 +1,7 @@
 ## Boolean operators
 
 Boolean is a type of value that can only be `True` or `False`. The `==` (equality) operator 
-compares two variables and checks whether they are equal.  
+compares two variables and checks whether they are equal. You will learn more about boolean operators in a later [task](course://Condition expressions/Boolean operators). 
 
 ### Task
  - Check whether the variable `two` is equal to `three`.
