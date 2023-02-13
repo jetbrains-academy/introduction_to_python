@@ -11,7 +11,7 @@ files:
     placeholder_text: '# Remove Gerard''s number from the phone book'
   - offset: 394
     length: 18
-    placeholder_text: ???
+    placeholder_text: '"Print Jane''s phone number from the phone_book"'
 - name: tests/__init__.py
   visible: false
 - name: tests/test_task.py
