@@ -9,6 +9,6 @@ Now that you’ve explored the basics of Python programming, you can dive deeper
 - Learn about the most widely used Python library with our [course on NumPy](https://plugins.jetbrains.com/plugin/18302-python-libraries--numpy).
 - Find out how to build an [AMazing](https://plugins.jetbrains.com/plugin/17519-amazing) maze with Python.
 - Discover the basics of [Machine Learning](https://plugins.jetbrains.com/plugin/18392-machine-learning-101).
-- Check out the projects in the [Python Core](https://hyperskill.org/tracks/2) or [Python for Beginners](https://hyperskill.org/tracks/6) track at JetBrains Academy.
+- Check out the projects in the [Python Core](https://hyperskill.org/tracks/2) or [Python for Beginners](https://hyperskill.org/tracks/6) track at JetBrains Academy on Hyperskill.
 
 Stay tuned for new courses and updates!
