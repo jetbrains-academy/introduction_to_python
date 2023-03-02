@@ -23,7 +23,7 @@ We recommend keeping the Task Description window visible and not hiding it compl
 If you use two monitors, it may be helpful to switch the Task Description panel to the floating mode and move it to the second monitor, or just place it near the main IDE window. To do this, click the tool window settings ![](images/gear.svg) icon :
 
 
-<img src="images/edu_task_description_window_settings.png" class="center" width=600>
+<img src="images/edu_task_description_window_settings_dark.png" class="center" width=600>
 
 <style>
 img {
