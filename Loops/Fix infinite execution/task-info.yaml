@@ -14,3 +14,5 @@ files:
   visible: false
 - name: stop_run.png
   visible: false
+- name: tests/decorated_test_function.py
+  visible: false
