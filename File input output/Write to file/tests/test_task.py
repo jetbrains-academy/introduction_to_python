@@ -8,7 +8,7 @@ class TestCase(unittest.TestCase):
             lines = result.readlines()
             expected, actual = 'This is the output file. Do not modify this line :)\n', lines[0]
             self.assertEqual(expected, actual,
-                             msg='The first line in the output file should remain "This is the output file.".')
+                             msg='The first line in the output file should remain "This is the output file.Do not modify this line :)".')
     def test_last_line(self):
         with open('output.txt', 'r') as result:
             lines = result.readlines()

@@ -10,8 +10,8 @@ files:
     placeholder_text: add modifier
   - offset: 89
     length: 33
-    placeholder_text: '# On a new line in  "output.txt", add all elements from the
-      zoo list, joined by " and "'
+    placeholder_text: "# On a new line in  \"output.txt\", add all elements from the\
+      \ zoo list, joined by \" and \""
   - offset: 127
     length: 27
     placeholder_text: '# Add the number to the output as well'
