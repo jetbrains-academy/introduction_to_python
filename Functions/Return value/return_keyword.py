@@ -18,5 +18,6 @@ def fib(n):
         a = tmp_var
     return result
 
+
 if __name__ == '__main__':
     print(fib(10))
