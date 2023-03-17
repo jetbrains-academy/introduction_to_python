@@ -5,7 +5,7 @@ files:
   placeholders:
   - offset: 194
     length: 35
-    placeholder_text: '''Use list comprehension to build the same list as above'''
+    placeholder_text: '''Use list comprehension to build a new list'''
 - name: tests/test_task.py
   visible: false
 - name: __init__.py

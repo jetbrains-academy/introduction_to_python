@@ -17,6 +17,8 @@ class TestCase(unittest.TestCase):
     def test_dict(self):
         self.assertTrue("Jared" in phone_book.keys(), msg="You didn't add Jared.")
         self.assertTrue(phone_book['Jared'] == 570, msg="Jared's number should be 570.")
+        self.assertTrue(phone_book['Jill'] == 345, msg="Jill's number should be 345.")
+        self.assertTrue(phone_book['Jane'] == 234, msg="Jane's number should be 234.")
         self.assertTrue('Gerard' not in phone_book.keys(), msg="You didn't remove Gerard.")
         self.assertEqual({'Jane': 234, 'Jill': 345, 'Jared': 570}, phone_book,
                          msg="Your resulting dictionary seems to be off.")
