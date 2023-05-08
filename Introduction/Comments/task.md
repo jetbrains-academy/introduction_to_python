@@ -28,7 +28,7 @@ same line as a statement. Inline comments should be separated by at least two sp
 
 You can read more about proper commenting in <a href="https://www.python.org/dev/peps/pep-0008/#comments">PEP 8 – Style Guide for Python Code</a>. 
   
-You can also comment a line or a block of code if you don't want to delete it it's not needed it at the moment. 
+You can also comment a line or a block of code if you don't want to delete it, but it's not needed at the moment. 
 
 ### Task
 In the code editor, comment the line with the `print` statement that says it should not be printed. 
