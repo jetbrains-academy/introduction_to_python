@@ -1,0 +1,17 @@
+type: edu
+custom_name: What is your name?
+files:
+- name: printing_your_name.py
+  visible: true
+  placeholders:
+  - offset: 52
+    length: 13
+    placeholder_text: JetBrains
+- name: tests/test_task.py
+  visible: false
+- name: __init__.py
+  visible: false
+- name: tests/__init__.py
+  visible: false
+- name: edu_context_menu_run.png
+  visible: false

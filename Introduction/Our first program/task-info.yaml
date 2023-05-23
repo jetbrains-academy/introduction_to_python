@@ -1,9 +1,0 @@
-type: theory
-files:
-- name: hello_world.py
-  visible: true
-  placeholders:
-  - offset: 32
-    length: 5
-    placeholder_text: Type your name here
-feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Introduction+/+Our+First+Program

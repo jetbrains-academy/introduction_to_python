@@ -1,29 +1,20 @@
 type: edu
+custom_name: Doing the math
 files:
 - name: arithmetic_operators.py
   visible: true
   placeholders:
-  - offset: 54
+  - offset: 51
     length: 10
-    placeholder_text: '# divide the number by two'
+    placeholder_text: '# divide the number by 2'
   - offset: 87
     length: 10
-    placeholder_text: '# get the remainder of the division of the number by two'
-  - offset: 123
-    length: 19
-    placeholder_text: '# multiply the division result by 2'
-  - offset: 162
-    length: 42
-    placeholder_text: '# add the division remainder to the multiplication result'
-  - offset: 227
-    length: 30
-    placeholder_text: '# subtract the multiplication result from the initial number'
-  - offset: 274
-    length: 11
-    placeholder_text: '# perform a floor division of number by 2'
-  - offset: 302
-    length: 26
-    placeholder_text: '# raise the multiplication result to the power of 3'
+    placeholder_text: '# multiply the number by 2'
+  - offset: 117
+    length: 39
+    placeholder_text: '# add the division result to the multiplication result'
 - name: tests/test_task.py
+  visible: false
+- name: edu_context_menu_run.png
   visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Variables+/+Arithmetic+Operators

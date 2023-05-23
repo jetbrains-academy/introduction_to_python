@@ -1,9 +1,6 @@
+custom_name: First steps with numbers
 content:
-- Variable definition
-- Undefined variable
-- Variable types
-- Type conversion
 - Arithmetic operators
 - Assignments
-- Boolean operators
-- Comparison operators
+- Strings
+- Concatenation

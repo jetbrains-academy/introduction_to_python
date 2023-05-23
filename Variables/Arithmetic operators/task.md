@@ -1,40 +1,54 @@
+## This demo
+
+This is a demo of **Introduction to Python** tutorial available at JetBrains Academy.
+<div class='hint' title="Running the code">
+To run your code at any time, choose the Run option from the context menu or press <span style="color: #509DD6">&shortcut:Run;</span>:
+
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<img src="edu_context_menu_run.png" class="center" width=600>
+</div>
+
+Good luck and have fun!
+
 ## Arithmetic operators
+In Python to assign a variable you need to use a `=` operator.
+```python
+x = 1
+```
 
-Just as in any other programming language, the addition ( `+` ), subtraction ( `-` ), 
-multiplication ( `*` ), and division ( `/` ) operators can be used with numbers. In 
-addition, Python has the power ( `**` ),  modulo ( `%` ), and floor division ( `//` ) operators.
+Just as in any other programming language, in Python the addition ( `+` ), 
+multiplication ( `*` ), and division ( `/` ) operators can be used with numbers. 
 
-- The `*` (multiplication) operator yields the product of its arguments. The arguments must 
-either both be numbers, or one argument must be an integer and the other – a sequence.
+- The `+` (addition) operator yields the sum of its arguments.
+  ```python
+  x = 1 + 2 # x is 3 now
+  ```
+- The `*` (multiplication) operator yields the product of its arguments. 
+  ```python
+  y = 3 * 5 # y is 15 now
+  ```
   
-- The `/` (division) and `//` (floor division) operators yield the quotient of their arguments. 
-  Division of integers yields a float, while floor division of integers results in an integer.
-  
-- The `%` (modulo) operator yields the remainder of the division of the first argument by the second.
+- The `/` (division) operator yields the quotient of its arguments. 
+  ```python
+  z = y / x # z is 5 now
+  ```
 
-- The `+` (addition) operator yields the sum of its arguments. The arguments must either both 
-  be numbers or both be sequences of the same type.
-  
-- The `-` (subtraction) operator yields the difference of its arguments.
+<div class='hint' title="Where is subtraction?">The other arithmetic operators are covered in the full version of the course.</div>
 
-The binary arithmetic operations have the conventional priority levels. Note that 
-some of these operations also apply to certain non-numeric types.
-
-You can read more on this topic <a href="https://docs.python.org/3/reference/expressions.html#binary-arithmetic-operations">here</a>.
 ### Task
  - Divide the value stored in `number` by `2`.
- - Calculate a remainder of such a division.
- - Multiply the division result by `2`.
- - Add the division remainder to the multiplication result.
- - Subtract the multiplication result from the number.
- - Perform a floor division of `number` by 2.
- - Raise the `multiplication_result` to the power of 3
+ - Multiply the value stored in `number` by `2`.
+ - Add the division result to the multiplication result.
 
 <div class='hint'>First, use the <code>/</code> operator.</div>
-<div class='hint'>Then use the <code>%</code> operator.</div>
 
 <div class='hint'>Then use the <code>*</code> operator.</div>
 
 <div class='hint'>Then use the <code>+</code> operator.</div>
 
-<div class='hint'>Then use the <code>-</code> operator.</div>
