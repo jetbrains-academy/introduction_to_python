@@ -1,6 +1,4 @@
-custom_name: First steps with numbers
+custom_name: First steps with words
 content:
-- Arithmetic operators
-- Assignments
 - Strings
 - Concatenation
