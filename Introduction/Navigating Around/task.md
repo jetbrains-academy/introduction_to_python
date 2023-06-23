@@ -20,6 +20,6 @@ img {
   margin-right: auto;
 }
 </style>
-<img src="edu_course_overview.png" class="center" width=800>
+<img src="edu_course_overview_dark.png" class="center" width=800>
 
 Click the "Next" button to navigate to the next task.

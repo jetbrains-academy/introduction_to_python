@@ -18,6 +18,8 @@ files:
   visible: false
 - name: images/hideToolWindow.svg
   visible: false
+- name: images/edu_task_description_window_settings_dark.png
+  visible: false
 - name: images/edu_task_description_window_settings.png
   visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Introduction+/+Task+Description
