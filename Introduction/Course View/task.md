@@ -9,7 +9,7 @@ img {
   margin-right: auto;
 }
 </style>
-<img src="edu_course_view.png" class="center" width=400>
+<img src="edu_course_view_dark.png" class="center" width=400>
 
 You can navigate to any task by double-clicking its name.
 
