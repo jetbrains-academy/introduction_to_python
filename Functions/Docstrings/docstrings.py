@@ -1,5 +1,5 @@
 def increment_list(mylist):
-    """This function adds 1 to each element of the list"""
+    """This function adds 1 to each element of the list."""
 
     for i in range(len(mylist)):
         mylist[i] += 1

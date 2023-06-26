@@ -9,5 +9,5 @@ Docstrings should also generally be written for module, class and method definit
 ### Task 
 Add the following docstring to the function defined in the code editor:
 ```text
-"""This function adds 1 to each element of the list"""
+"""This function adds 1 to each element of the list."""
 ```
