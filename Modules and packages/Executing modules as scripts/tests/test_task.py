@@ -24,8 +24,8 @@ class TestCase1(unittest.TestCase):
                          msg='You should move the last print statement in some_module into the `main` block.')
 
     def test_main_main(self):
-        self.assertFalse("This should be printed ONLY when dict_keys.py is called directly." in output,
-                         msg='You should move the last print statement in dict_keys.py into the `main` block.')
+        self.assertFalse("This should be printed ONLY when task.py is called directly." in output,
+                         msg='You should move the last print statement in task.py into the `main` block.')
 
     def test_main_func(self):
         self.assertTrue('This is a message from the function in the imported module.' in output,
