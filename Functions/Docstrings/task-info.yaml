@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 32
-    length: 54
+    length: 55
     placeholder_text: "# TODO: add a docstring here"
 - name: tests/test_task.py
   visible: false

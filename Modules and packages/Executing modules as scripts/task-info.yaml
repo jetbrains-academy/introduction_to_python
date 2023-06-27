@@ -7,7 +7,7 @@ files:
     length: 18
     placeholder_text: '# Call func() from the imported module'
   - offset: 107
-    length: 105
+    length: 100
     placeholder_text: print('This should be printed ONLY when dict_keys.py is called
       directly.')
 - name: tests/test_task.py
