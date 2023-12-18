@@ -21,6 +21,8 @@ and an `int` is a number without a decimal point.
 For more information on this topic, refer to the "<a href="https://docs.python.org/3/reference/datamodel.html#objects-values-and-types">Objects, values and types</a>"
 and "<a href="https://docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy">The standard type hierarchy</a>" sections in Python Documentation.
 
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/5852).
+
 ### Task
 Print the type of the variable `float_number`.  
 

@@ -17,17 +17,29 @@ either both be numbers, or one argument must be an integer and the other – a s
   
 - The `-` (subtraction) operator yields the difference of its arguments.
 
+For example
+```python
+a = 16
+b = 3
+result = a // b  # result will be 5
+result = a % b   # result will be 1
+result = a ** 2  # result will be 256 (16 in power of 2)
+```
+
 The binary arithmetic operations have the conventional priority levels. Note that 
 some of these operations also apply to certain non-numeric types.
 
 You can read more on this topic <a href="https://docs.python.org/3/reference/expressions.html#binary-arithmetic-operations">here</a>.
+
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/5865).
+
 ### Task
- - Divide the value stored in `number` by `2`.
+ - Divide the value stored in `init_number` by `2`.
  - Calculate a remainder of such a division.
- - Multiply the division result by `2`.
- - Add the division remainder to the multiplication result.
- - Subtract the multiplication result from the number.
- - Perform a floor division of `number` by 2.
+ - Multiply the `division_result` by `2`.
+ - Add the `division_remainder` to the `multiplication_result`.
+ - Subtract the `multiplication_result` from the `init_number`.
+ - Perform a floor division of `init_number` by 2.
  - Raise the `multiplication_result` to the power of 3
 
 <div class='hint'>First, use the <code>/</code> operator.</div>
@@ -38,3 +50,7 @@ You can read more on this topic <a href="https://docs.python.org/3/reference/exp
 <div class='hint'>Then use the <code>+</code> operator.</div>
 
 <div class='hint'>Then use the <code>-</code> operator.</div>
+
+<div class='hint'>Then use the <code>//</code> operator.</div>
+
+<div class='hint'>Then use the <code>**</code> operator.</div>

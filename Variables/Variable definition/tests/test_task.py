@@ -27,16 +27,7 @@ class TestCase(unittest.TestCase):
                       "errors and warnings.".format(str(e)))
 
     def test_assignment_operator(self):
-        expected_first_greetings = "greetings = greetings"
-        actual_output = self.actualOutput.getvalue()
-
-        self.assertIn(expected_first_greetings, actual_output, msg="The line expressing greetings after the initial "
-                                                                   "assignment was not found. Check that the variable is "
-                                                                   "assigned properly and that the print statement "
-                                                                   "is intact.")
-
-    def test_assignment_operator2(self):
-        expected_first_greetings = "greetings = greetings"
+        expected_first_greetings = "Hello, World"
         actual_output = self.actualOutput.getvalue()
 
         self.assertIn(expected_first_greetings, actual_output, msg="The line expressing greetings after the initial "
@@ -45,16 +36,16 @@ class TestCase(unittest.TestCase):
                                                                    "is intact.")
 
     def test_variable(self):
-        unexpected_greetings = "greetings"
+        unexpected_name = "World"
 
         try:
-            actual_greetings = try_import().greetings
+            actual_name = try_import().name
         except AttributeError:
-            self.fail(msg="The variable greetings seems to be undefined. Do not remove it from the task code.")
+            self.fail(msg="The variable name seems to be undefined. Do not remove it from the task code.")
 
-        self.assertNotEqual(unexpected_greetings, actual_greetings, msg="The variable greetings doesn't seem to be "
-                                                                        "reassigned. You should change it to something "
-                                                                        "else.")
+        self.assertNotEqual(unexpected_name, actual_name, msg="The variable name doesn't seem to be "
+                                                              "reassigned. You should change it to something "
+                                                              "else.")
 
     def test_chained_assignment(self):
         expected_a = expected_b = 2
