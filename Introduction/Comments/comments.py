@@ -3,5 +3,7 @@ print("Hello!")  # This comment is for the second line.
 
 print("# this is not a comment")
 
+# print(“This commented line will never be executed”)
+
 # The following line should be commented:
 # print("This line should not be printed!")
