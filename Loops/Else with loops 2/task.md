@@ -18,8 +18,7 @@ The `else` statement will only be executed if `n` is a prime number, i.e. the `i
 `for` loop. 
 
 ### Task
-
-Inside the [function](course://Functions/Definition) `contains_even_number()`, write a `for` loop that would iterate over a list `lst` and, if an even element is found,
+Inside the [function](course://Loops/Else with loops 2) `contains_even_number()`, write a `for` loop that would iterate over a list `lst` and, if an even element is found,
 print `f"List {lst} contains an even number."` and exit the loop, if no such element is found, print `f"List {lst} does not contain an even number."`. 
 
 <div class="hint">

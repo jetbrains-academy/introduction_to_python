@@ -28,6 +28,8 @@ Output:
 ```
 List comprehensions are also more efficient computationally than a `for` loop.
 
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6315).
+
 In the code editor, use list comprehension to build `my_efficient_list` from the elements of `my_inefficient_list`
 by adding $10$ to each of them. For example, the first element of `my_inefficient_list` is $1 + 10 = 11$,
 so the first element of `my_efficient_list` should be $11 + 10 = 21$, and so on.

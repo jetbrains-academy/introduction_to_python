@@ -34,6 +34,8 @@ Remember, an `else` after an `if` statement is skipped and NOT executed if the e
 `if` is `True`, while in the case of loops, an `else` clause is executed after the loop itself
 is completed (unless there was a `break` in there somewhere).
 
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6302).
+
 In the code editor, add two lines of code to the second loop to make sure the loop only prints
 numbers 1 and 2 and never prints the phrase `"for loop is done"`.
 
