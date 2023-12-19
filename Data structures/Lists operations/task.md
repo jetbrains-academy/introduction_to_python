@@ -32,5 +32,7 @@ squares
   
 Find out about many other useful list methods on <a href="https://docs.python.org/3/tutorial/datastructures.html#more-on-lists">this page</a>.
 
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6031).
+
 Replace `"dino"` with `"dinosaur"` in the `animals` list.  
 <div class='hint'>Use list indexing operation and value assignment.</div>

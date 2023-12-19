@@ -14,6 +14,8 @@ followed by a dot.
 
 Read more about the operations that dictionaries support <a href="https://docs.python.org/3/library/stdtypes.html#typesmapping">here</a>.
 
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/11096).
+
 Print all values from the `phone_book` .  
 
 <div class='hint'>Use the method <code>values()</code>.</div>

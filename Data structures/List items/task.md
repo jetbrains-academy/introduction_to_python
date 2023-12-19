@@ -8,5 +8,8 @@ animals[:] = []
 ```
   
 Make all `animals` elephants by replacing the last two items.  
+We suggest that you first run the program in the IDE without changes to see how the `animals` list looks like after all the operations have been made
 
 <div class='hint'>Use assignment to a slice as in examples.</div>
+
+<div class='hint'>You can assign a list consisting of several elements.</div>

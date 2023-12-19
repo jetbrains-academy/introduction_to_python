@@ -33,6 +33,8 @@ aa = bb = cc
 Python is a programming language
 ```
 
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6972#join-a-list).
+
 Assign a value to the  `joined` variable such that the `print` statement prints the following:
 ```text
 I like apples and I like bananas and I like peaches and I like grapes
