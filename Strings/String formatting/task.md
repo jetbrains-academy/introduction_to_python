@@ -15,6 +15,7 @@ or decimal values.
 
 For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6037).
 
+### Task
 Tell PyCharm how old you are (using digits).  
 
 <div class='hint'>Use the <code>%d</code> special symbol.</div>

@@ -9,6 +9,7 @@ Detailed information about all string methods can be found <a href="https://docs
 
 For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6842).
 
+### Task
 Print `monty_python` in upper case using an appropriate string method.  
 
 <div class='hint'>Pay attention to how the <code>lower()</code> method is used in our code.</div>

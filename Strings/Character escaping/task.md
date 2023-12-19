@@ -20,6 +20,7 @@ You can learn more about escaping from <a href="https://docs.python.org/3/refere
 
 For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/7130).
 
+### Task
 Print out the following text using one string:  
 ```text
 The name of this ice cream is "Sweet'n'Tasty"  

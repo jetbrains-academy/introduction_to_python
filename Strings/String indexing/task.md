@@ -11,6 +11,7 @@ Note that since `-0` is the same as `0` , negative indices start from `-1`.
 
 For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6189).
 
+### Task
 Use the index operator to get the letter `"P"` from `"Python"` .  
 
 <div class="hint">Note that indices start with 0.</div>

@@ -31,6 +31,7 @@ For more information about formatted string literals you can refer to <a href="h
 
 For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6037).
 
+### Task
 Try creating an f-string yourself. Also try running the code to see what it prints.
 
 <div class="hint">The value assigned to the <code>name</code> variable has to be a string, so it needs to be in quotes, 
