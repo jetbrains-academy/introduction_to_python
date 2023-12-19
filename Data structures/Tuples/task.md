@@ -43,6 +43,7 @@ applicable to tuples. You can read more about tuples <a href="https://docs.pytho
 
 For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/7462).
   
+### Task
 Print the length of the tuple `alphabet`. Then create a tuple with a single element `'fun_tuple'`. 
 You can run the code to see what it prints.  
 

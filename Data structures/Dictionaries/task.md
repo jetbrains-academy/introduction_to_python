@@ -27,6 +27,7 @@ but using a key instead of an index. More info about this data structure can be 
 
 For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6481).
 
+### Task
 Add Jared's (`"Jared"`) number `570` to the phone book.
 Remove Gerard's number from the phone book.
 Print Jane's phone number from the `phone_book`.  
