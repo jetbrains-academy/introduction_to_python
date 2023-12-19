@@ -29,6 +29,8 @@ f"{name.lower()} is funny."
 ```
 For more information about formatted string literals you can refer to <a href="https://docs.python.org/3/reference/lexical_analysis.html#formatted-string-literals">Python Docs</a>.
 
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6037).
+
 Try creating an f-string yourself. Also try running the code to see what it prints.
 
 <div class="hint">The value assigned to the <code>name</code> variable has to be a string, so it needs to be in quotes, 

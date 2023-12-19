@@ -12,7 +12,9 @@ or decimal values.
 > interface, or <a href="https://docs.python.org/3/library/string.html#template-strings">template strings</a> may help avoid these errors. 
 > Each of these alternatives provides their own trade-offs and benefits of 
 > simplicity, flexibility, and/or extensibility.</i>
-  
+
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6037).
+
 Tell PyCharm how old you are (using digits).  
 
 <div class='hint'>Use the <code>%d</code> special symbol.</div>

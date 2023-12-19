@@ -1,7 +1,22 @@
 ## String length
 
-The `len()` method is used to count how many characters a string contains.  
-  
+The `len()` method is used to count how many characters a string contains.
+
+For example:
+```python
+s = "Hello World"
+print(len(s))   # will print 11
+```
+
+Note, that result of `/` division have type float:
+```python
+a = 10/2
+print(a)        # 5.0
+print(type(a))  # <class 'float'>
+```
+
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/5814).
+
 Get the first half of the string stored in the variable `phrase`.  
 Note: when getting the index, remember about type conversion.  
 

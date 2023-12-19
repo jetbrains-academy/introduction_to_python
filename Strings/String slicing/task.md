@@ -24,6 +24,8 @@ str[:end]      # items from the beginning through end-1
 str[:]         # a copy of the whole array
 </code></pre>
 
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6177).
+
 Use slicing to get `"Python"` from the `monty_python` variable.  
 
 <div class='hint'>You can leave one of the indices empty.</div>
