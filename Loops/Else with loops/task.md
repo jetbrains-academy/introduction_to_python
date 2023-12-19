@@ -36,6 +36,7 @@ is completed (unless there was a `break` in there somewhere).
 
 For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6302).
 
+### Task
 In the code editor, add two lines of code to the second loop to make sure the loop only prints
 numbers 1 and 2 and never prints the phrase `"for loop is done"`.
 

@@ -10,6 +10,7 @@ You can read more about the `for` statement on <a href="https://docs.python.org/
   
 For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6065).
 
+### Task
 Print each prime number from the `primes` list using the `for` loop. A prime 
 number is a natural number greater than `1` that has no positive divisors 
 other than `1` and itself.  

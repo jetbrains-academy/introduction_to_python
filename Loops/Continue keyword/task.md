@@ -7,6 +7,7 @@ the `else` clause is executed if it is present.
   
 For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6302#continue).
 
+### Task
 Print only the odd numbers `1, 3, 5, 7, 9`.  
 
 <div class='hint'>Use the <code>%</code> operator to check if <code>x</code> is even.</div>
