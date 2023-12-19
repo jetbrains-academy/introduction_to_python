@@ -20,6 +20,9 @@ my_function()  # function call
 ```
 
 Read more about defining functions in <a href="https://docs.python.org/3/tutorial/controlflow.html#defining-functions">this section</a> of Python Documentation.
+
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/5900).
+
 ### Task
  - Call the function `my_function` inside the loop to repeat its invocation 5 times
  - Define a function that can replace the duplicated `print` statements in the file.  

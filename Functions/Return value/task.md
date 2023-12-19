@@ -6,6 +6,8 @@ without a `return` statement do return a value. This value is
 called `None` (it’s a built-in name). Writing the value `None` is normally suppressed by 
 the interpreter, but if you really want to see it, you can use `print(some_func())`.
 
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/5900#execution-and-return).
+
 ><i>The first statement of the function body can optionally be a string literal; this string 
 literal is the function’s documentation string, or docstring (more about docstrings can 
 be found in the section <a href="https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings">Documentation Strings</a>

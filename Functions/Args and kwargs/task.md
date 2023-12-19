@@ -24,6 +24,8 @@ after the `*args` parameter are [‘keyword-only’](https://peps.python.org/pep
 rather than positional arguments. Another way to call this function is shown in call 2, and it will give 
 us the same output.
 
+For more structured and detailed information, you can refer to [this ](https://hyperskill.org/learn/step/8560) and [this](https://hyperskill.org/learn/step/9544) Hyperskill knowledge base pages.
+
 ### Task
 
 In the code editor, modify the code below the `cat()` function so that it prints 
