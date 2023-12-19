@@ -7,6 +7,7 @@ of `or` is `True`. The boolean operator `not` inverts the boolean expression it 
   
 For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6025).
 
+### Task
 Write an expression that evaluates to `True` if `name` is equal to `"John"` and
 he is `16` or older.  
 
