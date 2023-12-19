@@ -41,6 +41,8 @@ a += 1 if a > b else a -= 1
 ```
 </details>
   
+For more structured and detailed information, you can refer to [this](https://hyperskill.org/learn/step/5932) and [this](https://hyperskill.org/learn/step/5926) Hyperskill knowledge base pages.
+
 Print `True` if `name` is equal to `"John"` and `False` otherwise.  
 
 <div class='hint'>Use the <code>if</code> keyword and the <code>==</code> operator.</div>

@@ -5,6 +5,8 @@ operator `and` returns `True` when the expressions on both sides of `and` are `T
 The boolean operator `or` returns `True` when at least one expression on either side 
 of `or` is `True`. The boolean operator `not` inverts the boolean expression it precedes.  
   
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6025).
+
 Write an expression that evaluates to `True` if `name` is equal to `"John"` and
 he is `16` or older.  
 
