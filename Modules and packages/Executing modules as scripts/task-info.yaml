@@ -1,25 +1,24 @@
 type: edu
 files:
-- name: task.py
-  visible: true
-  placeholders:
-  - offset: 65
-    length: 18
-    placeholder_text: '# Call func() from the imported module'
-  - offset: 107
-    length: 100
-    placeholder_text: print('This should be printed ONLY when dict_keys.py is called
-      directly.')
-- name: tests/test_task.py
-  visible: false
-- name: __init__.py
-  visible: false
-- name: tests/__init__.py
-  visible: false
-- name: some_module.py
-  visible: true
-  placeholders:
-  - offset: 174
-    length: 66
-    placeholder_text: print('This should not be printed')
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 65
+        length: 18
+        placeholder_text: '# Call func() from the imported module'
+      - offset: 125
+        length: 100
+        placeholder_text: print('This should be printed ONLY when task.py is called directly.')
+  - name: tests/test_task.py
+    visible: false
+  - name: __init__.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+  - name: some_module.py
+    visible: true
+    placeholders:
+      - offset: 173
+        length: 66
+        placeholder_text: print('This should not be printed when this file is imported')
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Modules+and+Packages+/+Executing+modules+as+scripts
