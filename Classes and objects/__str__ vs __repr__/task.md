@@ -27,6 +27,9 @@ Also, if we think it would be useful to have a string representation for users, 
 a `__str__` function. Check out another implementation of the class `Complex` in the code editor. Run the code
 to see what each of the two `print` statements prints.
 
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/7139#str__-vs-__repr).
+
+### Task
 Implement `__str__` and `__repr__` methods for the class `Cat`. `__str__` method should return a string like this:
 `"My siamese cat's name is Lucy"`;  `__repr__` method should return a string like this:
 `"Cat, breed: siamese, name: Lucy"`. Use [f-strings](course://Strings/F-strings).

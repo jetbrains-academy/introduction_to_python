@@ -43,6 +43,9 @@ variable `x`.
 You can find out more about class definition syntax by reading <a href="https://docs.python.org/3/tutorial/classes.html#class-definition-syntax">this section</a>
 of Python Documentation.
 
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6661).
+
+### Task
 Assign a value to  `variable` inside `MyClass` and create an object `my_class` of the class `MyClass()`. 
 Run the code and see what happens!
 
