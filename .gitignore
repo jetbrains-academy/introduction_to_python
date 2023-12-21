@@ -136,3 +136,6 @@ dmypy.json
 !.idea/vcs.xml
 .idea/
 *.iml
+
+# Course files that shouldn't be committed
+/.coursecreator/
