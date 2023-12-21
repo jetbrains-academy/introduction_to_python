@@ -137,5 +137,5 @@ dmypy.json
 .idea/
 *.iml
 
-# Course files that shouldn't be commited
- .coursecreator/
+# Course files that shouldn't be committed
+/.coursecreator/

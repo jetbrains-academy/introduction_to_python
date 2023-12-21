@@ -2,6 +2,8 @@
 
 Welcome to the course in basics of Python programming!
 
+Please join the course chat on Discord using the [link](https://discord.gg/aU6qvN5weS). There, you can ask questions, interact with instructors, and connect with your fellow students.
+
 #### Why Learn Python?
 Python is one of the most popular programming languages in the world.
 Used extensively in data science, ML, and AI, Python is the fastest growing major programming language.
