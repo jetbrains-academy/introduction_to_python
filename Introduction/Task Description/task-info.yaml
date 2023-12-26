@@ -1,25 +1,29 @@
 type: theory
 files:
-- name: main.py
-  visible: true
-- name: images/back.svg
-  visible: false
-- name: images/commentTask.svg
-  visible: false
-- name: images/edu_next_button.png
-  visible: false
-- name: images/edu_peek_solution.png
-  visible: false
-- name: images/reset.svg
-  visible: false
-- name: images/forward.svg
-  visible: false
-- name: images/gear.svg
-  visible: false
-- name: images/hideToolWindow.svg
-  visible: false
-- name: images/edu_task_description_window_settings_dark.png
-  visible: false
-- name: images/edu_task_description_window_settings.png
-  visible: false
+  - name: main.py
+    visible: true
+  - name: images/back.svg
+    visible: false
+  - name: images/commentTask.svg
+    visible: false
+  - name: images/edu_next_button.png
+    visible: false
+  - name: images/edu_peek_solution.png
+    visible: false
+  - name: images/reset.svg
+    visible: false
+  - name: images/forward.svg
+    visible: false
+  - name: images/gear.svg
+    visible: false
+  - name: images/hideToolWindow.svg
+    visible: false
+  - name: images/edu_task_description_window_settings_dark.png
+    visible: false
+  - name: images/edu_task_description_window_settings.png
+    visible: false
+  - name: images/moreVertical.svg
+    visible: true
+  - name: images/moreVertical_dark.svg
+    visible: true
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Introduction+/+Task+Description
