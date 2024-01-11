@@ -29,4 +29,6 @@ Add Jared's (`"Jared"`) number `570` to the phone book.
 Remove Gerard's number from the phone book.
 Print Jane's phone number from the `phone_book`.  
 
+Please do not add or remove any lines from the code.
+
 <div class='hint'>Use dictionary indexing, e.g., <code>dct[key]</code></div>

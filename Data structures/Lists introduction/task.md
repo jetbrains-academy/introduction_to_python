@@ -19,5 +19,7 @@ You can explore lists in more detail by reading <a href="https://docs.python.org
 
 Use list slicing to print `[4, 9, 16]`.  
 
+Please do not add or remove any lines from the code.
+
 <div class='hint'>List slicing syntax looks just like that for strings: <code>lst[index1:index2]</code>.
 Don't forget that the element with the index <code>index2</code> is not included!</div>

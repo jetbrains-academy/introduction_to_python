@@ -5,4 +5,6 @@ boolean operators: `not` is evaluated first, `and` is evaluated next, and `or` i
 
 Write an expression that evaluates to `True` if `name` is either `"John"` or `"Jane"` who are `16` or older, but younger than `25`.
 
+Please do not add any extra lines to the code.
+
 <div class='hint'>Combine the <code>and</code> and <code>or</code> keywords.</div>

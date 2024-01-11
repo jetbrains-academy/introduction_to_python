@@ -39,3 +39,14 @@ class TestCase(unittest.TestCase):
         # TODO comeback and switch it to another assert architecture if the render of the text is not fixed in task view
         self.assertIs(type(actual_converted_float_number), expected_type, msg="The variable doesn't seem to be an integer "
                                                                               "yet. Please convert it!")
+
+    def test_0_code_len(self):
+        with open("type_cast.py", "r") as taskfile:
+            lines = taskfile.readlines()
+            self.assertTrue(len(lines) == 10, msg="Please do not add or remove any lines from the code file.")
+
+    def test_statement_1(self):
+        with open("type_cast.py", "r") as taskfile:
+            lines = taskfile.readlines()
+            code = lines[-3]
+            self.assertTrue("int(" in code, msg="Your expression does not perform a type conversion.")

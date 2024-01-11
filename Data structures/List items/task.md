@@ -9,4 +9,6 @@ animals[:] = []
   
 Make all `animals` elephants by replacing the last two items.  
 
+Please do not add or remove any lines from the code.
+
 <div class='hint'>Use assignment to a slice as in examples.</div>
