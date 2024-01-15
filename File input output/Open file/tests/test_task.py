@@ -16,7 +16,7 @@ class TestCase(unittest.TestCase):
             self.assertTrue(outfile.closed, msg='The outfile file is not closed.')
             with open('outfile.txt', 'r') as file:
                 hello = file.readline()
-                self.assertEqual('Hello World', hello, msg='Please do not remove write Hello World instruction')
+                self.assertEqual('Hello World', hello, msg='Please do not remove the instruction to write "Hello World"')
 
         except ImportError:
             self.assertTrue(False, msg='Please do not rename any variables.')
@@ -25,4 +25,4 @@ class TestCase(unittest.TestCase):
             self.assertTrue(False, msg='You should open input1.txt as a file.')
 
         except FileNotFoundError:
-            self.assertTrue(False, msg='Output file name should be used from outfile_name variable.')
+            self.assertTrue(False, msg='The output file name should be derived from the outfile_name variable.')

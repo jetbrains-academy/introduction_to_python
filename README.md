@@ -11,8 +11,7 @@
   <p>Have fun and good luck!</p>
 
 ## Want to know more?
-If you have questions about the course or the tasks or if you find some errors,
-you can ask questions and participate in discussions in repository [issues](https://github.com/jetbrains-academy/introduction_to_python/issues).
+If you have questions about the course or the tasks, or if you find any errors, feel free to ask questions and participate in discussions within the repository [issues](https://github.com/jetbrains-academy/introduction_to_python/issues).
 
 ## Contribution
 Please be sure to review the [project's contributing guidelines](./contributing.md) to learn how to help the project.

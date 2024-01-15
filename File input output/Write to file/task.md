@@ -46,4 +46,4 @@ append another line with the `number` to the same output file.
 <div class='hint'>Use the <code>'a'</code> modifier to append lines at the end of the file.</div>
 <div class='hint'>Use the <code>write()</code> method.</div>
 <div class='hint'>Convert <code>number</code> into a string before writing.</div>
-<div class="hint">Add <code>\n</code> at the beginning of each string to write so that it eds up a separate line.</div>
+<div class="hint">Add <code>\n</code> at the beginning of each string to write, so that it ends up on a separate line.</div>

@@ -31,8 +31,8 @@ free up any system resources used by it. You cannot use the file object after it
 For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/8691).
 
 ### Task
-- In the code editor, open the file `input1.txt` in read mode properly using the `with` statement. `input1.txt` file stores the name of the file where the string `Hello World` should to be output. Reading this name is already implemented in the `outfile_name` variable.
-- Open the file with `outfile_name` name in writing mode
+- In the code editor, open the file `input1.txt` in read mode, properly using the `with` statement. The `input1.txt` file stores the name of the file where the string `Hello World` should be output. Reading this name is already implemented in the `outfile_name` variable.
+- Open the file with the `outfile_name` name in write mode.
 - Afterward, close the output file that was opened.
 
 After running your code, check out the output file that appeared in the course view among the other files.

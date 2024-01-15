@@ -9,7 +9,7 @@ files:
       - offset: 242
         length: 12
         placeholder_text: ???
-      - offset: 408
+      - offset: 412
         length: 15
         placeholder_text: '# Close the output file!'
   - name: input.txt

@@ -10,10 +10,10 @@ files:
     placeholder_text: modifier
   - offset: 89
     length: 33
-    placeholder_text: "# Write a new line symbol into a file and all elements from the zoo list, joined by \" and \""
+    placeholder_text: "# Write a new line symbol into a file, along with all elements from the zoo list, joined by \" and \""
   - offset: 127
     length: 27
-    placeholder_text: '# Write a new line symbol and number-variable value into a file'
+    placeholder_text: '# Write a new line symbol and the value of the number variable into a file'
 - name: tests/__init__.py
   visible: false
 - name: tests/test_task.py
