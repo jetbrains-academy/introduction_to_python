@@ -6,12 +6,12 @@ print("a = " + str(a))
 # Assign "World" to the name variable using the assignment operator
 name = "World"
 print("Hello, " + str(name))
-# Reassign name variable with your actual name
+# Reassign the name variable with your actual name
 name = "Username"
 print("Hello, " + str(name))
 
 
-# Use here the chain assignment to assigns the value 2 to variables "a" and "b".
+# Use chain assignment here to assign the value 2 to variables "a" and "b".
 a = b = 2
 print("a = " + str(a))
 print("b = " + str(b))
