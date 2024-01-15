@@ -9,7 +9,7 @@ animals[:] = []
   
 ### Task
 Make all `animals` elephants by replacing the last two items.  
-We suggest that you first run the program in the IDE without changes to see how the `animals` list looks like after all the operations have been made
+We suggest that you first run the program in the IDE without making any changes. This will allow you to see what the `animals` list looks like after all the operations have been performed.
 
 <div class='hint'>Use assignment to a slice as in examples.</div>
 
