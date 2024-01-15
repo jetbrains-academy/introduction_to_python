@@ -8,7 +8,7 @@ s = "Hello World"
 print(len(s))   # will print 11
 ```
 
-Note, that result of `/` division have type float:
+Note that the result of the `/` division operation is of type float:
 ```python
 a = 10/2
 print(a)        # 5.0

@@ -3,7 +3,7 @@ files:
   - name: character_escaping.py
     visible: true
     placeholders:
-      - offset: 157
+      - offset: 159
         length: 47
         placeholder_text: ???
   - name: tests/__init__.py
