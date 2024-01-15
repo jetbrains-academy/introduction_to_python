@@ -17,7 +17,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
 
-      - name: Call action jetbrains-academy/links-checker-action
+      - name: Call the action jetbrains-academy/links-checker-action
         uses: jetbrains-academy/links-checker-action@main
         with:
           dir: ./
