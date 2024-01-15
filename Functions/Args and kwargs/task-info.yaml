@@ -3,13 +3,13 @@ files:
   - name: args_kwargs.py
     visible: true
     placeholders:
-      - offset: 1156
+      - offset: 1159
         length: 54
         placeholder_text: ???
-      - offset: 1348
+      - offset: 1363
         length: 54
         placeholder_text: ???
-      - offset: 1524
+      - offset: 1545
         length: 32
         placeholder_text: ???
   - name: tests/test_task.py
