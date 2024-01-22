@@ -18,3 +18,8 @@ except ImportError:
     class TestCase(unittest.TestCase):
         def test_fail(self):
             self.assertTrue(False, msg="Do not rename any variables.")
+
+except TypeError:
+    class TestCase(unittest.TestCase):
+        def test_fail(self):
+            self.assertTrue(False, msg="Don't forget to convert the result of division to int type")
