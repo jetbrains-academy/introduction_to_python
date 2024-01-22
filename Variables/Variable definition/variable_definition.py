@@ -3,15 +3,15 @@ a = 1
 # For now: it is used to convert the variable "a" into a string.
 print("a = " + str(a))
 
-# Assign "greetings" to the variable using the assignment operator
-greetings = "greetings"
-print("greetings = " + str(greetings))
-# Reassign anything to the variable here
-greetings = 5
-print("greetings = " + str(greetings))
+# Assign "World" to the name variable using the assignment operator
+name = "World"
+print("Hello, " + str(name))
+# Reassign the name variable with your actual name
+name = "Username"
+print("Hello, " + str(name))
 
 
-# This is called a "chained assignment". It assigns the value 2 to variables "a" and "b".
+# Use chain assignment here to assign the value 2 to variables "a" and "b".
 a = b = 2
 print("a = " + str(a))
 print("b = " + str(b))

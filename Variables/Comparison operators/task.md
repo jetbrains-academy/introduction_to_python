@@ -22,6 +22,9 @@ that of any arithmetic, shifting or bitwise operation. Comparisons yield boolean
 values: either `True` or `False`. Comparisons can be chained arbitrarily, and 
 expressions like `a < b < c` have the 
 conventional mathematical meaning. Read more on comparisons <a href="https://docs.python.org/3/reference/expressions.html#comparisons">here</a>.
+
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/5920).
+
 ### Task
  - Check whether the value of the variable `three` is strictly greater than the value of 
 the variable `two`.

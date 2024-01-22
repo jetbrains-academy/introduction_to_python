@@ -1,29 +1,29 @@
 type: edu
 files:
-- name: arithmetic_operators.py
-  visible: true
-  placeholders:
-  - offset: 54
-    length: 10
-    placeholder_text: '# divide the number by two'
-  - offset: 87
-    length: 10
-    placeholder_text: '# get the remainder of the division of the number by two'
-  - offset: 123
-    length: 19
-    placeholder_text: '# multiply the division result by 2'
-  - offset: 162
-    length: 42
-    placeholder_text: '# add the division remainder to the multiplication result'
-  - offset: 227
-    length: 30
-    placeholder_text: '# subtract the multiplication result from the initial number'
-  - offset: 274
-    length: 11
-    placeholder_text: '# perform a floor division of number by 2'
-  - offset: 302
-    length: 26
-    placeholder_text: '# raise the multiplication result to the power of 3'
-- name: tests/test_task.py
-  visible: false
+  - name: arithmetic_operators.py
+    visible: true
+    placeholders:
+      - offset: 59
+        length: 15
+        placeholder_text: '# divide the init_number by 2'
+      - offset: 97
+        length: 15
+        placeholder_text: '# get the remainder of the division of the init_number by 2'
+      - offset: 138
+        length: 19
+        placeholder_text: '# multiply the division_result by 2'
+      - offset: 177
+        length: 42
+        placeholder_text: '# add the division_remainder to the multiplication_result'
+      - offset: 242
+        length: 35
+        placeholder_text: '# subtract the multiplication_result from the init_number'
+      - offset: 294
+        length: 16
+        placeholder_text: '# perform a floor division of init_number by 2'
+      - offset: 327
+        length: 26
+        placeholder_text: '# raise the multiplication_result to the power of 3'
+  - name: tests/test_task.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Variables+/+Arithmetic+Operators
