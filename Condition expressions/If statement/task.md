@@ -26,6 +26,9 @@ If you have only one statement to execute, you can put it on the same line as th
 if a > b: print("a is greater than b")
 ```
 
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/5953).
+
+### Task
 Print `"Not an empty list!"` if the `tasks` list is not empty.  
 After the list is cleared, check again (you might need a different condition!) and print `'Now empty!'` if it is.
 
