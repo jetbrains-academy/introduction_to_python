@@ -22,6 +22,9 @@ import statements at the beginning of a module.
 
 You can find out more about modules in Python by reading [this section](https://docs.python.org/3/tutorial/modules.html) of The Python Tutorial. 
   
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6019#module-loading).
+
+### Task
 In the code editor, import the module `calculator` and create an instance of the class `Calculator` (`calc`). 
 Use the `add` method defined in `Calculator` in a loop to add up numbers from 0 to 99.
 
