@@ -36,7 +36,9 @@ x.num
 (3-4.5j)
 ```
 
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6669#def-__init).
 
+### Task
 In the code editor, add parameters to the`__init__()` method of the `Car` class, so we can 
 create it with a specified color and brand.  
 

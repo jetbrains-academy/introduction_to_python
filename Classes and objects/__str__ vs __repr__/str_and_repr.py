@@ -4,7 +4,7 @@ class Complex:
         self.img = imag_part
 
     def __repr__(self):
-        return f'Complex(10, 20)'
+        return f'Complex({self.real}, {self.img})'
 
     def __str__(self):
         return f'{self.real} + i{self.img}'

@@ -22,6 +22,9 @@ class Bag:
         self.add(x)
 ```
   
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6669#self).
+
+### Task
 In the code editor, implement the `add` method of the `Calculator` class. It should 
 add `amount` to the field `current`.  In addition, complete the method `get_current`.
 Run the code to see how it works.
