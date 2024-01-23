@@ -23,7 +23,7 @@ files:
   - name: images/edu_task_description_window_settings.png
     visible: false
   - name: images/moreVertical.svg
-    visible: true
+    visible: false
   - name: images/moreVertical_dark.svg
-    visible: true
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Introduction+/+Task+Description
