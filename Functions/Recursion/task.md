@@ -54,6 +54,8 @@ Keep in mind that recursion isn’t useful in every situation. For some problems
 possible, will be awkward rather than elegant. Recursive implementations often consume more 
 memory than non-recursive ones and in some cases may result in slower execution.
 
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/7665).
+
 ### Task
 In the code editor, implement a recursive function that calculates the [factorial](https://en.wikipedia.org/wiki/Factorial) of a positive integer.
 For 1 and 0 it returns 1, for every other number it calculates the product of this number (`n`) and

@@ -19,6 +19,7 @@ Do not put spaces around the `=` symbol in function calls and definitions.
 Explore this topic further by reading <a href="https://docs.python.org/3/tutorial/controlflow.html#default-argument-values">this section</a>
 of Python Documentation.
 
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/10295).
 
 ### Task
 Add parameters to the `hello()` function and set a default value for the `name` parameter.  
