@@ -5,7 +5,9 @@ always be `True`, such a loop becomes infinite. The most straightforward way to 
 an infinite loop is to use `while True`. The `break` keyword is used to 
 escape the loop.  
 
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6302#break).
   
+### Task
 Write a condition to exit the loop on its third iteration after evaluating if `animal`
 is equal to `elephant`.  Use the `break` statement.  The `zoo` list in the end should contain 
 only `lion` and `tiger` (because you `pop` all the other ones in the loop).
