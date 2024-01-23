@@ -11,9 +11,12 @@ class TestCase(unittest.TestCase):
                 from open_file import outfile
             output = f.getvalue().split('\n')
 
-            expected, actual = 8, len(output)
+            expected, actual = 6, len(output)
             self.assertEqual(expected, actual, msg='Please do not remove or add any print statements.')
             self.assertTrue(outfile.closed, msg='The outfile file is not closed.')
+            with open('outfile.txt', 'r') as file:
+                hello = file.readline()
+                self.assertEqual('Hello World', hello, msg='Please do not remove the instruction to write "Hello World"')
 
         except ImportError:
             self.assertTrue(False, msg='Please do not rename any variables.')
@@ -21,3 +24,5 @@ class TestCase(unittest.TestCase):
         except NameError:
             self.assertTrue(False, msg='You should open input1.txt as a file.')
 
+        except FileNotFoundError:
+            self.assertTrue(False, msg='The output file name should be derived from the outfile_name variable.')

@@ -10,5 +10,8 @@
 
   <p>Have fun and good luck!</p>
 
-  <p>P.S. Want to contribute? Feel free to send a pull request to this course’s
-  <a href=”https://github.com/jetbrains-academy/introduction_to_python”>git repo</a>.</p>
+## Want to know more?
+If you have questions about the course or the tasks, or if you find any errors, feel free to ask questions and participate in discussions within the repository [issues](https://github.com/jetbrains-academy/introduction_to_python/issues).
+
+## Contribution
+Please be sure to review the [project's contributing guidelines](./contributing.md) to learn how to help the project.
