@@ -17,6 +17,9 @@ squares + [36, 49, 64, 81, 100]
 
 You can explore lists in more detail by reading <a href="https://docs.python.org/3.9/tutorial/introduction.html#lists">this page</a>.
 
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/5979).
+
+### Task
 Use list slicing to print `[4, 9, 16]`.  
 
 <div class='hint'>List slicing syntax looks just like that for strings: <code>lst[index1:index2]</code>.

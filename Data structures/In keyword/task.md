@@ -8,6 +8,8 @@ item. You can apply `in` to lists or dictionaries the same way you did it with s
 
 Please complete the task in the specified order.
 
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/11096).
+
 <div class="hint">Use the <code>in</code> keyword.</div>
 
 <div class="hint">Use the <code>.values()</code> and <code>.keys()</code> attributes.</div>
