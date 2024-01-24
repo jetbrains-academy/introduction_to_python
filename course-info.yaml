@@ -13,15 +13,15 @@ vendor:
 programming_language: Python
 environment: unittest
 content:
-- Introduction
-- Variables
-- Strings
-- Data structures
-- Condition expressions
-- Loops
-- Functions
-- Classes and objects
-- Modules and packages
-- File input output
+  - Introduction
+  - Variables
+  - Strings
+  - Data structures
+  - Condition expressions
+  - Loops
+  - Functions
+  - Classes and objects
+  - Modules and packages
+  - File input output
 tags:
-- Beginner-friendly
+  - Beginner-friendly
