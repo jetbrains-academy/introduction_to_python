@@ -31,7 +31,7 @@ Output:
 ```text
 1
 ```
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6938).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6938?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 In the code editor, use indexing to access and print elements `9` and `10` from of the nested list `my_list`. 

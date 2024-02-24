@@ -30,7 +30,7 @@ You can read more about proper commenting in <a href="https://www.python.org/dev
   
 You can also comment a line or a block of code if you don't want to delete it, but it's not needed at the moment. 
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6081).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6081?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 In the code editor, comment the line with the `print` statement that says it should not be printed. 

@@ -13,7 +13,7 @@ or decimal values.
 > Each of these alternatives provides their own trade-offs and benefits of 
 > simplicity, flexibility, and/or extensibility.</i>
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6037).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6037?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 Tell PyCharm how old you are (using digits).  

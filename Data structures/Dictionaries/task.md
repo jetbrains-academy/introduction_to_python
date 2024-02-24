@@ -25,7 +25,7 @@ You can access a value in a dictionary similarly to how you would access a value
 but using a key instead of an index. More info about this data structure can be found 
 <a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries">here</a>.
 
-For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6481).
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6481?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 Add Jared's (`"Jared"`) number `570` to the phone book.

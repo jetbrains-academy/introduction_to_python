@@ -35,7 +35,7 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: my_function() missing 1 required positional argument: 'surname'
 ```
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/7248).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/7248?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 In the code editor, define a function that prints the square of a passed parameter.  

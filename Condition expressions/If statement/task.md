@@ -26,7 +26,7 @@ If you have only one statement to execute, you can put it on the same line as th
 if a > b: print("a is greater than b")
 ```
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/5953).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/5953?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 Print `"Not an empty list!"` if the `tasks` list is not empty.  

@@ -28,7 +28,7 @@ Output:
 ```
 List comprehensions are also more efficient computationally than a `for` loop.
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6315).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6315?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 In the code editor, use list comprehension to build `my_efficient_list` from the elements of `my_inefficient_list`

@@ -23,7 +23,7 @@ for modules: see what it prints for you when you run the code of the task.
 Remember that you can use &shortcut:CodeCompletion; after a dot (.) to explore available 
 methods of a module. You can read more about standard modules <a href="https://docs.python.org/3/tutorial/modules.html#standard-modules">here</a>.
 
-For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6019#built-in-modules).  
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6019#built-in-modules?utm_source=jba&utm_medium=jba_courses_links).  
 
 ### Task
 Print the current date and time using an imported built-in module `datetime`.  

@@ -41,7 +41,7 @@ values `12345`, `54321`, and `hello!` are packed together in a tuple.
 Some other list methods are also 
 applicable to tuples. You can read more about tuples <a href="https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences">here</a>.
 
-For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/7462).
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/7462?utm_source=jba&utm_medium=jba_courses_links).
   
 ### Task
 Print the length of the tuple `alphabet`. Then create a tuple with a single element `'fun_tuple'`. 

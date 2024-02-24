@@ -37,7 +37,7 @@ when utilising `from` with similar effects:
 from calculator import Subtract as Minus
 ```
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6019#module-loading).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6019#module-loading?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 Import the `Calculator` class from `calculator` and create an instance of this class. Remember how to access it correctly in 
