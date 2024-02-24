@@ -15,7 +15,7 @@ print(a)        # 5.0
 print(type(a))  # <class 'float'>
 ```
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/5814).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/5814?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 Get the first half of the string stored in the variable `phrase`.  

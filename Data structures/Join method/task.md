@@ -33,7 +33,7 @@ aa = bb = cc
 Python is a programming language
 ```
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6972#join-a-list).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6972#join-a-list?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 Assign a value to the  `joined` variable such that the `print` statement prints the following:

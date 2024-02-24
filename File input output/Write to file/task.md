@@ -36,7 +36,7 @@ f.write('\n' + 'string,' + ' ' + 'another string')
 ```
 This will add a new line and write `'string, another string'`.
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/8334).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/8334?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 In the code editor, **append** one new line to `output.txt` with all elements from the `zoo` list separated by `' and '`. 

@@ -5,7 +5,7 @@ always be `True`, such a loop becomes infinite. The most straightforward way to 
 an infinite loop is to use `while True`. The `break` keyword is used to 
 escape the loop.  
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6302#break).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6302#break?utm_source=jba&utm_medium=jba_courses_links).
   
 ### Task
 Write a condition to exit the loop on its third iteration after evaluating if `animal`

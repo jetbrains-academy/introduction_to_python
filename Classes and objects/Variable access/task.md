@@ -17,7 +17,7 @@ then `MyClass.year` and `MyClass.say_hello` are valid attribute references retur
 integer and a function object, respectively. Class attributes can be 
 assigned to, so you can change the value of `MyClass.year` by assignment.
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6661#class-attribute).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6661#class-attribute?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 Check out our example and print the value of `variable1` from `my_object`.  
