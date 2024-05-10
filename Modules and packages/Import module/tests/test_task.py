@@ -2,7 +2,6 @@ import unittest
 import contextlib
 import io
 import re
-import calculator
 
 f = io.StringIO()
 try:
@@ -11,25 +10,11 @@ try:
     output = f.getvalue().split('\n')
 
     class TestCase(unittest.TestCase):
-        def test_class(self):
-            try:
-                self.assertTrue(isinstance(calc, calculator.Calculator),
-                                msg='`calc` should be an instance of Calculator.')
-            except NameError:
-                self.assertTrue(False, msg='Do not change variable names.')
-
         def test_out(self):
             expected, actual = 'Hello, World! My name is John', output[0]
-            self.assertEqual(expected, actual, msg='Please do not change the starter code.')
-            expected, actual = str(4950), output[1]
-            self.assertEqual(expected, actual, msg='Calculation result looks wrong.')
+            self.assertEqual(expected, actual, msg='Call hello_world with "John" argument')
 
-except NameError:
+except AttributeError:
     class TestFailCase(unittest.TestCase):
         def test_fail(self):
-            self.assertTrue(False, msg='You need to import the calculator module.')
-
-except ModuleNotFoundError:
-    class TestFailCase1(unittest.TestCase):
-        def test_fail(self):
-            self.assertTrue(False, msg="Don't use file extensions in imports.")
+            self.assertTrue(False, msg='You need to use hello_world function from my_funcs module.')

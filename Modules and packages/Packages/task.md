@@ -43,6 +43,8 @@ You can learn more about packages by reading <a href="https://docs.python.org/3/
 For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6384).
 
 ### Task
+Look at the file structure in the `classes` and `functions` directories and in the subdirectories.
+
 In the code editor, import the `official` module properly to make the last `print` 
 statement work.
 

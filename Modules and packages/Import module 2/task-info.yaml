@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: imports.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 17
+        placeholder_text: '# Import the module `calculator` here'
+      - offset: 75
+        length: 11
+        placeholder_text: '# Use Calculator method `add` to add `i` to the current value.'
+      - offset: 26
+        length: 23
+        placeholder_text: '''Create a new instance of Calculator class defined in calculator'''
+  - name: calculator.py
+    visible: true
+  - name: tests/test_task.py
+    visible: false
+  - name: __init__.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Modules+and+Packages+/+Import+module+2
