@@ -1,9 +1,5 @@
 type: edu
 files:
-- name: my_module.py
-  visible: true
-- name: calculator.py
-  visible: true
 - name: from_import.py
   visible: true
   placeholders:
@@ -13,6 +9,10 @@ files:
   - offset: 97
     length: 12
     placeholder_text: '''Instantiate a calculator'''
+- name: my_module.py
+  visible: true
+- name: calculator.py
+  visible: true
 - name: tests/__init__.py
   visible: false
 - name: tests/test_task.py
