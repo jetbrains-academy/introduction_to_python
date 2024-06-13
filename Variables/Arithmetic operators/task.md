@@ -31,7 +31,7 @@ some of these operations also apply to certain non-numeric types.
 
 You can read more on this topic <a href="https://docs.python.org/3/reference/expressions.html#binary-arithmetic-operations">here</a>.
 
-For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/5865).
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/5865?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
  - Divide the value stored in `init_number` by `2`.

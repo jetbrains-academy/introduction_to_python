@@ -36,7 +36,7 @@ one object, it will be changed for all objects of the class (check out the examp
 editor – see what `print(barsik.favorite_food)` will print). If you intend using a list to keep track 
 of features unique to each instance, you need to make it an instance attribute.
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6677).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6677?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 In the code editor, complete the implementation of the `Animals` class so that the `print` statement 

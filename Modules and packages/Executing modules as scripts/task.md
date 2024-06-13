@@ -56,7 +56,7 @@ some_module __name__ is: __main__
 some_module executed directly
 ```
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6057).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6057?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 <i>The files in this task are named the same as in the examples above, but their code is a bit different.</i>

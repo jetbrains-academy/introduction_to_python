@@ -52,7 +52,7 @@ If you want to read all the lines of a file in a list, you can also use `list(f)
 
 For more details, check out the section [Methods of File Objects](https://docs.python.org/3/tutorial/inputoutput.html#methods-of-file-objects) in Python Tutorial.
 
-For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/8139).
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/8139?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 Print the contents of "input.txt" to output by iterating over the lines of the file and printing each one.

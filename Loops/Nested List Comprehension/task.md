@@ -33,7 +33,7 @@ Output:
 [[0, 2, 4, 6, 8], [0, 2, 4, 6, 8], [0, 2, 4, 6, 8]]
 ```
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6938#nested-list-comprehension).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6938#nested-list-comprehension?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 

@@ -18,7 +18,7 @@ idea to pick your favorite kind of quotes and use them consistently.
 
 You can learn more about escaping from <a href="https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals">this section</a> of Python Documentation.
 
-For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/7130).
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/7130?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 Print out the following text using one string:  
