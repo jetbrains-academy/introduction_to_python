@@ -46,7 +46,7 @@ of Python Documentation.
 For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6661?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
-Assign a value to  `variable` inside `MyClass` and create an object `my_class` of the class `MyClass()`. 
+Assign a value to  `variable` inside `MyClass` and create an object `my_object` of the class `MyClass()`. 
 Run the code and see what happens!
 
 <div class='hint'>Assign any value to <code>variable</code>.</div>
