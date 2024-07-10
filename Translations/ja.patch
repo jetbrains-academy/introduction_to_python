@@ -1,0 +1,2551 @@
+diff -Naur "a/Classes and objects/Class and Instance Variables/task.md" "b/Classes and objects/Class and Instance Variables/task.md"
+--- "a/Classes and objects/Class and Instance Variables/task.md"    1970-01-01 09:00:00.000000000 +0900
++++ "b/Classes and objects/Class and Instance Variables/task.md"    2022-04-09 23:02:37.686574694 +0900
+@@ -0,0 +1,53 @@
++## クラス変数とインスタンス変数 :(Class and Instance Variables)
++
++一般に、「インスタンス変数」は各インスタンスに固有のデータ用であり、  
++「クラス変数」はクラスのすべてのインスタンスによって共有される属性とメソッド用です:
++
++```python
++class Cat:
++
++    species = "Felis catus"  
++    
++    def __init__(self, breed, name):
++        self.breed = breed  
++        self.name = name
++
++cleo = Cat('mix', 'Cleo')
++furry = Cat('bengal', 'Furry')
++
++print(cleo.name)
++print(cleo.species)
++print(furry.name)
++print(furry.species)
++```
++
++```text
++Cleo
++Felis catus
++Furry
++Felis catus
++```
++`species`（種族）はすべてのインスタンスで共有されるクラス変数であり、    
++`name`（名前）と `breed`（品種）は各インスタンスに固有のインスタンス変数であることがわかります。
++
++共有データは、リストや辞書などの可変オブジェクトを含む場合、驚くべき効果をもたらす可能性があります。
++
++
++クラス変数がリストであり、1つのオブジェクトに対して変更すると、  
++クラスのすべてのオブジェクトに対して変更されます
++
++コードエディタの例を確認してください。
++
++`print(barsik.favorite_food)` が出力する内容を確認してください。
++
++リストを使用して各インスタンスに固有の機能を追跡する場合は、  
++リストをインスタンス属性にする必要があります。
++
++コードエディタで、`Animals` クラスの実装を完了して、以下の `print` ステートメントが次のような行を出力するようにします:
++
++各ペットに `"This is Doggy the dog, one of my pets."`   
++（これは私のペットの1匹である犬の犬です。）
++
++<div class='hint'>クラス変数には、すべてのインスタンス間で共有される情報が含まれている必要があります。（<code>"pets"</code> の1つです)</div>
++
++<div class='hint'>インスタンス変数には、インスタンスに固有の情報が含まれている必要があります。（名前は一意です）</div>
+diff -Naur "a/Classes and objects/Definition/task.md" "b/Classes and objects/Definition/task.md"
+--- "a/Classes and objects/Definition/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Classes and objects/Definition/task.md"  2022-04-09 23:02:37.682574653 +0900
+@@ -0,0 +1,54 @@
++## 意味 :(Definition)
++
++クラスは、データと機能をバンドルする手段を提供します。
++
++新しいクラスを作成すると、新しいタイプのオブジェクトが作成され、そのタイプの新しいインスタンスを作成できるようになります。
++
++クラスは基本的に、オブジェクトを作成するためのテンプレートです。  
++各クラスインスタンス（オブジェクト）には、その状態を維持するための属性を付加できます。  
++オブジェクトの関数はメソッドと呼ばれ、その状態を変更できます。  
++メソッドは、オブジェクトのクラスによって定義されます。
++
++クラス定義の一般化された形式は次のようになります:
++
++```
++class ClassName:
++    <statement-1>
++    .
++    .
++    .
++    <statement-N>
++```
++
++関数定義（ `def` ステートメント）のようなクラス定義は、効果を発揮する前に実行する必要があります。
++
++クラス定義内のステートメントは通常関数定義ですが、他のステートメントが役立つ場合もあります。
++クラス内の関数定義には通常、独特の形式の引数リストがあります。これについては後で説明します。
++
++クラスオブジェクトは、属性参照とインスタンス化の2種類の操作をサポートします。
++
++属性参照については、次のセクションで説明します。
++
++クラスのインスタンス化は関数表記を使用します。
++クラスオブジェクトが、クラスの新しいインスタンスを返すパラメータのない関数であると想像してみてください。
++
++例えば：
++
++```python
++class SomeClass:
++    """A simple example class"""
++    i = 12345
++
++x = SomeClass()
++```
++`x = SomeClass()` は、クラスの新しいインスタンスを作成し、このオブジェクトをローカル変数 `x` に割り当てます。
++
++クラス定義構文の詳細については、Python ドキュメントの <a href="https://docs.python.org/3/tutorial/classes.html#class-definition-syntax">このセクション</a> をご覧ください。
++
++`MyClass` 内の `variable` に値を割り当て、クラス `MyClass()` のオブジェクト `my_class` を作成します。
++
++コードを実行して、何が起こるかを確認してください。
++
++<div class='hint'>任意の値を <code>variable</code> に割り当てます。</div>
++
++<div class='hint'>テキストの例を見て、オブジェクトをインスタンス化する方法を理解してください。</div>
+diff -Naur "a/Classes and objects/Special __init__ method/task.md" "b/Classes and objects/Special __init__ method/task.md"
+--- "a/Classes and objects/Special __init__ method/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/Classes and objects/Special __init__ method/task.md" 2022-04-09 23:02:37.682574653 +0900
+@@ -0,0 +1,49 @@
++## 特別な__init__メソッド :(Special &#95;&#95;init&#95;&#95; method)
++
++インスタンス化操作（クラスオブジェクトの「呼び出し」）は空のオブジェクトを作成しますが、特定の初期状態にカスタマイズされたインスタンスを使用してオブジェクトを作成すると便利です。
++
++従って、クラスは `__init__()` という名前の特別なメソッドを定義する場合があります。
++
++このような: 
++
++
++```python
++class MyClass:
++    def __init__(self):
++        self.data = []
++```
++`__init__` はPython で予約されているメソッドの1つです。
++
++定義されている場合、 `__init__()` メソッドは、クラスのインスタンスが作成されるときに自動的に呼び出され、オブジェクトとその属性を初期化します。
++
++それは常に少なくとも 1つの引数 `self` を取ります。
++
++従って、この例では、初期化された新しいインスタンスは次の方法で取得できます:
++
++```python
++x = MyClass()
++```
++
++ `__init__()` メソッドは、柔軟性を高めるために引数を受け取る場合があります。
++その場合、クラスインスタンス化演算子に与えられた引数は `__init__()` に渡されます。
++
++例えば：
++
++```python
++class Complex:
++    def __init__(self, real_part, imag_part):
++        self.r = real_part
++        self.i = imag_part
++        self.num = complex(self.r, self.i)
++
++x = Complex(3.0, -4.5)  # Instantiating a complex number
++x.num
++```
++```text
++(3-4.5j)
++```
++
++コードエディタで、`Car` クラスの `__init__()` メソッドにパラメータを追加します。
++指定された色とブランドで作成します。
++
++<div class='hint'> <code>self</code> と <code>color</code> の 2つのパラメータを追加します。</div>
+diff -Naur "a/Classes and objects/The self parameter/task.md" "b/Classes and objects/The self parameter/task.md"
+--- "a/Classes and objects/The self parameter/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Classes and objects/The self parameter/task.md"  2022-04-09 23:02:37.682574653 +0900
+@@ -0,0 +1,35 @@
++## 自己パラメータ :(The self parameter)
++
++前の課題で見た `self` パラメータを説明する時が来ました。
++
++クラスメソッドに渡される最初の引数は `self` です。これは単なる慣例にすぎません。
++`self` という名前はPython にとって特別な意味はありません。
++
++規則に従うことをお勧めします。そうしないと、他のPython プログラマーがコードを読みにくくなる可能性があります。
++
++Python は `self` パラメータを使用して、作成または変更されたオブジェクトを参照します。
++
++メソッドは、`self` 引数のメソッド属性を使用して他のメソッドを呼び出すことができます:
++
++```python
++class Bag:
++    def __init__(self):
++        self.data = []
++
++    def add(self, x):
++        self.data.append(x)
++
++    def addtwice(self, x):
++        self.add(x)  # Calling the method `add` from another method
++        self.add(x)
++```
++
++コードエディタで、`Calculator` クラスの `add` メソッドを実装します。
++フィールド `current` に `amount` を追加する必要があります。
++
++さらに、メソッド `get_current` を完了します。
++
++コードを実行して、どのように機能するかを確認します。
++
++<div class='hint'> <code>amount</code> を <code>self.current</code> 変数に追加します。</div>
++<div class='hint'> <code>+=</code> 記号を使用します。</div>
+diff -Naur "a/Classes and objects/Update variable/task.md" "b/Classes and objects/Update variable/task.md"
+--- "a/Classes and objects/Update variable/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/Classes and objects/Update variable/task.md" 2022-04-09 23:02:37.682574653 +0900
+@@ -0,0 +1,11 @@
++## 変数を更新 :(Update variable)
++
++この演習では、新しい `Car` オブジェクト `car2` を作成してから、`car2` の `color` を `"red"` に設定します。
++
++`description` メソッドを呼び出して、`car1` と `car2` の説明を出力します。
++
++<div class='hint'>クラスを「呼び出す」ことにより、前の課題でオブジェクトをインスタンス化した方法を思い出してください。</div>
++
++<div class='hint'>値の割り当て (<code>=</code>) と属性参照構文 <code>obj.attribute</code>を使用して色を変更します。</div>.
++
++<div class='hint'> printステートメントで、前の課題で行ったように <code>description()</code> メソッドを呼び出します。</div>
+diff -Naur "a/Classes and objects/Variable access/task.md" "b/Classes and objects/Variable access/task.md"
+--- "a/Classes and objects/Variable access/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/Classes and objects/Variable access/task.md" 2022-04-09 23:02:37.682574653 +0900
+@@ -0,0 +1,27 @@
++## 可変アクセス :(Variable access)
++
++「属性参照」を使用して、オブジェクト内の変数にアクセスできます。
++
++「属性参照」は、Python のすべての属性参照に標準の構文 `obj.name` を使用します。
++
++有効な属性名は、クラスオブジェクトが作成されたときにクラスの名前空間にあったすべての名前です。
++
++従って、クラス定義が次のようになっている場合:
++
++```python
++class MyClass:
++    year = 2021
++
++    def say_hello(self):
++        return 'hello world'
++```
++
++`MyClass.year` と `MyClass.say_hello` は、それぞれ整数と関数オブジェクトを返す有効な「属性参照」です。
++
++クラス属性を割り当てることができるため、割り当てによって `MyClass.year` の値を変更できます。
++
++例を確認して、`my_object` から `variable1` の値を出力してください。
++
++オブジェクト `my_object` の `foo` メソッドを呼び出し、結果を出力します。
++
++<div class='hint'> <code>object.name</code> 構文を使用して<code>variable1</code> にアクセスします。</div>
+diff -Naur "a/Classes and objects/__str__ vs __repr__/task.md" "b/Classes and objects/__str__ vs __repr__/task.md"
+--- "a/Classes and objects/__str__ vs __repr__/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/Classes and objects/__str__ vs __repr__/task.md" 2022-04-09 23:02:37.682574653 +0900
+@@ -0,0 +1,56 @@
++## \_\_str__ と \_\_repr__ メソッド :(\_\_str__ vs \_\_repr__ methods)
++
++Python の `str()` メソッドと `repr()` メソッドは、どちらもオブジェクトの文字列表現に使用されますが、いくつかの違いがあります。
++
++例えば:
++
++```python
++s = 'Hello World'
++print (str(s))
++print(repr(s))
++```
++```text
++Hello World
++'Hello World'
++```
++
++`repr()` 関数を使用して文字列を出力すると、引用符のペアで出力されます。
++
++`str()` はユーザーの出力を作成するときに使用され、
++`repr()` は通常デバッグと開発に使用されます。
++
++ `repr()` は明確に、`str()` が読み取り可能である必要があります。
++
++`__init__` と同様に、メソッド `__repr__` と `__str__` は Python で予約されています。
++
++`print()` ステートメントと `str()` 組み込み関数は、オブジェクトのクラスで定義された `__str__` メソッドを使用して、その文字列表現を表示します。
++
++`repr()` 組み込み関数は、オブジェクトのクラスで定義された `__repr__` メソッドを使用します。
++
++従って、デバッグ用の詳細情報が必要な場合は、独自に定義したクラスに `__repr__` が必要です。
++
++また、ユーザーに文字列表現を使用すると便利だと思われる場合は、`__str__` 関数を作成する必要があります。
++
++
++コードエディタでクラス `Complex` の別の実装を確認してください。
++
++コードを実行して、2つの `print` ステートメントのそれぞれが何を出力するかを確認します。
++
++クラス `Cat` に `__str__` メソッドと `__repr__` メソッドを実装します。
++
++`__str__` メソッドは次のような文字列を返す必要があります:
++
++`"My siamese cat's name is Lucy"`
++（`"私のシャム猫の名前はルーシーです"`）
++
++`__repr__` メソッドは次のような文字列を返す必要があります: 
++
++`"Cat, breed: siamese, name: Lucy"`
++（`"猫, 品種: シャム, 名前: ルーシー"`）
++
++[f-strings](course://Strings/F-strings) を使用します。
++
++<div class='hint'> <code>self.attribute</code> 構文を使用することを忘れないでください。</div>
++
++<div class='hint'> アポストロフィを出力するために文字がエスケープされることを忘れないでください。</div>
++
+diff -Naur "a/Condition expressions/Boolean operators/task.md" "b/Condition expressions/Boolean operators/task.md"
+--- "a/Condition expressions/Boolean operators/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/Condition expressions/Boolean operators/task.md" 2022-04-09 23:02:37.686574694 +0900
+@@ -0,0 +1,11 @@
++## ブール演算子 :(Boolean operators)
++
++ブール演算子はステートメントを比較し、結果をブール値で返します。
++
++ブール演算子 `and` は、`and` の両側の式が `True` の場合、`True` を返します。  
++ブール演算子 `or` は、`or` のいずれかの側の少なくとも1つの式が `True` である場合、`True` を返します。  
++ブール演算子 `not` は、先行するブール式を反転します。
++
++`name` が `"John"` と等しく、彼が `16` 以上の場合、`True` と評価される式を記述します。
++
++<div class='hint'> <code>and</code> キーワードと <code>>=</code> 演算子を使用します</div>
+diff -Naur "a/Condition expressions/Boolean operators order/task.md" "b/Condition expressions/Boolean operators order/task.md"
+--- "a/Condition expressions/Boolean operators order/task.md"   1970-01-01 09:00:00.000000000 +0900
++++ "b/Condition expressions/Boolean operators order/task.md"   2022-04-09 23:02:37.686574694 +0900
+@@ -0,0 +1,9 @@
++## ブール演算子の順序 :(Boolean operators order)
++
++ブール演算子は左から右に評価されません。ブール演算子の演算の順序があります。
++
++`not` が最初に評価され、` and` が次に評価され、`or` が最後に評価されます。
++
++`name` が `16` 以上で `25` より若い `"John"` または `"Jane"` のいずれかである場合、`True` と評価される式を記述します。
++
++<div class='hint'> <code>and</code> と <code>or</code> キーワードを組み合わせます。</div>
+diff -Naur "a/Condition expressions/Else and elif parts in if statement/task.md" "b/Condition expressions/Else and elif parts in if statement/task.md"
+--- "a/Condition expressions/Else and elif parts in if statement/task.md"   1970-01-01 09:00:00.000000000 +0900
++++ "b/Condition expressions/Else and elif parts in if statement/task.md"   2022-04-09 23:02:37.686574694 +0900
+@@ -0,0 +1,32 @@
++## else および elif ステートメント :(Else and elif parts in if statement)
++
++`elif` および `else` ステートメントは `if` ステートメントを補完します。
++
++0個以上の `elif` 部分があり、`else` 部分はオプションです。キーワード `elif` は「else if」の略で、過度のインデントを回避するのに役立ちます。
++
++<div class='hint'> <code>if … elif … elif …</code> シーケンスは、Java など他の言語で見られる <code>switch</code> または <code>case</code> ステートメントの代わりになります。</div>
++
++条件付き実行では、1つが `True` であることが判明するまで、式を1つずつ評価することにより、スイートの1つだけが選択されます。
++
++次に、そのスイートが実行され、`if` ステートメントの他の部分は評価されません。
++
++すべての式が `false` の場合、 `else` 句のスイート（存在する場合）が実行されます。
++
++```python
++a = 200
++b = 33
++if b > a:
++  print("b is greater than a")
++elif a == b:
++  print("a and b are equal")
++else:
++  print("a is greater than b")
++```
++```text
++a is greater than b
++```
++  
++`name` が `"John"` と等しい場合は `True` を出力し、そうでない場合は `False` を出力します。
++
++<div class='hint'> <code>if</code> キーワードと <code>==</code> 演算子を使用します。</div>
++<div class='hint'> <code>else</code> キーワードを使用します。</div>
+diff -Naur "a/Condition expressions/If statement/task.md" "b/Condition expressions/If statement/task.md"
+--- "a/Condition expressions/If statement/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Condition expressions/If statement/task.md"  2022-04-09 23:02:37.686574694 +0900
+@@ -0,0 +1,36 @@
++## If ステートメント :(If statement)
++
++Python の複合ステートメントには、他のステートメント（のグループ）が含まれています。
++それらは、何らかの方法でそれらの他のステートメントの実行に影響を与えるか、または制御します。
++
++おそらく最もよく知られているステートメントタイプは `if` ステートメントです。
++`if` キーワードは、その表現が `True` であるかどうかをチェックした後、指定されたコードを実行する条件ステートメントを形成するために使用されます。
++
++Python はインデントを使用してコードブロックを定義します:
++
++```python
++if value > 1000: 
++    print("It's a large number!")  # Indented block
++    a += 1                         # Indented block
++    
++print("Outside the block!")
++```
++
++コードブロックはインデントで始まり、インデントされていない最初の行で終わります。
++
++インデントの量は、ブロック全体で一貫している必要があります。
++通常、インデントには 4つの空白または 1つのタブが使用されます。
++
++インデントが正しくないと、`IndentationError` が発生します。
++
++実行するステートメントが 1つしかない場合は、それを `if` ステートメントと同じ行に配置できます:
++
++```python
++if a > b: print("a is greater than b")
++```
++
++`tasks` リストが空の場合は `"empty"` を出力します。
++リストがクリアされたら、もう一度確認し（別の条件が必要になる場合があります！）、
++そうである場合は `'Now empty!'` を出力します。
++
++<div class='hint'> <code>len()</code> 関数を使用して、 <code>tasks</code> が空かどうかを確認します。</div>
+diff -Naur "a/Data structures/Dictionaries/task.md" "b/Data structures/Dictionaries/task.md"
+--- "a/Data structures/Dictionaries/task.md"    1970-01-01 09:00:00.000000000 +0900
++++ "b/Data structures/Dictionaries/task.md"    2022-04-09 23:02:37.690574737 +0900
+@@ -0,0 +1,39 @@
++## 辞書 :(Dictionaries)
++
++辞書はリストに似ていますが、インデックスの代わりにキーを検索して値にアクセスする点が異なります。
++
++キーは任意の不変タイプにすることができます。
++文字列と数字は常にキーにすることができます。
++タプルに不変オブジェクトのみが含まれている場合は、タプルをキーとして使用できます。
++リストをキーとして使用することはできません。
++
++辞書を <code>key: value</code> のペアのセットと考えてください。
++
++ただし、キーは1つの辞書内で一意である必要があります。
++
++辞書は中かっこで囲まれています:
++
++例:  `dct = {'key1' : "value1", 'key2' : "value2"}`
++
++中括弧のペアは空の辞書 `{}` を作成します。
++
++辞書は、`dict` コンストラクター(constructor) を使用して作成することもできます:
++
++```python
++a = dict(one=1, two=2, three=3)
++b = {'one': 1, 'two': 2, 'three': 3}
++c = dict([('two', 2), ('one', 1), ('three', 3)])
++print(a == b == c)
++```
++```text
++True
++```
++リストの値にアクセスするのと同じようにディクショナリの値にアクセスできますが、インデックスの代わりにキーを使用します。
++
++このデータ構造の詳細については、<a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries">こちら</a> をご覧ください。
++
++Jared（ `"Jared"`）の番号 `570` を電話帳に追加します。
++電話帳からGerard の番号を削除します。
++電話帳の `phone_book` から Jane（ジェーン）の電話番号を出力します。
++
++<div class='hint'>辞書のインデックスを使用します（例: <code>dct[key]</code></div>）
+diff -Naur "a/Data structures/Dictionary keys() and values()/task.md" "b/Data structures/Dictionary keys() and values()/task.md"
+--- "a/Data structures/Dictionary keys() and values()/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Data structures/Dictionary keys() and values()/task.md"  2022-04-09 23:02:37.690574737 +0900
+@@ -0,0 +1,21 @@
++## 辞書の keys() と values() 　:(Dictionary keys() and values())
++
++辞書には、`keys()`、`values()`、`items()` などの便利なメソッドがたくさんあります。
++
++`keys()` メソッドは、辞書内のすべてのキーのリストを挿入順に表示するビューオブジェクトを返します。
++
++`values()` は、ディクショナリの値の新しいビューを返します。
++
++`items()` メソッドが呼び出されると、辞書のアイテムの新しいビューがリスト内のタプル `(key, value)` ペアとして返されます。
++
++ `dict.keys()`、`dict.values()`、および `dict.items()` によって返されるオブジェクトは、ディクショナリのエントリの動的ビューを提供します。つまり、ディクショナリが変更されると、ビューはこれらの変更を反映します。
++
++&shortcut:CodeCompletion; を使用して残りを探索できます。
++
++ `dict_name` の後にドットが続きます。
++
++辞書がサポートする操作の詳細については、<a href="https://docs.python.org/3/library/stdtypes.html#typesmapping">こちら</a> をご覧ください。
++
++電話帳の `phone_book` からすべての値を出力します。
++
++<div class='hint'>メソッド <code>values()</code>を使用します。</div>
+diff -Naur "a/Data structures/In keyword/task.md" "b/Data structures/In keyword/task.md"
+--- "a/Data structures/In keyword/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Data structures/In keyword/task.md"  2022-04-09 23:02:37.690574737 +0900
+@@ -0,0 +1,14 @@
++## In キーワード :(In keyword)
++
++`in` キーワードは、リストまたは辞書に特定の項目が含まれているかどうかを確認するために使用されます。
++文字列で行ったのと同じ方法で、リストまたは辞書に `in` を適用できます。
++
++
++1) `grocery_dict` の値に番号 `6` が含まれているかどうかを確認します。
++2) 辞書に `"basil"` （バジル）が含まれているかどうかを確認します。
++
++指定された順序で課題を完了してください。
++
++<div class='hint'> <code>in</code> キーワードを使用します。</div>
++
++<div class='hint'> <code>.values()</code> 属性と <code>.keys()</code> 属性を使用します。</div>
+diff -Naur "a/Data structures/Join method/task.md" "b/Data structures/Join method/task.md"
+--- "a/Data structures/Join method/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/Data structures/Join method/task.md" 2022-04-09 23:02:37.686574694 +0900
+@@ -0,0 +1,44 @@
++##  join() メソッド :(Join method)
++
++`.join()` は実際には文字列メソッドですが、文字列、リスト、タプルなどの反復可能なオブジェクトを理解する必要があるため、ここで説明します。
++
++この[メソッド](https://docs.python.org/3/library/stdtypes.html#str.join) は、反復可能なオブジェクトから文字列を作成するための柔軟な方法を提供します。
++
++iterable の各要素（list、string、tuple など）を文字列セパレータ（`join()` メソッドが呼び出される文字列）で結合し、連結された文字列を返します。
++
++iterable に文字列以外の値がある場合、`TypeError` が発生します。
++
++`join()` メソッドの構文は次のようになります:
++
++```python
++string.join(iterable)
++```
++
++例:
++
++```python
++string_ = 'abcde'  # a string iterable
++tuple_ = ('aa', 'bb', 'cc')  # a tuple iterable
++list_ = ['Python', 'programming language']  # a list iterable
++
++print(' + '.join(string_))  # join with the ' + ' separator
++print(' = '.join(tuple_))  # join with the ' = ' separator
++
++sep = ' is a '
++print(sep.join(list_))  # join with the ' is a ' separator
++```
++```text
++a + b + c + d + e
++aa = bb = cc
++Python is a programming language
++```
++`print` ステートメントが次のように出力するように `joined` 変数に値を割り当てます:
++
++```text
++I like apples and I like bananas and I like peaches and I like grapes
++```
++
++<div class='hint'>例をよく見て、同じことをしてください！</div>
++
++<div class='hint'><code>fruits</code>が反復可能であり、<code>separator</code> がセパレータ文字列です。</div>
++
+diff -Naur "a/Data structures/List items/task.md" "b/Data structures/List items/task.md"
+--- "a/Data structures/List items/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Data structures/List items/task.md"  2022-04-09 23:02:37.690574737 +0900
+@@ -0,0 +1,13 @@
++## リストのアイテム :(List items)
++
++個々のリスト要素と同様に、リストのスライスに割り当てることができます。
++
++次のような操作を行うことで、リストのサイズを変更したり、リストを完全にクリアしたりすることもできます:
++
++```python
++animals[:] = []
++```
++  
++最後の 2つのアイテムを置き換えて、すべての `animals` の象 (elephants) を作ります。
++
++<div class='hint'>例のようにスライスへの割り当てを使用します。</div>
+diff -Naur "a/Data structures/Lists introduction/task.md" "b/Data structures/Lists introduction/task.md"
+--- "a/Data structures/Lists introduction/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Data structures/Lists introduction/task.md"  2022-04-09 23:02:37.690574737 +0900
+@@ -0,0 +1,29 @@
++## リストの紹介 :(Lists introduction)
++
++Python には、データをグループ化するために使用されるいくつかの複合データ型があります。
++
++最も用途が広いのはリストです。
++これは、角かっこで囲まれた一連のカンマ区切りの値（アイテム）として記述できます。
++（例: `lst = [item1, item2]`）
++
++リストにはさまざまなタイプのアイテムが含まれている場合がありますが、通常、リスト内のすべてのアイテムは同じタイプです。
++
++文字列と同様に、リストにはインデックスを付けてスライスすることができます。
++（[レッスン3]（course：// Strings / Stringslicing）を参照）
++
++すべてのスライス操作は、要求された要素を含む新しいリストを返します。
++
++リストは、連結などの操作もサポートします:
++
++```python
++squares = [1, 4, 9, 16, 25]
++squares + [36, 49, 64, 81, 100]
++[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
++```
++
++リストの詳細については、<a href="https://docs.python.org/3.9/tutorial/introduction.html#lists">このページ</a> をご覧ください。
++
++リストスライスを使用して `[4, 9, 16]` を出力します。
++
++<div class='hint'>リストのスライス構文は、文字列の場合と同じように見えます: <code>lst[index1:index2]</code>
++インデックス <code>index2</code> の要素は含まれていないことを忘れないでください！</div>
+diff -Naur "a/Data structures/Lists operations/task.md" "b/Data structures/Lists operations/task.md"
+--- "a/Data structures/Lists operations/task.md"    1970-01-01 09:00:00.000000000 +0900
++++ "b/Data structures/Lists operations/task.md"    2022-04-09 23:02:37.690574737 +0900
+@@ -0,0 +1,35 @@
++## リストの操作 :(List operations)
++
++文字列とは異なり、リストは変更可能なタイプです。
++つまり、`lst[index] = new_item` を使用してコンテンツを変更できます。
++
++```python
++cubes = [1, 8, 27, 65, 125]  # something's wrong here
++4 ** 3  # the cube of 4 is 64, not 65!
++```
++```text
++64
++```
++```python
++cubes[3] = 64  # replace the wrong value
++cubes
++```
++```text
++[1, 8, 27, 64, 125]
++```
++ `append()` メソッドまたはリスト連結を使用して、リストの最後に新しいアイテムを追加できます。
++
++```python
++squares = [1, 4, 9, 16, 25]
++squares.append(6**2)
++squares
++```
++```text
++[1, 4, 9, 16, 25, 36]
++```
++
++<a href="https://docs.python.org/3/tutorial/datastructures.html#more-on-lists">このページ</a> で他の多くの便利なリストメソッドについて調べてください。
++
++`animals` リストの `"dino"` を `"dinosaur"` に置き換えます。
++
++<div class='hint'>リストのインデックス作成操作と値の割り当てを使用します。</div>
+diff -Naur "a/Data structures/Nested Lists/task.md" "b/Data structures/Nested Lists/task.md"
+--- "a/Data structures/Nested Lists/task.md"    1970-01-01 09:00:00.000000000 +0900
++++ "b/Data structures/Nested Lists/task.md"    2022-04-09 23:02:37.690574737 +0900
+@@ -0,0 +1,41 @@
++## ネストされたリスト :(Nested Lists)
++
++リストには、他のリスト（サブリスト）も含め、あらゆる種類のオブジェクトを含めることができます。
++このデータ構造は、「ネストされたリスト」と呼ばれます。
++
++ネストされたリストを使用して、データを階層構造に配置できます。
++
++ネストされたリストは、サブリストのコンマ区切りシーケンスを作成することで作成できます:
++
++```python
++nested_list = [[1, 2, 3], [4, 5], 6]
++```
++以前と同じように、インデックスを使用してネストされたリストのアイテムにアクセスできます:
++
++```python
++print(nested_list[1])
++print(nested_list[2])
++```
++Output:
++```text
++[4, 5]
++6
++```
++
++複数のインデックスを使用して、ネストされたリストのサブリスト内のアイテムにアクセスできます。
++`nested_list` から番号 `1` にアクセスするには、インデックス `0` を2回使用します。
++
++まず、要素 `[1,2,3]` にアクセスし、次にそのサブリストの最初の要素にアクセスします:
++
++```python
++print(nested_list[0][0])
++```
++Output:
++```text
++1
++```
++
++コードエディタで、インデックスを使用して、ネストされたリスト `my_list` の要素 `9` と `10` にアクセスして出力します。
++
++<div class='hint'>行き詰まった場合は、「課題の説明」ウィンドウにある例をもう一度確認してください。</div>
++
+diff -Naur "a/Data structures/Tuples/task.md" "b/Data structures/Tuples/task.md"
+--- "a/Data structures/Tuples/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Data structures/Tuples/task.md"  2022-04-09 23:02:37.698574822 +0900
+@@ -0,0 +1,57 @@
++## タプル :(Tuples)
++
++タプルは、別の標準シーケンスデータ型を表します。
++
++それらはリストとほとんど同じです。
++タプルとリストの唯一の重要な違いは、タプルは不変であるということです。
++タプル内の要素を追加、置換、または削除することはできません。
++
++タプルは、括弧で囲まれたコンマ区切りの要素で構成されます。
++
++次に例を示します:
++
++```python
++(a, b, c)
++```
++ 
++特別な状況は、0 または 1個のアイテムを含むタプルの構築です。
++空のタプルは、空の括弧のペアで構成されます。
++1つの項目を持つタプルは、値の後にコンマを付けて作成されます。
++
++例えば：
++
++```python
++empty = ()
++singleton = 'hello',    # <-- note the trailing comma
++len(empty)
++```
++```text
++0
++```
++```python
++len(singleton)
++```
++```text
++1
++```
++```python
++singleton
++```
++```text
++('hello',)
++```
++
++ステートメント `t = 12345, 54321, 'hello!'` は、タプルパッキングの例です。
++
++値 `12345`、 `54321`、および `hello!` はタプルに一緒にパックされます。
++
++他のいくつかのリストメソッドもタプルに適用できます。
++
++タプルの詳細については、<a href="https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences">こちら</a> をご覧ください。
++
++タプル`alphabet` の長さを出力します。
++次に、単一の要素 `'fun_tuple'` を使用してタプルを作成します。
++コードを実行して、何が出力されるかを確認できます。
++
++<div class='hint'> <code>len()</code> 関数を使用します。</div>
++<div class='hint'>1つの要素を持つタプルの末尾のコンマを忘れないでください。</div>
+diff -Naur "a/File input output/Open file/task.md" "b/File input output/Open file/task.md"
+--- "a/File input output/Open file/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/File input output/Open file/task.md" 2022-04-09 23:02:37.698574822 +0900
+@@ -0,0 +1,49 @@
++## ファイルを開く :(Open file)
++
++Python には、コンピューター上のファイルに対して情報を読み書きするための多数の組み込み関数があります。
++
++`open()` はファイルオブジェクトを返し、最も一般的には 2つの引数で使用されます: `open(filename, mode)`:
++
++```python
++f = open('somefile.txt', 'w')
++```
++
++最初の引数は、ファイル名を含む文字列です。 
++
++2番目の引数は、ファイルの使用方法を説明するいくつかの文字を含む別の文字列です。
++
++ファイルが読み取り専用の場合は `'r'`、書き込み専用の場合は `'w'`（同じ名前の既存のファイルは消去されます）、
++追加するときは `'a'`（ファイルに書き込まれたデータはすべてそのファイルの最後に追加されます）、でファイルを開きます。
++
++読み取りと書き込みの両方のの場合は `'r+'` 、でファイルを開きます。
++
++mode 引数はオプションです。省略した場合は `'r'` が想定されます。
++
++ファイルオブジェクトを処理するときは、`with` キーワードを使用することをお勧めします。
++利点は、コードスイートの終了後にファイルが適切に閉じられることです。
++
++```python
++with open('somefile.txt') as f:
++    read_data = f.read()
++
++#  We can check that the file has been automatically closed.
++f.closed
++```
++→ファイルが自動的に閉じられたことを確認できます。
++
++```text
++True
++```
++
++**重要**:  `with` キーワードを使用していない場合は、 `f.close()` を呼び出してファイルを閉じ、ファイルが使用しているシステムリソースを解放する必要があります。
++
++`with` ステートメントまたは `f.close()` の呼び出しによって、ファイルオブジェクトを閉じた後は使用できません。
++
++コードエディタで、 `with` ステートメントを使用して、ファイル `input1.txt` を読み取りモードで適切に開きます。
++次の行のファイルに使用されている名前を確認して使用してください。
++
++その後、開いた出力ファイル `outfile` を閉じます。
++
++コードを実行した後、他のファイルの中で「コースの表示」ウィンドウに表示された出力ファイルを確認してください。
++
++<div class='hint'>練習のためだけに！、 <code>r</code> 引数をメソッド <code>open()</code>に指定します。</div>
+diff -Naur "a/File input output/Read file/task.md" "b/File input output/Read file/task.md"
+--- "a/File input output/Read file/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/File input output/Read file/task.md" 2022-04-09 23:02:37.702574863 +0900
+@@ -0,0 +1,62 @@
++## ファイルを読む :(Read file)
++
++ファイルの内容を読み取るには、 `f.read(size)` を呼び出すことができます。
++これは、ある量のデータを読み取り、それを文字列として返します。
++サイズが省略または負の場合、ファイルの内容全体が読み取られて返されます。
++
++```python
++with open('somefile.txt') as f:
++    print(f.read())
++```
++```text
++Here's everything that's in the file.\n
++```
++<i>**注**: ファイルがマシンのメモリの 2倍の大きさである場合、問題が発生します。</i>
++
++`f.readline()` はファイルから 1行を読み取ります。
++
++改行文字 (`\n`) は文字列の最後に残され、ファイルが改行で終わっていない場合にのみファイルの最後の行で省略されます。
++
++ `f.readline()` が空の文字列を返す場合、ファイルの終わりに達していますが、空白行は、単一の改行のみを含む文字列である`\n` で表されます。
++
++```python
++f.readline()
++```
++```text
++'This is the first line of the file.\n'
++```
++```python
++f.readline()
++```
++```text
++'Second line of the file\n'
++```
++```python
++f.readline()
++```
++```text
++''
++``` 
++
++ファイルから行を読み取るために、ファイルオブジェクトをループできます。
++これはメモリ効率が高く、高速で、コードをシンプルにします:
++
++```python
++for line in f:
++    print(line)
++```
++```text
++This is the first line of the file.
++Second line of the file
++```
++
++リスト内のファイルのすべての行を読み取りたい場合は、 `list(f)` または `f.readlines()` を使用することもできます。
++
++詳細については、Python チュートリアルの [ファイルオブジェクトのメソッド](https://docs.python.org/3/tutorial/inputoutput.html#methods-of-file-objects) のセクションを確認してください。
++
++「input.txt」の内容を表示して、ファイルの行を繰り返して出力します。
++次に、「input1.txt」の最初の行のみを出力します。
++
++<div class='hint'>「課題の説明」ウィンドウの例のようにファイルオブジェクトをループします。</div>
++<div class='hint'> <code>print</code> 関数を使用します。</div>
++<div class='hint'> <code>readline()</code> メソッドを使用して 1行を出力します。</div>
+diff -Naur "a/File input output/What next/task.md" "b/File input output/What next/task.md"
+--- "a/File input output/What next/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/File input output/What next/task.md" 2022-04-09 23:02:37.706574906 +0900
+@@ -0,0 +1,17 @@
++おめでとうございます、コースは終了しました。楽しんでいただけたでしょうか。:(What next)
++
++一般的なフィードバックを残したい場合は、コースのマーケットプレイス[ページ](https://plugins.jetbrains.com/plugin/16630-introduction-to-python/reviews) にレビューを書いてください。
++
++貢献したい場合は、コースの[GitHubレポジトリ](https://github.com/jetbrains-academy/introduction_to_python) でプルリクエスト、または問題を自由に作成してください。
++
++### 次は何？
++
++Python プログラミングの基本を学んだので、さらに深く掘り下げて新しいスキルを磨くことができます。
++ここにあなたのためのいくつかのオプションがあります:
++
++- [NumPyのコース](https://plugins.jetbrains.com/plugin/18302-python-libraries--numpy) で、最も広く使用されているPython ライブラリについて学びます。
++- Pythonで[AMazing](https://plugins.jetbrains.com/plugin/17519-amazing) 迷路を構築する方法をご覧ください。
++- [機械学習](https://plugins.jetbrains.com/plugin/18392-machine-learning-101) の基本をご覧ください。
++- JetBrains Academy の[PythonCore](https://hyperskill.org/tracks/2) または [Python for Beginners](https://hyperskill.org/tracks/6) トラックでプロジェクトを確認してください。
++
++新しいコースとアップデートをお楽しみに！
+diff -Naur "a/File input output/Write to file/task.md" "b/File input output/Write to file/task.md"
+--- "a/File input output/Write to file/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/File input output/Write to file/task.md" 2022-04-09 23:02:37.702574863 +0900
+@@ -0,0 +1,69 @@
++## ファイルに書き込む :(Write to file)
++
++すでに述べたように、 `open()` の 2番目の引数として `'w'` を使用すると、ファイルは書き込み専用で開きます。
++新しい空のファイルが作成されます。
++
++同じ名前の別のファイルがすでに存在する場合、そのファイルは消去されます。
++既存のファイルにコンテンツを追加する場合は、 `'a'` （追加）修飾子を使用する必要があります。
++
++別のファイルオブジェクトメソッド `f.write(string)` は、 <i>string</i> の内容をファイルに書き込み、書き込まれた文字数を返します。
++
++```python
++f.write('This is a test\n')
++```
++```text
++15
++```
++テキストモードの他のタイプのオブジェクトは、最初に文字列に変換する必要があります:
++
++```python
++value = ('the answer', 42)
++s = str(value)  # convert the tuple into string
++f.write(s)
++```
++```python
++18
++```
++指定したテキストがファイルのどこに挿入されるかは、ファイルモードによって異なります (`'a'` と `'w'`) 。
++
++`'a'`:  テキストはファイルの最後に挿入されます。
++
++`'w'`: テキストが最初に挿入される前に、ファイルは空になります。
++
++改行などの記号を文字列に含める場合（新しい行から開始する場合）、「+」を付けて追加します:
++
++```python
++f.write('\n' + 'string,' + ' ' + 'another string')
++```
++
++これにより、新しい行が追加され、 `'文字列、別の文字列'`が書き込まれます。
++
++コードエディタで、`zoo` リストのすべての要素を "output.txt" に追加して、
++出力が新しい行から追加され、要素が `' and '` で区切られるようにします。
++ <code>' and '.join(lst)</code> 構文を使用して、リスト要素を必要な文字列に結合します。
++その後、同じ出力ファイルに `number` を追加します。
++
++<div class='hint'> <code>'a'</code> 修飾子を使用して、ファイルの最後に行を追加します。 </div>
++<div class='hint'> <code>write()</code> メソッドを使用します。</div>
++<div class='hint'>書き込む前に <code>number</code> を文字列に変換します。</div>
++<div class='hint'>各文字列の先頭に <code>\n</code> を追加して、別の行を編集するように書き込みます。</div>
++
++
++## 次は何ですか？
++
++さて、Python の基本をマスターしたら、次に何をすべきか疑問に思っていることでしょう。
++
++[JetBrains Academy](https://hi.hyperskill.org?utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=last-task) をチェックすることをお勧めします。
++
++JetBrains Academy を今すぐ試す理由は次のとおりです:
++
++- 現在、37 のPython プロジェクトと348 のトピックが学習に利用可能であり、その数は増え続けています。
++Kotlin やJava などの他のプログラミング言語も学習に利用できます。
++
++- さまざまな難易度のプロジェクトは、すべての人に柔軟な学習体験を提供します。
++
++- 包括的な学習トラックは、詳細な[ナレッジマップ](https://hyperskill.org/knowledge-map?utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=last-task) で補強されています。
++
++- どこでも学習: ブラウザを介してタブレットまたは携帯電話で学習を開始し、ラップトップまたはPC で続行できます。 [IDE でプロジェクトをビルド](https://hyperskill.org/plugin#python?utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=last-task) することもできます。
++
++JetBrains Academy の[ここ](https://hyperskill.org/onboarding?track=python&utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=last-task) に参加して、自分で試してみてください。
+diff -Naur "a/Functions/Args and kwargs/task.md" "b/Functions/Args and kwargs/task.md"
+--- "a/Functions/Args and kwargs/task.md"   1970-01-01 09:00:00.000000000 +0900
++++ "b/Functions/Args and kwargs/task.md"   2022-04-09 23:02:37.706574906 +0900
+@@ -0,0 +1,49 @@
++## Args と kwargs :(Args and kwargs)
++
++`**name` 形式の最後の正式なパラメータが存在する場合、仮パラメータに対応するものを除くすべてのキーワード引数を含む辞書（[データ構造 — 辞書](course://Data structures/Dictionaries) を参照）を受け取ります。
++
++これは、形式パラメータリスト以外の任意の数の位置引数を含むタプルを受け取る形式 `*name` の形式パラメータと組み合わせることができます。（`*name` は `**name` の前に出現する必要があります）
++
++例えば、コードエディタで次のような関数を定義すると、
++「call 1」に示すように呼び出すことができ、次のように出力されます:
++
++```text
++-- Do you know how to get to the Library ? 　←（図書館への行き方は ?）
++-- I'm sorry, I am not from here, no idea about the Library ←（図書館はわかりません）
++Do you at least have a cigar, sir? 　←（葉巻はありますか？）
++Sure, help yourself. 　←（助けてください。）
++----------------------------------------
++lost_person : old banker 　←（失われた人 : 古い銀行家）
++other_guy : street clown 　←（他の男 : ストリートピエロ）
++scene : in a park 　←（シーン：公園で）
++```
++
++この関数は、任意の数の引数を使用して呼び出すことができます。
++
++これらの引数はタプルにまとめられます。（[タプル](course://Data structures/Tuples) を参照）
++
++可変の引数の前に、0個以上の通常の引数が発生する可能性があります。
++私たちの場合、「場所」が 1つあります。
++
++ `*args` パラメータの後に発生する正式なパラメータはすべて「キーワードのみ」の引数です。つまり、位置引数ではなくキーワードとしてのみ使用できます。
++
++この関数を呼び出す別の方法を「call 2」に示します。これにより、同じ出力が得られます。
++
++### 課題
++
++コードエディタで、 `cat()` 関数の下のコードを変更して、
++次のように出力します:
++
++```text
++-- This cat would eat if you gave it anything ←（この猫は何かを食べるでしょう）
++-- Lovely fur, the Maine Coon 　←（素敵な毛皮、メインクーン）
++-- It's fat ! 　←（太っている！）
++IT IS TOO FAT. 　←（太りすぎです。）
++YOU ARE FEEDING YOUR CAT TOO MUCH. 　←（猫に与えすぎ）
++```
++
++<div class='hint'> <code>*</code> を使用して余分な位置引数をアンパックすることを忘れないでください。</div>
++
++<div class='hint'> <code>**</code> を使用してキーワード引数を解凍することを忘れないでください。</div>
++
++<div class='hint'> 正式なパラメータ<code>food</code> の値を指定することを忘れないでください。</div>
+diff -Naur "a/Functions/Default parameters/task.md" "b/Functions/Default parameters/task.md"
+--- "a/Functions/Default parameters/task.md"    1970-01-01 09:00:00.000000000 +0900
++++ "b/Functions/Default parameters/task.md"    2022-04-09 23:02:37.710574948 +0900
+@@ -0,0 +1,29 @@
++## デフォルトのパラメータ :(Default parameters)
++
++可変の引数で関数を定義することも可能です。
++
++組み合わせることができる 3つの形式があります。  
++最も便利な形式は、1つ以上の引数のデフォルト値を指定することです。
++
++これにより、定義されているよりも少ない引数で呼び出すことができる関数が作成されます。
++
++例えば、コードエディタの最初の関数を確認してください。
++
++この関数は、いくつかの方法で呼び出すことができます。
++
++- 必須の引数 `a` のみを与える: `multiply_by(3)`
++- オプションの引数の 1つを与える: `multiply_by(3, 47)`、または `multiply_by(3, c=47)`
++- またはすべての議論を与える: `multiply_by(3, 47, 0)`
++
++`c=47` の 3番目のケースで行ったように、関数呼び出しで提供する引数を指定できます。
++
++これを指定しない場合、値は順序に従って割り当てられます。
++
++関数呼び出しと定義では、`=` 記号の前後にスペースを入れないでください。
++
++このトピックについて詳しくは、Pythonドキュメントの <a href="https://docs.python.org/3/tutorial/controlflow.html#default-argument-values">このセクション</a> をご覧ください。
++
++### 課題
++`hello()` 関数にパラメータを追加し、`name` パラメータのデフォルト値を設定します。
++
++<div class='hint'> <code>name</code> パラメータのデフォルト値を指定します。</div>
+diff -Naur a/Functions/Definition/task.md b/Functions/Definition/task.md
+--- a/Functions/Definition/task.md  1970-01-01 09:00:00.000000000 +0900
++++ b/Functions/Definition/task.md  2022-04-09 23:02:37.706574906 +0900
+@@ -0,0 +1,33 @@
++## 意味 :(Definition)
++
++関数は、コードを有用なブロックに分割し、より多くのものにするための便利な方法です。
++
++読み取り可能で、再利用できます。
++
++キーワード `def` は関数定義を導入します。
++
++その後に、関数名と仮パラメーターの括弧で囲まれたリスト（空の場合もあります）を続ける必要があります。
++
++関数の本体を形成するステートメントは次の行から始まり、インデントする必要があります。
++
++関数は、呼び出されたときにのみ実行されます。
++
++関数を呼び出すには、名前の後に括弧を付けて使用します:
++
++```python
++def my_function():  # function definition
++  print("Hello from a function")
++
++my_function()  # function call
++```
++
++関数の定義について詳しくは、Pythonドキュメントの <a href="https://docs.python.org/3/tutorial/controlflow.html#defining-functions">このセクション</a> をご覧ください。
++
++### 課題
++
++- ループ内で関数 `my_function` を呼び出して、その呼び出しを 5回繰り返します  
++- ファイル内の重複した `print` ステートメントを置き換えることができる関数を定義します。
++
++<div class='hint'> <code>()</code> を使用して <code>my_function</code> 関数を呼び出します。</div>
++
++<div class='hint'>Use the <code>def</code> キーワードを使用して、<code>fun</code> 関数を定義します。</div>
+diff -Naur "a/Functions/Keyword Arguments/task.md" "b/Functions/Keyword Arguments/task.md"
+--- "a/Functions/Keyword Arguments/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/Functions/Keyword Arguments/task.md" 2022-04-09 23:02:37.706574906 +0900
+@@ -0,0 +1,48 @@
++## キーワード引数 :(Keyword Arguments)
++
++関数は `kwarg=value` の形式のキーワード引数を使用して呼び出すこともできることをすでに示唆しました。
++
++例えば、私たちが定義した関数 `cat()` は、1つの必須引数（`food`）と 3つのオプションの引数（`state`、 `action`、および `breed`）を受け入れます。
++
++次のいずれかの方法で呼び出すことができます（すべて試してみることができます）:
++
++```python
++cat('chicken')                     # 1 位置引数
++cat(food='chicken')                # 1 キーワード引数
++cat(food='fish', action='bite')    # 2 キーワード引数
++cat(action='bite', food='fish')    # 2 キーワード引数
++cat('beef', 'happy', 'hiss')       # 3 位置引数
++cat('a hug', state='purrring')     # 1 位置引数、1 キーワード引数
++```
++
++関数呼び出しでは、キーワード引数は位置引数の後に続く必要があります。
++
++渡されるすべてのキーワード引数は、関数によって受け入れられる引数の 1つと一致する必要があり（例えば、`book` は `cat` 関数の有効な引数ではありません）、それらの順序は重要ではありません。
++
++これには、オプションではない引数も含まれます。（例えば、`cat(food='fish')` も有効です）。
++
++引数が値を複数回受け取ることはできません。
++
++次のすべての呼び出しは無効になります:
++
++```python
++cat()                              # 必要な引数がありません
++cat(food='fish', 'dead')           # キーワード引数の後の位置引数
++cat('veggies', food='nothing')     # 同じ引数の値が重複しています
++cat(actor='Johnny Depp')           # 不明なキーワード引数
++```
++
++### 課題
++
++エディタで、引数を指定して関数呼び出しを行い、次のように出力します:
++
++```text
++-- This cat wouldn't growl if you gave it soup
++-- Lovely fur, the Sphinx
++-- It's still hungry!
++```
++
++<div class='hint'>キーワード引数には、<code>state='asleep'</code> などの構文を使用します。</div>
++
++<div class='hint'>キーワード引数として指定しない限り、必須の引数 <code>food</code> は最初の位置にある必要があります。</div>
++
+diff -Naur "a/Functions/Parameters and call arguments/task.md" "b/Functions/Parameters and call arguments/task.md"
+--- "a/Functions/Parameters and call arguments/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/Functions/Parameters and call arguments/task.md" 2022-04-09 23:02:37.706574906 +0900
+@@ -0,0 +1,45 @@
++## パラメータと呼び出し引数 :(Parameters and call arguments)
++
++「関数パラメータ」は、関数名に続く括弧 `()` 内で定義されます。
++
++「パラメータ」は、関数に渡される引数の変数名として機能します。
++
++「パラメータ」と「引数」という用語は同じものを指します。つまり、関数に渡される情報です。
++
++ただし、「パラメータ」は関数定義の括弧内にリストされている「変数」であり、「引数」は関数が呼び出されたときに関数に送信される「値」です。
++
++デフォルトでは、関数は正しい数の引数を使用して呼び出す必要があります。
++
++関数が 2つの引数を予期している場合は、2つの引数を使用して呼び出す必要があります:
++
++```python
++def my_function(name, surname):
++    print(name + " " + surname)
++
++my_function("Jon", "Snow")
++```
++
++結果:
++```text
++Jon Snow
++```
++
++ただし、呼び出し中に引数を 1つだけ指定すると、次のようになります:
++
++```python
++my_function("Sam")
++```
++
++`TypeError`が発生します:
++```text
++TypeError                                 Traceback (most recent call last)
++<ipython-input-29-40eb74e4b26a> in <module>
++----> 1 my_function('Jon')
++
++TypeError: my_function() missing 1 required positional argument: 'surname'
++```
++
++### 課題
++コードエディタで、渡されたパラメータの 2乗を出力する関数を定義します。
++
++<div class='hint'>関数定義の括弧内に <code>x</code> パラメーターを追加します。</div>
+diff -Naur a/Functions/Recursion/task.md b/Functions/Recursion/task.md
+--- a/Functions/Recursion/task.md   1970-01-01 09:00:00.000000000 +0900
++++ b/Functions/Recursion/task.md   2022-04-09 23:02:37.706574906 +0900
+@@ -0,0 +1,70 @@
++## 再帰 :(Recursion)
++
++<b>recursion</b> という単語は、ラテン語の <i>recurrere</i> に由来します。  
++これは、戻る、元に戻す、または繰り返すことを意味します。
++
++プログラミングでは、再帰とは、関数がそれ自体を呼び出すコーディング手法を指します。
++
++ほとんどの場合、再帰は必要ありませんが、状況によっては、自己参照の定義が必要です。
++
++ツリーのようなデータ構造を使うことは良い例です。
++このような構造はネストされており、再帰的定義に容易に適合します。
++
++同じ課題の非再帰的アルゴリズムは非常に面倒です。
++
++これは再帰関数の簡単な例です。
++
++引数として数値を取り、指定された引数からゼロまでの数値を出力します。
++
++再帰呼び出しでは、引数は現在の `n` の値より1小さいため、各再帰は基本ケース（ゼロ）に近づきます。
++
++```python
++def countdown(n):
++    print(n, end=' ')
++    if n == 0:
++        return             # 再帰を終了
++    else:
++        countdown(n - 1)   # 再帰呼び出し
++
++
++countdown(4)
++```
++```text
++10 9 8 7 6 5 4 3 2 1 0 
++```
++
++<div class='hint'>この関数は引数の妥当性をチェックしません。<code>n</code> 
++が非整数または負の場合、 <code>RecursionError</code> が発生します。
++
++基本ケースに到達しないための例外：
++
++```python
++countdown(-10)
++```
++```text
++RecursionError: maximum recursion depth exceeded while calling a Python object
++```
++sys モジュールの関数を使用して、Python の再帰制限を確認できます。  
++`getrecursionlimit()` と呼ばれ、 `setrecursionlimit()` で変更できます:
++
++```python
++from sys import setrecursionlimit
++setrecursionlimit(3000)
++getrecursionlimit()
++```
++```text
++3000
++```
++</div>
++
++再帰はすべての状況で役立つわけではないことに注意してください。  
++一部の問題では、再帰的な解決策は可能ですが、エレガントというよりは厄介です。
++
++再帰的な実装は、非再帰的な実装よりも多くのメモリを消費することが多く、場合によっては実行が遅くなる可能性があります。
++
++### 課題
++コードエディタで、正の整数の[階乗](https://en.wikipedia.org/wiki/Factorial) を計算する再帰関数を実装します。
++
++1 と 0 の場合は 1 を返し、1つおきの数値については、この数値 (`n`) と前の数値の階乗 (`n-1`) の積を計算します。
++
++<div class='hint'>再帰関数呼び出しを忘れないでください。</div>
+diff -Naur "a/Functions/Return value/task.md" "b/Functions/Return value/task.md"
+--- "a/Functions/Return value/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Functions/Return value/task.md"  2022-04-09 23:02:37.710574948 +0900
+@@ -0,0 +1,25 @@
++## 戻り値 :(Return value)
++
++関数は、キーワード `return` を使用して、呼び出し元に値を返す場合があります。
++戻り値を使用して変数に割り当てるか、単に出力することができます。
++
++実際、`return` ステートメントのない関数でも値を返します。
++
++この値は `None`（なし）と呼ばれます（組み込みの名前です）。
++
++値 `None` の書き込みは通常、インタープリタによって抑制されますが、
++本当に見たい場合は、 `print(some_func())` を使用できます。
++
++><i>関数本体の最初のステートメントは、オプションで文字列リテラルにすることができます。この文字列リテラルは、関数のドキュメント文字列または docstring です。  
++（ docstring の詳細については、Pythonドキュメントの  <a href="https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings">ドキュメント文字列</a> をご覧ください。）  
++作成するコードに docstring を含めることをお勧めします。</i>
++
++「フィボナッチ数列」では、最初の 2つの数字は `1` と `1` であり、その後はそれぞれ
++数値は前の 2つの合計です。
++
++### 課題
++`n` までの「フィボナッチ数列」の数のリストを返す関数を記述します。
++
++<div class='hint'> <code>b</code> を 1で初期化します。</div>
++<div class='hint'> <code>b</code> を <code>a + b</code>で更新します。</div>
++<div class='hint'> <code>a</code> を <code>tmp_var</code>で更新します。</div>
+diff -Naur a/Introduction/About/task.md b/Introduction/About/task.md
+--- a/Introduction/About/task.md    1970-01-01 09:00:00.000000000 +0900
++++ b/Introduction/About/task.md    2022-04-09 23:02:37.710574948 +0900
+@@ -0,0 +1,29 @@
++## コースについて
++
++Python プログラミングの基礎のコースへようこそ！
++
++#### なぜ Python を学ぶのですか？
++
++Python は、世界で最も人気のあるプログラミング言語の1つです。
++Pythonは、データサイエンス、ML、AI で広く使用されており、最も急速に成長している主要なプログラミング言語です。
++ 
++これは、プログラミングに精通するための完璧な出発点です。
++Python は、他のほとんどのプログラミング言語よりも読み取り、書き込み、学習が簡単です。
++Python を使用すると、単純な初心者の課題にとらわれることはありません。
++多数の Python フォーラムと Q＆A プラットフォーム、およびサポートを提供するオープンソースコミュニティは、学習意欲を維持するのに役立つ貴重なリソースです。
++
++#### コースの目的
++
++このコースを完了すると、次のことができるようになります。
++
++- 変数、データ構造、関数、クラスなどの基本的なプログラミングの概念を理解して利用できます。
++- Python コードを読めます。
++- Python で簡単なプログラムを作成できます。
++- Python モジュールおよびパッケージを操作できます。
++- 他のコースでPython を学び続け、より複雑な資料を提供します。
++
++#### 前提条件
++
++このコースを完了するために、Python やプログラミング全般の経験は必要ありません。
++
++頑張って！
+diff -Naur a/Introduction/Comments/task.md b/Introduction/Comments/task.md
+--- a/Introduction/Comments/task.md 1970-01-01 09:00:00.000000000 +0900
++++ b/Introduction/Comments/task.md 2022-04-09 23:02:37.714574991 +0900
+@@ -0,0 +1,40 @@
++## コメント :(Comments)
++
++Python のコメントは、ハッシュ文字 (`#`) と単一のスペースで始まり、物理行の終わりまで続きます。
++
++ &shortcut:CommentByLineComment; を使うと、
++PyCharm の行全体またはコードブロックのコメントまたはコメント解除ができます。
++
++コードを変更したときは、常にコメントを最新の状態に保つことを優先してください。
++
++コードと矛盾するコメントは、コメントがない場合よりも悪いことです。
++また、不必要ですが、明白なことを述べている場合、実際にはかなり気が散ります。
++
++なので、これを行わないでください:
++
++```python
++x = x + 1                 # Increment x
++```
++コメントは完全な文章である必要があります。最初の単語は、小文字で始まる識別子でない限り、大文字にする必要があります。コメントが明確で、他の人にもわかりやすいものであることを確認してください。
++
++#### ブロックコメント :(Block Comments)
++
++ブロックコメントは通常、それに続く一部（またはすべて）のコードに適用され、そのコードと同じレベルにインデントされます。
++
++#### インラインコメント :(Inline Comments)
++
++インラインコメントは慎重に使用してください。
++インラインコメントは、ステートメントと同じ行のコメントです。
++インラインコメントは、ステートメントから少なくとも 2つのスペースで区切る必要があります。
++
++適切なコメントの詳細については、<a href="https://www.python.org/dev/peps/pep-0008/#comments">PEP 8 – Style Guide for Python Code</a> を参照してください。
++
++削除したくない場合は、コードの 1行またはブロックにコメントを付けることもできます。現時点では必要ありません。
++
++### 課題
++コードエディタで、出力しないことを示す `print` ステートメントで、行にコメントを付けます。
++コードが強調表示されなくなった様子を確認ください。
++
++<div class='hint'>
++  <code>#</code> とその <code>print</code> ステートメントの前にスペースを追加します。他はすべてそのままにしておきます。
++</div>
+diff -Naur "a/Introduction/Course View/task.md" "b/Introduction/Course View/task.md"
+--- "a/Introduction/Course View/task.md"    1970-01-01 09:00:00.000000000 +0900
++++ "b/Introduction/Course View/task.md"    2022-04-09 23:02:37.714574991 +0900
+@@ -0,0 +1,21 @@
++## コースの表示 :(Course View)
++
++<b>「コースの表示」</b> (Course) ウィンドウには、コースの項目が表示されます: 課題を含むレッスンの一覧です:
++
++<style>
++img {
++  display: block;
++  margin-left: auto;
++  margin-right: auto;
++}
++</style>
++<img src="edu_course_view.png" class="center" width="30%"/>
++
++名前をダブルクリックすると、任意の課題に移動できます。
++
++「コースの表示」ウィンドウを非表示にするには、「プロジェクトツール」のウィンドウ ボタンをクリックするか、 <span style="color: #509DD6">&shortcut:ActivateProjectToolWindow;</span> を押します。
++
++これにより、「編集エリア」ウィンドウと「課題の説明」ウィンドウ用のスペースが増えます。
++
++非表示の「コースの表示」ウィンドウを表示するには、[プロジェクトツールウィンドウ]ボタンをクリックします。または、<span style="color: #509DD6">&shortcut:ActivateProjectToolWindow;</span> を再び押します。
++
+diff -Naur a/Introduction/Editor/task.md b/Introduction/Editor/task.md
+--- a/Introduction/Editor/task.md   1970-01-01 09:00:00.000000000 +0900
++++ b/Introduction/Editor/task.md   2022-04-09 23:02:37.714574991 +0900
+@@ -0,0 +1,24 @@
++## 編集エリア :(Editor)
++
++<b>「編集エリア」</b> (Editor) は、プログラミングを行うための遊び場です。チェックせずに理論的な課題やクイズに取り組んでいる間、ここで実験することができます。
++
++プログラミングの割り当ての場合、「編集エリア」は既存のコードを修正するか、独自のコードを最初から作成する場所です。このコードがチェックされます。
++
++<style>
++img {
++  display: block;
++  margin-left: auto;
++  margin-right: auto;
++}
++</style>
++<img src="edu_editor.png" class="center" width="60%"/>
++
++コードをいつでも実行するには、コンテキストメニューから[実行]オプションを選択するか、<span style="color: #509DD6">&shortcut:Run;</span> を押します:
++
++<img src="edu_context_menu_run.png" class="center" width="60%"/>
++
++
++「編集エリア」に戻ってコードに集中したい場合に、最も速いやり方は、[すべてのウィンドウを非表示]コマンド
++ (<span style="color: #509DD6">&shortcut:HideAllWindows;</span>) を使うことです。
++すべてのウィンドウを元に戻すには、コマンドを繰り返します。
++
+diff -Naur "a/Introduction/Navigating Around/task.md" "b/Introduction/Navigating Around/task.md"
+--- "a/Introduction/Navigating Around/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Introduction/Navigating Around/task.md"  2022-04-09 23:02:37.710574948 +0900
+@@ -0,0 +1,25 @@
++## EduToolsプラグインの概要 :( EduTools plugin overview)
++
++このレッスンは、[EduTools プラグイン](https://www.jetbrains.com/help/education/educational-products.html) を使用して最初のステップを実行し、それを使用してPython を学習するのに役立ちます。
++
++EduTools プラグインを使用すると、コーディングタスクを完了してプログラミング言語とツールを学習し、IDE 内で即座にフィードバックを得ることができます。
++
++十分に話しましょう – 始めましょう！
++
++インターフェースに既に精通している場合は、このレッスンをスキップできます。
++
++### コースでの作業
++EduTools で利用できるすべてのコースは、レッスンのリストとして構成されています。
++次に、レッスンをセクションにグループ化できます。
++各レッスンにはいくつかの課題が含まれています。
++
++コースを開くと、ナビゲーションに使用されるメインのツールウィンドウが表示されます:
++
++<b>「コースの表示」</b>ウィンドウ  
++<b>「編集エリア」</b>ウィンドウ  
++<b>「課題の説明」</b>ウィンドウ
++
++<img src="edu_course_overview.png" width="100%"/>
++
++「Next」（次へ）ボタンをクリックして、次の課題に移動します。
++
+diff -Naur "a/Introduction/Our first program/task.md" "b/Introduction/Our first program/task.md"
+--- "a/Introduction/Our first program/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Introduction/Our first program/task.md"  2022-04-09 23:02:37.714574991 +0900
+@@ -0,0 +1,29 @@
++## 私たちの最初のプログラム :(Our first program)
++
++従来、プログラミング言語で最初に作成するプログラムは `"Hello World!"` です。
++
++こちらでも紹介します。
++
++このスクリプトを実行するには、 **Editor** ビュー（編集画面）の任意の場所を「右クリック」して、
++コンテキストメニューを表示し、**実行 'hello_world'** を選択します。
++
++または、&shortcut:RunClass; ショートカットを使用することもできます。
++PyCharm Edu でのみ、![](execute.svg) 男の子アイコンを使用できます。
++
++詳細については、[私たちのヘルプ](https://www.jetbrains.com/help/pycharm/running-and-rerunning-applications.html) をご覧ください。
++
++## JetBrains アカデミー :(JetBrains Academy)
++
++この課題が難しすぎると思われる場合、または、より構造化された詳細なカリキュラムを探している場合は、
++ [JetBrains Academy](https://hi.hyperskill.org?utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=first-task) を試してみることをお勧めします。
++
++JetBrains Academy を試す理由はたくさんあります。それらのほんの一部を次に示します:
++
++- 詳細な[ナレッジマップ](https://hyperskill.org/knowledge-map?utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=first-task) を含む包括的な学習トラック。
++
++- スキルレベルに合わせて柔軟な学習体験を提供する、さまざまな難易度のプロジェクト。
++
++- [専門能力開発ツール](https://hyperskill.org/plugin?utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=first-task) を使用して練習し、習得することができます。
++
++Join JetBrains Academy の [こちら](https://hyperskill.org/onboarding?track=python&utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=first-task) に参加して、自分で試してみてください。
++
+diff -Naur "a/Introduction/Task Description/task.md" "b/Introduction/Task Description/task.md"
+--- "a/Introduction/Task Description/task.md"   1970-01-01 09:00:00.000000000 +0900
++++ "b/Introduction/Task Description/task.md"   2022-04-09 23:02:37.714574991 +0900
+@@ -0,0 +1,46 @@
++## 課題の説明 :(Task Description)
++
++**課題の説明** (Description) ウィンドウには、課題を完了するために必要なすべての情報が表示されます。
++
++理論的な課題の場合、説明は学習および読み物を提供します。  
++クイズの場合、それは複数の選択肢の質問を提供します。  
++プログラミングの割り当てについては、解決すべき問題が記載されています。
++
++次のアクションには、「課題の説明」ウィンドウのアイコンを使用します:
++
++|アイコン       |説明        |  
++| ------------------------------------ | ------------------------------- |  
++|**チェック**            | <font size="-1">クイズの回答 またはプログラム課題のコードが正しいか確認</font>|  
++| **実行**               | <font size="-1">コードを実行します（理論上の課題）</font>|  
++|![](images/back.svg)    |  <font size="-1">前のタスクに移動</font>|  
++|![](images/forward.svg) <font size="-1">または</font> **次へ** | <font size="-1">次のタスクに進む</font>|  
++|![](images/reset.svg)   | <font size="-1">タスクで行ったすべての変更を破棄し、最初からやり直します</font>|  
++|![](images/commentTask.svg) | <font size="-1">Stepikで課題ページを表示し、コメントを残してください</font>|  
++|<a>ソリューションのピーク...</a>| <font size="-1">正解を明らかにし、<b>差分</b>を表示します。</font>|  
++
++「課題の説明」ウィンドウを完全に非表示にせずに、表示したままにしておくことをオススメします。
++
++気が散る場合は、「課題の説明」ウィンドウの右上隅にある ![](images/hideToolWindow.svg) ボタンをクリックして非表示にできます。
++
++2台のモニタを使用する場合は、「課題の説明」ウィンドウ（パネル）をフローティングモードに切り替えて、2台目のモニタに移動するか、IDE のメインウィンドウの近くに配置すると便利な場合があります。
++
++これを行うには、ツールウィンドウの設定 ![](images/gear.svg) アイコンをクリックします:
++
++<img src="images/edu_task_description_window_settings.png" width="60%"/>
++
++<style>
++img {
++  display: inline !important;
++}
++table, th, td {
++  border: 1px solid black;
++  border-collapse: collapse;
++}
++th, td {
++  padding: 5px;
++}
++table td:nth-child(1) {
++    text-align: center;
++}
++</style>
++
+diff -Naur "a/Loops/Break keyword/task.md" "b/Loops/Break keyword/task.md"
+--- "a/Loops/Break keyword/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/Loops/Break keyword/task.md" 2022-04-09 23:02:37.722575075 +0900
+@@ -0,0 +1,14 @@
++## Break キーワード :(Break keyword)
++
++無限ループは、決して終了しないループです。
++ループ条件が常に`True`である場合、そのようなループは無限になります。
++
++無限ループを作成する最も簡単な方法は、`while True` を使用することです。
++`break` キーワードは、ループをエスケープするために使用されます。
++
++`animal` が `elephant` と等しいかどうかを評価した後、3回目の反復でループを終了する条件を記述します。
++ `break` ステートメントを使用します。
++最後の `zoo` リストには `lion` と `tiger` だけが含まれている必要があります（ループ内の他のすべてのものを `pop` するため）。
++
++<div class='hint'> <code>==</code> を使用して、<code>animal</code> が <code>"elephant"</code> と等しいかどうかを確認します。</div>
++
+diff -Naur "a/Loops/Continue keyword/task.md" "b/Loops/Continue keyword/task.md"
+--- "a/Loops/Continue keyword/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Loops/Continue keyword/task.md"  2022-04-09 23:02:37.730575159 +0900
+@@ -0,0 +1,11 @@
++## continue キーワード :(Continue keyword)
++
++`continue` キーワードは、現在の反復でのみループ内の残りのコードをスキップし、次の反復に進むために使用されます。
++
++ループは `for` または `while` ステートメントに戻り、条件を再度評価します。
++次の項目がない場合、存在する場合は `else` 句が実行されます。
++
++奇数の `1、3、5、7、9` のみを出力します。
++
++<div class='hint'> <code>%</code> 演算子を使用して、<code>x</code> が偶数かどうかを確認します。</div>
++
+diff -Naur "a/Loops/Else with loops/task.md" "b/Loops/Else with loops/task.md"
+--- "a/Loops/Else with loops/task.md"   1970-01-01 09:00:00.000000000 +0900
++++ "b/Loops/Else with loops/task.md"   2022-04-09 23:02:37.722575075 +0900
+@@ -0,0 +1,41 @@
++##  Else with ループ :(Else with loops)
++
++「それ以外の場合はループ」
++
++`break` ステートメントは、最も内側を囲む `for` または `while` ループから抜け出すことがわかりました。
++Python では、ループステートメントに `else` 句を含めることもできます。
++
++iterable の枯渇（ `for` を使用）によってループが終了したとき、または条件が `False`（ `while` を使用）になったときに実行されますが、ループが `break` ステートメントによって終了したときは実行されません。
++
++素数を検索するループの次の例を確認してください:
++
++```python
++for n in range(2, 10):
++    for x in range(2, n):
++        if n % x == 0:
++            print(n, 'equals', x, '*', n//x)
++            break
++    else:
++        # loop fell through without finding a factor
++        print(n, 'is a prime number')
++```
++```text
++2 is a prime number
++3 is a prime number
++4 equals 2 * 2
++5 is a prime number
++6 equals 2 * 3
++7 is a prime number
++8 equals 2 * 4
++9 equals 3 * 3
++```
++
++このコードでは、`else` 句は `if` ステートメントではなく、`for` ループに属しています。
++
++`if` ステートメントの後の `else` はスキップされ、 `if` に続く式が `True` の場合は実行されませんが、
++ループの場合、（どこかに「休憩」がない限り）`else` 句はループ自体が完了した後に実行されます。
++
++コードエディタで、2行目のコードを 2行目に追加して、ループが 1 と 2 の数字のみを出力し、
++`"for loop is done"` というフレーズを出力しないようにします。
++
++<div class='hint'>番号3で終了する必要があります。</div>
+diff -Naur "a/Loops/For loop/task.md" "b/Loops/For loop/task.md"
+--- "a/Loops/For loop/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Loops/For loop/task.md"  2022-04-09 23:02:37.714574991 +0900
+@@ -0,0 +1,16 @@
++## for ループ :(for loop)
++
++`for` ステートメントは、シーケンスの要素（文字列、タプル、リストなど）または別の反復可能なオブジェクトを反復処理するために使用されます。
++
++シーケンスは 1回評価されます。
++各反復で、`for` ループで定義された変数がリスト内の次の値に割り当てられます。
++`for`ステートメントの行に続くコードは、アイテムごとに 1回実行されます。
++アイテムが使い果たされると、ループは終了します。
++
++Pythonドキュメントの <a href="https://docs.python.org/3/reference/compound_stmts.html#the-for-statement"> このページ</a> で `for` ステートメントの詳細を読むことができます。
++
++`for` ループを使用して、`primes` リストから各素数を出力します。
++素数は `1` より大きい自然数であり、`1` とそれ自体以外に正の約数はありません。
++
++<div class='hint'> <code>for</code> ループを使用して、<code>primes</code> を反復処理し、各要素を1つずつ出力します。</div>
++
+diff -Naur "a/Loops/List Comprehension/task.md" "b/Loops/List Comprehension/task.md"
+--- "a/Loops/List Comprehension/task.md"    1970-01-01 09:00:00.000000000 +0900
++++ "b/Loops/List Comprehension/task.md"    2022-04-09 23:02:37.722575075 +0900
+@@ -0,0 +1,52 @@
++## リスト内包 :(List Comprehension)
++
++ループを使用して、リスト（または別のデータ構造）を作成できます。
++
++例えば：
++
++
++```python
++my_list = []
++for i in range(5):
++    my_list.append(i)
++
++print(my_list)
++```
++
++出力:
++```text
++[0, 1, 2, 3, 4]
++```
++
++これは素晴らしいですが、かなりかさばります。
++
++リスト内包表記は、既存のリストまたは別の反復可能オブジェクト（タプル、文字列、配列、範囲など）の値に基づいて新しいリストを作成する場合に、よりコンパクトな構文を提供します。
++
++それは同じタスクを実行し、プログラムを簡素化します。
++通常、リスト内包表記は 1行のコードで記述されます。
++
++
++```python
++my_list = [i for i in range(5)]
++print(my_list)
++```
++出力:
++```text
++[0, 1, 2, 3, 4]
++```
++
++リスト内包表記は、`for` ループよりも計算効率が高くなります。
++
++コードエディタで、リスト内包表記を使用して、各要素に $10$ を追加することにより、
++`my_inefficient_list` の要素から `my_efficient_list` を作成します。
++
++例えば、`my_inefficient_list` の最初の要素は $1 + 10 = 11$ であるため、
++`my_efficient_list` の最初の要素は $11 + 10 = 21$ になります。
++
++<div class='hint'>
++
++上記の例では、 `i for i in range(5)` を使用しました。この式の中で、好きなように `i` を変更できます。
++
++例えば、すべての `i` から `5` を引くには、 `i - 5 for i in range(5)` に対して `i - 5` を実行できます。
++</div>
++
+diff -Naur "a/Loops/Loop over a string/task.md" "b/Loops/Loop over a string/task.md"
+--- "a/Loops/Loop over a string/task.md"    1970-01-01 09:00:00.000000000 +0900
++++ "b/Loops/Loop over a string/task.md"    2022-04-09 23:02:37.722575075 +0900
+@@ -0,0 +1,10 @@
++## 文字列をループする :( Loop over a string)
++
++前に説明したように、Python の文字列は多くの点でリストに似ています。
++リストを反復処理するのと同じように、文字列を反復処理できます。
++
++ループを使用して、`hello_world` に含まれる文字数をカウントします。
++この数値を変数 `length` に格納します。
++
++<div class='hint'> <code>for</code> ループを使用して、<code>hello_world</code> 文字列を反復処理します。</div>
++
+diff -Naur "a/Loops/Nested List Comprehension/task.md" "b/Loops/Nested List Comprehension/task.md"
+--- "a/Loops/Nested List Comprehension/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/Loops/Nested List Comprehension/task.md" 2022-04-09 23:02:37.722575075 +0900
+@@ -0,0 +1,49 @@
++## ネストされたリスト内包 :(Nested List Comprehension)
++
++「ネストされたリスト内包」は、他の「リスト内包」内のネストされた「リスト内包」です。
++
++これは「[ネストされたループ](course://Loops/Nested for Loop) 」と非常によく似ています。
++
++「ネストされたループ」を使用して「[ネストされたリスト](course://Data structures/Nested Lists) 」を構築するプログラムは次のとおりです:
++
++```python
++matrix = []
++
++for i in range(3):
++
++    # Append an empty sublist inside the list
++    matrix.append([])
++
++    for j in range(0, 10, 2):
++        matrix[i].append(j)
++
++print(matrix)
++```
++
++出力:
++```text
++[[0, 2, 4, 6, 8], [0, 2, 4, 6, 8], [0, 2, 4, 6, 8]]
++```
++
++「ネストされたリスト内包」表記を使用すると、同じことが 1行で実行できます:
++
++```python
++matrix = [[j for j in range(0, 10, 2)] for i in range(3)]
++print(matrix)
++```
++出力:
++```text
++[[0, 2, 4, 6, 8], [0, 2, 4, 6, 8], [0, 2, 4, 6, 8]]
++```
++
++### 課題
++
++各行（サブリスト）に `string` の **文字(characters)** 0〜9 が含まれるように、$10×10$ の `matrix` を作成します。
++リスト内包表記 (list comprehension) を使用して、1行のコードで課題を完了します。
++
++<div class='hint'>
++
++「課題の説明」ウィンドウの例に従ってください。範囲の 1つではなく、反復可能として `string` を使用する必要があります。
++
++</div>
++
+diff -Naur "a/Loops/Nested for Loop/task.md" "b/Loops/Nested for Loop/task.md"
+--- "a/Loops/Nested for Loop/task.md"   1970-01-01 09:00:00.000000000 +0900
++++ "b/Loops/Nested for Loop/task.md"   2022-04-09 23:02:37.722575075 +0900
+@@ -0,0 +1,54 @@
++## ネストされたループ :(Nested Loops)
++
++ネストされたループは、別のループ内のループです。
++内側のループは、外側のループの反復ごとに 1回実行されます。
++
++```python
++adjectives = ["black", "stylish", "expensive"]
++clothes = ["jacket", "shirt", "boots"]
++
++for x in adjectives:
++  for y in clothes:
++    print(x, y)
++```
++出力:
++```text
++black jacket
++black shirt
++black boots
++stylish jacket
++stylish shirt
++stylish boots
++expensive jacket
++expensive shirt
++expensive boots
++```
++
++<details>
++
++どのタイプのループも別のループ内にネストできることに注意してください。
++例えば、 [`while` loop](course://Loops/While loop) （詳細を参照）は、`for` ループ内にネストできます。
++その逆も可能です。
++</details>
++
++3x3 の三目並べボードが与えられます。
++課題は、すべての位置を出力することです。
++各辺に沿った座標は、リスト `coordinates` に保存されます。
++
++出力は次のようになります:
++
++```text
++1 x 1
++1 x 2
++1 x 3
++2 x 1
++...
++```
++
++座標のすべての組み合わせについても同様です。
++
++<div class='hint'>
++
++ネストされた `for` ループで、同じリストをもう一度繰り返しますが、今回は別の変数名（`coordinate2`）を使用します。
++</div>
++
+diff -Naur "a/Loops/While loop/task.md" "b/Loops/While loop/task.md"
+--- "a/Loops/While loop/task.md"    1970-01-01 09:00:00.000000000 +0900
++++ "b/Loops/While loop/task.md"    2022-04-09 23:02:37.722575075 +0900
+@@ -0,0 +1,12 @@
++## while ループ :(while loop)
++
++`while` ループは `if` ステートメントにいくぶん似ています: ある条件が `True` の場合にコードを実行します。
++主な違いは、条件が `True` である限り、インデントされたコードを実行し続けることです。
++
++式が `False` の場合、ループは終了します。
++
++ `1` から `9`  `(1, 4, ... , 81)` までのすべての正方形を出力します。
++`while` ループで `number` 変数を使用します。
++
++<div class='hint'>条件で <code>number</code> が厳密に10未満であることを確認してください。</div>
++
+diff -Naur "a/Modules and packages/Built-in modules/task.md" "b/Modules and packages/Built-in modules/task.md"
+--- "a/Modules and packages/Built-in modules/task.md"   1970-01-01 09:00:00.000000000 +0900
++++ "b/Modules and packages/Built-in modules/task.md"   2022-04-09 23:02:37.730575159 +0900
+@@ -0,0 +1,30 @@
++## 内蔵モジュール :(Built-in modules)
++
++Python には、[標準モジュールのライブラリ](https://docs.python.org/3/library/) が付属しています。
++
++一部のモジュールはインタープリタに組み込まれています。これらは、言語のコアの一部ではないが、効率のため、またはシステムコールなどのオペレーティングシステム プリミティブへのアクセスを提供するために組み込まれている操作へのアクセスを提供します。
++
++1つの特定のモジュールは注意に値します: `sys` 。これはすべての Python インタープリターに組み込まれています。
++
++変数 ` sys.ps1` および `sys.ps2` は、インタプリタがインタラクティブモードの場合にプライマリおよびセカンダリプロンプトとして使用される文字列を定義します:
++
++```text
++>>> import sys
++>>> sys.ps1
++'>>> '
++>>> sys.ps2
++'... '
++```
++
++変数 `sys.path` は、モジュールのインタープリタの検索パスを決定する文字列のリストです。
++課題のコードを実行すると何が出力されるか、を確認してください。
++
++&shortcut :CodeCompletion; （コード補完機能）を使用できることを忘れないでください:
++ドット (.) の後に、モジュールの使用可能なメソッドを調べます。
++
++標準モジュールの詳細については、<a href="https://docs.python.org/3/tutorial/modules.html#standard-modules">こちら</a> をご覧ください。
++
++インポートされた組み込みモジュール `datetime` を使用して現在の日付を出力します。
++
++ <div class='hint'> <code>datetime.datetime.today()</code> 関数を使用します。</div>
++
+diff -Naur "a/Modules and packages/Executing modules as scripts/task.md" "b/Modules and packages/Executing modules as scripts/task.md"
+--- "a/Modules and packages/Executing modules as scripts/task.md"   1970-01-01 09:00:00.000000000 +0900
++++ "b/Modules and packages/Executing modules as scripts/task.md"   2022-04-09 23:02:37.730575159 +0900
+@@ -0,0 +1,66 @@
++## モジュールをスクリプトとして実行します :(Executing modules as scripts)
++
++Python モジュールは、実行可能ステートメントと関数またはクラスの定義を含むファイルです。
++
++これらのステートメントは、`import` ステートメントでモジュール名が最初に検出されたときに実行されます。
++ファイル名は、接尾辞 .py が追加されたモジュール名です。
++
++モジュール内では、モジュールの名前（文字列として）は、グローバル変数 `__name__` の値として使用できます。
++
++モジュールを**直接**（つまり、別のモジュールにインポートすることなく）実行すると、
++モジュール内のコードは、インポートした場合と同じように実行されますが、
++ `__name__` は `"__main__"` に設定されています。
++
++次のように `__name__` と `__main__` を使用できます:
++
++```python
++if __name__ == "__main__":
++   # Do something here
++```
++
++このブロック内のステートメントは、モジュールが直接実行され、別のモジュールへのインポートを介さない場合にのみ実行されます。例えば、2つのファイルについて考えてみましょう:
++
++main_program:
++```python
++import some_module
++
++print(f"main_program __name__ is: {__name__}")
++
++if __name__ == "__main__":
++   print("main_program executed directly")
++else:
++   print("main_program executed when imported")
++```
++
++some_module:
++```python
++print(f"some_module __name__ is: {__name__}")
++
++if __name__ == "__main__":
++   print("some_module executed directly")
++else:
++   print("some_module executed when imported")
++```
++
++`main_program` を実行した後の出力:
++```text
++some_module __name__ is: some_module
++some_module executed when imported
++main_program __name__ is: __main__
++main_program executed directly
++```
++
++`some_module` を実行した後の出力:
++```text
++some_module __name__ is: __main__
++some_module executed directly
++```
++`task.py`と`some_module.py`を変更して、task.py を実行したときに出力が次のようになるようにします:
++
++```text
++This is a message from some_module.
++This is a message from __main__.
++This is a message from the function in the imported module.
++This should be printed ONLY when task.py is called directly.
++```
++
+diff -Naur "a/Modules and packages/From import/task.md" "b/Modules and packages/From import/task.md"
+--- "a/Modules and packages/From import/task.md"    1970-01-01 09:00:00.000000000 +0900
++++ "b/Modules and packages/From import/task.md"    2022-04-09 23:02:37.730575159 +0900
+@@ -0,0 +1,44 @@
++## インポート :(from import)
++
++import ステートメントの 1つの形式は、`from` の名前でモジュールから直接インポートします。
++このようにして、インポートされた `module_name` をプレフィックスなしで使用できます。
++
++例えば:
++
++```python
++from calculator import Add
++
++calc = Add()    # name `Add` used directly without prefix `calculator`
++```
++
++これは、インポートが取得されるモジュールの名前をローカルシンボルテーブルに導入しません（したがって、この例では、 `calculator` は定義されていません）。
++
++モジュールが定義するすべての名前をインポートするオプションもあります:
++
++```python
++from calculator import *
++calc = Multiply()
++```
++
++これにより、アンダースコア`_`で始まる名前を除くすべての名前がインポートされます。
++ほとんどの場合、Python プログラマーはこれを使用しません。
++これは、未知の名前のセットをインタープリターに導入し、既に定義したものを隠す可能性があるためです。
++
++モジュール名の後に `as` が続く場​​合、`as` に続く名前はインポートされたモジュールに直接バインドされます:
++
++```python
++import my_module as mm
++mm.hello_world()
++```
++
++これは、 `import my_module` が行うのと同じ方法でモジュールを効果的にインポートしますが、唯一の違いは `mm` として使用できることです。同様の効果を持つ `from` を利用する場合にも使用できます:
++
++```python
++from calculator import Subtract as Minus
++```
++
++`calculator` から `Calculator` クラスをインポートし、このクラスのインスタンスを作成します。
++この場合、正しくアクセスする方法を覚えておいてください:
++
++<div class='hint'>注: この <code>Calculator</code> クラスは、直接インポートしたので、プレフィックスなしで呼び出す必要があります。</div>
++
+diff -Naur "a/Modules and packages/Import module/task.md" "b/Modules and packages/Import module/task.md"
+--- "a/Modules and packages/Import module/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Modules and packages/Import module/task.md"  2022-04-09 23:02:37.730575159 +0900
+@@ -0,0 +1,29 @@
++## インポート モジュール :(Import module)
++
++プログラムが長くなると、メンテナンスを容易にするために、プログラムをいくつかのファイルに分割することをお勧めします。また、いくつかのプログラムで定義をコピーせずに、いくつかのプログラムで作成した便利な関数を使用することもできます。
++
++Python のモジュールは、Python の定義とステートメントを含む `.py` 拡張子を持つ単純な Python ファイルです。
++
++モジュールは、`import` キーワードと拡張子 `.py` のないファイル名を使用して他のモジュールからインポートされます。
++
++一連の関数（ `func1`、` func2` など）を含む `my_funcs.py` というスクリプトを作成したとします。
++これで、同じディレクトリに配置されている別のスクリプトでそれらを使用する場合は、`import my_funcs` を実行できます。
++
++これは、 `my_funcs` で定義された関数の名前を直接インポートしませんが、モジュール名を使用して、次のように関数にアクセスできるようになります:
++
++```python
++my_funcs.func1()
++```
++モジュールは他のモジュールをインポートできます。
++慣例で行われていますが、すべてのインポートステートメントをモジュールの先頭に配置する必要はありません。
++
++Python チュートリアルの [このセクション](https://docs.python.org/3/tutorial/modules.html) を読むと、Python のモジュールについて詳しく知ることができます。
++
++コードエディタで、モジュール `calculator` をインポートし、クラス `Calculator` (`calc`) のインスタンスを作成します。
++
++ループ内の `Calculator` で定義された `add` メソッドを使用して、0 から 99 までの数値を合計します。
++
++<div class='hint'> <code>import</code> キーワードと <code>calculator</code> リファレンスを使用します。</div>
++<div class='hint'> <code>module.function()</code> などの構文を使用して、モジュールから関数にアクセスします。</div>
++<div class='hint'>関数に引数を指定することを忘れないでください。</div>
++
+diff -Naur "a/Modules and packages/Packages/task.md" "b/Modules and packages/Packages/task.md"
+--- "a/Modules and packages/Packages/task.md"   1970-01-01 09:00:00.000000000 +0900
++++ "b/Modules and packages/Packages/task.md"   2022-04-09 23:02:37.730575159 +0900
+@@ -0,0 +1,47 @@
++## パッケージ :(Packages)
++
++パッケージは、「点線のモジュール名」を使用してPython のモジュール名前空間を構造化する方法です。
++
++例えば、モジュール名 `A.B` は、`A` という名前のパッケージ内の `B` という名前のサブモジュールを指定します。
++
++モジュールを使用することで、さまざまなモジュールの作成者が互いのグローバル変数名について心配する必要がなくなるのと同様に、点線のモジュール名を使用すると、[NumPy](https://numpy.org/) のようなマルチモジュールパッケージの作成者を省略できます。または [Pillow](https://pypi.org/project/Pillow/) は、互いのモジュール名を気にする必要がありません。
++
++<code>__init__.py</code> ファイルは、Python でファイルを含むディレクトリをパッケージとして処理するために必要です。これにより、<code> string </code> などの一般名のディレクトリが、モジュール検索パスの後半で発生する歪んだモジュールを意図せずに非表示にするのを防ぎます。最も単純なケースでは、<code>__init__.py</code> は空のファイルにすることができます。</div>
++
++私たちが作成したパッケージ `functions` と `classes` をチェックしてください。
++パッケージのユーザーは、パッケージから個々のモジュールをインポートできます。
++
++例を示します:
++
++```python
++import functions.greeting.hello
++```
++
++これにより、サブモジュール `functions.greeting.hello` がロードされます。フルネームで参照する必要があります:
++
++```python
++functions.greeting.hello.hello('Susan')
++```
++
++サブモジュールをインポートする別の方法は次のとおりです:
++
++```python
++from functions.greeting import hello
++```
++
++これにより、サブモジュール `hello` もロードされ、パッケージプレフィックスなしで使用できるようになるため、次のように使用できます:
++
++```python
++hello.hello('Susan')
++```
++パッケージの詳細については、Python ドキュメントの <a href="https://docs.python.org/3/tutorial/modules.html#packages">このページ</a> をご覧ください。
++
++コードエディタで、 `official` モジュールを適切にインポートして、最後の `print` ステートメントを機能させます。
++
++2番目の print ステートメントで、関数呼び出しを追加して（適切な関数を見つけて）、`'Alex'` に別れを告げます。
++
++<div class='hint'><code>package.subpackage.module</code> などの構文を使用してモジュールにアクセスします。</div>
++<div class='hint'><code>import module as something</code> などの構文を使用します。</div>
++<div class='hint'>インポートを確認してください: 2番目の課題に適切な機能を備えている可能性のあるインポートがあります。
++使用するときは注意してください。モジュールはすでに特定の名前でインポートされています。</div>
++
+diff -Naur a/README.md b/README.md
+--- a/README.md 1970-01-01 09:00:00.000000000 +0900
++++ b/README.md 2022-04-09 23:02:37.730575159 +0900
+@@ -0,0 +1,12 @@
++# 「Introduction to Python」コースの紹介（教育製品バージョン）[![official JetBrains project](http://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
++
++<p>これは、JetBrains Educational Products によるPython の入門コースです。
++対象読者は、プログラミングの経験がほとんどまたはまったくない、Python の学習を開始したい人々です。</p>
++
++<p>このコースでは、変数とその操作、文字列とその他のデータ構造、ブール演算子、条件、制御フローなどの基本について学習します。ループ、関数、クラスを実装し、コードの一部をインポートされたモジュールとして使用し、テキストファイルを操作してみます。</p>
++
++<p>楽しんで頑張ってください！</p>
++
++<p>P.S. 貢献したいですか？このコースにプルリクエストを送信してください
++<a href=”https://github.com/jetbrains-academy/introduction_to_python”>git リポジトリ</a>.</p>
++
+diff -Naur "a/Strings/Basic string methods/task.md" "b/Strings/Basic string methods/task.md"
+--- "a/Strings/Basic string methods/task.md"    1970-01-01 09:00:00.000000000 +0900
++++ "b/Strings/Basic string methods/task.md"    2022-04-09 23:02:37.730575159 +0900
+@@ -0,0 +1,17 @@
++## 基本的な文字列メソッド :(Basic string methods)
++
++多くの便利な文字列メソッドがあります。
++
++例えば、 `lower()` メソッドを使用して、文字列の大文字と小文字を削除できます。  
++`upper()` メソッドは、文字列を大文字にするために使用されます。
++
++文字列メソッドを呼び出すには、文字列（または文字列を含む変数）の後にドットを入力し、その後にメソッド名を入力します。（例: `"John".upper()`）
++
++PyCharm では、ドットを入力した後のショートカット（ &shortcut:CodeCompletion; ）を使用して、使用可能なすべての文字列メソッドを調べることができます。
++
++すべての文字列メソッドの詳細については、<a href="https://docs.python.org/3/library/stdtypes.html#string-methods">こちら</a> をご覧ください。
++
++適切な文字列メソッドを使用して、大文字で `monty_python` を出力します。
++
++<div class='hint'>コードで <code>lower()</code> メソッドがどのように使用されているかに注意してください。</div>
++
+diff -Naur "a/Strings/Character escaping/task.md" "b/Strings/Character escaping/task.md"
+--- "a/Strings/Character escaping/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Strings/Character escaping/task.md"  2022-04-09 23:02:37.738575244 +0900
+@@ -0,0 +1,34 @@
++## キャラクターエスケープ :(Character escaping)
++
++バックスラッシュは、一重引用符や二重引用符などの特殊記号をエスケープするために使用されます。
++
++例えば、`"It\'s me"`（それは私です）、または `"She said \"Hello\""` （彼女は「こんにちは」と言った）などです。
++
++文字列の一部として実際に <code>\\</code> 文字を入力する必要がある場合は、それもエスケープする必要があります。
++
++例えば、単一の円記号を印刷する方法は次のとおりです:
++
++```python
++print('\\')
++```
++
++特殊記号 `'\n'` は文字列に「改行」を追加するために使用され、`'\t'` は「集計」を意味します。
++
++引用符には特別な意味があり、バックスラッシュを使用してエスケープすることもできます。
++
++文字列内に引用符を印刷する必要がある場合は、別の種類の引用符を使用してください。
++
++二重引用符で囲まれた文字列では、エスケープせずに一重引用符を使用できます。その逆も可能です。
++
++また、補足として、お気に入りの種類の引用符を選び、それらを一貫して使用することをお勧めします。
++
++エスケープの詳細については、Pythonドキュメントの <a href="https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals">このセクション</a> をご覧ください。
++
++1つの文字列を使用して次のテキストを出力します:
++
++```text
++The name of this ice cream is "Sweet'n'Tasty"  
++```
++
++<div class='hint'>バックスラッシュを使用して引用符をエスケープします。</div>
++
+diff -Naur a/Strings/Concatenation/task.md b/Strings/Concatenation/task.md
+--- a/Strings/Concatenation/task.md 1970-01-01 09:00:00.000000000 +0900
++++ b/Strings/Concatenation/task.md 2022-04-09 23:02:37.730575159 +0900
+@@ -0,0 +1,10 @@
++## 連結 :(Concatenation)
++
++一部の算術演算は非数値型にも適用できることを覚えていますか？
++
++`+` 記号を使用して 2つの文字列を組み合わせると、「連結」と呼ばれます。
++
++`hello` 変数と `world` 変数を使用して、文字列 `"Hello World"` を取得します。
++
++<div class='hint'>連鎖連結と単一スペース文字列 <code>" "</code> を使用します。</div>
++
+diff -Naur a/Strings/F-strings/task.md b/Strings/F-strings/task.md
+--- a/Strings/F-strings/task.md 1970-01-01 09:00:00.000000000 +0900
++++ b/Strings/F-strings/task.md 2022-04-09 23:02:37.730575159 +0900
+@@ -0,0 +1,36 @@
++## フォーマットされた文字列リテラル :(Formatted string literals)
++
++フォーマットされた文字列リテラル、または Fストリング (f-string) は、接頭辞 'f' または 'F' が付いた文字列リテラルです。これらの文字列には、中括弧 `{}` で区切られた式である置換フィールドが含まれる場合があります。
++
++中括弧の外側の文字列の部分は文字通り扱われます。  
++エスケープシーケンスは、通常の文字列リテラルのようにデコードされます。  
++置換式には改行を含めることができますが（トリプルクォート文字列など）、コメントを含めることはできません。  
++各式は、フォーマットされた文字列リテラルが表示されるコンテキストで、左から右の順に評価されます。
++
++いくつかの例を示します:
++
++```python
++name = "Fred"
++f"He said his name is {name}."
++```
++```text
++'He said his name is Fred.'
++```
++
++例えば、Fストリングで実行できるよりも凝ったことができます:
++
++```python
++f"{name.lower()} is funny."
++```
++
++```text
++'fred is funny.'
++```
++
++フォーマットされた文字列リテラルの詳細については、<a href="https://docs.python.org/3/reference/lexical_analysis.html#formatted-string-literals"> Python Docs</a> を参照してください。
++
++自分で、Fストリングを作成してみてください。
++また、コードを実行して、何が出力されるかを確認してください。
++
++<div class='hint'> <code>name</code> 変数に割り当てられる値は文字列である必要があるため、<code>'Max'</code> のように引用符で囲む必要があります。</div>
++
+diff -Naur "a/Strings/In operator/task.md" "b/Strings/In operator/task.md"
+--- "a/Strings/In operator/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/Strings/In operator/task.md" 2022-04-09 23:02:37.734575202 +0900
+@@ -0,0 +1,8 @@
++## In 演算子 :(In operator)
++
++文字列に特定の文字または部分文字列が含まれているかどうかを確認する場合は、`in` キーワードを使用できます。
++
++`"ice cream"`（アイスクリーム）に `"ice"`（アイス）があるかどうかを確認し、結果を変数 `contains` に割り当てます。
++
++<div class='hint'> <code>in</code> 演算子を使用します。</div>
++
+diff -Naur "a/Strings/String formatting/task.md" "b/Strings/String formatting/task.md"
+--- "a/Strings/String formatting/task.md"   1970-01-01 09:00:00.000000000 +0900
++++ "b/Strings/String formatting/task.md"   2022-04-09 23:02:37.730575159 +0900
+@@ -0,0 +1,16 @@
++## 文字列のフォーマット :(String formatting)
++
++文字列の後の`%`演算子は、文字列を変数と組み合わせるために使用されます。  
++`%` 演算子は、文字列内の `%s` をその後に続く文字列変数に置き換えます。  
++`%d` 特殊記号は、数値または 10進値のプレースホルダーとして使用されます。
++
++> <i><b>注</b>: ここで説明する書式設定操作には、さまざまな癖があり、多くの一般的なエラーが発生します。
++> 新しい形式の文字列リテラル（[さらに](course://Strings/F-strings) を参照）を使用して、<code><a href="https://docs.python.org/3/library/stdtypes.html#str.format">str.format()</a></code> インターフェース、
++> または <a href="https://docs.python.org/3/library/string.html#template-strings"> テンプレート文字列</a>は、これらのエラーを回避するのに役立つ場合があります。
++> これらの選択肢はそれぞれ、単純さ、柔軟性、および拡張性という独自のトレードオフと利点を提供します。</i>
++
++PyCharm にあなたが何歳かを伝えます（数字を使用）。
++
++<div class='hint'> <code>%d</code> 特殊記号を使用します。</div>
++<div class='hint'>あなたは何歳ですか？</div>
++
+diff -Naur "a/Strings/String indexing/task.md" "b/Strings/String indexing/task.md"
+--- "a/Strings/String indexing/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/Strings/String indexing/task.md" 2022-04-09 23:02:37.734575202 +0900
+@@ -0,0 +1,17 @@
++## 文字列のインデックス作成 :(String indexing)
++
++文字列の位置がわかっている場合は、文字列内の文字にアクセスできます。
++
++例えば、 `str[index]` は、文字列 `str` の位置 `index` にある文字を生成します。
++
++文字列のインデックス作成は常に `0` から始まることに注意してください。
++文字列に `x` が見つからない場合、`index` は `ValueError` を発生させます。
++
++右から（つまり、文字列の終わりから）カウントを開始する必要がある場合は、インデックスが負の数になることもあります。
++
++`-0` は `0` と同じであるため、負のインデックスは `-1` から始まることに注意してください。
++
++インデックス演算子を使用して、`"Python"` から文字 `"P"` を取得します。
++
++<div class='hint'>インデックスは 0 で始まることに注意してください。</div>
++
+diff -Naur "a/Strings/String length/task.md" "b/Strings/String length/task.md"
+--- "a/Strings/String length/task.md"   1970-01-01 09:00:00.000000000 +0900
++++ "b/Strings/String length/task.md"   2022-04-09 23:02:37.734575202 +0900
+@@ -0,0 +1,11 @@
++## 文字列の長さ :(String length)
++
++`len()` メソッドは、文字列に含まれる文字数をカウントするために使用されます。
++
++変数 `phrase` に格納されている文字列の前半を取得します。
++注: インデックスを取得するときは、型変換について覚えておいてください。
++
++<div class='hint'>文字列の最初から中間点までのスライスを取得する必要があります。</div>
++
++<div class='hint'>文字列の長さを 2で割って、中間のインデックスを取得します。除算の結果は整数である必要があります。</div>
++
+diff -Naur "a/Strings/String multiplication/task.md" "b/Strings/String multiplication/task.md"
+--- "a/Strings/String multiplication/task.md"   1970-01-01 09:00:00.000000000 +0900
++++ "b/Strings/String multiplication/task.md"   2022-04-09 23:02:37.734575202 +0900
+@@ -0,0 +1,13 @@
++## 文字列の乗算 :(String multiplication)
++
++Python は、文字列ごとの乗算もサポートしています（ただし、その逆はサポートされていません）。
++
++`not_yet_food` 変数を使用して、`food` 変数に保存されている食品名を取得します。
++
++<div class='hint'>
++
++`"クス"`を`2`回繰り返すと`"クスクス"`になります。
++</div>
++
++<div class='hint'>乗算を使用します。</div>
++
+diff -Naur "a/Strings/String negative indexing/task.md" "b/Strings/String negative indexing/task.md"
+--- "a/Strings/String negative indexing/task.md"    1970-01-01 09:00:00.000000000 +0900
++++ "b/Strings/String negative indexing/task.md"    2022-04-09 23:02:37.734575202 +0900
+@@ -0,0 +1,8 @@
++## 文字列の負のインデックス :(String negative indexing)
++
++すでに述べたように、負のインデックスを使用して、文字列の末尾から「逆方向」に文字をカウントできます。
++
++負のインデックスを使用して、`long_string` から `'！'` 記号を取得します。
++
++<div class='hint'>負のインデックスを使用します。</div>
++
+diff -Naur "a/Strings/String slicing/task.md" "b/Strings/String slicing/task.md"
+--- "a/Strings/String slicing/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Strings/String slicing/task.md"  2022-04-09 23:02:37.734575202 +0900
+@@ -0,0 +1,32 @@
++## スライス :(Slicing)
++
++スライスは、文字列から複数の文字（サブ文字列）を抽出するために使用されます。
++
++その構文はインデックス作成の構文と似ていますが、1つのインデックスの代わりに、コロンで区切られた 2つのインデックス（数値）を使用します。（例: `str[ind1:ind2]`）
++
++これらの 2つのインデックスは、部分文字列の開始と終了に対応します。
++インデックスが `ind1` のシンボルは含まれますが、インデックスが `ind2` のシンボルは含まれないことに注意してください。
++
++Pythonでスライスがどのように機能するかを視覚的に示します:
++
++
++```text
+++---+---+---+---+---+---+
++| P | y | t | h | o | n |
+++---+---+---+---+---+---+
++0   1   2   3   4   5   6
++-6  -5  -4  -3  -2  -1
++```
++
++##### 例:
++<pre><code>
++str[start:end] # アイテムは最初から最後-1まで
++str[start:]    # アイテムは配列の残りの部分から始まります
++str[:end]      # 最初から最後-1 までのアイテム
++str[:]         # 配列全体のコピー
++</code></pre>
++
++スライスを使用して、`monty_python` 変数から `"Python"` を取得します。
++
++<div class='hint'>インデックスの 1つを空のままにしておくことができます。</div>
++
+diff -Naur "a/Variables/Arithmetic operators/task.md" "b/Variables/Arithmetic operators/task.md"
+--- "a/Variables/Arithmetic operators/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Variables/Arithmetic operators/task.md"  2022-04-09 23:02:37.738575244 +0900
+@@ -0,0 +1,39 @@
++## 算術演算子 :(Arithmetic operators)
++
++他のプログラミング言語と同じように、加算（ `+` ）、減算（ `-` ）、
++乗算（ `*` ）および除算（ `/` ）演算子は、数値とともに使用できます。
++さらに、Python には、累乗（ `**` ）、モジュロ（ `％` ）、およびフロア分割（`//` ）演算子があります。
++
++- `*`（乗算）演算子は、その引数の積を生成します。
++引数は両方とも数値であるか、一方の引数が整数でもう一方がシーケンスである必要があります。
++
++- `/`（除算）および `//`（床除算）演算子は、引数の商を生成します。
++整数の除算はfloatを生成し、整数のフロア除算は整数を生成します。
++
++- `%`（モジュロ）演算子は、最初の引数を2番目の引数で除算した余りを返します。
++
++- `+`（加算）演算子は、その引数の合計を生成します。
++引数は、両方が数値であるか、両方が同じタイプのシーケンスである必要があります。
++
++- `-`（減算）演算子は、その引数の差を生成します。
++
++2進算術演算には、従来の優先度レベルがあります。
++これらの操作の一部は、特定の非数値タイプにも適用されることに注意してください。
++
++このトピックの詳細については、<a href="https://docs.python.org/3/reference/expressions.html#binary-arithmetic-operations">こちら</a>をご覧ください。
++
++### 課題
++- `number` に格納されている値を `2` で割ります。
++- そのような除算の余りを計算します。
++- 除算結果に `2` を掛けます。
++- 除算の余りを乗算結果に追加します。
++- 数値から乗算結果を減算します。
++- `number` を 2 でフロア分割します。
++- `multiplication_result` を 3 の累乗に上げます。
++
++<div class='hint'>まず、<code>/</code> 演算子を使用します。</div>
++<div class='hint'>次に、<code>%</code> 演算子を使用します。</div>
++<div class='hint'>次に、<code>*</code> 演算子を使用します。</div>
++<div class='hint'>次に、<code>+</code> 演算子を使用します。</div>
++<div class='hint'>次に、<code>-</code> 演算子を使用します。</div>
++
+diff -Naur a/Variables/Assignments/task.md b/Variables/Assignments/task.md
+--- a/Variables/Assignments/task.md 1970-01-01 09:00:00.000000000 +0900
++++ b/Variables/Assignments/task.md 2022-04-09 23:02:37.738575244 +0900
+@@ -0,0 +1,12 @@
++## 割り当て :(Assignments)
++
++拡張代入は、二項演算と代入ステートメントを組み合わせた単一のステートメントです（ `+=`、 `-=` など）。
++
++`x += 1` のような拡張代入式は、`x = x + 1` と書き直して、同様の効果を得ることができます。
++この <a href="https://docs.python.org/3/reference/simple_stmts.html#augmented-assignment-statements">こちら </a> について詳しく読むことができます。
++
++### 課題
++拡張代入を使用して `5` を `number` に追加し、変数を更新します。
++
++<div class='hint'> <code>+=</code> 演算子を使用します。</div>
++
+diff -Naur "a/Variables/Boolean operators/task.md" "b/Variables/Boolean operators/task.md"
+--- "a/Variables/Boolean operators/task.md" 1970-01-01 09:00:00.000000000 +0900
++++ "b/Variables/Boolean operators/task.md" 2022-04-09 23:02:37.738575244 +0900
+@@ -0,0 +1,14 @@
++## ブール演算子 :(Boolean operators)
++
++ブール値は、`True`または`False`のみが可能な値のタイプです。
++ `==`（等式）演算子は 2つの変数を比較し、それらが等しいかどうかをチェックします。
++
++### 課題
++- 変数 `two` が `three` と等しいかどうかを確認します。
++- 変数 `is_equal` に不正な名前が付いているかどうかを確認します。
++- 変数 `is_false` に実際に嘘が含まれているかどうかを確認します。
++
++<div class='hint'> <code>==</code> 演算子を使用します。</div>
++<div class='hint'> <code>True</code> 値を使用します。</div>
++<div class='hint'> <code>False</code> 値を使用します。</div>
++
+diff -Naur "a/Variables/Comparison operators/task.md" "b/Variables/Comparison operators/task.md"
+--- "a/Variables/Comparison operators/task.md"  1970-01-01 09:00:00.000000000 +0900
++++ "b/Variables/Comparison operators/task.md"  2022-04-09 23:02:37.738575244 +0900
+@@ -0,0 +1,38 @@
++## 比較演算子 :(Comparison operators)
++
++Python には、次のような多くの種類の比較演算子があります:
++
++- `<` 未満
++  
++- `>`  より大きい
++  
++- `==` 等しい
++  
++- `>=` 以上
++  
++- `<=` 以下
++  
++- `!=` 等しくない
++
++演算子は、2つのオブジェクトの値を比較します。
++オブジェクトは同じタイプである必要はありません。
++
++Python のすべての比較演算の優先度は同じであり、算術演算、シフト演算、またはビット演算の優先度よりも低くなっています。比較すると、ブール値（`True` または `False`）が生成されます。
++
++比較は任意に連鎖させることができ、`a <b <c` のような式は、従来の数学的意味を持っています。
++
++比較の詳細については、 <a href="https://docs.python.org/3/reference/expressions.html#comparisons">こちら</a> をご覧ください。
++
++### 課題
++- 変数 `three` の値が変数 `two` の値よりも厳密に大きいかどうかを確認します。
++- 変数 `one` の値が変数 `three` の値よりも厳密に小さいかどうかを確認します。
++- 変数 `three` の値が、変数 `two` の値と変数 `one` の値の両方よりも厳密に大きいかどうかを確認します。
++- 変数 `one` が変数 `two` と等しくないかどうかを確認します。
++- 変数 `thee` がそれ自体と等しいかどうかを確認します。
++
++<div class='hint'> <code>></code> 演算子を使用します。</div>
++<div class='hint'> <code><</code> 演算子を使用します。</div>
++<div class='hint'> <code>></code> 演算子と <code><</code> 演算子の両方を使用します。</div>
++<div class='hint'> <code>!=</code>演算子を使用します。 </div>
++<div class='hint'> <code>==</code> 演算子を使用します。</div>
++
+diff -Naur "a/Variables/Type conversion/task.md" "b/Variables/Type conversion/task.md"
+--- "a/Variables/Type conversion/task.md"   1970-01-01 09:00:00.000000000 +0900
++++ "b/Variables/Type conversion/task.md"   2022-04-09 23:02:37.738575244 +0900
+@@ -0,0 +1,15 @@
++## 型変換 :(Type conversion)
++
++あるデータ型を別のデータ型に変換できる組み込み関数がいくつかあります。
++これらの関数は、変換された値を表す新しいオブジェクトを返します。
++
++`int(x)` は `x` を整数に変換します。
++`float(x)` は `x` を浮動小数点数に変換します。
++ `str(x)` は、オブジェクト `x` を文字列表現に変換します。
++
++### 課題
++
++`float_number` を整数に変換します。
++
++<div class='hint'> <code>int()</code> 関数を使用します。</div>
++
+diff -Naur "a/Variables/Undefined variable/task.md" "b/Variables/Undefined variable/task.md"
+--- "a/Variables/Undefined variable/task.md"    1970-01-01 09:00:00.000000000 +0900
++++ "b/Variables/Undefined variable/task.md"    2022-04-09 23:02:37.738575244 +0900
+@@ -0,0 +1,39 @@
++## 算術演算子 :(Arithmetic operators)
++
++他のプログラミング言語と同じように、加算（ `+` ）、減算（ `-` ）、
++乗算（ `*` ）および除算（ `/` ）演算子は、数値とともに使用できます。
++さらに、Python には、累乗（ `**` ）、モジュロ（ `％` ）、およびフロア分割（`//` ）演算子があります。
++
++- `*`（乗算）演算子は、その引数の積を生成します。
++引数は両方とも数値であるか、一方の引数が整数でもう一方がシーケンスである必要があります。
++
++- `/`（除算）および `//`（床除算）演算子は、引数の商を生成します。
++整数の除算はfloatを生成し、整数のフロア除算は整数を生成します。
++
++- `%`（モジュロ）演算子は、最初の引数を 2番目の引数で除算した余りを返します。
++
++- `+`（加算）演算子は、その引数の合計を生成します。
++引数は、両方が数値であるか、両方が同じタイプのシーケンスである必要があります。
++
++- `-`（減算）演算子は、その引数の差を生成します。
++
++2進算術演算には、従来の優先度レベルがあります。
++これらの操作の一部は、特定の非数値タイプにも適用されることに注意してください。
++
++このトピックの詳細については、<a href="https://docs.python.org/3/reference/expressions.html#binary-arithmetic-operations">こちら</a>をご覧ください。
++
++### 課題
++- `number` に格納されている値を `2` で割ります。
++- そのような除算の余りを計算します。
++- 除算結果に `2` を掛けます。
++- 除算の余りを乗算結果に追加します。
++- 数値から乗算結果を減算します。
++- `number` を 2 でフロア分割します。
++- `multiplication_result` を 3 の累乗に上げます。
++
++<div class='hint'>まず、<code>/</code> 演算子を使用します。</div>
++<div class='hint'>次に、<code>%</code> 演算子を使用します。</div>
++<div class='hint'>次に、<code>*</code> 演算子を使用します。</div>
++<div class='hint'>次に、<code>+</code> 演算子を使用します。</div>
++<div class='hint'>次に、<code>-</code> 演算子を使用します。</div>
++
+diff -Naur "a/Variables/Variable definition/task.md" "b/Variables/Variable definition/task.md"
+--- "a/Variables/Variable definition/task.md"   1970-01-01 09:00:00.000000000 +0900
++++ "b/Variables/Variable definition/task.md"   2022-04-09 23:02:37.738575244 +0900
+@@ -0,0 +1,13 @@
++## 変数の定義 :(Variable definition)
++
++変数は値を格納するために使用されるため、後で参照できます。
++変数はラベルのようなものであり、Python では、代入演算子と呼ばれる '` =`' 記号を使用して、変数に値を割り当てます。
++
++割り当ては連鎖させることができます。（例: `a = b = 2`）
++
++### 課題
++- 変数 `greetings` に格納されている値を変更します。
++- チェーン代入を使用して、`a` と `b` の両方に 2 を格納します。
++
++<div class='hint'>回答プレースホルダーに新しい値を入力します。</div>
++
+diff -Naur "a/Variables/Variable types/task.md" "b/Variables/Variable types/task.md"
+--- "a/Variables/Variable types/task.md"    1970-01-01 09:00:00.000000000 +0900
++++ "b/Variables/Variable types/task.md"    2022-04-09 23:02:37.738575244 +0900
+@@ -0,0 +1,28 @@
++## 変数タイプ :(Variable types)
++
++Python プログラムのすべてのデータは、オブジェクトまたはオブジェクト間の関係によって表されます。
++
++すべてのオブジェクトには、ID、タイプ、および値があります。
++オブジェクトのID は、一度作成されると変更されることはありません。
++これは、メモリ内のオブジェクトのアドレスと考えることができます。
++
++オブジェクトの `type` は、サポートする操作を決定し（たとえば、「長さはありますか？」）、そのタイプのオブジェクトに可能な値を定義します。
++
++`type()` 関数は、オブジェクトの型（オブジェクト自体）を返します。
++そのアイデンティティと同様に、オブジェクトのタイプも変更できません。
++
++一部のオブジェクトの値は変更される可能性があります。
++値が変更される可能性のあるオブジェクトは <i>mutable</i>（可変）です。
++作成後に値が変更できないオブジェクトは <i>immutable</i>（不変）と呼ばれます。
++
++Python には、整数と浮動小数点数の 2つの主要なタイプの数値があります。
++それらの最も重要な違いは、`float` は小数点のある数値であり、`int` は小数点のない数値であることです。
++
++このトピックの詳細については、Python ドキュメントの "<a href="https://docs.python.org/3/reference/datamodel.html#objects-values-and-types">オブジェクト、値、およびタイプ</a>" と "<a href="https://docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy">標準の型階層</a>" のセクションを参照してください。
++
++### 課題
++変数 `float_number` の型を出力します。
++
++<div class='hint'>
++2行目の <code>number</code> のタイプをどのように決定したかを確認し、<code>float_number</code> でも同じことを行います。</div>
++
