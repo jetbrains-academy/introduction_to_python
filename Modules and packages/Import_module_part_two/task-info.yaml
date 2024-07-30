@@ -1,4 +1,5 @@
 type: edu
+custom_name: Import module part 2
 files:
   - name: imports.py
     visible: true
@@ -6,12 +7,12 @@ files:
       - offset: 0
         length: 17
         placeholder_text: '# Import the module `calculator` here'
-      - offset: 75
-        length: 11
-        placeholder_text: '# Use Calculator method `add` to add `i` to the current value.'
       - offset: 26
         length: 23
         placeholder_text: '''Create a new instance of Calculator class defined in calculator'''
+      - offset: 75
+        length: 11
+        placeholder_text: '# Use Calculator method `add` to add `i` to the current value.'
   - name: calculator.py
     visible: true
   - name: tests/test_task.py
