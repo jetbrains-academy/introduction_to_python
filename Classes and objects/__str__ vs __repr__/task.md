@@ -27,7 +27,7 @@ Also, if we think it would be useful to have a string representation for users, 
 a `__str__` function. Check out another implementation of the class `Complex` in the code editor. Run the code
 to see what each of the two `print` statements prints.
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/7139#str__-vs-__repr).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/7139#str__-vs-__repr?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 Implement `__str__` and `__repr__` methods for the class `Cat`. `__str__` method should return a string like this:

@@ -17,7 +17,7 @@ directly, but using the module name, you can now access the functions, for examp
 my_funcs.func1()
 ```
   
-For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6019#module-loading).
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6019#module-loading?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 In the code editor, you have already imported module `my_funcs`. 

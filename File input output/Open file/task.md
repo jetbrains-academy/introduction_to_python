@@ -28,7 +28,7 @@ True
 **Important**: If you’re not using the `with` keyword, then you should call `f.close()` to close the file and 
 free up any system resources used by it. You cannot use the file object after it is closed, whether by a `with` statement or by calling `f.close()`.
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/8691).
+For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/8691?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 - In the code editor, open the file `input1.txt` in read mode, properly using the `with` statement. The `input1.txt` file stores the name of the file where the string `Hello World` should be output. Reading this name is already implemented in the `outfile_name` variable.
