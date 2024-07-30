@@ -1,6 +1,6 @@
 content:
-  - Import module
-  - Import module 2
+  - Import_module
+  - Import_module_part_two
   - Built-in modules
   - From import
   - Packages
