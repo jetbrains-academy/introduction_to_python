@@ -20,8 +20,8 @@ my_funcs.func1()
 For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6019#module-loading?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
-In the code editor, you have already imported module `my_funcs`. 
-Call the function `hello_world` from this module with argument `"John"`
+In the code editor, you have already imported the module `my_funcs`. 
+Call the function `hello_world` from this module with the argument `"John"`.
 
 <div class='hint'>Access the function from the module using syntax such as <code>module.function()</code>.</div>
 <div class="hint">Don't forget to provide the function with an argument.</div>
