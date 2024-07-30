@@ -9,7 +9,7 @@ files:
         placeholder_text: '# Import the `calculator` module here'
       - offset: 26
         length: 23
-        placeholder_text: '''Create a new instance of Calculator class defined in calculator'''
+        placeholder_text: '#Create a new instance of the `Calculator` class defined in the `calculator` module'
       - offset: 75
         length: 11
         placeholder_text: '# Use the Calculator method `add` to add `i` to the current value.'
