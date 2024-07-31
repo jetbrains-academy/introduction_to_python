@@ -19,9 +19,7 @@ try:
                 self.assertTrue(False, msg='Do not change variable names.')
 
         def test_out(self):
-            expected, actual = 'Hello, World! My name is John', output[0]
-            self.assertEqual(expected, actual, msg='Please do not change the starter code.')
-            expected, actual = str(4950), output[1]
+            expected, actual = str(4950), output[0]
             self.assertEqual(expected, actual, msg='Calculation result looks wrong.')
 
 except NameError:

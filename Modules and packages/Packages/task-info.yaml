@@ -1,30 +1,30 @@
 type: edu
 files:
-- name: packages.py
-  visible: true
-  placeholders:
-  - offset: 95
-    length: 46
-    placeholder_text: '# Import the `official` module here'
-  - offset: 197
-    length: 20
-    placeholder_text: '''Say goodbye to Alex'''
-- name: functions/greeting/hello.py
-  visible: true
-- name: functions/goodbye.py
-  visible: true
-- name: classes/calculator.py
-  visible: true
-- name: classes/__init__.py
-  visible: true
-- name: functions/__init__.py
-  visible: true
-- name: functions/greeting/__init__.py
-  visible: true
-- name: functions/greeting/official.py
-  visible: true
-- name: tests/__init__.py
-  visible: false
-- name: tests/test_task.py
-  visible: false
+  - name: packages.py
+    visible: true
+    placeholders:
+      - offset: 95
+        length: 46
+        placeholder_text: '# Import the `official` module here'
+      - offset: 197
+        length: 20
+        placeholder_text: '''Say goodbye to Alex'''
+  - name: functions/greeting/hello.py
+    visible: true
+  - name: functions/goodbye.py
+    visible: true
+  - name: classes/calculator.py
+    visible: true
+  - name: classes/__init__.py
+    visible: true
+  - name: functions/__init__.py
+    visible: true
+  - name: functions/greeting/__init__.py
+    visible: true
+  - name: functions/greeting/official.py
+    visible: true
+  - name: tests/__init__.py
+    visible: false
+  - name: tests/test_task.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Modules+and+Packages+/+Packages

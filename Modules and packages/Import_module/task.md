@@ -16,19 +16,13 @@ directly, but using the module name, you can now access the functions, for examp
 ```python
 my_funcs.func1()
 ```
-
-Modules can import other modules. It is customary but not required to place all 
-import statements at the beginning of a module.
-
-You can find out more about modules in Python by reading [this section](https://docs.python.org/3/tutorial/modules.html) of The Python Tutorial. 
   
 For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6019#module-loading?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
-In the code editor, import the module `calculator` and create an instance of the class `Calculator` (`calc`). 
-Use the `add` method defined in `Calculator` in a loop to add up numbers from 0 to 99.
+In the code editor, you have already imported the module `my_funcs`. 
+Call the function `hello_world` from this module with the argument `"John"`.
 
-<div class='hint'>Use the <code>import</code> keyword and the <code>calculator</code> reference.</div>
 <div class='hint'>Access the function from the module using syntax such as <code>module.function()</code>.</div>
 <div class="hint">Don't forget to provide the function with an argument.</div>
 
