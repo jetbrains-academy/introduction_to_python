@@ -8,7 +8,7 @@ for each item. When the items are exhausted, the loop terminates.
 
 You can read more about the `for` statement on <a href="https://docs.python.org/3/reference/compound_stmts.html#the-for-statement">this page</a> of Python Documentation.
   
-For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6065).
+For more structured and detailed information, you can also refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6065?utm_source=jba&utm_medium=jba_courses_links).
 
 ### Task
 Print each prime number from the `primes` list using the `for` loop. A prime 
