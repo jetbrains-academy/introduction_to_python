@@ -1,16 +1,16 @@
 type: edu
 files:
-- name: tuples.py
-  visible: true
-  placeholders:
-  - offset: 161
-    length: 13
-    placeholder_text: ???
-  - offset: 189
-    length: 12
-    placeholder_text: ???
-- name: tests/__init__.py
-  visible: false
-- name: tests/test_task.py
-  visible: false
+  - name: tuples.py
+    visible: true
+    placeholders:
+      - offset: 161
+        length: 13
+        placeholder_text: ???
+      - offset: 189
+        length: 12
+        placeholder_text: ???
+  - name: tests/__init__.py
+    visible: false
+  - name: tests/test_task.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Data+Structures+/+Tuples

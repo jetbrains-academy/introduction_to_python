@@ -1,9 +1,11 @@
 type: theory
 files:
-- name: main.py
-  visible: true
-- name: edu_course_view_dark.png
-  visible: false
-- name: edu_course_view.png
-  visible: false
+  - name: main.py
+    visible: true
+  - name: edu_course_view_dark.png
+    visible: false
+    is_binary: true
+  - name: edu_course_view.png
+    visible: false
+    is_binary: true
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Introduction+/+Course+View

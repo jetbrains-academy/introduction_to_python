@@ -6,13 +6,15 @@ files:
     placeholders:
       - offset: 0
         length: 17
-        placeholder_text: '# Import the `calculator` module here'
+        placeholder_text: "# Import the `calculator` module here"
       - offset: 26
         length: 23
-        placeholder_text: '#Create a new instance of the `Calculator` class defined in the `calculator` module'
+        placeholder_text: "#Create a new instance of the `Calculator` class defined in\
+      \ the `calculator` module"
       - offset: 75
         length: 11
-        placeholder_text: '# Use the Calculator method `add` to add `i` to the current value.'
+        placeholder_text: "# Use the Calculator method `add` to add `i` to the current\
+      \ value."
   - name: calculator.py
     visible: true
   - name: tests/test_task.py

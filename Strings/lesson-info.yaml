@@ -1,12 +1,12 @@
 content:
-- Concatenation
-- String multiplication
-- String indexing
-- String negative indexing
-- String slicing
-- In operator
-- String length
-- Character escaping
-- Basic string methods
-- String formatting
-- F-strings
+  - Concatenation
+  - String multiplication
+  - String indexing
+  - String negative indexing
+  - String slicing
+  - In operator
+  - String length
+  - Character escaping
+  - Basic string methods
+  - String formatting
+  - F-strings

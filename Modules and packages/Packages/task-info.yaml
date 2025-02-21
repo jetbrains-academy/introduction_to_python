@@ -5,7 +5,7 @@ files:
     placeholders:
       - offset: 95
         length: 46
-        placeholder_text: '# Import the `official` module here'
+        placeholder_text: "# Import the `official` module here"
       - offset: 197
         length: 20
         placeholder_text: '''Say goodbye to Alex'''

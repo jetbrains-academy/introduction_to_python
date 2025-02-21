@@ -1,5 +1,5 @@
 type: theory
 files:
-- name: main.py
-  visible: true
+  - name: main.py
+    visible: true
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=File+Input+Output+/+What+next

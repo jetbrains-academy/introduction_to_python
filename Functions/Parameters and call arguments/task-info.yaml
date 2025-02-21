@@ -1,12 +1,12 @@
 type: edu
 files:
-- name: param_args.py
-  visible: true
-  placeholders:
-  - offset: 145
-    length: 14
-    placeholder_text: '# Define a function named "square" that prints square of passed
-      parameter'
-- name: tests/test_task.py
-  visible: false
+  - name: param_args.py
+    visible: true
+    placeholders:
+      - offset: 145
+        length: 14
+        placeholder_text: "# Define a function named \"square\" that prints square of\
+      \ passed parameter"
+  - name: tests/test_task.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Functions+/+Parameters+and+call+arguments

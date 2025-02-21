@@ -1,15 +1,15 @@
 type: edu
 files:
-- name: nested_loop.py
-  visible: true
-  placeholders:
-  - offset: 61
-    length: 31
-    placeholder_text: "# TODO: use a nested loop here."
-- name: tests/test_task.py
-  visible: false
-- name: __init__.py
-  visible: false
-- name: tests/__init__.py
-  visible: false
+  - name: nested_loop.py
+    visible: true
+    placeholders:
+      - offset: 61
+        length: 31
+        placeholder_text: "# TODO: use a nested loop here."
+  - name: tests/test_task.py
+    visible: false
+  - name: __init__.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Loops+/+Nested+For+Loop

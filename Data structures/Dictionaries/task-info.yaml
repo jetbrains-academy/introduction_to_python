@@ -1,19 +1,19 @@
 type: edu
 files:
-- name: dicts.py
-  visible: true
-  placeholders:
-  - offset: 317
-    length: 25
-    placeholder_text: '# Add Jared''s number to the phone book'
-  - offset: 344
-    length: 24
-    placeholder_text: '# Remove Gerard''s number from the phone book'
-  - offset: 394
-    length: 18
-    placeholder_text: '"Print Jane''s phone number from the phone_book"'
-- name: tests/__init__.py
-  visible: false
-- name: tests/test_task.py
-  visible: false
+  - name: dicts.py
+    visible: true
+    placeholders:
+      - offset: 317
+        length: 25
+        placeholder_text: "# Add Jared's number to the phone book"
+      - offset: 344
+        length: 24
+        placeholder_text: "# Remove Gerard's number from the phone book"
+      - offset: 394
+        length: 18
+        placeholder_text: '"Print Jane''s phone number from the phone_book"'
+  - name: tests/__init__.py
+    visible: false
+  - name: tests/test_task.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Data+Structures+/+Dictionaries

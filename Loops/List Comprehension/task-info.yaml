@@ -1,15 +1,15 @@
 type: edu
 files:
-- name: list_comprehension.py
-  visible: true
-  placeholders:
-  - offset: 194
-    length: 35
-    placeholder_text: '''Use list comprehension to build a new list'''
-- name: tests/test_task.py
-  visible: false
-- name: __init__.py
-  visible: false
-- name: tests/__init__.py
-  visible: false
+  - name: list_comprehension.py
+    visible: true
+    placeholders:
+      - offset: 194
+        length: 35
+        placeholder_text: '''Use list comprehension to build a new list'''
+  - name: tests/test_task.py
+    visible: false
+  - name: __init__.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Loops+/+List+Comprehension

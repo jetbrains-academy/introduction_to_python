@@ -1,9 +1,9 @@
 content:
-- Variable definition
-- Undefined variable
-- Variable types
-- Type conversion
-- Arithmetic operators
-- Assignments
-- Boolean operators
-- Comparison operators
+  - Variable definition
+  - Undefined variable
+  - Variable types
+  - Type conversion
+  - Arithmetic operators
+  - Assignments
+  - Boolean operators
+  - Comparison operators
