@@ -1,7 +1,6 @@
 # Introduction to Python course  (JetBrains Academy version) [![official JetBrains project](http://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
-<p>This is an introductory Python course by JetBrains Academy.
-  The target audience are the people with little or no experience in programming who
-  would like to start learning Python.</p>
+  <p>This is an introductory Python course by JetBrains Academy. Python is a leading language for data analysis, AI, ML, automation, and more. The course is designed for individuals with little to no programming experience who want to start learning Python.</p>
+
 
   <p>In this course, you will learn about the basics, such as variables and operations
   with them, strings and other data structures, boolean operators, conditions, control
