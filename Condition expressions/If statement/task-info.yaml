@@ -1,18 +1,18 @@
 type: edu
 files:
-- name: if_statement.py
-  visible: true
-  placeholders:
-  - offset: 236
-    length: 19
-    placeholder_text: '# TODO: Write an if statement with a condition to check if
-      the list `tasks` is empty.'
-  - offset: 322
-    length: 43
-    placeholder_text: '# TODO: check if the list is empty now and print ''Now empty!''
-      if so.'
-- name: tests/__init__.py
-  visible: false
-- name: tests/test_task.py
-  visible: false
+  - name: if_statement.py
+    visible: true
+    placeholders:
+      - offset: 236
+        length: 19
+        placeholder_text: "# TODO: Write an if statement with a condition to check if\
+      \ the list `tasks` is empty."
+      - offset: 322
+        length: 43
+        placeholder_text: "# TODO: check if the list is empty now and print 'Now empty!'\
+      \ if so."
+  - name: tests/__init__.py
+    visible: false
+  - name: tests/test_task.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Condition+Expressions+/+If+Statement

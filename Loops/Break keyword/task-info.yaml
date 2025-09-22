@@ -1,16 +1,16 @@
 type: edu
 files:
-- name: break_keyword.py
-  visible: true
-  placeholders:
-  - offset: 435
-    length: 5
-    placeholder_text: '# Exit the loop'
-  - offset: 402
-    length: 24
-    placeholder_text: '# Add the condition to exit the loop'
-- name: tests/__init__.py
-  visible: false
-- name: tests/test_task.py
-  visible: false
+  - name: break_keyword.py
+    visible: true
+    placeholders:
+      - offset: 402
+        length: 24
+        placeholder_text: "# Add the condition to exit the loop"
+      - offset: 435
+        length: 5
+        placeholder_text: "# Exit the loop"
+  - name: tests/__init__.py
+    visible: false
+  - name: tests/test_task.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Loops+/+Break+keyword

@@ -1,23 +1,23 @@
 type: edu
 custom_name: Update variable
 files:
-- name: update_variable.py
-  visible: true
-  placeholders:
-  - offset: 212
-    length: 5
-    placeholder_text: ???
-  - offset: 252
-    length: 5
-    placeholder_text: ???
-  - offset: 291
-    length: 18
-    placeholder_text: '''Call description() method of car2'''
-  - offset: 265
-    length: 18
-    placeholder_text: '''Call description() method of car1'''
-- name: tests/__init__.py
-  visible: false
-- name: tests/test_task.py
-  visible: false
+  - name: update_variable.py
+    visible: true
+    placeholders:
+      - offset: 212
+        length: 5
+        placeholder_text: ???
+      - offset: 252
+        length: 5
+        placeholder_text: ???
+      - offset: 265
+        length: 18
+        placeholder_text: '''Call description() method of car1'''
+      - offset: 291
+        length: 18
+        placeholder_text: '''Call description() method of car2'''
+  - name: tests/__init__.py
+    visible: false
+  - name: tests/test_task.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Classes+and+Objects+/+Update+variable

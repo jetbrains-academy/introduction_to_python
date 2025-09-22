@@ -1,16 +1,16 @@
 type: edu
 files:
-- name: access_variable.py
-  visible: true
-  placeholders:
-  - offset: 347
-    length: 19
-    placeholder_text: '''Print variable1 from my_object'''
-  - offset: 374
-    length: 15
-    placeholder_text: '''Call method foo() of object my_object'''
-- name: tests/__init__.py
-  visible: false
-- name: tests/test_task.py
-  visible: false
+  - name: access_variable.py
+    visible: true
+    placeholders:
+      - offset: 347
+        length: 19
+        placeholder_text: '''Print variable1 from my_object'''
+      - offset: 374
+        length: 15
+        placeholder_text: '''Call method foo() of object my_object'''
+  - name: tests/__init__.py
+    visible: false
+  - name: tests/test_task.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Classes+and+Objects+/+Variable+access

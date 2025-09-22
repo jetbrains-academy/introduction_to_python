@@ -1,19 +1,19 @@
 type: edu
 files:
-- name: call_method.py
-  visible: true
-  placeholders:
-  - offset: 208
-    length: 12
-    placeholder_text: "# TODO: set the exponentiation `base`, it should be equal to\
+  - name: call_method.py
+    visible: true
+    placeholders:
+      - offset: 208
+        length: 12
+        placeholder_text: "# TODO: set the exponentiation `base`, it should be equal to\
       \ the current value."
-  - offset: 268
-    length: 19
-    placeholder_text: "# TODO: use the `multiply` method with the parameter `base`\
+      - offset: 268
+        length: 19
+        placeholder_text: "# TODO: use the `multiply` method with the parameter `base`\
       \ to calculate the result."
-- name: tests/test_task.py
-  visible: false
-- name: __init__.py
-  visible: false
-- name: tests/__init__.py
-  visible: false
+  - name: tests/test_task.py
+    visible: false
+  - name: __init__.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false

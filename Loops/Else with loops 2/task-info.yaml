@@ -1,14 +1,14 @@
 type: edu
 files:
-- name: else_with_loops2.py
-  visible: true
-  placeholders:
-  - offset: 35
-    length: 184
-    placeholder_text: pass
-- name: tests/test_task.py
-  visible: false
-- name: __init__.py
-  visible: false
-- name: tests/__init__.py
-  visible: false
+  - name: else_with_loops2.py
+    visible: true
+    placeholders:
+      - offset: 35
+        length: 184
+        placeholder_text: pass
+  - name: tests/test_task.py
+    visible: false
+  - name: __init__.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false

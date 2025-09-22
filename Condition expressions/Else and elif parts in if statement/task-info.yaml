@@ -1,16 +1,16 @@
 type: edu
 files:
-- name: else_elif.py
-  visible: true
-  placeholders:
-  - offset: 352
-    length: 18
-    placeholder_text: '# TODO: check if name is equal to "John"'
-  - offset: 387
-    length: 5
-    placeholder_text: '# TODO: otherwise...'
-- name: tests/__init__.py
-  visible: false
-- name: tests/test_task.py
-  visible: false
+  - name: else_elif.py
+    visible: true
+    placeholders:
+      - offset: 352
+        length: 18
+        placeholder_text: "# TODO: check if name is equal to \"John\""
+      - offset: 387
+        length: 5
+        placeholder_text: "# TODO: otherwise..."
+  - name: tests/__init__.py
+    visible: false
+  - name: tests/test_task.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Condition+Expressions+/+Else+and+Elif

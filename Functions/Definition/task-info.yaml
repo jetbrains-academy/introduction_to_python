@@ -1,14 +1,14 @@
 type: edu
 files:
-- name: functions.py
-  visible: true
-  placeholders:
-  - offset: 257
-    length: 10
-    placeholder_text: '# Define a function named "fun" to replace three lines above'
-  - offset: 101
-    length: 13
-    placeholder_text: '# Call my_function here'
-- name: tests/test_task.py
-  visible: false
+  - name: functions.py
+    visible: true
+    placeholders:
+      - offset: 101
+        length: 13
+        placeholder_text: "# Call my_function here"
+      - offset: 257
+        length: 10
+        placeholder_text: "# Define a function named \"fun\" to replace three lines above"
+  - name: tests/test_task.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Functions+/+Definition

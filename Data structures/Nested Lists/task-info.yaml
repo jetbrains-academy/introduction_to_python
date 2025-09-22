@@ -1,16 +1,16 @@
 type: edu
 files:
-- name: task.py
-  visible: true
-  placeholders:
-  - offset: 55
-    length: 13
-    placeholder_text: '''Print number 9 from the nested list'''
-  - offset: 76
-    length: 10
-    placeholder_text: '''Print number 10 from the nested list'''
-- name: tests/__init__.py
-  visible: false
-- name: tests/test_task.py
-  visible: false
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 55
+        length: 13
+        placeholder_text: '''Print number 9 from the nested list'''
+      - offset: 76
+        length: 10
+        placeholder_text: '''Print number 10 from the nested list'''
+  - name: tests/__init__.py
+    visible: false
+  - name: tests/test_task.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Data+Structures+/+Nested+Lists

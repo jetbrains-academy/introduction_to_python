@@ -1,11 +1,10 @@
 content:
-- Definition
-- Variable access
-- Update variable
-- The self parameter
-- Call a method from another method
-- Special __init__ method
-- __str__ vs __repr__
-- Class and Instance Variables
-- Class and Instance Variables 2
-
+  - Definition
+  - Variable access
+  - Update variable
+  - The self parameter
+  - Call a method from another method
+  - Special __init__ method
+  - __str__ vs __repr__
+  - Class and Instance Variables
+  - Class and Instance Variables 2

@@ -5,13 +5,13 @@ files:
     placeholders:
       - offset: 152
         length: 37
-        placeholder_text: '# Open the file input1.txt in read mode using the with statement'
+        placeholder_text: "# Open the file input1.txt in read mode using the with statement"
       - offset: 242
         length: 12
         placeholder_text: ???
       - offset: 412
         length: 15
-        placeholder_text: '# Close the output file!'
+        placeholder_text: "# Close the output file!"
   - name: input.txt
     visible: true
   - name: input1.txt

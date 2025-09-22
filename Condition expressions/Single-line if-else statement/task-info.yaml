@@ -1,18 +1,18 @@
 type: edu
 files:
-- name: task.py
-  visible: true
-  placeholders:
-  - offset: 115
-    length: 73
-    placeholder_text: |-
-      if my_random_number > 50:
-          print(my_random_number)
-      else:
-          print("Too small!")
-- name: tests/test_task.py
-  visible: false
-- name: __init__.py
-  visible: false
-- name: tests/__init__.py
-  visible: false
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 115
+        length: 73
+        placeholder_text: |-
+          if my_random_number > 50:
+              print(my_random_number)
+          else:
+              print("Too small!")
+  - name: tests/test_task.py
+    visible: false
+  - name: __init__.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false

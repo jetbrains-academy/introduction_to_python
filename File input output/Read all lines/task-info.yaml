@@ -1,17 +1,17 @@
 type: edu
 files:
-- name: read_all_lines.py
-  visible: true
-  placeholders:
-  - offset: 43
-    length: 31
-    placeholder_text: "# TODO: read all lines from input.txt into the list called\
+  - name: read_all_lines.py
+    visible: true
+    placeholders:
+      - offset: 43
+        length: 31
+        placeholder_text: "# TODO: read all lines from input.txt into the list called\
       \ lines_list"
-- name: tests/test_task.py
-  visible: false
-- name: __init__.py
-  visible: false
-- name: tests/__init__.py
-  visible: false
-- name: input.txt
-  visible: true
+  - name: tests/test_task.py
+    visible: false
+  - name: __init__.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+  - name: input.txt
+    visible: true

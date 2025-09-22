@@ -1,15 +1,15 @@
 type: edu
 files:
-- name: __init__.py
-  visible: false
-- name: tests/__init__.py
-  visible: false
-- name: order.py
-  visible: true
-  placeholders:
-  - offset: 185
-    length: 26
-    placeholder_text: length=5, 5, '____'
-- name: tests/test_task.py
-  visible: false
+  - name: __init__.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+  - name: order.py
+    visible: true
+    placeholders:
+      - offset: 185
+        length: 26
+        placeholder_text: "length=5, 5, '____'"
+  - name: tests/test_task.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Functions+/+Argument+Order

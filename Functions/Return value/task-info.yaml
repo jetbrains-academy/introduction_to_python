@@ -1,22 +1,23 @@
 type: edu
 files:
-- name: return_keyword.py
-  visible: true
-  placeholders:
-  - offset: 364
-    length: 1
-    placeholder_text: '# Assign an initial value to the b variable'
-  - offset: 436
-    length: 9
-    placeholder_text: '# Update the b variable with a sum'
-  - offset: 454
-    length: 11
-    placeholder_text: '# Restore the old value of the b variable to the a variable from the temp'
-  - offset: 470
-    length: 13
-    placeholder_text: '# Here we need to return the result to the caller'
-- name: tests/test_task.py
-  visible: false
-- name: tests/decorated_test_function.py
-  visible: false
+  - name: return_keyword.py
+    visible: true
+    placeholders:
+      - offset: 364
+        length: 1
+        placeholder_text: "# Assign an initial value to the b variable"
+      - offset: 436
+        length: 9
+        placeholder_text: "# Update the b variable with a sum"
+      - offset: 454
+        length: 11
+        placeholder_text: "# Restore the old value of the b variable to the a variable\
+      \ from the temp"
+      - offset: 470
+        length: 13
+        placeholder_text: "# Here we need to return the result to the caller"
+  - name: tests/test_task.py
+    visible: false
+  - name: tests/decorated_test_function.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Functions+/+Return+value
