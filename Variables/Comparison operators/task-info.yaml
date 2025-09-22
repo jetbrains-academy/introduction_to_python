@@ -1,26 +1,26 @@
 type: edu
 files:
-- name: comparison_operators.py
-  visible: true
-  placeholders:
-  - offset: 213
-    length: 1
-    placeholder_text: '?'
-  - offset: 367
-    length: 1
-    placeholder_text: '?'
-  - offset: 519
-    length: 1
-    placeholder_text: '?'
-  - offset: 527
-    length: 1
-    placeholder_text: '?'
-  - offset: 708
-    length: 2
-    placeholder_text: '?'
-  - offset: 860
-    length: 2
-    placeholder_text: '?'
-- name: tests/test_task.py
-  visible: false
+  - name: comparison_operators.py
+    visible: true
+    placeholders:
+      - offset: 213
+        length: 1
+        placeholder_text: '?'
+      - offset: 367
+        length: 1
+        placeholder_text: '?'
+      - offset: 519
+        length: 1
+        placeholder_text: '?'
+      - offset: 527
+        length: 1
+        placeholder_text: '?'
+      - offset: 708
+        length: 2
+        placeholder_text: '?'
+      - offset: 860
+        length: 2
+        placeholder_text: '?'
+  - name: tests/test_task.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Variables+/+Comparison+Operators

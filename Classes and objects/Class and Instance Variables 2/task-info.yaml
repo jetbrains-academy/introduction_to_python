@@ -1,24 +1,24 @@
 type: edu
 files:
-- name: class_instance2.py
-  visible: true
-  placeholders:
-  - offset: 16
-    length: 15
-    placeholder_text: "# TODO: add a mutable class variable (all_cities list) to store\
+  - name: class_instance2.py
+    visible: true
+    placeholders:
+      - offset: 16
+        length: 15
+        placeholder_text: "# TODO: add a mutable class variable (all_cities list) to store\
       \ all added city names"
-  - offset: 185
-    length: 15
-    placeholder_text: "# TODO: call add_city method to add the city name to the list\
+      - offset: 185
+        length: 15
+        placeholder_text: "# TODO: call add_city method to add the city name to the list\
       \ upon object initialization"
-  - offset: 234
-    length: 33
-    placeholder_text: |-
-      pass
-              # TODO: implement a method that will append a city name to the all_cities list. Delete the pass statement!
-- name: tests/test_task.py
-  visible: false
-- name: __init__.py
-  visible: false
-- name: tests/__init__.py
-  visible: false
+      - offset: 234
+        length: 33
+        placeholder_text: |-
+          pass
+                  # TODO: implement a method that will append a city name to the all_cities list. Delete the pass statement!
+  - name: tests/test_task.py
+    visible: false
+  - name: __init__.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false

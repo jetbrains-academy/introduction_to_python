@@ -1,18 +1,19 @@
 type: edu
 files:
-- name: infinite.py
-  visible: true
-  placeholders:
-  - offset: 146
-    length: 6
-    placeholder_text: '# TODO'
-- name: tests/test_task.py
-  visible: false
-- name: __init__.py
-  visible: false
-- name: tests/__init__.py
-  visible: false
-- name: stop_run.png
-  visible: false
-- name: tests/decorated_test_function.py
-  visible: false
+  - name: infinite.py
+    visible: true
+    placeholders:
+      - offset: 146
+        length: 6
+        placeholder_text: "# TODO"
+  - name: tests/test_task.py
+    visible: false
+  - name: __init__.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
+  - name: stop_run.png
+    visible: false
+    is_binary: true
+  - name: tests/decorated_test_function.py
+    visible: false

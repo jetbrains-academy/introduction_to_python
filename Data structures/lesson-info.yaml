@@ -1,12 +1,12 @@
 content:
-- Lists introduction
-- Lists operations
-- List items
-- Nested Lists
-- Tuples
-- Join method
-- Dictionaries
-- Add Items from lists
-- Dictionary keys() and values()
-- Dictionary keys
-- In keyword
+  - Lists introduction
+  - Lists operations
+  - List items
+  - Nested Lists
+  - Tuples
+  - Join method
+  - Dictionaries
+  - Add Items from lists
+  - Dictionary keys() and values()
+  - Dictionary keys
+  - In keyword

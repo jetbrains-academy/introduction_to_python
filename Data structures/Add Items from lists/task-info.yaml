@@ -1,15 +1,15 @@
 type: edu
 files:
-- name: lists_to_dict.py
-  visible: true
-  placeholders:
-  - offset: 126
-    length: 44
-    placeholder_text: '# TODO: populate the dictionary with key:value pairs from the
-      lists'
-- name: tests/test_task.py
-  visible: false
-- name: __init__.py
-  visible: false
-- name: tests/__init__.py
-  visible: false
+  - name: lists_to_dict.py
+    visible: true
+    placeholders:
+      - offset: 126
+        length: 44
+        placeholder_text: "# TODO: populate the dictionary with key:value pairs from the\
+      \ lists"
+  - name: tests/test_task.py
+    visible: false
+  - name: __init__.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false

@@ -1,13 +1,13 @@
 type: edu
 files:
-- name: string_methods.py
-  visible: true
-  placeholders:
-  - offset: 131
-    length: 20
-    placeholder_text: ???
-- name: tests/__init__.py
-  visible: false
-- name: tests/test_task.py
-  visible: false
+  - name: string_methods.py
+    visible: true
+    placeholders:
+      - offset: 131
+        length: 20
+        placeholder_text: ???
+  - name: tests/__init__.py
+    visible: false
+  - name: tests/test_task.py
+    visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Strings+/+Basic+String+Methods

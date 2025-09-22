@@ -1,22 +1,22 @@
 type: edu
 files:
-- name: dict_keys.py
-  visible: true
-  placeholders:
-  - offset: 0
-    length: 150
-    placeholder_text: |-
-      ages_dict = {
-          "Alice": 21,
-          "Bob": 39,
-          "George": 30,
-          "Susanne": 27,
-          "Bob": 19,
-          ["Ashley", "Alex", "Nancy"]: 35
-      }
-- name: tests/test_task.py
-  visible: false
-- name: __init__.py
-  visible: false
-- name: tests/__init__.py
-  visible: false
+  - name: dict_keys.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 150
+        placeholder_text: |-
+          ages_dict = {
+              "Alice": 21,
+              "Bob": 39,
+              "George": 30,
+              "Susanne": 27,
+              "Bob": 19,
+              ["Ashley", "Alex", "Nancy"]: 35
+          }
+  - name: tests/test_task.py
+    visible: false
+  - name: __init__.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false

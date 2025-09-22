@@ -8,10 +8,10 @@ files:
         placeholder_text: ???
       - offset: 324
         length: 10
-        placeholder_text: '# Assign a new value'
+        placeholder_text: "# Assign a new value"
       - offset: 444
         length: 5
-        placeholder_text: '# Assign 2 to both a and b here'
+        placeholder_text: "# Assign 2 to both a and b here"
   - name: tests/test_task.py
     visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfRlDlldKfuq-cHMNFfHMER61P1PRIan7KG6yp1GvaweDI7GA/viewform?usp=pp_url&entry.2103429047=Variables+/+Variable+Definition

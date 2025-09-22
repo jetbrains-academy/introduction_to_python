@@ -1,18 +1,18 @@
 type: edu
 files:
-- name: indentation.py
-  visible: true
-  placeholders:
-  - offset: 89
-    length: 152
-    placeholder_text: |-
-      if datetime.date.today().day < 15:
-      print("It's the beginning of the month still!")
-      else:
-      print("It's not the beginning of the month anymore :(")
-- name: tests/test_task.py
-  visible: false
-- name: __init__.py
-  visible: false
-- name: tests/__init__.py
-  visible: false
+  - name: indentation.py
+    visible: true
+    placeholders:
+      - offset: 89
+        length: 152
+        placeholder_text: |-
+          if datetime.date.today().day < 15:
+          print("It's the beginning of the month still!")
+          else:
+          print("It's not the beginning of the month anymore :(")
+  - name: tests/test_task.py
+    visible: false
+  - name: __init__.py
+    visible: false
+  - name: tests/__init__.py
+    visible: false
