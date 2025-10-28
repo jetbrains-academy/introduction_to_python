@@ -1,16 +1,16 @@
-class Complex:
+class ComplexNumber:
     def __init__(self, real_part, imag_part):
         self.real = real_part
         self.img = imag_part
 
     def __repr__(self):
-        return f'Complex({self.real}, {self.img})'
+        return f'ComplexNumber({self.real}, {self.img})'
 
     def __str__(self):
         return f'{self.real} + i{self.img}'
 
 
-x = Complex(2, 5)
+x = ComplexNumber(2, 5)
 print(str(x))
 print(repr(x))
 
