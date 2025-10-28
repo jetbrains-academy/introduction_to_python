@@ -23,13 +23,13 @@ The `__init__()` method may receive arguments for greater flexibility.
 In that case, arguments given to the class instantiation operator are passed 
 on to `__init__()`. For example:
 ```python
-class Complex:
+class ComplexNumber:
     def __init__(self, real_part, imag_part):
         self.r = real_part
         self.i = imag_part
         self.num = complex(self.r, self.i)
 
-x = Complex(3.0, -4.5)  # Instantiating a complex number
+x = ComplexNumber(3.0, -4.5)  # Instantiating a complex number
 x.num
 ```
 ```text

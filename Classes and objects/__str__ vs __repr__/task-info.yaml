@@ -3,10 +3,10 @@ files:
   - name: str_and_repr.py
     visible: true
     placeholders:
-      - offset: 455
+      - offset: 473
         length: 46
         placeholder_text: ???
-      - offset: 541
+      - offset: 559
         length: 45
         placeholder_text: ???
   - name: tests/__init__.py
