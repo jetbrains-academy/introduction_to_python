@@ -1,4 +1,4 @@
-class ComplexNumber:
+class ComplexBuilder:
     def set_parts(self, real_part, imag_part):
         self.r = real_part
         self.i = imag_part
@@ -7,7 +7,7 @@ class ComplexNumber:
         self.num = complex(self.r, self.i)
 
 
-complex_number = ComplexNumber()  # Instantiate a complex number object
+complex_number = ComplexBuilder()  # Instantiate a complex number object
 complex_number.set_parts(12, 5)  # Call set_parts method with real_part = 12 and imag_part = 5
 complex_number.build()  # Build the complex number
 print(complex_number.num)
