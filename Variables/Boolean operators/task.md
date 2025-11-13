@@ -18,7 +18,7 @@ For more structured and detailed information, you can refer to [this Hyperskill 
 
 ### Task
 In this task, insert only these tokens where needed: `==`, `!=`, `True`, `False`.  
-The `is` operator checks if two objects are the same - for example, whether a variable is identical to `True` or `False`.
+The `is` operator checks if two objects are the same – for example, whether a variable is identical to `True` or `False`.
  - Check whether the variable `two` is equal to `three`. This will create a Boolean result stored in `is_equal`.
  - Check if the variable `is_equal` has a deceiving name.
  - Check if the variable `is_false` does indeed contain a lie.
