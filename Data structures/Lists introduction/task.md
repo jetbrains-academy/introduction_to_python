@@ -15,7 +15,7 @@ squares + [36, 49, 64, 81, 100]
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ```
 
-You can explore lists in more detail by reading <a href="https://docs.python.org/3.9/tutorial/introduction.html#lists">this page</a>.
+You can explore lists in more detail by reading <a href="https://docs.python.org/3/tutorial/introduction.html#lists">this page</a>.
 
 
 ### Task
