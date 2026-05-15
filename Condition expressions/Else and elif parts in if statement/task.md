@@ -40,8 +40,7 @@ can be written as
 a += 1 if a > b else a -= 1
 ```
 </details>
-  
-For more structured and detailed information, you can refer to [this](https://hyperskill.org/learn/step/5932?utm_source=jba&utm_medium=jba_courses_links) and [this](https://hyperskill.org/learn/step/5926?utm_source=jba&utm_medium=jba_courses_links) Hyperskill knowledge base pages.
+
 
 ### Task
 Print `True` if `name` is equal to `"John"` and `False` otherwise.  

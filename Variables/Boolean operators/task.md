@@ -14,8 +14,6 @@ compares two variables and checks whether they are equal. Use `!=` (not equal) t
 
 You will learn more about boolean operators in a later [task](course://Condition expressions/Boolean operators). 
 
-For more structured and detailed information, you can refer to [this Hyperskill knowledge base page](https://hyperskill.org/learn/step/6025?utm_source=jba&utm_medium=jba_courses_links).
-
 ### Task
 In this task, insert only these tokens where needed: `==`, `!=`, `True`, `False`.  
 The `is` operator checks if two objects are the same – for example, whether a variable is identical to `True` or `False`.
