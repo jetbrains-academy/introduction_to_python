@@ -1,5 +1,3 @@
-## Built-in modules
-
 Python comes with a [library of standard modules](https://docs.python.org/3/library/). 
 
 Some modules are built into the interpreter; these provide access to operations that are 

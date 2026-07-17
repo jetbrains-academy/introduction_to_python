@@ -1,5 +1,3 @@
-## Slicing
-
 Slicing is used to extract multiple characters (a substring) from a string. 
 Its syntax is similar to that of indexing, but instead of just one index you use 
 two indices (numbers) separated by a colon, e.g., `str[ind1:ind2]`. These two 

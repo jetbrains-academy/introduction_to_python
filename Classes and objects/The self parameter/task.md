@@ -1,5 +1,3 @@
-## The self parameter
-
 It's time to explain the `self` parameter we saw in previous tasks.
 The first argument passed to a class method is `self`. This is nothing more 
 than a convention: the name `self` has no special meaning to Python. 

@@ -1,5 +1,3 @@
-## List Comprehension
-
 You can use a loop to build a list (or another data structure).
 For example:
 

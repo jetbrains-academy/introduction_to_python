@@ -1,5 +1,3 @@
-## Type conversion
-
 There are several built-in functions that let you convert one data type into another. 
 These functions return a new object representing the converted value. `int(x)` 
 converts `x` into an integer. `float(x)` converts `x` into a floating-point number. `str(x)` 

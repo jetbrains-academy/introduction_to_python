@@ -1,5 +1,3 @@
-## Nested Lists
-
 A list can contain any kind of objects, even other lists (sublists). This 
 data structure is known as a nested list.
 

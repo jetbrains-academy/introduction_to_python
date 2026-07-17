@@ -1,5 +1,3 @@
-## Nested Loops
-
 A nested loop is a loop inside another loop.
 The inner loop is executed once for each iteration of the outer loop.
 

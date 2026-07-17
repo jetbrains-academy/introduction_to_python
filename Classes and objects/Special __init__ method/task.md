@@ -1,5 +1,3 @@
-## Special &#95;&#95;init&#95;&#95; method
-
 The instantiation operation (“calling” a class object) creates an empty object, 
 but it is useful to create objects with instances customized to a specific 
 initial state. Therefore, a class may define a special method named `__init__()`, 

@@ -1,5 +1,3 @@
-## Nested List Comprehension
-
 Nested list comprehensions are simply list comprehensions nested within other 
 list comprehension. This is quite similar to [nested loops](course://Loops/Nested for Loop).
 Here is a program that builds a [nested list](course://Data structures/Nested Lists) using a nested loop:

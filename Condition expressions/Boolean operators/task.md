@@ -1,5 +1,3 @@
-## Boolean operators
-
 Boolean operators compare statements and return results in boolean values. The boolean 
 operator `and` returns `True` when the expressions on both sides of `and` are `True`.
 The boolean operator `or` returns `True` when at least one expression on either side 

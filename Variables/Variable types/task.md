@@ -1,5 +1,3 @@
-## Variable types
-
 All data in a Python program is represented by objects or by relations between 
 objects. Every object has an identity, a type, and a value. An object’s identity 
 never changes once it has been created; you may think of it as the object’s 

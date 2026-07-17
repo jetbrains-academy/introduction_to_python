@@ -1,5 +1,3 @@
-## String indexing
-
 You can access a character in a string if you know its position. For example, 
 `str[index]` will yield the character at position `index` in the string `str`.
 Note that string indexing always starts at `0`. `index` raises `ValueError` 

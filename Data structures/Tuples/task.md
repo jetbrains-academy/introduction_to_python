@@ -1,5 +1,3 @@
-## Tuples
-
 Tuples represent another standard sequence data type.
 They are almost identical to lists. The only significant difference between tuples and 
 lists is that tuples are immutable: you cannot add, replace, or delete elements in 

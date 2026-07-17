@@ -1,5 +1,3 @@
-## while loop
-
 A `while` loop is somewhat similar to an `if` statement: it executes some code if some 
 condition is `True`. The key difference is that it will continue to execute indented 
 code for as long as the condition is `True`.  If the expression is `False`, the loop terminates.

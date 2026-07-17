@@ -1,5 +1,3 @@
-## \_\_str__ vs \_\_repr__ methods
-
 Both `str()` and `repr()` methods in Python are used for string representation of an object,
 but there are some differences.
 For example:

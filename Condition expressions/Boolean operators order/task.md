@@ -1,5 +1,3 @@
-## Boolean operators order
-
 Boolean operators are not evaluated from left to right. There's an order of operations for 
 boolean operators: `not` is evaluated first, `and` is evaluated next, and `or` is evaluated last.  
 

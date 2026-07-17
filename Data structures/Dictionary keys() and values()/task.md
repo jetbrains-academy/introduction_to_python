@@ -1,5 +1,3 @@
-## Dictionary keys() and values()
-
 There are many useful methods in dictionaries, such as `keys()`,  `values()`, and `items()`. 
 The `keys()` method returns a view object that displays a list of all the keys in the dictionary in order of insertion. 
 `values()` returns a new view of the dictionary’s values. When the `items()` method is called,

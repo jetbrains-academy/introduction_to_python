@@ -1,5 +1,3 @@
-## Lists introduction
-
 Python has a number of compound data types used to group data together. 
 The most versatile is the list, which can be written as a series of comma-separated 
 values (items) enclosed in square brackets, e.g., `lst = [item1, item2]`. 

@@ -1,5 +1,3 @@
-## Else with loops 2
-
 This type of `else` is useful only if there is an `if` condition present inside the loop, which somehow depends on the loop variable.
 Let's look once again at the example from the previous task:
 

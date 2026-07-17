@@ -1,5 +1,3 @@
-## Dictionaries
-
 A dictionary is similar to a list, except that you access its values by looking up a 
 key instead of an index. A key can be any immutable type. Strings and numbers can 
 always be keys; tuples can be used as keys if they contain only immutable objects. 

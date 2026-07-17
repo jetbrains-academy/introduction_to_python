@@ -1,5 +1,3 @@
-## Character escaping
-
 Backslash is used to escape special symbols, such as single or double quotation marks, 
 for example, `"It\'s me"` or `"She said \"Hello\""`. If you need to actually type the <code>\\</code>
 character as part of your string, you will need to escape it too. For example, here's how 

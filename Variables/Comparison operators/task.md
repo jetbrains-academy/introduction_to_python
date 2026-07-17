@@ -1,5 +1,3 @@
-## Comparison operators
-
 Python has many types of comparison operators, including: 
 - `<` less than
   

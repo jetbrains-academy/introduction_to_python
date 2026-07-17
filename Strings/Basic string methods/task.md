@@ -1,5 +1,3 @@
-## Basic string methods
-
 There are many useful string methods. For instance, you can use the `lower()` method to get 
 rid of any capitalization in your strings. The `upper()` method is used to make a string 
 uppercase. To call any string method, type a dot after the string (or a variable containing 

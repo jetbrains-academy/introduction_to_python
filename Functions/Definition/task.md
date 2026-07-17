@@ -1,5 +1,3 @@
-## Definition
-
 Functions are a convenient way to divide your code into useful blocks, make it more
 readable, and reuse it.
 The keyword `def` introduces a function definition.

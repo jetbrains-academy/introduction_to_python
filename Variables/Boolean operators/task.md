@@ -1,5 +1,3 @@
-## Boolean operators
-
 Boolean is a type of value that can only be `True` or `False`. The `==` (equality) operator 
 compares two variables and checks whether they are equal. Use `!=` (not equal) to check that two values differ.
 

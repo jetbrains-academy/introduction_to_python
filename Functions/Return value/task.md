@@ -1,5 +1,3 @@
-## Return value
-
 Functions may return a value to the caller, using the keyword `return` . You can use the 
 returned value to assign it to a variable or just print it out. In fact, even functions 
 without a `return` statement do return a value. This value is 

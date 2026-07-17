@@ -1,5 +1,3 @@
-## Import module 2
-
 You can import not only functions but also classes and even other modules. It is customary, though not required, to place all 
 import statements at the beginning of a module.
 

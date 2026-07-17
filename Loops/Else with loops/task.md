@@ -1,5 +1,3 @@
-## Else with loops
-
 We saw that the `break` statement breaks out of the innermost enclosing `for` or `while` loop.
 
 Python also allows loop statements to have an `else` clause. It is executed when the loop terminates

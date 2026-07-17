@@ -1,5 +1,3 @@
-## Dictionary keys
-
 Try to figure out what's wrong with this dictionary and fix it.
 
 When fixing, be aware of the following requirements

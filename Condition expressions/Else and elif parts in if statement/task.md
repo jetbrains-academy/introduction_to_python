@@ -1,5 +1,3 @@
-## Else and elif statements
-
 The `elif` and `else` statements complement the `if` statement. 
 There can be zero or more `elif` parts, and the `else` part is optional. The keyword 
 `elif` is short for ‘else if’, and is useful to avoid excessive indentation.
