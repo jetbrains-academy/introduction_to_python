@@ -1,5 +1,3 @@
-## About the Course
-
 Welcome to the course in basics of Python programming!
 
 Please join the course chat on Discord using the [link](https://discord.gg/aU6qvN5weS). There, you can ask questions, interact with instructors, and connect with your fellow students.

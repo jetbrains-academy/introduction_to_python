@@ -1,5 +1,3 @@
-## Assignments
-
 An augmented assignment is a single statement combining a binary operation and an 
 assignment statement, such as `+=`, `-=`, etc.  
 

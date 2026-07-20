@@ -1,5 +1,3 @@
-## Read file
-
 
 To read a file’s contents, you can call `f.read(size)`, which reads some quantity of data and returns it as 
 a string. When size is omitted or negative, the entire contents of the file will be read and returned.

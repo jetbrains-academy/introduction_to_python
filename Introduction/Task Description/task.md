@@ -1,5 +1,3 @@
-## Task Description
-
 The **Task Description** window gives you all the information you need to complete a task:
 
 For theoretical tasks, the description provides learning and reading materials.

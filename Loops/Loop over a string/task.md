@@ -1,5 +1,3 @@
-## Loop over a string
-
 As we discussed earlier, strings in Python are in many ways similar to lists. 
 You can iterate over a string just like you would iterate over a list.  
   

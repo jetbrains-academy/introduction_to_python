@@ -1,5 +1,3 @@
-## String length
-
 The `len()` method is used to count how many characters a string contains.
 
 For example:

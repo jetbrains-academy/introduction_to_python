@@ -1,5 +1,3 @@
-## Arithmetic operators
-
 Just as in any other programming language, the addition ( `+` ), subtraction ( `-` ), 
 multiplication ( `*` ), and division ( `/` ) operators can be used with numbers. In 
 addition, Python has the power ( `**` ),  modulo ( `%` ), and floor division ( `//` ) operators.

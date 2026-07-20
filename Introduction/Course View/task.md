@@ -1,5 +1,3 @@
-## Course View
-
 <b>Course View</b> shows you the course syllabus: a list of lessons with tasks.
 
 <style>

@@ -1,5 +1,3 @@
-## Write to file
-
 As we already mentioned, if you use `'w'` as the second argument in `open()`, the file opens for 
 writing only. A new empty file will be created. If another file with the same name already exists, it 
 will be erased. If you want to add some content to an existing file, you should use the `'a'` 

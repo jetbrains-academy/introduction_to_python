@@ -1,5 +1,3 @@
-## Default parameters
-
 It is also possible to define functions with a variable number of arguments. There are 
 three forms, which can be combined. The most useful form is to specify a default value 
 for one or more arguments. This creates a function that can be called with fewer 

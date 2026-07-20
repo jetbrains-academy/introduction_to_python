@@ -1,5 +1,3 @@
-## Update variable 
-
 In this exercise, create a new `Car` object `car2` and then set `color` 
 of `car2` to `"red"`. Print the descriptions of `car1` and `car2` by calling the 
 `description` method.

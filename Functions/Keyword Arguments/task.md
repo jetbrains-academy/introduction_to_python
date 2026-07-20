@@ -1,5 +1,3 @@
-## Keyword Arguments
-
 We already hinted that functions can also be called using keyword arguments of the form `kwarg=value`. For 
 instance, the function `cat()`, which we defined for you,
 accepts one required argument (`food`) and three optional arguments (`state`, `action`, and `breed`). 

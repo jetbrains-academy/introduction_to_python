@@ -1,5 +1,3 @@
-## Executing modules as scripts
-
 A Python module is a file containing executable statements as well as function or class definitions. 
 These statements are executed the first time the module name is encountered in an `import` statement.
 The file name is the module name with the suffix .py appended. Within a module, the 

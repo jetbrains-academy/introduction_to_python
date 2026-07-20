@@ -1,5 +1,3 @@
-## String multiplication
-
 Python also supports string-by-number multiplication (but not the other way around!).  
   
 Use `not_yet_food` variable to get a food name stored in `food` 

@@ -1,5 +1,3 @@
-## The join() method
-
 `.join()` is, in fact, a string method, but we're discussing it now because it 
 requires understanding of iterable objects, such as strings, lists, and tuples.
 This [method](https://docs.python.org/3/library/stdtypes.html#str.join) provides a flexible way to create strings from iterable objects. 

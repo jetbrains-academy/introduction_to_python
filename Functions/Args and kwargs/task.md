@@ -1,5 +1,3 @@
-## Args and kwargs
-
 When a final formal parameter of the form `**name` is present, it receives a dictionary 
 (see [Data Structures — Dictionaries ](course://Data structures/Dictionaries)) containing 
 all keyword arguments except for those corresponding 

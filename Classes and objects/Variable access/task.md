@@ -1,5 +1,3 @@
-## Variable access
-
 You can use attribute references to access variables inside an object.
 Attribute references use the standard syntax for all attribute references 
 in Python: `obj.name`. Valid attribute names are all the names that were in 

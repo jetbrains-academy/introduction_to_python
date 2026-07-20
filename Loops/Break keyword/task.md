@@ -1,5 +1,3 @@
-## Break keyword
-
 An infinite loop is a loop that never exits. If the loop condition happens to 
 always be `True`, such a loop becomes infinite. The most straightforward way to create
 an infinite loop is to use `while True`. The `break` keyword is used to 

@@ -1,5 +1,3 @@
-## If statement
-
 Compound statements in Python contain (groups of) other statements; they affect or control 
 the execution of those other statements in some way.
 

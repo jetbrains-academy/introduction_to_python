@@ -1,5 +1,3 @@
-## Argument Order
-
 In the code editor, you can see a function that prints a table 
 with a given number of rows and columns; it can also use different 
 symbols for printing the table. The function call below contains some errors;

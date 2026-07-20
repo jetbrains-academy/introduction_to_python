@@ -1,5 +1,3 @@
-## Continue keyword
-
 The `continue` keyword is used to skip the rest of the code inside the loop for 
 the current iteration only and proceed right to the next one. The loop returns to the `for` or 
 `while` statement and evaluates the condition again. If there is no next item, 

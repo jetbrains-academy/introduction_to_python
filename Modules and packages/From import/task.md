@@ -1,5 +1,3 @@
-## from import
-
 One form of the import statement imports names `from` a module directly. This way, you 
 can use the imported name without the `module_name` prefix.  For example:
 

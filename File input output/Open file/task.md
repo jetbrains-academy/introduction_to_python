@@ -1,4 +1,3 @@
-## Open file
 Python has a number of built-in functions to read and write information to a file on your computer.
 
 `open()` returns a file object, and is most commonly used with two arguments: `open(filename, mode)`:

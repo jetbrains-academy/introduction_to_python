@@ -1,5 +1,3 @@
-## Formatted string literals
-
 A formatted string literal, or an f-string, is a string literal that is prefixed 
 with 'f' or 'F'. These strings may contain replacement fields, which are 
 expressions delimited by curly braces `{}`. 

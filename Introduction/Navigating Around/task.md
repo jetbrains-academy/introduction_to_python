@@ -1,5 +1,3 @@
-## JetBrains Academy plugin overview
-
 This lesson will help you take your first steps with the [JetBrains Academy plugin](https://www.jetbrains.com/help/education/educational-products.html) and use it to learn Python.
 
 With the JetBrains Academy plugin, you can learn programming languages and tools by completing coding tasks and get instant feedback right inside the IDE.

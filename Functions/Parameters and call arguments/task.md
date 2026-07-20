@@ -1,5 +1,3 @@
-## Parameters and call arguments
-
 Function parameters are defined inside the parentheses `()` following the 
 function name. A parameter acts as a variable name for an argument passed to the
 function. 

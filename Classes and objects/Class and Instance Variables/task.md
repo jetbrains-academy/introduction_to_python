@@ -1,5 +1,3 @@
-## Class and Instance Variables
-
 In general, instance variables are for data unique to each instance, 
 and class variables are for attributes and methods shared by all instances of the class:
 

@@ -1,5 +1,3 @@
-## Concatenation
-
 Remember that some arithmetic operations can also apply to non-numeric types?
 Combining two strings using the `+` symbol is called concatenation.  
   
