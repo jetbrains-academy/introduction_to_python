@@ -22,10 +22,10 @@ Follow these steps to set up the course environment and begin learning:
 1. **Visit the Course Page:** Go to the [JetBrains Academy Course Catalog](https://academy.jetbrains.com/course/16630-introduction-to-python?=fromGitHub).
 2. **Launch the Course:** Click the **Take course** button.
 3. **Install JetBrains Toolbox:** When prompted, download and install the free JetBrains Toolbox App to manage your educational workspace.
-4. **Set Up the IDE:** Inside the Toolbox App, install **PyCharm Community Edition** (or another compatible JetBrains IDE). The course will configure itself and launch directly in your editor window.
+4. **Set Up the IDE:** Inside the Toolbox App, install **PyCharm**. The course will configure itself and launch directly in your editor window.
 5. **Complete the Lessons:** Work through the 9 core modules to complete all **84 tasks and lessons** to master your Python programming fundamentals!
 
-*Note: Completing the entire course track generates a verifiable certificate of completion for your resume or LinkedIn profile if you have an active premium JetBrains Academy subscription.*
+*Note: Completing the entire course track generates a verifiable certificate of completion for your resume or LinkedIn profile if you have an active premium JetBrains subscription.*
 
 ## Want to know more?
 If you have questions about the course or the tasks, or if you find any errors, feel free to ask questions and participate in discussions within the repository [issues](https://github.com/jetbrains-academy/introduction_to_python/issues).
