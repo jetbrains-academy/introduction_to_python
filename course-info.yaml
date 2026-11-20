@@ -30,4 +30,4 @@ additional_files:
   - name: README.md
   - name: contributing.md
   - name: requirements.txt
-yaml_version: 6
+yaml_version: 5
