@@ -23,9 +23,11 @@ content:
   - File input output
 tags:
   - Beginner-friendly
+environment_settings:
+  max_python_language_version: 3.14
 additional_files:
   - name: LICENSE
   - name: README.md
   - name: contributing.md
   - name: requirements.txt
-yaml_version: 5
+yaml_version: 6
